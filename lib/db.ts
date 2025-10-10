@@ -81,7 +81,7 @@ export async function getBusinesses(
     params.push(offset)
   }
 
-  const result = await client.execute(query, params)
+  const result = await client.execute({ sql: query, args: params })
   return result.rows.map(row => ({
     id: row.id as string,
     name: row.name as string,
@@ -105,10 +105,10 @@ export async function getBusinesses(
 }
 
 export async function getBusinessBySlug(slug: string): Promise<Business | null> {
-  const result = await client.execute(
-    'SELECT * FROM businesses WHERE slug = ?',
-    [slug]
-  )
+  const result = await client.execute({
+    sql: 'SELECT * FROM businesses WHERE slug = ?',
+    args: [slug],
+  })
 
   if (result.rows.length === 0) return null
 
@@ -136,7 +136,10 @@ export async function getBusinessBySlug(slug: string): Promise<Business | null> 
 }
 
 export async function getCategories(): Promise<Category[]> {
-  const result = await client.execute('SELECT * FROM categories ORDER BY name ASC')
+  const result = await client.execute({
+    sql: 'SELECT * FROM categories ORDER BY name ASC',
+    args: [],
+  })
   return result.rows.map(row => ({
     id: row.id as string,
     name: row.name as string,
@@ -146,10 +149,10 @@ export async function getCategories(): Promise<Category[]> {
 }
 
 export async function getCategoryBySlug(slug: string): Promise<Category | null> {
-  const result = await client.execute(
-    'SELECT * FROM categories WHERE slug = ?',
-    [slug]
-  )
+  const result = await client.execute({
+    sql: 'SELECT * FROM categories WHERE slug = ?',
+    args: [slug],
+  })
 
   if (result.rows.length === 0) return null
 
@@ -163,7 +166,10 @@ export async function getCategoryBySlug(slug: string): Promise<Category | null> 
 }
 
 export async function getAreas(): Promise<Area[]> {
-  const result = await client.execute('SELECT * FROM areas ORDER BY name ASC')
+  const result = await client.execute({
+    sql: 'SELECT * FROM areas ORDER BY name ASC',
+    args: [],
+  })
   return result.rows.map(row => ({
     id: row.id as string,
     name: row.name as string,
@@ -173,10 +179,10 @@ export async function getAreas(): Promise<Area[]> {
 }
 
 export async function getAreaBySlug(slug: string): Promise<Area | null> {
-  const result = await client.execute(
-    'SELECT * FROM areas WHERE slug = ?',
-    [slug]
-  )
+  const result = await client.execute({
+    sql: 'SELECT * FROM areas WHERE slug = ?',
+    args: [slug],
+  })
 
   if (result.rows.length === 0) return null
 
@@ -190,10 +196,10 @@ export async function getAreaBySlug(slug: string): Promise<Area | null> {
 }
 
 export async function getFeaturedBusinesses(limit: number = 6): Promise<Business[]> {
-  const result = await client.execute(
-    'SELECT * FROM businesses WHERE featured = true ORDER BY rating DESC, name ASC LIMIT ?',
-    [limit]
-  )
+  const result = await client.execute({
+    sql: 'SELECT * FROM businesses WHERE featured = true ORDER BY rating DESC, name ASC LIMIT ?',
+    args: [limit],
+  })
 
   return result.rows.map(row => ({
     id: row.id as string,
@@ -218,4 +224,3 @@ export async function getFeaturedBusinesses(limit: number = 6): Promise<Business
 }
 
 export default client
-
