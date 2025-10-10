@@ -1,3 +1,4 @@
+export const dynamic = 'force-dynamic'
 import { getFeaturedBusinesses, getCategories, getAreas } from '@/lib/db'
 import Link from 'next/link'
 import BusinessCard from '@/components/BusinessCard'

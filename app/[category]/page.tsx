@@ -1,3 +1,4 @@
+export const dynamic = 'force-dynamic'
 import { notFound } from 'next/navigation'
 import { getCategoryBySlug, getBusinesses, getCategories, getAreas, getFeaturedBusinesses } from '@/lib/db'
 import Breadcrumbs from '@/components/Breadcrumbs'
