@@ -1,20 +1,17 @@
 [
-  {
-    "id": "cat-1",
-    "name": "Plumbers",
-    "slug": "plumbers",
-    "description": "Licensed plumbing services for residential and commercial properties"
-  },
-  {
-    "id": "cat-2",
-    "name": "Cafes",
-    "slug": "cafes",
-    "description": "Coffee shops and cafes in the local area"
-  },
-  {
-    "id": "cat-3",
-    "name": "Vets",
-    "slug": "vets",
-    "description": "Veterinary services for your pets"
-  }
+  {"id": "cat-1", "name": "Plumbers", "slug": "plumbers", "description": "Licensed plumbing services for residential and commercial properties"},
+  {"id": "cat-2", "name": "Cafes", "slug": "cafes", "description": "Coffee shops and cafes in the local area"},
+  {"id": "cat-3", "name": "Vets", "slug": "vets", "description": "Veterinary services for your pets"},
+  {"id": "cat-4", "name": "Electricians", "slug": "electricians", "description": "Certified electricians for installations and repairs"},
+  {"id": "cat-5", "name": "Restaurants", "slug": "restaurants", "description": "Local restaurants and dining establishments"},
+  {"id": "cat-6", "name": "Hair Salons", "slug": "hair-salons", "description": "Professional hair styling and beauty services"},
+  {"id": "cat-7", "name": "Dentists", "slug": "dentists", "description": "Dental care and oral health services"},
+  {"id": "cat-8", "name": "Gyms", "slug": "gyms", "description": "Fitness centers and gyms"},
+  {"id": "cat-9", "name": "Car Mechanics", "slug": "car-mechanics", "description": "Auto repair and maintenance services"},
+  {"id": "cat-10", "name": "Garden Centers", "slug": "garden-centers", "description": "Plants, gardening supplies and landscaping"},
+  {"id": "cat-11", "name": "Solicitors", "slug": "solicitors", "description": "Legal services and advice"},
+  {"id": "cat-12", "name": "Accountants", "slug": "accountants", "description": "Tax and accounting services"},
+  {"id": "cat-13", "name": "Estate Agents", "slug": "estate-agents", "description": "Property sales and lettings"},
+  {"id": "cat-14", "name": "Builders", "slug": "builders", "description": "Construction and building services"},
+  {"id": "cat-15", "name": "Cleaners", "slug": "cleaners", "description": "Professional cleaning services"}
 ]
