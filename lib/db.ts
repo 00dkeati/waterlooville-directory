@@ -118,3 +118,14 @@ export async function getFeaturedBusinesses(limit: number = 6): Promise<Business
     .sort((a, b) => b.rating - a.rating)
     .slice(0, limit)
 }
+
+export async function getBusinesses(limit?: number): Promise<Business[]> {
+  await loadData()
+  let businesses = businessesCache!
+  
+  if (limit) {
+    businesses = businesses.slice(0, limit)
+  }
+  
+  return businesses
+}
