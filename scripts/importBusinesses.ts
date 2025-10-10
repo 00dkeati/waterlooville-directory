@@ -53,8 +53,7 @@ async function importBusinessesFromCSV(csvPath: string) {
         console.warn(`Skipping line ${i + 1}: mismatched columns`)
         continue
       }
-      
-      const business: BusinessData = {}
+      const business: Partial<BusinessData> = {}
       
       headers.forEach((header, index) => {
         const value = values[index]
