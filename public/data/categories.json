@@ -1,0 +1,20 @@
+[
+  {
+    "id": "cat-1",
+    "name": "Plumbers",
+    "slug": "plumbers",
+    "description": "Licensed plumbing services for residential and commercial properties"
+  },
+  {
+    "id": "cat-2",
+    "name": "Cafes",
+    "slug": "cafes",
+    "description": "Coffee shops and cafes in the local area"
+  },
+  {
+    "id": "cat-3",
+    "name": "Vets",
+    "slug": "vets",
+    "description": "Veterinary services for your pets"
+  }
+]
