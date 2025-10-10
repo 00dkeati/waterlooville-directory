@@ -1,3 +1,4 @@
+export const dynamic = 'force-dynamic'
 import { getAreas } from '@/lib/db'
 import Link from 'next/link'
 import Breadcrumbs from '@/components/Breadcrumbs'
