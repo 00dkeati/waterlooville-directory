@@ -6,16 +6,16 @@
   "/api/photo/route": "app/api/photo/route.js",
   "/biz/[slug]/page": "app/biz/[slug]/page.js",
   "/robots.txt/route": "app/robots.txt/route.js",
-  "/search/page": "app/search/page.js",
   "/top/[slug]/page": "app/top/[slug]/page.js",
-  "/about/page": "app/about/page.js",
-  "/api/search/route": "app/api/search/route.js",
+  "/search/page": "app/search/page.js",
   "/api/reviews/route": "app/api/reviews/route.js",
   "/[category]/page": "app/[category]/page.js",
-  "/categories/page": "app/categories/page.js",
+  "/api/search/route": "app/api/search/route.js",
+  "/about/page": "app/about/page.js",
   "/areas/page": "app/areas/page.js",
-  "/sitemap.xml/route": "app/sitemap.xml/route.js",
-  "/page": "app/page.js",
+  "/categories/page": "app/categories/page.js",
   "/contact/page": "app/contact/page.js",
-  "/area/[slug]/page": "app/area/[slug]/page.js"
+  "/page": "app/page.js",
+  "/area/[slug]/page": "app/area/[slug]/page.js",
+  "/sitemap.xml/route": "app/sitemap.xml/route.js"
 }
