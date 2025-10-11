@@ -9,7 +9,7 @@ export default function BusinessSchema({ business }: BusinessSchemaProps) {
     ? JSON.parse(business.opening_hours_json) 
     : null
 
-  const schema = {
+  const schema: any = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": business.name,
@@ -36,7 +36,6 @@ export default function BusinessSchema({ business }: BusinessSchemaProps) {
     "priceRange": "££"
   }
 
-  // Add opening hours if available
   if (openingHours) {
     const days = ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday']
     const openingHoursSpecification = days

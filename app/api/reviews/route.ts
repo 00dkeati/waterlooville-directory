@@ -1,5 +1,7 @@
 import { NextResponse } from 'next/server'
 
+export const dynamic = 'force-dynamic';
+
 // This would integrate with actual review APIs in production
 export async function GET(request: Request) {
   const { searchParams } = new URL(request.url)
@@ -18,7 +20,7 @@ export async function GET(request: Request) {
   
   // For now, return static data
   const reviewSources = await import('@/public/data/review-sources.json')
-  const sources = reviewSources.default[businessId] || []
+  const sources = (reviewSources.default as any)[businessId] || []
   
   return NextResponse.json({ sources })
 }
