@@ -26,6 +26,21 @@ export default async function EstateAgentsPage() {
       return b.review_count - a.review_count
     })
 
+  // Function to get reviews for an agent from their real Google reviews
+  const getAgentReviews = (agent: any): Array<{text: string, author: string, rating: number}> => {
+    if (agent.reviews && agent.reviews.length > 0) {
+      // Return top 2 real Google reviews
+      return agent.reviews.slice(0, 2).map((review: any) => ({
+        text: review.text,
+        author: review.author_name,
+        rating: review.rating
+      }))
+    }
+    
+    // No reviews available yet
+    return []
+  }
+
   // Calculate statistics
   const avgRating = estateAgents.reduce((sum, agent) => sum + agent.rating, 0) / estateAgents.length
   const totalReviews = estateAgents.reduce((sum, agent) => sum + agent.review_count, 0)
@@ -121,6 +136,7 @@ export default async function EstateAgentsPage() {
                 const position = index + 1
                 const insights = getAgentInsights(agent, position)
                 const isTopThree = position <= 3
+                const agentReviews = getAgentReviews(agent)
                 
                 return (
                   <tr 
@@ -162,6 +178,32 @@ export default async function EstateAgentsPage() {
                                 {insight}
                               </div>
                             ))}
+                          </div>
+                        )}
+                        
+                        {/* Google Reviews */}
+                        {agentReviews.length > 0 && (
+                          <div className="mt-3 space-y-2">
+                            {agentReviews.map((review, idx) => (
+                              <div key={idx} className="bg-white border-2 border-blue-200 rounded-lg p-3 shadow-sm">
+                                <div className="flex items-start gap-2 mb-1">
+                                  <span className="text-yellow-500 text-sm flex-shrink-0 mt-0.5">{'★'.repeat(review.rating)}{'☆'.repeat(5-review.rating)}</span>
+                                  <span className="text-xs font-bold text-gray-600">{review.author}</span>
+                                </div>
+                                <p className="text-sm text-gray-700 italic leading-relaxed">
+                                  "{review.text.length > 120 ? review.text.substring(0, 120) + '...' : review.text}"
+                                </p>
+                                <div className="mt-1 text-xs text-blue-600 font-semibold">
+                                  ✓ Verified Google Review
+                                </div>
+                              </div>
+                            ))}
+                          </div>
+                        )}
+                        
+                        {agentReviews.length === 0 && (
+                          <div className="mt-3 text-xs text-gray-500 italic">
+                            💬 Reviews loading... Run <code className="bg-gray-200 px-1 rounded">npm run enrich:estate-agents</code> to fetch Google reviews
                           </div>
                         )}
                       </div>

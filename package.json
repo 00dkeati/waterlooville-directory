@@ -9,7 +9,8 @@
     "lint": "next lint",
     "db:push": "turso db push waterlooville-directory schema.sql",
     "db:seed": "tsx scripts/importBusinesses.ts",
-    "enrich": "tsx scripts/enrichBusinessData.ts"
+    "enrich": "tsx scripts/enrichBusinessData.ts",
+    "enrich:estate-agents": "tsx scripts/enrichEstateAgents.ts"
   },
   "dependencies": {
     "@googlemaps/google-maps-services-js": "^3.4.2",

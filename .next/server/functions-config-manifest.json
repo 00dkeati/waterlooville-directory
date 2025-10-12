@@ -1,1 +1,1 @@
-{"version":1,"functions":{"/api/news":{},"/api/reviews":{},"/api/search":{},"/api/social-feed":{},"/sitemap.xml":{},"/[category]":{},"/about":{},"/area/[slug]":{},"/areas":{},"/categories":{},"/contact":{},"/estate-agents":{},"/":{},"/w/[slug]":{},"/waterlooville-[slug]":{}}}
+{"version":1,"functions":{"/api/search":{},"/api/reviews":{},"/api/social-feed":{},"/api/news":{},"/[category]":{},"/about":{},"/area/[slug]":{},"/areas":{},"/contact":{},"/":{},"/estate-agents":{},"/sitemap.xml":{},"/waterlooville-[slug]":{},"/categories":{},"/w/[slug]":{}}}
