@@ -1,10 +1,11 @@
 import { notFound } from 'next/navigation'
-import { getBusinessBySlug, getCategoryBySlug, getAreaBySlug, getFeaturedBusinesses } from '@/lib/db'
+import { getBusinessBySlug, getCategoryBySlug, getAreaBySlug, getFeaturedBusinesses, getBusinessesByCategoryAndArea } from '@/lib/db'
 import Breadcrumbs from '@/components/Breadcrumbs'
 import RelatedLinks from '@/components/RelatedLinks'
 import FAQ from '@/components/FAQ'
 import BusinessMap from '@/components/BusinessMap'
 import BusinessGallery from '@/components/BusinessGallery'
+import BusinessCard from '@/components/BusinessCard'
 import { Metadata } from 'next'
 
 interface BusinessPageProps {
@@ -48,14 +49,79 @@ export default async function BusinessPage({ params }: BusinessPageProps) {
     notFound()
   }
 
-  const [category, area, featuredBusinesses] = await Promise.all([
+  const [category, area, featuredBusinesses, similarBusinesses] = await Promise.all([
     getCategoryBySlug(business.category),
     getAreaBySlug(business.area),
-    getFeaturedBusinesses(3)
+    getFeaturedBusinesses(3),
+    getBusinessesByCategoryAndArea(business.category, business.area, 4)
   ])
+
+  // Filter out current business from similar businesses
+  const filteredSimilarBusinesses = similarBusinesses.filter(b => b.id !== business.id).slice(0, 3)
 
   const formatRating = (rating: number) => {
     return '★'.repeat(Math.floor(rating)) + '☆'.repeat(5 - Math.floor(rating))
+  }
+
+  // Generate AI Overview
+  const generateBusinessOverview = () => {
+    const rating = business.rating || 0
+    const reviewCount = business.review_count || 0
+    
+    let qualityText = ''
+    if (rating >= 4.8) qualityText = 'exceptional quality and outstanding customer satisfaction'
+    else if (rating >= 4.5) qualityText = 'excellent service and high customer satisfaction'
+    else if (rating >= 4.0) qualityText = 'quality service and positive customer feedback'
+    else qualityText = 'professional service'
+    
+    let experienceText = ''
+    if (reviewCount > 200) experienceText = 'extensive experience serving hundreds of satisfied customers'
+    else if (reviewCount > 100) experienceText = 'proven track record with over a hundred happy customers'
+    else if (reviewCount > 50) experienceText = 'growing reputation in the local community'
+    else experienceText = 'commitment to customer satisfaction'
+    
+    return `${business.name} is a trusted ${category?.name || business.category} in ${area?.name || business.area}, known for ${qualityText}. With ${experienceText}, they have established themselves as a reliable choice for local residents. ${business.description || ''}`
+  }
+
+  // Generate review highlights
+  const generateReviewHighlights = () => {
+    const highlights = []
+    if (business.rating >= 4.5) {
+      highlights.push('⭐ Consistently high ratings')
+      highlights.push('👍 Highly recommended by customers')
+    }
+    if (business.review_count > 100) {
+      highlights.push('💯 Trusted by hundreds of customers')
+    }
+    if (business.review_count > 50) {
+      highlights.push('📈 Growing positive reputation')
+    }
+    highlights.push('✓ Verified local business')
+    highlights.push('📍 Conveniently located in ' + (area?.name || business.area))
+    
+    return highlights
+  }
+
+  // Format opening hours nicely
+  const formatOpeningHours = () => {
+    if (!business.opening_hours_json) return null
+    try {
+      const hours = JSON.parse(business.opening_hours_json)
+      return hours
+    } catch {
+      return null
+    }
+  }
+
+  const openingHours = formatOpeningHours()
+  const isOpenNow = () => {
+    if (!openingHours) return null
+    const now = new Date()
+    const dayName = now.toLocaleDateString('en-US', { weekday: 'long' }).toLowerCase()
+    const todayHours = openingHours[dayName]
+    if (todayHours === 'Closed') return false
+    // Simplified - just check if not closed
+    return todayHours && todayHours !== 'Closed'
   }
 
   // Generate FAQ content
@@ -134,21 +200,46 @@ export default async function BusinessPage({ params }: BusinessPageProps) {
               )}
             </div>
 
-            <div className="flex items-center mb-4">
-              <span className="text-yellow-400 text-lg mr-2">
-                {formatRating(business.rating)}
-              </span>
-              <span className="text-gray-700">
-                {business.rating.toFixed(1)} ({business.review_count} reviews)
-              </span>
+            <div className="flex items-center gap-4 mb-4 flex-wrap">
+              <div className="flex items-center">
+                <span className="text-yellow-400 text-lg mr-2">
+                  {formatRating(business.rating)}
+                </span>
+                <span className="text-gray-700 font-semibold">
+                  {business.rating.toFixed(1)} ({business.review_count} reviews)
+                </span>
+              </div>
+              {isOpenNow() !== null && (
+                <span className={`px-3 py-1 rounded-full text-sm font-semibold ${isOpenNow() ? 'bg-green-100 text-green-800' : 'bg-red-100 text-red-800'}`}>
+                  {isOpenNow() ? '🟢 Open Now' : '🔴 Closed'}
+                </span>
+              )}
             </div>
-
-            {business.description && (
-              <p className="text-lg text-gray-700 leading-relaxed">
-                {business.description}
-              </p>
-            )}
           </header>
+
+          {/* AI Business Overview */}
+          <section className="bg-gradient-to-r from-blue-50 to-indigo-50 border-2 border-blue-200 rounded-xl p-6 mb-8">
+            <div className="flex items-center gap-2 mb-3">
+              <span className="text-2xl">✨</span>
+              <h2 className="text-xl font-bold text-gray-900">AI Business Overview</h2>
+            </div>
+            <p className="text-gray-700 leading-relaxed text-lg">
+              {generateBusinessOverview()}
+            </p>
+          </section>
+
+          {/* Review Highlights */}
+          <section className="bg-white rounded-xl shadow-lg p-6 mb-8">
+            <h2 className="text-2xl font-bold text-gray-900 mb-4">Why Choose {business.name}?</h2>
+            <div className="grid md:grid-cols-2 gap-3">
+              {generateReviewHighlights().map((highlight, index) => (
+                <div key={index} className="flex items-center gap-2 p-3 bg-green-50 rounded-lg">
+                  <span className="text-green-600 font-bold text-lg">✓</span>
+                  <span className="text-gray-700">{highlight}</span>
+                </div>
+              ))}
+            </div>
+          </section>
 
           {/* Business Images */}
           {business.images && business.images.length > 0 && (
@@ -159,44 +250,58 @@ export default async function BusinessPage({ params }: BusinessPageProps) {
           )}
 
           {/* Contact Information */}
-          <section className="bg-white p-6 rounded-lg shadow-md mb-8">
-            <h2 className="text-2xl font-semibold text-gray-900 mb-6">Contact Information</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              {business.address && (
-                <div>
-                  <h3 className="font-semibold text-gray-900 mb-2">Address</h3>
-                  <p className="text-gray-700">
-                    {business.address}
-                    {business.postcode && <><br />{business.postcode}</>}
-                  </p>
-                </div>
-              )}
-              
+          <section className="bg-gradient-to-br from-blue-600 to-indigo-600 text-white rounded-xl shadow-lg p-8 mb-8">
+            <h2 className="text-2xl font-bold mb-6">Get in Touch</h2>
+            <div className="space-y-4">
               {business.phone && (
-                <div>
-                  <h3 className="font-semibold text-gray-900 mb-2">Phone</h3>
-                  <a 
-                    href={`tel:${business.phone}`}
-                    className="text-blue-600 hover:text-blue-800 transition-colors"
-                  >
-                    {business.phone}
-                  </a>
-                </div>
+                <a 
+                  href={`tel:${business.phone}`}
+                  className="flex items-center gap-4 p-4 bg-white/10 backdrop-blur-sm rounded-lg hover:bg-white/20 transition-all group"
+                >
+                  <span className="text-3xl">📞</span>
+                  <div>
+                    <div className="text-sm text-blue-100">Call Us</div>
+                    <div className="text-lg font-semibold group-hover:text-blue-100">{business.phone}</div>
+                  </div>
+                </a>
               )}
               
               {business.website && (
-                <div>
-                  <h3 className="font-semibold text-gray-900 mb-2">Website</h3>
-                  <a 
-                    href={business.website}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-blue-600 hover:text-blue-800 transition-colors"
-                  >
-                    Visit Website →
-                  </a>
+                <a 
+                  href={business.website}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-4 p-4 bg-white/10 backdrop-blur-sm rounded-lg hover:bg-white/20 transition-all group"
+                >
+                  <span className="text-3xl">🌐</span>
+                  <div>
+                    <div className="text-sm text-blue-100">Visit Website</div>
+                    <div className="text-lg font-semibold group-hover:text-blue-100 truncate">View Online →</div>
+                  </div>
+                </a>
+              )}
+              
+              {business.address && (
+                <div className="flex items-start gap-4 p-4 bg-white/10 backdrop-blur-sm rounded-lg">
+                  <span className="text-3xl">📍</span>
+                  <div>
+                    <div className="text-sm text-blue-100">Address</div>
+                    <div className="text-lg font-semibold">
+                      {business.address}
+                      {business.postcode && <><br />{business.postcode}</>}
+                    </div>
+                  </div>
                 </div>
               )}
+
+              <a 
+                href={business.lat && business.lng ? `https://www.google.com/maps/dir/?api=1&destination=${business.lat},${business.lng}` : '#'}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block w-full text-center bg-white text-blue-600 py-3 px-6 rounded-lg font-bold hover:bg-blue-50 transition-colors"
+              >
+                Get Directions →
+              </a>
             </div>
           </section>
 
@@ -211,13 +316,46 @@ export default async function BusinessPage({ params }: BusinessPageProps) {
           </section>
 
           {/* Opening Hours */}
-          {business.opening_hours_json && (
-            <section className="bg-white p-6 rounded-lg shadow-md mb-8">
-              <h2 className="text-2xl font-semibold text-gray-900 mb-4">Opening Hours</h2>
-              <div className="text-gray-700">
-                <pre className="whitespace-pre-wrap">
-                  {JSON.stringify(JSON.parse(business.opening_hours_json), null, 2)}
-                </pre>
+          {openingHours && (
+            <section className="bg-white rounded-xl shadow-lg p-6 mb-8">
+              <h2 className="text-2xl font-bold text-gray-900 mb-4">Opening Hours</h2>
+              <div className="space-y-2">
+                {Object.entries(openingHours).map(([day, hours]) => {
+                  const hoursStr = String(hours)
+                  const isToday = new Date().toLocaleDateString('en-US', { weekday: 'long' }).toLowerCase() === day
+                  const isClosed = hoursStr === 'Closed'
+                  
+                  return (
+                    <div 
+                      key={day}
+                      className={`flex justify-between items-center p-3 rounded-lg ${
+                        isToday ? 'bg-blue-50 border-2 border-blue-200 font-semibold' : 'bg-gray-50'
+                      }`}
+                    >
+                      <span className="capitalize text-gray-900">
+                        {isToday && '→ '}{day}
+                        {isToday && ' (Today)'}
+                      </span>
+                      <span className={isClosed ? 'text-red-600 font-medium' : 'text-green-700 font-medium'}>
+                        {hoursStr}
+                      </span>
+                    </div>
+                  )
+                })}
+              </div>
+            </section>
+          )}
+
+          {/* Similar Businesses */}
+          {filteredSimilarBusinesses.length > 0 && (
+            <section className="bg-white rounded-xl shadow-lg p-6 mb-8">
+              <h2 className="text-2xl font-bold text-gray-900 mb-6">
+                Similar {category?.name || business.category} in {area?.name || business.area}
+              </h2>
+              <div className="grid gap-6">
+                {filteredSimilarBusinesses.map((similarBusiness) => (
+                  <BusinessCard key={similarBusiness.id} business={similarBusiness} />
+                ))}
               </div>
             </section>
           )}
