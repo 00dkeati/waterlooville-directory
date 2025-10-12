@@ -4456,6 +4456,29 @@
     "google_place_id": "ChIJ3UmaJXdDdEgRzXvgi9IUxAo",
     "images": [
       "https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photoreference=AciIO2e4HlSpdGrUx62N1o0LzPiSw-d2xj8gHy-sF4RAR4j7UHW8pUoZbbqjxYa8LBsVx_280ZyEuSdvoQP7T1HqIoCEqtcCzkTNFAZLPxGcEYxgesj8cDtF_hXObetYTKYBsrFEU0kJXT0umXHkO0Ml2DPGW30xPexBRu5o5ZvpkMi0Yo7t9jTqqcUpPIDwvRRa5djRuEWR5WggIciEQWCr58iz-nR0KQTVmM40z_gnBXgQknTpZUENSGz-TfAL7WhSYiNaLr4uYmM95KPI8Hci78mf0f_TfPDupNQax7KgknH75Q&key=AIzaSyB3pZBoHHpAmibsx8zT1VH6JW9_Odpm9sM"
+    ],
+    "aggregated_reviews": [
+      {
+        "author_name": "Sarah Hall",
+        "rating": 5,
+        "text": "We highly recommend A J Eyres. They have been absolutely fantastic from start to finish. When we first met Debs, we knew she was the agent to go with as she was professional yet friendly and so knowledgable.",
+        "date": "2023-10-20",
+        "source": "google"
+      },
+      {
+        "author_name": "Carol Hassan",
+        "rating": 5,
+        "text": "This is a really friendly and very efficient estate agent. We just recently sold our house through them. They go the extra mile with the photograph taking, if the weather is not that good, they come back the first sunny day to retake the photos.",
+        "date": "2023-10-20",
+        "source": "google"
+      },
+      {
+        "author_name": "Marion Larcom",
+        "rating": 5,
+        "text": "Deb and her team recently sold my bungalow. I have used them before so didn't hesitate to contact them again. I wasn't disappointed in the service. They all have a good balance of being professional and friendly.",
+        "date": "2023-07-20",
+        "source": "google"
+      }
     ]
   },
   {
