@@ -164,14 +164,27 @@ async function scrapeSource(page: any, business: any, source: string): Promise<R
     console.log(`      ⏳ Page loaded, waiting for content...`)
     await page.waitForTimeout(4000)
 
-    // For Google Maps, click on first business result
+    // For Google Maps, handle cookie consent and click on first business result
     if (source === 'google') {
       try {
+        // Accept Google cookies if prompted
+        try {
+          const acceptButton = page.locator('button:has-text("Accept all"), button:has-text("Reject all")').first()
+          if (await acceptButton.isVisible({ timeout: 3000 })) {
+            await acceptButton.click()
+            console.log(`      ✓ Handled cookie consent`)
+            await page.waitForTimeout(2000)
+          }
+        } catch (e) {
+          // No cookie dialog, continue
+        }
+
         // Wait for and click the first business result
-        await page.waitForSelector('a[href*="/maps/place/"]', { timeout: 5000 })
+        await page.waitForSelector('a[href*="/maps/place/"]', { timeout: 8000 })
         const firstResult = page.locator('a[href*="/maps/place/"]').first()
         await firstResult.click()
-        await page.waitForTimeout(3000)
+        console.log(`      ✓ Clicked business listing`)
+        await page.waitForTimeout(4000)
         
         // Try to click Reviews tab
         try {
@@ -273,7 +286,8 @@ async function scrapeReviewsWithAI() {
   )
 
   console.log(`📊 Found ${targets.length} estate agents`)
-  console.log(`🎯 Sources: Google, Trustpilot, Yell\n`)
+  console.log(`🎯 Sources: Google, Trustpilot, Yell`)
+  console.log(`\n⚠️  NOTE: Testing with first 5 agents only (remove limit for full scrape)\n`)
 
   const browser = await chromium.launch({ 
     headless: true,
@@ -281,12 +295,18 @@ async function scrapeReviewsWithAI() {
   })
 
   let totalReviews = 0
-  const sources = ['google', 'trustpilot', 'yell']
+  const sources = ['google'] // Start with just Google for now
+  const testLimit = 5 // Limit to first 5 for testing
 
   try {
     const page = await browser.newPage()
     
-    for (let i = 0; i < targets.length; i++) {
+    // Set user agent to avoid bot detection
+    await page.setExtraHTTPHeaders({
+      'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36'
+    })
+    
+    for (let i = 0; i < Math.min(targets.length, testLimit); i++) {
       const business = targets[i]
       console.log(`\n[${i + 1}/${targets.length}] ${business.name}`)
 
