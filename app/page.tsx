@@ -101,6 +101,38 @@ export default async function HomePage() {
         </div>
       </section>
 
+      {/* Waterlooville Guides */}
+      <section className="mb-12">
+        <h2 className="text-3xl font-bold text-gray-900 mb-8">Waterlooville Guides</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {[
+            { slug: 'waterlooville-shops', title: 'Shopping Guide', icon: '🛍️', desc: 'Sainsburys, ASDA, Retail Park & more' },
+            { slug: 'waterlooville-restaurants', title: 'Restaurants & Food', icon: '🍽️', desc: 'Dining, takeaways & cafes' },
+            { slug: 'waterlooville-services', title: 'Local Services', icon: '⚙️', desc: 'Tradesmen & professionals' },
+            { slug: 'waterlooville-healthcare', title: 'Healthcare', icon: '🏥', desc: 'Doctors, dentists & medical' },
+            { slug: 'waterlooville-jobs', title: 'Jobs & Careers', icon: '💼', desc: 'Employment opportunities' },
+            { slug: 'waterlooville-property', title: 'Property & Housing', icon: '🏠', desc: 'Houses for sale & estate agents' },
+            { slug: 'waterlooville-leisure', title: 'Leisure & Sports', icon: '🎯', desc: 'Gyms, pools & clubs' },
+            { slug: 'waterlooville-community', title: 'Community', icon: '👥', desc: 'Schools, churches & services' },
+            { slug: 'waterlooville-information', title: 'Local Info', icon: '📍', desc: 'Weather, news & map' },
+          ].map((guide) => (
+            <Link
+              key={guide.slug}
+              href={`/w/${guide.slug}`}
+              className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 group"
+            >
+              <div className="text-4xl mb-3">{guide.icon}</div>
+              <h3 className="text-lg font-bold text-gray-900 group-hover:text-blue-600 transition-colors mb-2">
+                {guide.title}
+              </h3>
+              <p className="text-sm text-gray-600">
+                {guide.desc}
+              </p>
+            </Link>
+          ))}
+        </div>
+      </section>
+
       {/* Local Insights */}
       <section className="bg-white p-8 rounded-lg shadow-md">
         <h2 className="text-2xl font-bold text-gray-900 mb-4">About Waterlooville</h2>

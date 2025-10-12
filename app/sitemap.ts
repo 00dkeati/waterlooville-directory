@@ -1,6 +1,7 @@
 export const dynamic = 'force-dynamic'
 import { MetadataRoute } from 'next'
 import { getCategories, getAreas, getBusinesses } from '@/lib/db'
+import seoPages from '@/data/seo-pages.json'
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const baseUrl = 'https://waterloovilledirectory.co.uk'
@@ -70,6 +71,16 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       lastModified: new Date(business.updated_at),
       changeFrequency: 'monthly',
       priority: 0.7,
+    })
+  }
+
+  // Add programmatic SEO pages
+  for (const seoPage of seoPages) {
+    sitemap.push({
+      url: `${baseUrl}/w/${seoPage.slug}`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
+      priority: 0.9, // High priority for SEO pages
     })
   }
 
