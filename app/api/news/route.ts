@@ -10,39 +10,39 @@ export async function GET() {
     
     const localNews = [
       {
-        title: "Waterlooville Town Centre Regeneration Plans Move Forward",
-        description: "New proposals for improving the town centre have been unveiled, including enhanced shopping facilities and improved public spaces for residents.",
-        url: "https://www.portsmouth.co.uk/news/waterlooville",
+        title: "Waterlooville Shopping Guide - Find All Local Shops",
+        description: "Discover all the shops in Waterlooville including Sainsburys, ASDA, Waitrose, M&S, Argos and more at the retail park and town centre.",
+        url: "/w/waterlooville-shops",
         publishedAt: new Date(Date.now() - 2 * 60 * 60 * 1000).toISOString(),
-        source: "Portsmouth News"
+        source: "Waterlooville Directory"
       },
       {
-        title: "Local Businesses Report Strong Community Support",
-        description: "Waterlooville's independent businesses are thriving thanks to increased support from local residents choosing to shop locally.",
-        url: "https://www.hampshirelive.news/waterlooville",
+        title: "Best Restaurants in Waterlooville - Complete Dining Guide",
+        description: "Find the best restaurants, cafes, pubs and takeaways in Waterlooville. From Chinese and Indian to fish & chips and more.",
+        url: "/w/waterlooville-restaurants",
         publishedAt: new Date(Date.now() - 5 * 60 * 60 * 1000).toISOString(),
-        source: "Hampshire Live"
+        source: "Waterlooville Directory"
       },
       {
-        title: "New Community Events Planned for Waterlooville",
-        description: "The local council has announced a series of community events aimed at bringing residents together and celebrating local culture.",
-        url: "https://www.havant.gov.uk/",
+        title: "Waterlooville Jobs & Vacancies - Employment Opportunities",
+        description: "Browse current job vacancies and part-time positions available in Waterlooville. Find your next career opportunity locally.",
+        url: "/w/waterlooville-jobs",
+        publishedAt: new Date(Date.now() - 12 * 60 * 60 * 1000).toISOString(),
+        source: "Waterlooville Directory"
+      },
+      {
+        title: "Waterlooville Healthcare Services - Doctors & Dentists",
+        description: "Find doctors, dentists, orthodontists, opticians and vets in Waterlooville. Complete healthcare directory.",
+        url: "/w/waterlooville-healthcare",
         publishedAt: new Date(Date.now() - 24 * 60 * 60 * 1000).toISOString(),
-        source: "Havant Borough Council"
+        source: "Waterlooville Directory"
       },
       {
-        title: "Waterlooville Schools Achieve Outstanding Results",
-        description: "Local schools in the Waterlooville area have been praised for their excellent academic performance and community engagement.",
-        url: "https://www.bbc.co.uk/news/england/hampshire",
+        title: "Local Services in Waterlooville - Tradesmen & Professionals",
+        description: "Find hairdressers, barbers, garages, taxis and all local services in Waterlooville. Professional tradesmen directory.",
+        url: "/w/waterlooville-services",
         publishedAt: new Date(Date.now() - 36 * 60 * 60 * 1000).toISOString(),
-        source: "BBC Hampshire"
-      },
-      {
-        title: "Transport Improvements Coming to Waterlooville Area",
-        description: "Hampshire County Council announces plans to improve local transport links and road infrastructure in and around Waterlooville.",
-        url: "https://www.hants.gov.uk/",
-        publishedAt: new Date(Date.now() - 48 * 60 * 60 * 1000).toISOString(),
-        source: "Hampshire County Council"
+        source: "Waterlooville Directory"
       }
     ]
 
