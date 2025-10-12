@@ -37,8 +37,20 @@ export default async function EstateAgentsPage() {
       }))
     }
     
-    // No reviews available yet
-    return []
+    // Generate review preview based on rating to show what will appear
+    const reviews: Array<{text: string, author: string, rating: number}> = []
+    
+    if (agent.review_count > 0) {
+      // Show that reviews exist on Google but need to be fetched
+      const starRating = Math.floor(agent.rating)
+      reviews.push({
+        text: `${agent.review_count} verified Google reviews available for ${agent.name}. Reviews will be displayed here once fetched from Google Places API.`,
+        author: `${agent.review_count} Google Reviews`,
+        rating: starRating
+      })
+    }
+    
+    return reviews
   }
 
   // Calculate statistics
@@ -201,9 +213,14 @@ export default async function EstateAgentsPage() {
                           </div>
                         )}
                         
-                        {agentReviews.length === 0 && (
-                          <div className="mt-3 text-xs text-gray-500 italic">
-                            💬 Reviews loading... Run <code className="bg-gray-200 px-1 rounded">npm run enrich:estate-agents</code> to fetch Google reviews
+                        {agentReviews.length === 0 && agent.review_count === 0 && (
+                          <div className="mt-3 bg-blue-50 border border-blue-200 rounded-lg p-3">
+                            <div className="text-xs font-semibold text-blue-900">
+                              💬 No reviews found yet
+                            </div>
+                            <div className="text-xs text-blue-700 mt-1">
+                              Be the first to leave a review on their business page!
+                            </div>
                           </div>
                         )}
                       </div>
