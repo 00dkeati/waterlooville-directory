@@ -11,7 +11,8 @@
     "db:seed": "tsx scripts/importBusinesses.ts",
     "enrich": "tsx scripts/enrichBusinessData.ts",
     "enrich:estate-agents": "tsx scripts/enrichEstateAgents.ts",
-    "aggregate:reviews": "tsx scripts/aggregateAllReviews.ts"
+    "aggregate:reviews": "tsx scripts/aggregateAllReviews.ts",
+    "scrape:reviews": "tsx scripts/simpleAiScraper.ts"
   },
   "dependencies": {
     "@googlemaps/google-maps-services-js": "^3.4.2",
