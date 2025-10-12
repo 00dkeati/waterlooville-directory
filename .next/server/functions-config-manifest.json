@@ -1,1 +1,1 @@
-{"version":1,"functions":{"/api/reviews":{},"/api/social-feed":{},"/api/news":{},"/sitemap.xml":{},"/api/search":{},"/area/[slug]":{},"/about":{},"/categories":{},"/contact":{},"/":{},"/areas":{},"/[category]":{},"/waterlooville-[slug]":{},"/w/[slug]":{}}}
+{"version":1,"functions":{"/api/news":{},"/api/reviews":{},"/api/social-feed":{},"/sitemap.xml":{},"/area/[slug]":{},"/api/search":{},"/contact":{},"/categories":{},"/[category]":{},"/about":{},"/":{},"/areas":{},"/w/[slug]":{},"/waterlooville-[slug]":{}}}
