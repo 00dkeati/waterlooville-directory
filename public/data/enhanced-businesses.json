@@ -49,8 +49,15 @@
       "Same Day Service",
       "No Call Out Fee"
     ],
-    "payment_methods": ["Cash", "Card", "Bank Transfer", "Finance Available"],
-    "languages": ["English"],
+    "payment_methods": [
+      "Cash",
+      "Card",
+      "Bank Transfer",
+      "Finance Available"
+    ],
+    "languages": [
+      "English"
+    ],
     "yearsInBusiness": 19,
     "jobsCompleted": 5000,
     "responseTime": "Usually responds within 1 hour",
