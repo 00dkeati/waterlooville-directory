@@ -30,7 +30,7 @@ interface Place {
 async function getPlaces(category: string): Promise<Place[]> {
   const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.waterlooville.co'
   try {
-    const response = await fetch(\`\${baseUrl}/api/search\`, {
+    const response = await fetch(`${baseUrl}/api/search`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ 
@@ -71,8 +71,8 @@ export async function generateMetadata({ params }: { params: { category: string 
   const cat = categories.find(c => c.slug === params.category)
   if (!cat) return { title: 'Not Found' }
   return {
-    title: \`\${cat.name} in Waterlooville - Local Directory\`,
-    description: \`Find the best \${cat.name.toLowerCase()} in Waterlooville with reviews and ratings.\`
+    title: `${cat.name} in Waterlooville - Local Directory`,
+    description: `Find the best ${cat.name.toLowerCase()} in Waterlooville with reviews and ratings.`
   }
 }
 
@@ -113,7 +113,7 @@ export default async function CategoryPage({ params }: { params: { category: str
             const score = calculateRankingScore(place)
             
             return (
-              <div key={place.place_id} className={\`bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition \${isFeatured ? 'ring-4 ring-yellow-400 scale-105' : ''}\`}>
+              <div key={place.place_id} className={`bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition ${isFeatured ? 'ring-4 ring-yellow-400 scale-105' : ''}`}>
                 {isFeatured && (
                   <div className="bg-gradient-to-r from-yellow-400 to-orange-500 text-white px-4 py-2 text-center font-bold">
                     🌟 RESTAURANT OF THE WEEK 🌟
@@ -122,12 +122,12 @@ export default async function CategoryPage({ params }: { params: { category: str
                 
                 <div className="relative h-48 bg-gray-200">
                   {place.photos?.[0] ? (
-                    <Image src={\`/api/photo?reference=\${place.photos[0].photo_reference}\`} alt={place.name} fill className="object-cover" />
+                    <Image src={`/api/photo?reference=${place.photos[0].photo_reference}`} alt={place.name} fill className="object-cover" />
                   ) : (
                     <div className="h-full flex items-center justify-center"><span className="text-4xl">🍴</span></div>
                   )}
                   {!isFeatured && idx < 3 && (
-                    <div className={\`absolute top-2 left-2 w-10 h-10 rounded-full flex items-center justify-center font-bold text-white \${idx === 0 ? 'bg-yellow-500' : idx === 1 ? 'bg-gray-400' : 'bg-orange-600'}\`}>
+                    <div className={`absolute top-2 left-2 w-10 h-10 rounded-full flex items-center justify-center font-bold text-white ${idx === 0 ? 'bg-yellow-500' : idx === 1 ? 'bg-gray-400' : 'bg-orange-600'}`}>
                       #{idx + 1}
                     </div>
                   )}
@@ -162,7 +162,7 @@ export default async function CategoryPage({ params }: { params: { category: str
                     </div>
                   )}
                   
-                  <Link href={\`/biz/\${place.place_id}\`} className={\`block text-center py-2 px-4 rounded \${isFeatured ? 'bg-gradient-to-r from-yellow-400 to-orange-500 text-white' : 'bg-blue-600 text-white hover:bg-blue-700'}\`}>
+                  <Link href={`/biz/${place.place_id}`} className={`block text-center py-2 px-4 rounded ${isFeatured ? 'bg-gradient-to-r from-yellow-400 to-orange-500 text-white' : 'bg-blue-600 text-white hover:bg-blue-700'}`}>
                     View Details
                   </Link>
                 </div>
