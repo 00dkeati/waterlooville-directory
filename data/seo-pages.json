@@ -145,7 +145,142 @@
           "title": "Fast Food & Takeaway",
           "items": ["Waterlooville McDonalds", "Waterlooville Dominos", "Waterlooville Kebab shops"]
         }
-      ]
+      ],
+      "detailedGuide": {
+        "diningAreas": [
+          {
+            "name": "Waterlooville Town Centre",
+            "description": "Central dining hub with a mix of restaurants, cafes, and traditional pubs",
+            "location": "London Road and Hambledon Road area",
+            "parking": "Free parking available nearby",
+            "atmosphere": "Vibrant mix of casual dining and traditional British pubs",
+            "restaurants": [
+              {
+                "name": "The Red Lion",
+                "type": "Traditional Pub",
+                "cuisine": "British",
+                "description": "Historic pub serving classic British dishes and local ales",
+                "features": "Real ales, traditional pub food, outdoor seating",
+                "priceRange": "££",
+                "specialties": ["Sunday Roast", "Fish & Chips", "Steak & Ale Pie"],
+                "booking": "Walk-ins welcome, table reservations recommended weekends"
+              },
+              {
+                "name": "Café Rouge",
+                "type": "Bistro",
+                "cuisine": "French",
+                "description": "French bistro with classic dishes and wine selection",
+                "features": "French wines, outdoor terrace, family-friendly",
+                "priceRange": "£££",
+                "specialties": ["Croque Monsieur", "Boeuf Bourguignon", "Crème Brûlée"],
+                "booking": "Table reservations recommended"
+              }
+            ]
+          },
+          {
+            "name": "Wellington Retail Park",
+            "description": "Modern dining options with chain restaurants and family-friendly venues",
+            "location": "Wellington Way, near major retailers",
+            "parking": "Free parking available",
+            "atmosphere": "Family-friendly with quick service options",
+            "restaurants": [
+              {
+                "name": "McDonald's",
+                "type": "Fast Food",
+                "cuisine": "American",
+                "description": "Global fast food chain serving burgers, fries, and family meals",
+                "features": "Drive-thru, McCafé, free WiFi, family seating",
+                "priceRange": "£",
+                "specialties": ["Big Mac", "Chicken McNuggets", "Apple Pie"],
+                "booking": "No reservations needed"
+              },
+              {
+                "name": "Pizza Express",
+                "type": "Restaurant",
+                "cuisine": "Italian",
+                "description": "Italian chain restaurant specializing in pizza and pasta",
+                "features": "Wood-fired pizzas, children's menu, takeaway available",
+                "priceRange": "££",
+                "specialties": ["Margherita Pizza", "Spaghetti Carbonara", "Dough Balls"],
+                "booking": "Online booking available"
+              }
+            ]
+          },
+          {
+            "name": "Local Neighborhoods",
+            "description": "Hidden gems and local favorites throughout Waterlooville",
+            "location": "Various locations across PO7 and PO8",
+            "parking": "Street parking and local car parks",
+            "atmosphere": "Authentic local dining experiences",
+            "restaurants": [
+              {
+                "name": "Number 73 Bar and Kitchen",
+                "type": "Restaurant & Bar",
+                "cuisine": "Modern British",
+                "description": "Contemporary dining with locally sourced ingredients",
+                "features": "Craft cocktails, seasonal menu, private dining",
+                "priceRange": "£££",
+                "specialties": ["Seasonal Game", "Local Seafood", "Artisan Cheeses"],
+                "booking": "Essential - very popular"
+              },
+              {
+                "name": "The Bird in Hand",
+                "type": "Gastropub",
+                "cuisine": "British",
+                "description": "Modern gastropub with elevated pub classics",
+                "features": "Craft beer selection, Sunday roasts, dog-friendly",
+                "priceRange": "££",
+                "specialties": ["Beer-Battered Fish", "Slow-Cooked Lamb", "Sticky Toffee Pudding"],
+                "booking": "Recommended for dinner service"
+              }
+            ]
+          }
+        ],
+        "cuisineTypes": [
+          {
+            "type": "Chinese",
+            "description": "Authentic Chinese cuisine with both traditional and modern dishes",
+            "popularDishes": ["Sweet & Sour Chicken", "Chow Mein", "Duck Pancakes"],
+            "priceRange": "££",
+            "dietaryOptions": "Vegetarian and vegan options available"
+          },
+          {
+            "type": "Indian",
+            "description": "Spice-rich Indian cuisine with regional specialties",
+            "popularDishes": ["Chicken Tikka Masala", "Lamb Biryani", "Vegetable Curry"],
+            "priceRange": "££",
+            "dietaryOptions": "Extensive vegetarian menu, gluten-free options"
+          },
+          {
+            "type": "Fish & Chips",
+            "description": "Traditional British fish and chips with locally caught fish",
+            "popularDishes": ["Cod & Chips", "Haddock & Chips", "Fish Pie"],
+            "priceRange": "££",
+            "dietaryOptions": "Gluten-free batter available at some locations"
+          },
+          {
+            "type": "Italian",
+            "description": "Authentic Italian cuisine with fresh pasta and wood-fired pizzas",
+            "popularDishes": ["Margherita Pizza", "Spaghetti Carbonara", "Tiramisu"],
+            "priceRange": "££",
+            "dietaryOptions": "Vegetarian pizzas, gluten-free pasta options"
+          }
+        ],
+        "diningTips": [
+          "Best for families: Pizza Express, McDonald's, and most pubs",
+          "Romantic dining: Café Rouge, Number 73 Bar and Kitchen",
+          "Quick lunch: McDonald's, local cafes, sandwich shops",
+          "Sunday lunch: The Red Lion, The Bird in Hand",
+          "Takeaway options: Most restaurants offer collection and delivery",
+          "Dietary requirements: Most restaurants accommodate vegetarian, vegan, and gluten-free diets"
+        ],
+        "bookingInfo": {
+          "advanceBooking": "Recommended for popular restaurants, especially weekends",
+          "walkIns": "Most pubs and casual dining accept walk-ins",
+          "onlineBooking": "Many restaurants offer online booking via their websites",
+          "phoneBooking": "Traditional phone booking available at all restaurants"
+        }
+      }
     }
   },
   {

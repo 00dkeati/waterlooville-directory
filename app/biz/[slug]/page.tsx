@@ -7,6 +7,7 @@ import BusinessMap from '@/components/BusinessMap'
 import BusinessGallery from '@/components/BusinessGallery'
 import BusinessCard from '@/components/BusinessCard'
 import SocialMediaFeed from '@/components/SocialMediaFeed'
+import MessageBoard from '@/components/MessageBoard'
 import { Metadata } from 'next'
 
 interface BusinessPageProps {
@@ -353,6 +354,12 @@ export default async function BusinessPage({ params }: BusinessPageProps) {
             facebookUrl={business.facebook_url}
             instagramUrl={business.instagram_url}
             twitterUrl={business.twitter_url}
+          />
+
+          {/* Community Reviews / Message Board */}
+          <MessageBoard 
+            businessName={business.name}
+            businessSlug={business.slug}
           />
 
           {/* Similar Businesses */}
