@@ -1,3 +1,5 @@
+'use client'
+
 export default function TestImages() {
   // Test image URL from our data
   const testImageUrl = "https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photoreference=AciIO2do5Bvz38mDLWFpM5SCpxUF1wLjE9rKHPyXb_-_8867wl4nVjTszqQRN_Rz1vXDF4j9WLffK7S7jZup3QKPwFoeK3RCtMTc8MevfFc4ULYlCM3F345Hgo_vebv8PDrsfOb4lZEaDP9c2m7k61TQh2Rf-6G6SHYPltJopQz52n_NSJSS3779-xVOq5lZuqeVTxKuHmNN7Gxqig0iLiWWnqjPPaIqbFZ29x5A0o7FC-0doUFC8f5MmbD5OWifAUrQTGfmnsLzz15C5QUIBkniV71iG4fmP-xJh3hJYM0yJkR4Gg&key=AIzaSyB3pZBoHHpAmibsx8zT1VH6JW9_Odpm9sM"
