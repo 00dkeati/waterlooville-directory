@@ -93,96 +93,126 @@ export default async function EstateAgentsPage() {
       </header>
 
       {/* League Table */}
-      <section className="bg-white rounded-xl shadow-lg overflow-hidden mb-8">
-        <div className="bg-gradient-to-r from-gray-50 to-gray-100 px-6 py-4 border-b border-gray-200">
-          <h2 className="text-2xl font-bold text-gray-900">🏆 Official Rankings 2024</h2>
-          <p className="text-gray-600 mt-1">Based on verified Google reviews and ratings</p>
+      <section className="bg-white rounded-xl shadow-2xl overflow-hidden mb-8 border-4 border-gray-200">
+        {/* Table Header */}
+        <div className="bg-gradient-to-r from-blue-600 to-indigo-600 px-6 py-5">
+          <h2 className="text-3xl font-black text-white flex items-center gap-3">
+            <span className="text-4xl">🏆</span>
+            OFFICIAL LEAGUE TABLE 2024
+          </h2>
+          <p className="text-blue-100 mt-2 text-sm font-medium">Ranked by verified Google customer reviews</p>
         </div>
 
         <div className="overflow-x-auto">
-          <table className="w-full">
-            <thead className="bg-gray-50 border-b-2 border-gray-200">
-              <tr>
-                <th className="px-6 py-4 text-left text-xs font-bold text-gray-600 uppercase tracking-wider">Rank</th>
-                <th className="px-6 py-4 text-left text-xs font-bold text-gray-600 uppercase tracking-wider">Estate Agent</th>
-                <th className="px-6 py-4 text-center text-xs font-bold text-gray-600 uppercase tracking-wider">Rating</th>
-                <th className="px-6 py-4 text-center text-xs font-bold text-gray-600 uppercase tracking-wider">Reviews</th>
-                <th className="px-6 py-4 text-left text-xs font-bold text-gray-600 uppercase tracking-wider">Location</th>
-                <th className="px-6 py-4 text-center text-xs font-bold text-gray-600 uppercase tracking-wider">Action</th>
+          <table className="w-full border-collapse">
+            {/* Table Header Row */}
+            <thead>
+              <tr className="bg-gradient-to-r from-gray-800 to-gray-900 text-white border-b-4 border-yellow-400">
+                <th className="px-4 py-4 text-center text-sm font-black uppercase tracking-wider w-20">POS</th>
+                <th className="px-6 py-4 text-left text-sm font-black uppercase tracking-wider">ESTATE AGENT</th>
+                <th className="px-4 py-4 text-center text-sm font-black uppercase tracking-wider w-32">RATING</th>
+                <th className="px-4 py-4 text-center text-sm font-black uppercase tracking-wider w-28">REVIEWS</th>
+                <th className="px-6 py-4 text-left text-sm font-black uppercase tracking-wider w-56">LOCATION</th>
+                <th className="px-4 py-4 text-center text-sm font-black uppercase tracking-wider w-36">DETAILS</th>
               </tr>
             </thead>
-            <tbody className="divide-y divide-gray-200">
+            <tbody>
               {estateAgents.map((agent, index) => {
                 const position = index + 1
                 const insights = getAgentInsights(agent, position)
+                const isTopThree = position <= 3
                 
                 return (
                   <tr 
                     key={agent.id}
-                    className={`hover:bg-gray-50 transition-colors ${
-                      position <= 3 ? 'bg-yellow-50/30' : ''
-                    }`}
+                    className={`
+                      border-b-2 border-gray-200 transition-all duration-200
+                      ${index % 2 === 0 ? 'bg-gray-50' : 'bg-white'}
+                      ${isTopThree ? 'border-l-8' : 'border-l-4'}
+                      ${position === 1 ? 'border-l-yellow-400 bg-yellow-50' : ''}
+                      ${position === 2 ? 'border-l-gray-400 bg-gray-100' : ''}
+                      ${position === 3 ? 'border-l-orange-400 bg-orange-50' : ''}
+                      ${!isTopThree ? 'border-l-blue-200' : ''}
+                      hover:bg-blue-50 hover:border-l-blue-500
+                    `}
                   >
-                    {/* Rank */}
-                    <td className="px-6 py-4 whitespace-nowrap">
-                      <div className="flex items-center">
-                        <span className="text-2xl font-bold text-gray-900">
-                          {getMedal(position)}
-                        </span>
+                    {/* Position */}
+                    <td className="px-4 py-5 text-center">
+                      <div className={`
+                        inline-flex items-center justify-center w-12 h-12 rounded-full font-black text-2xl
+                        ${position === 1 ? 'bg-gradient-to-br from-yellow-300 to-yellow-500 text-yellow-900 shadow-lg border-4 border-yellow-600' : ''}
+                        ${position === 2 ? 'bg-gradient-to-br from-gray-300 to-gray-400 text-gray-800 shadow-lg border-4 border-gray-500' : ''}
+                        ${position === 3 ? 'bg-gradient-to-br from-orange-300 to-orange-500 text-orange-900 shadow-lg border-4 border-orange-600' : ''}
+                        ${position > 3 ? 'bg-gradient-to-br from-blue-500 to-indigo-600 text-white shadow-md' : ''}
+                      `}>
+                        {position <= 3 ? getMedal(position) : position}
                       </div>
                     </td>
 
-                    {/* Estate Agent Name & Insights */}
-                    <td className="px-6 py-4">
-                      <div className="flex items-start">
-                        <div>
-                          <div className="text-lg font-bold text-gray-900 mb-1">
-                            {agent.name.replace('Estate Agents', '').replace('Waterlooville', '').trim()}
-                          </div>
-                          {insights.length > 0 && (
-                            <div className="space-y-1">
-                              {insights.map((insight, idx) => (
-                                <div key={idx} className="text-xs text-gray-600 flex items-center gap-1">
-                                  {insight}
-                                </div>
-                              ))}
-                            </div>
-                          )}
+                    {/* Estate Agent Name */}
+                    <td className="px-6 py-5">
+                      <div>
+                        <div className="text-xl font-black text-gray-900 mb-1 leading-tight">
+                          {agent.name.replace('Estate Agents', '').replace('Waterlooville', '').trim()}
                         </div>
+                        {insights.length > 0 && (
+                          <div className="space-y-0.5 mt-2">
+                            {insights.map((insight, idx) => (
+                              <div key={idx} className="text-xs font-semibold text-blue-600 flex items-center gap-1">
+                                {insight}
+                              </div>
+                            ))}
+                          </div>
+                        )}
                       </div>
                     </td>
 
                     {/* Rating */}
-                    <td className="px-6 py-4 whitespace-nowrap text-center">
-                      <div className={`inline-flex items-center px-3 py-1 rounded-full border-2 ${getRatingColor(agent.rating)}`}>
-                        <span className="text-yellow-500 text-lg mr-1">★</span>
-                        <span className="font-bold text-xl">{agent.rating.toFixed(1)}</span>
+                    <td className="px-4 py-5 text-center">
+                      <div className={`
+                        inline-flex flex-col items-center px-4 py-3 rounded-xl border-4 font-black shadow-lg
+                        ${agent.rating >= 4.8 ? 'bg-gradient-to-br from-green-400 to-green-600 border-green-700 text-white' : ''}
+                        ${agent.rating >= 4.5 && agent.rating < 4.8 ? 'bg-gradient-to-br from-blue-400 to-blue-600 border-blue-700 text-white' : ''}
+                        ${agent.rating >= 4.0 && agent.rating < 4.5 ? 'bg-gradient-to-br from-yellow-300 to-yellow-500 border-yellow-600 text-yellow-900' : ''}
+                        ${agent.rating < 4.0 ? 'bg-gradient-to-br from-gray-300 to-gray-400 border-gray-500 text-gray-800' : ''}
+                      `}>
+                        <div className="flex items-center gap-1">
+                          <span className="text-2xl">★</span>
+                          <span className="text-3xl">{agent.rating.toFixed(1)}</span>
+                        </div>
+                        <div className="text-xs mt-1 opacity-90">
+                          {agent.rating >= 4.8 ? 'OUTSTANDING' : agent.rating >= 4.5 ? 'EXCELLENT' : agent.rating >= 4.0 ? 'GOOD' : 'AVERAGE'}
+                        </div>
                       </div>
                     </td>
 
                     {/* Reviews */}
-                    <td className="px-6 py-4 whitespace-nowrap text-center">
-                      <div className="text-lg font-semibold text-gray-900">
-                        {agent.review_count}
+                    <td className="px-4 py-5 text-center">
+                      <div className="bg-gradient-to-br from-indigo-100 to-purple-100 border-2 border-indigo-300 rounded-lg px-3 py-2">
+                        <div className="text-3xl font-black text-indigo-900">
+                          {agent.review_count}
+                        </div>
+                        <div className="text-xs font-bold text-indigo-700 uppercase">
+                          Reviews
+                        </div>
                       </div>
-                      <div className="text-xs text-gray-500">reviews</div>
                     </td>
 
                     {/* Location */}
-                    <td className="px-6 py-4">
-                      <div className="text-sm text-gray-600">
-                        <div className="font-medium">{agent.address}</div>
-                        <div className="text-xs text-gray-500">{agent.postcode}</div>
+                    <td className="px-6 py-5">
+                      <div className="bg-gray-100 rounded-lg px-4 py-2 border-2 border-gray-300">
+                        <div className="font-bold text-gray-900 text-sm">{agent.address}</div>
+                        <div className="text-xs font-semibold text-gray-600 mt-1">{agent.postcode}</div>
                       </div>
                     </td>
 
                     {/* Action */}
-                    <td className="px-6 py-4 whitespace-nowrap text-center">
+                    <td className="px-4 py-5 text-center">
                       <Link
                         href={`/biz/${agent.slug}`}
-                        className="inline-flex items-center px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold rounded-lg transition-colors"
+                        className="inline-block px-5 py-3 bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white text-sm font-black rounded-lg transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 uppercase"
                       >
-                        View Details →
+                        View →
                       </Link>
                     </td>
                   </tr>
@@ -190,6 +220,13 @@ export default async function EstateAgentsPage() {
               })}
             </tbody>
           </table>
+        </div>
+
+        {/* Table Footer */}
+        <div className="bg-gradient-to-r from-gray-800 to-gray-900 px-6 py-4 border-t-4 border-yellow-400">
+          <p className="text-gray-300 text-sm text-center font-medium">
+            ⚡ Updated with live Google review data • Last updated: {new Date().toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' })}
+          </p>
         </div>
       </section>
 
