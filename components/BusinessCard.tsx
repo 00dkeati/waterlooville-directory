@@ -10,28 +10,108 @@ export default function BusinessCard({ business }: BusinessCardProps) {
     return '★'.repeat(Math.floor(rating)) + '☆'.repeat(5 - Math.floor(rating))
   }
 
-  // Generate a simple AI-style overview based on available data
+  // Generate detailed AI-style overview based on available data
   const generateOverview = () => {
-    const categoryDescriptions: { [key: string]: string } = {
-      'restaurants': 'dining experience',
-      'pubs': 'pub atmosphere',
-      'cafes': 'café ambiance',
-      'plumbers': 'plumbing services',
-      'electricians': 'electrical services',
-      'health': 'healthcare services',
-      'shopping': 'shopping experience',
-      'beauty': 'beauty services',
-      'automotive': 'automotive services'
+    const rating = business.rating || 0
+    const reviewCount = business.review_count || 0
+    const category = business.category
+    const area = business.area
+    
+    // Detailed category insights
+    const categoryInsights: { [key: string]: { type: string, qualities: string[], what: string } } = {
+      'restaurants': { 
+        type: 'restaurant',
+        qualities: ['quality food', 'excellent service', 'welcoming atmosphere'],
+        what: 'offering a diverse menu and memorable dining experiences'
+      },
+      'pubs': { 
+        type: 'pub',
+        qualities: ['great drinks', 'friendly atmosphere', 'local charm'],
+        what: 'providing a perfect spot for drinks and socializing'
+      },
+      'cafes': { 
+        type: 'café',
+        qualities: ['quality coffee', 'cozy ambiance', 'friendly service'],
+        what: 'serving fresh coffee and light meals in a relaxed setting'
+      },
+      'plumbers': { 
+        type: 'plumbing service',
+        qualities: ['reliable service', 'professional expertise', 'prompt response'],
+        what: 'handling all your plumbing needs with skilled technicians'
+      },
+      'electricians': { 
+        type: 'electrical service',
+        qualities: ['certified expertise', 'safety-focused', 'reliable work'],
+        what: 'providing expert electrical installations and repairs'
+      },
+      'health': { 
+        type: 'healthcare provider',
+        qualities: ['professional care', 'experienced staff', 'patient-focused'],
+        what: 'delivering quality healthcare services to the community'
+      },
+      'shopping': { 
+        type: 'retail store',
+        qualities: ['wide selection', 'competitive prices', 'helpful staff'],
+        what: 'offering quality products and excellent customer service'
+      },
+      'beauty': { 
+        type: 'beauty salon',
+        qualities: ['skilled stylists', 'relaxing atmosphere', 'quality treatments'],
+        what: 'providing professional beauty and wellness services'
+      },
+      'automotive': { 
+        type: 'automotive service',
+        qualities: ['expert mechanics', 'honest pricing', 'quality repairs'],
+        what: 'keeping your vehicle running smoothly with professional care'
+      }
     }
 
-    const ratingText = business.rating >= 4.5 ? 'highly rated' : 
-                       business.rating >= 4.0 ? 'well-rated' : 
-                       business.rating >= 3.5 ? 'popular' : 'established'
-    
-    const categoryType = categoryDescriptions[business.category] || 'local business'
-    const reviewCount = business.review_count || 0
+    const insight = categoryInsights[category] || { 
+      type: 'local business',
+      qualities: ['professional service', 'local expertise', 'reliable'],
+      what: 'serving the community with dedication'
+    }
 
-    return `A ${ratingText} ${categoryType} in ${business.area}${reviewCount > 50 ? ' with a strong customer following' : ''}. ${business.description || 'Serving the local community with quality service.'}`
+    // Rating-based descriptions
+    let ratingDesc = ''
+    let socialProof = ''
+    
+    if (rating >= 4.7) {
+      ratingDesc = 'Exceptional'
+      socialProof = reviewCount > 100 ? 'consistently praised by hundreds of satisfied customers' :
+                    reviewCount > 50 ? 'highly recommended by dozens of happy customers' :
+                    'earning outstanding reviews from customers'
+    } else if (rating >= 4.3) {
+      ratingDesc = 'Excellent'
+      socialProof = reviewCount > 100 ? 'trusted by over a hundred customers' :
+                    reviewCount > 50 ? 'well-regarded by many local customers' :
+                    'building a strong reputation in the area'
+    } else if (rating >= 4.0) {
+      ratingDesc = 'Highly rated'
+      socialProof = reviewCount > 50 ? 'appreciated by many customers' :
+                    'gaining positive feedback from customers'
+    } else if (rating >= 3.5) {
+      ratingDesc = 'Popular'
+      socialProof = 'serving the local community'
+    } else {
+      ratingDesc = 'Established'
+      socialProof = 'operating in the area'
+    }
+
+    // Build comprehensive overview
+    const parts = [
+      `${ratingDesc} ${insight.type} in ${area.charAt(0).toUpperCase() + area.slice(1)},`,
+      socialProof + '.',
+      `Known for ${insight.qualities[0]}, ${insight.qualities[1]}, and ${insight.qualities[2]},`,
+      `${insight.what}.`
+    ]
+
+    // Add business description if available and relevant
+    if (business.description && business.description.length > 50 && !business.description.includes('Professional')) {
+      parts.push(business.description)
+    }
+
+    return parts.join(' ')
   }
 
   return (
