@@ -6,7 +6,7 @@ import WaterloovilleNews from '@/components/WaterloovilleNews'
 
 export default async function HomePage() {
   const [featuredBusinesses, categories, areas] = await Promise.all([
-    getFeaturedBusinesses(6, 'waterlooville'), // Only show Waterlooville businesses
+    getFeaturedBusinesses(1, 'waterlooville'), // Only show 1 Waterlooville business
     getCategories(),
     getAreas()
   ])
@@ -37,14 +37,14 @@ export default async function HomePage() {
         </div>
       </section>
 
-      {/* News and Featured Businesses Section */}
+      {/* News and Featured Business Section */}
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12">
-        {/* Featured Businesses */}
+        {/* Featured Business */}
         <div className="lg:col-span-2">
           {featuredBusinesses.length > 0 && (
             <section>
-              <h2 className="text-3xl font-bold text-gray-900 mb-8">Featured Waterlooville Businesses</h2>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <h2 className="text-3xl font-bold text-gray-900 mb-8">⭐ Featured Waterlooville Business</h2>
+              <div className="max-w-2xl">
                 {featuredBusinesses.map((business) => (
                   <BusinessCard key={business.id} business={business} />
                 ))}
