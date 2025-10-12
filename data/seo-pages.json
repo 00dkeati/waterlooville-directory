@@ -21,7 +21,106 @@
           "title": "Specialist Shops",
           "items": ["Waterlooville Beds", "Waterlooville Carpets", "Waterlooville Fabric Shop", "Waterlooville O2"]
         }
-      ]
+      ],
+      "detailedGuide": {
+        "shoppingAreas": [
+          {
+            "name": "Waterlooville Town Centre (PO7 3DU)",
+            "description": "The heart of Waterlooville shopping, featuring a mix of high street brands and independent retailers",
+            "location": "Central Waterlooville, around London Road and Hambledon Road",
+            "parking": "Free parking available at London Road car park and Hambledon Road car park",
+            "busRoutes": "Regular bus services from Portsmouth, Havant, and surrounding areas",
+            "mainShops": [
+              {
+                "name": "Sainsbury's",
+                "type": "Supermarket",
+                "description": "Large supermarket with groceries, clothing, and household items",
+                "features": "Petrol station, pharmacy, café, click & collect"
+              },
+              {
+                "name": "Marks & Spencer",
+                "type": "Department Store",
+                "description": "Quality clothing, food hall, and home goods",
+                "features": "Food hall, clothing, home & beauty"
+              },
+              {
+                "name": "Argos",
+                "type": "Catalogue Retailer",
+                "description": "Electronics, furniture, toys, and home goods",
+                "features": "Click & collect, same-day delivery, tech support"
+              }
+            ],
+            "independentShops": [
+              "Local butchers and bakers",
+              "Independent fashion boutiques", 
+              "Specialist hobby and craft stores",
+              "Local florists and gift shops"
+            ],
+            "services": [
+              "Post Office",
+              "Banks and building societies",
+              "Hair salons and barbers",
+              "Cafes and restaurants"
+            ]
+          },
+          {
+            "name": "Wellington Retail Park (PO8 8UD)",
+            "description": "Modern retail park with major chains and big-box stores",
+            "location": "Wellington Way, just off the A3(M)",
+            "parking": "Free parking for all stores",
+            "busRoutes": "Stagecoach services from Waterlooville town centre",
+            "mainShops": [
+              {
+                "name": "ASDA",
+                "type": "Supermarket",
+                "description": "Large hypermarket with groceries, clothing, and household goods",
+                "features": "Petrol station, pharmacy, café, George clothing"
+              },
+              {
+                "name": "Waitrose",
+                "type": "Supermarket",
+                "description": "Premium supermarket with quality groceries and household items",
+                "features": "Wine bar, café, click & collect, Waitrose.com delivery"
+              },
+              {
+                "name": "Matalan",
+                "type": "Fashion & Home",
+                "description": "Affordable fashion, homeware, and seasonal items",
+                "features": "Clothing for all ages, home accessories, seasonal collections"
+              },
+              {
+                "name": "DFS",
+                "type": "Furniture",
+                "description": "Sofas, chairs, and living room furniture",
+                "features": "Free delivery, 0% finance, design consultation"
+              },
+              {
+                "name": "Wickes",
+                "type": "DIY & Building",
+                "description": "DIY supplies, building materials, and tools",
+                "features": "Trade account, delivery service, kitchen & bathroom showroom"
+              }
+            ],
+            "specialistStores": [
+              "Halfords (car parts and cycling)",
+              "B&Q (DIY and home improvement)",
+              "Currys (electronics and appliances)",
+              "Next (fashion and homeware)"
+            ]
+          }
+        ],
+        "shoppingTips": [
+          "Best parking: Free at both locations, but Wellington Retail Park has more spaces",
+          "Busiest times: Saturday afternoons and Sunday mornings",
+          "Best for groceries: Sainsbury's (town centre) or ASDA (retail park)",
+          "Best for fashion: Marks & Spencer (town centre) or Matalan (retail park)",
+          "Best for home goods: Argos (town centre) or DFS/Wickes (retail park)"
+        ],
+        "openingHours": {
+          "townCentre": "Most shops: Mon-Sat 9am-5:30pm, Sun 10am-4pm",
+          "retailPark": "Most shops: Mon-Fri 9am-8pm, Sat 9am-7pm, Sun 10am-4pm"
+        }
+      }
     }
   },
   {

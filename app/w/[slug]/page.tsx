@@ -89,23 +89,139 @@ export default async function SEOPage({ params }: SEOPageProps) {
             </p>
           </section>
 
-          {/* Content Sections */}
-          {page.content.sections.map((section, index) => (
-            <section key={index} className="bg-white rounded-xl shadow-lg p-8">
-              <h2 className="text-2xl font-bold text-gray-900 mb-6">{section.title}</h2>
-              <div className="grid md:grid-cols-2 gap-4">
-                {section.items.map((item) => (
-                  <div 
-                    key={item}
-                    className="flex items-center gap-3 p-4 bg-gradient-to-r from-blue-50 to-indigo-50 rounded-lg border border-blue-100 hover:shadow-md transition-shadow"
-                  >
-                    <span className="text-blue-600 text-xl">✓</span>
-                    <span className="font-medium text-gray-800">{item}</span>
+          {/* Detailed Shopping Guide for Shops Page */}
+          {page.slug === 'waterlooville-shops' && page.content.detailedGuide && (
+            <>
+              {/* Shopping Areas */}
+              {page.content.detailedGuide.shoppingAreas.map((area, index) => (
+                <section key={index} className="bg-white rounded-xl shadow-lg p-8 mb-8">
+                  <div className="flex items-start gap-4 mb-6">
+                    <div className="bg-blue-100 p-3 rounded-lg">
+                      <span className="text-2xl">🏪</span>
+                    </div>
+                    <div>
+                      <h2 className="text-2xl font-bold text-gray-900 mb-2">{area.name}</h2>
+                      <p className="text-gray-600 mb-4">{area.description}</p>
+                      <div className="flex flex-wrap gap-4 text-sm">
+                        <div className="flex items-center gap-1">
+                          <span>📍</span>
+                          <span className="text-gray-600">{area.location}</span>
+                        </div>
+                        <div className="flex items-center gap-1">
+                          <span>🅿️</span>
+                          <span className="text-gray-600">{area.parking}</span>
+                        </div>
+                        <div className="flex items-center gap-1">
+                          <span>🚌</span>
+                          <span className="text-gray-600">{area.busRoutes}</span>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                ))}
-              </div>
-            </section>
-          ))}
+
+                  {/* Main Shops */}
+                  <div className="mb-6">
+                    <h3 className="text-xl font-semibold text-gray-900 mb-4">Main Shops</h3>
+                    <div className="grid md:grid-cols-2 gap-4">
+                      {area.mainShops.map((shop, shopIndex) => (
+                        <div key={shopIndex} className="p-4 bg-gradient-to-r from-green-50 to-blue-50 rounded-lg border border-green-100">
+                          <h4 className="font-bold text-gray-900 mb-2">{shop.name}</h4>
+                          <p className="text-sm text-gray-600 mb-2">{shop.description}</p>
+                          <div className="text-xs text-gray-500">
+                            <strong>Features:</strong> {shop.features}
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+
+                  {/* Additional Info */}
+                  {area.independentShops && (
+                    <div className="mb-4">
+                      <h3 className="text-lg font-semibold text-gray-900 mb-3">Independent Shops</h3>
+                      <div className="flex flex-wrap gap-2">
+                        {area.independentShops.map((shop, idx) => (
+                          <span key={idx} className="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm">
+                            {shop}
+                          </span>
+                        ))}
+                      </div>
+                    </div>
+                  )}
+
+                  {area.services && (
+                    <div>
+                      <h3 className="text-lg font-semibold text-gray-900 mb-3">Services Available</h3>
+                      <div className="flex flex-wrap gap-2">
+                        {area.services.map((service, idx) => (
+                          <span key={idx} className="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm">
+                            {service}
+                          </span>
+                        ))}
+                      </div>
+                    </div>
+                  )}
+                </section>
+              ))}
+
+              {/* Shopping Tips */}
+              {page.content.detailedGuide.shoppingTips && (
+                <section className="bg-gradient-to-r from-yellow-50 to-orange-50 border-2 border-yellow-200 rounded-xl p-8 mb-8">
+                  <h2 className="text-2xl font-bold text-gray-900 mb-4 flex items-center gap-2">
+                    <span>💡</span>
+                    Shopping Tips
+                  </h2>
+                  <ul className="space-y-2">
+                    {page.content.detailedGuide.shoppingTips.map((tip, index) => (
+                      <li key={index} className="flex items-start gap-2">
+                        <span className="text-yellow-600 font-bold mt-1">•</span>
+                        <span className="text-gray-700">{tip}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </section>
+              )}
+
+              {/* Opening Hours */}
+              {page.content.detailedGuide.openingHours && (
+                <section className="bg-white rounded-xl shadow-lg p-8 mb-8">
+                  <h2 className="text-2xl font-bold text-gray-900 mb-4">Opening Hours</h2>
+                  <div className="grid md:grid-cols-2 gap-6">
+                    {Object.entries(page.content.detailedGuide.openingHours).map(([location, hours]) => (
+                      <div key={location} className="p-4 bg-gray-50 rounded-lg">
+                        <h3 className="font-semibold text-gray-900 mb-2 capitalize">
+                          {location.replace(/([A-Z])/g, ' $1').trim()}
+                        </h3>
+                        <p className="text-gray-600">{hours}</p>
+                      </div>
+                    ))}
+                  </div>
+                </section>
+              )}
+            </>
+          )}
+
+          {/* Regular Content Sections for other pages */}
+          {page.content.sections && (
+            <>
+              {page.content.sections.map((section, index) => (
+                <section key={index} className="bg-white rounded-xl shadow-lg p-8">
+                  <h2 className="text-2xl font-bold text-gray-900 mb-6">{section.title}</h2>
+                  <div className="grid md:grid-cols-2 gap-4">
+                    {section.items.map((item) => (
+                      <div 
+                        key={item}
+                        className="flex items-center gap-3 p-4 bg-gradient-to-r from-blue-50 to-indigo-50 rounded-lg border border-blue-100 hover:shadow-md transition-shadow"
+                      >
+                        <span className="text-blue-600 text-xl">✓</span>
+                        <span className="font-medium text-gray-800">{item}</span>
+                      </div>
+                    ))}
+                  </div>
+                </section>
+              ))}
+            </>
+          )}
 
           {/* Related Businesses */}
           {businesses.length > 0 && (
