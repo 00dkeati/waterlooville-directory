@@ -4,6 +4,7 @@ import Breadcrumbs from '@/components/Breadcrumbs'
 import RelatedLinks from '@/components/RelatedLinks'
 import FAQ from '@/components/FAQ'
 import BusinessMap from '@/components/BusinessMap'
+import BusinessGallery from '@/components/BusinessGallery'
 import { Metadata } from 'next'
 
 interface BusinessPageProps {
@@ -148,6 +149,14 @@ export default async function BusinessPage({ params }: BusinessPageProps) {
               </p>
             )}
           </header>
+
+          {/* Business Images */}
+          {business.images && business.images.length > 0 && (
+            <BusinessGallery 
+              businessName={business.name}
+              images={business.images}
+            />
+          )}
 
           {/* Contact Information */}
           <section className="bg-white p-6 rounded-lg shadow-md mb-8">

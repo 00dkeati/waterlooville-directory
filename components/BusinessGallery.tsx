@@ -11,11 +11,14 @@ interface BusinessGalleryProps {
 export default function BusinessGallery({ businessName, images }: BusinessGalleryProps) {
   const [selectedImage, setSelectedImage] = useState(0)
   
-  const galleryImages = images || [
-    'https://placehold.co/800x600/3b82f6/ffffff?text=Image1',
-    'https://placehold.co/800x600/8b5cf6/ffffff?text=Image2',
-    'https://placehold.co/800x600/10b981/ffffff?text=Image3'
+  // Create fallback images if no images provided or if images fail to load
+  const createFallbackImages = () => [
+    `https://placehold.co/800x600/3b82f6/ffffff?text=${encodeURIComponent(businessName)}`,
+    `https://placehold.co/800x600/8b5cf6/ffffff?text=Business+Gallery`,
+    `https://placehold.co/800x600/10b981/ffffff?text=Local+Business`
   ]
+  
+  const galleryImages = images && images.length > 0 ? images : createFallbackImages()
 
   return (
     <div className="bg-white rounded-xl overflow-hidden shadow-lg mb-8">
@@ -25,6 +28,7 @@ export default function BusinessGallery({ businessName, images }: BusinessGaller
           alt="Business image"
           fill
           className="object-cover"
+          unoptimized={true}
         />
       </div>
       
@@ -41,6 +45,7 @@ export default function BusinessGallery({ businessName, images }: BusinessGaller
                 alt="Thumbnail"
                 fill
                 className="object-cover"
+                unoptimized={true}
               />
             </button>
           ))}

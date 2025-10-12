@@ -40,7 +40,7 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
   }
 
   const [businesses, allCategories, allAreas, featuredBusinesses] = await Promise.all([
-    getBusinesses(params.category),
+    getBusinesses(params.category, 'waterlooville'), // Only show Waterlooville businesses on category pages
     getCategories(),
     getAreas(),
     getFeaturedBusinesses(3)

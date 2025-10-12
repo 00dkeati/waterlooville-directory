@@ -17,6 +17,8 @@ export interface Business {
   featured: boolean
   created_at: string
   updated_at: string
+  google_place_id?: string
+  images?: string[]
 }
 
 export interface Category {

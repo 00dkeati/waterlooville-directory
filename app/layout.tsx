@@ -5,6 +5,7 @@ import './globals.css'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://waterloovilledirectory.co.uk'),
   title: 'Waterlooville Directory - Find Local Businesses',
   description: 'Discover the best local businesses in Waterlooville and surrounding areas. From plumbers to cafes, find what you need with our comprehensive directory.',
   keywords: 'Waterlooville, local businesses, directory, Hampshire, Cowplain, Denmead',

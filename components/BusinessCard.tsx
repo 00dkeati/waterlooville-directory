@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import { Business } from '@/lib/db'
 
 interface BusinessCardProps {
@@ -11,22 +12,37 @@ export default function BusinessCard({ business }: BusinessCardProps) {
   }
 
   return (
-    <div className="business-card">
-      <div className="flex justify-between items-start mb-3">
-        <h3 className="text-lg font-semibold text-gray-900 line-clamp-2">
-          <Link 
-            href={`/biz/${business.slug}`}
-            className="hover:text-blue-600 transition-colors"
-          >
-            {business.name}
-          </Link>
-        </h3>
-        {business.featured && (
-          <span className="bg-yellow-100 text-yellow-800 text-xs font-medium px-2 py-1 rounded-full">
-            Featured
-          </span>
-        )}
-      </div>
+    <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
+      {/* Business Image */}
+      {business.images && business.images.length > 0 && (
+        <div className="relative h-48 w-full">
+          <Image
+            src={business.images[0]}
+            alt={`${business.name} business image`}
+            fill
+            className="object-cover"
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            unoptimized={true}
+          />
+        </div>
+      )}
+      
+      <div className="p-4">
+        <div className="flex justify-between items-start mb-3">
+          <h3 className="text-lg font-semibold text-gray-900 line-clamp-2">
+            <Link 
+              href={`/biz/${business.slug}`}
+              className="hover:text-blue-600 transition-colors"
+            >
+              {business.name}
+            </Link>
+          </h3>
+          {business.featured && (
+            <span className="bg-yellow-100 text-yellow-800 text-xs font-medium px-2 py-1 rounded-full">
+              Featured
+            </span>
+          )}
+        </div>
 
       <div className="flex items-center mb-2">
         <span className="text-yellow-400 text-sm mr-2">
@@ -71,17 +87,18 @@ export default function BusinessCard({ business }: BusinessCardProps) {
         )}
       </div>
 
-      <div className="mt-4 pt-3 border-t border-gray-200">
-        <div className="flex justify-between items-center text-sm">
-          <span className="text-gray-500 capitalize">
-            {business.category} in {business.area}
-          </span>
-          <Link 
-            href={`/biz/${business.slug}`}
-            className="text-blue-600 hover:text-blue-800 font-medium transition-colors"
-          >
-            View Details →
-          </Link>
+        <div className="mt-4 pt-3 border-t border-gray-200">
+          <div className="flex justify-between items-center text-sm">
+            <span className="text-gray-500 capitalize">
+              {business.category} in {business.area}
+            </span>
+            <Link 
+              href={`/biz/${business.slug}`}
+              className="text-blue-600 hover:text-blue-800 font-medium transition-colors"
+            >
+              View Details →
+            </Link>
+          </div>
         </div>
       </div>
     </div>
