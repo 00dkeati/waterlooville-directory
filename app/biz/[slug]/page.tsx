@@ -6,6 +6,7 @@ import FAQ from '@/components/FAQ'
 import BusinessMap from '@/components/BusinessMap'
 import BusinessGallery from '@/components/BusinessGallery'
 import BusinessCard from '@/components/BusinessCard'
+import SocialMediaFeed from '@/components/SocialMediaFeed'
 import { Metadata } from 'next'
 
 interface BusinessPageProps {
@@ -345,6 +346,14 @@ export default async function BusinessPage({ params }: BusinessPageProps) {
               </div>
             </section>
           )}
+
+          {/* Social Media Updates */}
+          <SocialMediaFeed 
+            businessName={business.name}
+            facebookUrl={business.facebook_url}
+            instagramUrl={business.instagram_url}
+            twitterUrl={business.twitter_url}
+          />
 
           {/* Similar Businesses */}
           {filteredSimilarBusinesses.length > 0 && (

@@ -19,6 +19,9 @@ export interface Business {
   updated_at: string
   google_place_id?: string
   images?: string[]
+  facebook_url?: string
+  instagram_url?: string
+  twitter_url?: string
 }
 
 export interface Category {
