@@ -1,6 +1,5 @@
 import { NextResponse } from 'next/server'
-import { readFile, writeFile } from 'fs/promises'
-import { join } from 'path'
+import { validateReviewContent } from '@/lib/contentFilter'
 
 export const dynamic = 'force-dynamic';
 
@@ -14,8 +13,115 @@ interface Review {
   createdAt: string
 }
 
-// Path to store reviews
-const REVIEWS_FILE = join(process.cwd(), 'public', 'data', 'user-reviews.json')
+// Using GitHub Gist as a simple free database
+// This is a temporary solution - for production, use a proper database
+const GIST_ID = process.env.REVIEWS_GIST_ID || ''
+const GITHUB_TOKEN = process.env.GITHUB_TOKEN || ''
+
+// Fallback to in-memory storage for development
+let memoryReviews: Review[] = [
+  {
+    id: 'demo-1',
+    businessName: 'Demo Business',
+    businessSlug: 'demo-business',
+    userName: 'Sarah Johnson',
+    rating: 5,
+    message: 'Excellent service! Highly recommend to anyone looking for quality work in Waterlooville.',
+    createdAt: new Date(Date.now() - 86400000).toISOString()
+  },
+  {
+    id: 'demo-2',
+    businessName: 'Waterlooville Shops',
+    businessSlug: 'waterlooville-shops',
+    userName: 'Mike Peters',
+    rating: 4,
+    message: 'Great shopping facilities. Sainsburys is particularly good, and the retail park has everything you need.',
+    createdAt: new Date(Date.now() - 172800000).toISOString()
+  }
+]
+
+// Simple rate limiting (in-memory)
+const rateLimitMap = new Map<string, number[]>()
+const RATE_LIMIT_WINDOW = 3600000 // 1 hour in milliseconds
+const MAX_REVIEWS_PER_HOUR = 3
+
+function checkRateLimit(identifier: string): boolean {
+  const now = Date.now()
+  const timestamps = rateLimitMap.get(identifier) || []
+  
+  // Remove timestamps older than the window
+  const recentTimestamps = timestamps.filter(t => now - t < RATE_LIMIT_WINDOW)
+  
+  if (recentTimestamps.length >= MAX_REVIEWS_PER_HOUR) {
+    return false // Rate limit exceeded
+  }
+  
+  // Add current timestamp
+  recentTimestamps.push(now)
+  rateLimitMap.set(identifier, recentTimestamps)
+  
+  return true
+}
+
+// Get reviews from GitHub Gist or memory
+async function getReviews(): Promise<Review[]> {
+  // If GitHub credentials are set, use Gist
+  if (GIST_ID && GITHUB_TOKEN) {
+    try {
+      const response = await fetch(`https://api.github.com/gists/${GIST_ID}`, {
+        headers: {
+          'Authorization': `token ${GITHUB_TOKEN}`,
+          'Accept': 'application/vnd.github.v3+json'
+        }
+      })
+      
+      if (response.ok) {
+        const gist = await response.json()
+        const content = gist.files['reviews.json']?.content
+        if (content) {
+          return JSON.parse(content)
+        }
+      }
+    } catch (error) {
+      console.error('Error fetching from Gist:', error)
+    }
+  }
+  
+  // Fallback to memory storage
+  return memoryReviews
+}
+
+// Save reviews to GitHub Gist or memory
+async function saveReviews(reviews: Review[]): Promise<boolean> {
+  // If GitHub credentials are set, use Gist
+  if (GIST_ID && GITHUB_TOKEN) {
+    try {
+      const response = await fetch(`https://api.github.com/gists/${GIST_ID}`, {
+        method: 'PATCH',
+        headers: {
+          'Authorization': `token ${GITHUB_TOKEN}`,
+          'Accept': 'application/vnd.github.v3+json',
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          files: {
+            'reviews.json': {
+              content: JSON.stringify(reviews, null, 2)
+            }
+          }
+        })
+      })
+      
+      return response.ok
+    } catch (error) {
+      console.error('Error saving to Gist:', error)
+    }
+  }
+  
+  // Fallback to memory storage
+  memoryReviews = reviews
+  return true
+}
 
 // Get reviews
 export async function GET(request: Request) {
@@ -23,15 +129,7 @@ export async function GET(request: Request) {
   const target = searchParams.get('target')
   
   try {
-    // Read existing reviews
-    let reviews: Review[] = []
-    try {
-      const data = await readFile(REVIEWS_FILE, 'utf-8')
-      reviews = JSON.parse(data)
-    } catch (error) {
-      // File doesn't exist yet, return empty array
-      reviews = []
-    }
+    let reviews = await getReviews()
 
     // Filter by target if provided
     if (target) {
@@ -62,6 +160,15 @@ export async function POST(request: Request) {
       )
     }
 
+    // Rate limiting (use IP or username as identifier)
+    const identifier = `${userName.toLowerCase()}-${businessSlug}`
+    if (!checkRateLimit(identifier)) {
+      return NextResponse.json(
+        { error: 'Too many reviews submitted. Please wait before submitting another review.' },
+        { status: 429 }
+      )
+    }
+
     if (rating < 1 || rating > 5) {
       return NextResponse.json(
         { error: 'Rating must be between 1 and 5' },
@@ -76,15 +183,17 @@ export async function POST(request: Request) {
       )
     }
 
-    // Read existing reviews
-    let reviews: Review[] = []
-    try {
-      const data = await readFile(REVIEWS_FILE, 'utf-8')
-      reviews = JSON.parse(data)
-    } catch (error) {
-      // File doesn't exist yet, create empty array
-      reviews = []
+    // Validate content for profanity and spam
+    const contentValidation = validateReviewContent(userName, message)
+    if (!contentValidation.valid) {
+      return NextResponse.json(
+        { error: contentValidation.error },
+        { status: 400 }
+      )
     }
+
+    // Get existing reviews
+    const reviews = await getReviews()
 
     // Create new review
     const newReview: Review = {
@@ -100,8 +209,15 @@ export async function POST(request: Request) {
     // Add to reviews
     reviews.push(newReview)
 
-    // Write back to file
-    await writeFile(REVIEWS_FILE, JSON.stringify(reviews, null, 2), 'utf-8')
+    // Save reviews
+    const saved = await saveReviews(reviews)
+
+    if (!saved) {
+      return NextResponse.json(
+        { error: 'Failed to save review' },
+        { status: 500 }
+      )
+    }
 
     return NextResponse.json({ success: true, review: newReview })
   } catch (error) {
