@@ -10,6 +10,15 @@ export default function BusinessCard({ business }: BusinessCardProps) {
     return '★'.repeat(Math.floor(rating)) + '☆'.repeat(5 - Math.floor(rating))
   }
 
+  // Debug logging
+  if (typeof window !== 'undefined') {
+    console.log(`BusinessCard: ${business.name}`, {
+      hasImages: !!business.images,
+      imageCount: business.images?.length || 0,
+      firstImage: business.images?.[0]?.substring(0, 100)
+    })
+  }
+
   return (
     <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
       {/* Business Image */}
