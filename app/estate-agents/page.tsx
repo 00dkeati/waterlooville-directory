@@ -26,31 +26,42 @@ export default async function EstateAgentsPage() {
       return b.review_count - a.review_count
     })
 
-  // Function to get reviews for an agent from their real Google reviews
-  const getAgentReviews = (agent: any): Array<{text: string, author: string, rating: number}> => {
-    if (agent.reviews && agent.reviews.length > 0) {
-      // Return top 2 real Google reviews
-      return agent.reviews.slice(0, 2).map((review: any) => ({
-        text: review.text,
-        author: review.author_name,
-        rating: review.rating
-      }))
+  // Get best and worst reviews for comparison
+  const getAgentReviews = (agent: any): {
+    positive: Array<{text: string, author: string, rating: number, source: string}>
+    negative: Array<{text: string, author: string, rating: number, source: string}>
+  } => {
+    if (agent.aggregated_reviews && agent.aggregated_reviews.length > 0) {
+      const reviews = agent.aggregated_reviews
+      
+      // Get 3 best reviews (5 stars and 4 stars)
+      const positive = reviews
+        .filter((r: any) => r.rating >= 4)
+        .sort((a: any, b: any) => b.rating - a.rating)
+        .slice(0, 3)
+        .map((r: any) => ({
+          text: r.text,
+          author: r.author_name,
+          rating: r.rating,
+          source: r.source
+        }))
+      
+      // Get 3 worst reviews (3 stars and below)
+      const negative = reviews
+        .filter((r: any) => r.rating <= 3)
+        .sort((a: any, b: any) => a.rating - b.rating)
+        .slice(0, 3)
+        .map((r: any) => ({
+          text: r.text,
+          author: r.author_name,
+          rating: r.rating,
+          source: r.source
+        }))
+      
+      return { positive, negative }
     }
     
-    // Generate review preview based on rating to show what will appear
-    const reviews: Array<{text: string, author: string, rating: number}> = []
-    
-    if (agent.review_count > 0) {
-      // Show that reviews exist on Google but need to be fetched
-      const starRating = Math.floor(agent.rating)
-      reviews.push({
-        text: `${agent.review_count} verified Google reviews available for ${agent.name}. Reviews will be displayed here once fetched from Google Places API.`,
-        author: `${agent.review_count} Google Reviews`,
-        rating: starRating
-      })
-    }
-    
-    return reviews
+    return { positive: [], negative: [] }
   }
 
   // Calculate statistics
@@ -148,7 +159,7 @@ export default async function EstateAgentsPage() {
                 const position = index + 1
                 const insights = getAgentInsights(agent, position)
                 const isTopThree = position <= 3
-                const agentReviews = getAgentReviews(agent)
+                const { positive, negative } = getAgentReviews(agent)
                 
                 return (
                   <tr 
@@ -193,27 +204,70 @@ export default async function EstateAgentsPage() {
                           </div>
                         )}
                         
-                        {/* Google Reviews */}
-                        {agentReviews.length > 0 && (
-                          <div className="mt-3 space-y-2">
-                            {agentReviews.map((review, idx) => (
-                              <div key={idx} className="bg-white border-2 border-blue-200 rounded-lg p-3 shadow-sm">
-                                <div className="flex items-start gap-2 mb-1">
-                                  <span className="text-yellow-500 text-sm flex-shrink-0 mt-0.5">{'★'.repeat(review.rating)}{'☆'.repeat(5-review.rating)}</span>
-                                  <span className="text-xs font-bold text-gray-600">{review.author}</span>
+                        {/* Positive Reviews (3 Best) */}
+                        {positive.length > 0 && (
+                          <div className="mt-4">
+                            <div className="text-sm font-black text-green-700 mb-2 flex items-center gap-2">
+                              <span>👍</span>
+                              TOP POSITIVE REVIEWS
+                            </div>
+                            <div className="space-y-2">
+                              {positive.map((review, idx) => (
+                                <div key={idx} className="bg-gradient-to-r from-green-50 to-emerald-50 border-2 border-green-300 rounded-lg p-3 shadow-sm">
+                                  <div className="flex items-start justify-between mb-1">
+                                    <span className="text-yellow-500 text-sm font-bold">{'★'.repeat(review.rating)}{'☆'.repeat(5-review.rating)}</span>
+                                    <span className="text-xs font-semibold text-green-700 uppercase">{review.source}</span>
+                                  </div>
+                                  <p className="text-sm text-gray-800 font-medium leading-relaxed mb-1">
+                                    "{review.text.length > 150 ? review.text.substring(0, 150) + '...' : review.text}"
+                                  </p>
+                                  <div className="text-xs text-gray-600 font-semibold">
+                                    — {review.author}
+                                  </div>
                                 </div>
-                                <p className="text-sm text-gray-700 italic leading-relaxed">
-                                  "{review.text.length > 120 ? review.text.substring(0, 120) + '...' : review.text}"
-                                </p>
-                                <div className="mt-1 text-xs text-blue-600 font-semibold">
-                                  ✓ Verified Google Review
-                                </div>
-                              </div>
-                            ))}
+                              ))}
+                            </div>
                           </div>
                         )}
                         
-                        {agentReviews.length === 0 && agent.review_count === 0 && (
+                        {/* Negative Reviews (3 Worst) - for transparency */}
+                        {negative.length > 0 && (
+                          <div className="mt-4">
+                            <div className="text-sm font-black text-orange-700 mb-2 flex items-center gap-2">
+                              <span>⚠️</span>
+                              AREAS FOR IMPROVEMENT
+                            </div>
+                            <div className="space-y-2">
+                              {negative.map((review, idx) => (
+                                <div key={idx} className="bg-gradient-to-r from-orange-50 to-red-50 border-2 border-orange-300 rounded-lg p-3 shadow-sm">
+                                  <div className="flex items-start justify-between mb-1">
+                                    <span className="text-yellow-500 text-sm font-bold">{'★'.repeat(review.rating)}{'☆'.repeat(5-review.rating)}</span>
+                                    <span className="text-xs font-semibold text-orange-700 uppercase">{review.source}</span>
+                                  </div>
+                                  <p className="text-sm text-gray-800 font-medium leading-relaxed mb-1">
+                                    "{review.text.length > 150 ? review.text.substring(0, 150) + '...' : review.text}"
+                                  </p>
+                                  <div className="text-xs text-gray-600 font-semibold">
+                                    — {review.author}
+                                  </div>
+                                </div>
+                              ))}
+                            </div>
+                          </div>
+                        )}
+                        
+                        {positive.length === 0 && negative.length === 0 && agent.review_count > 0 && (
+                          <div className="mt-3 bg-yellow-50 border-2 border-yellow-300 rounded-lg p-3">
+                            <div className="text-xs font-semibold text-yellow-900">
+                              📊 {agent.review_count} Google reviews available
+                            </div>
+                            <div className="text-xs text-yellow-700 mt-1">
+                              Run the AI scraper to fetch and display real customer reviews
+                            </div>
+                          </div>
+                        )}
+                        
+                        {positive.length === 0 && negative.length === 0 && agent.review_count === 0 && (
                           <div className="mt-3 bg-blue-50 border border-blue-200 rounded-lg p-3">
                             <div className="text-xs font-semibold text-blue-900">
                               💬 No reviews found yet
