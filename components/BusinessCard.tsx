@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import Image from 'next/image'
 import { Business } from '@/lib/db'
 
 interface BusinessCardProps {
@@ -15,14 +14,11 @@ export default function BusinessCard({ business }: BusinessCardProps) {
     <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
       {/* Business Image */}
       {business.images && business.images.length > 0 && (
-        <div className="relative h-48 w-full">
-          <Image
+        <div className="relative h-48 w-full overflow-hidden">
+          <img
             src={business.images[0]}
             alt={`${business.name} business image`}
-            fill
-            className="object-cover"
-            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-            unoptimized={true}
+            className="w-full h-full object-cover"
           />
         </div>
       )}

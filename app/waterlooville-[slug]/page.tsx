@@ -1,7 +1,6 @@
 // app/waterlooville-[slug]/page.tsx
 import { Metadata } from 'next'
 import { notFound } from 'next/navigation'
-import './styles.css'
 
 // Define all your SEO pages with their metadata
 const seoPages: Record<string, {

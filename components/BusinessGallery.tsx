@@ -1,7 +1,6 @@
 'use client'
 
 import { useState } from 'react'
-import Image from 'next/image'
 
 interface BusinessGalleryProps {
   businessName: string
@@ -22,13 +21,11 @@ export default function BusinessGallery({ businessName, images }: BusinessGaller
 
   return (
     <div className="bg-white rounded-xl overflow-hidden shadow-lg mb-8">
-      <div className="relative h-96 w-full">
-        <Image
+      <div className="relative h-96 w-full overflow-hidden">
+        <img
           src={galleryImages[selectedImage]}
           alt="Business image"
-          fill
-          className="object-cover"
-          unoptimized={true}
+          className="w-full h-full object-cover"
         />
       </div>
       
@@ -40,12 +37,10 @@ export default function BusinessGallery({ businessName, images }: BusinessGaller
               onClick={() => setSelectedImage(index)}
               className="relative flex-shrink-0 w-24 h-24 rounded-lg overflow-hidden border-2"
             >
-              <Image
+              <img
                 src={img}
                 alt="Thumbnail"
-                fill
-                className="object-cover"
-                unoptimized={true}
+                className="w-full h-full object-cover"
               />
             </button>
           ))}
