@@ -13,6 +13,7 @@
     "enrich:estate-agents": "tsx scripts/enrichEstateAgents.ts",
     "aggregate:reviews": "tsx scripts/aggregateAllReviews.ts",
     "scrape:reviews": "tsx scripts/simpleAiScraper.ts",
+    "scrape:coffee": "tsx scripts/scrapeCoffeeShops.ts",
     "generate:estate-guide": "tsx scripts/generateEstateAgentGuide.ts"
   },
   "dependencies": {
