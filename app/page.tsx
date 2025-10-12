@@ -2,10 +2,11 @@ export const dynamic = 'force-dynamic'
 import { getFeaturedBusinesses, getCategories, getAreas } from '@/lib/db'
 import Link from 'next/link'
 import BusinessCard from '@/components/BusinessCard'
+import WaterloovilleNews from '@/components/WaterloovilleNews'
 
 export default async function HomePage() {
   const [featuredBusinesses, categories, areas] = await Promise.all([
-    getFeaturedBusinesses(6),
+    getFeaturedBusinesses(6, 'waterlooville'), // Only show Waterlooville businesses
     getCategories(),
     getAreas()
   ])
@@ -36,17 +37,27 @@ export default async function HomePage() {
         </div>
       </section>
 
-      {/* Featured Businesses */}
-      {featuredBusinesses.length > 0 && (
-        <section className="mb-12">
-          <h2 className="text-3xl font-bold text-gray-900 mb-8">Featured Businesses</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {featuredBusinesses.map((business) => (
-              <BusinessCard key={business.id} business={business} />
-            ))}
-          </div>
-        </section>
-      )}
+      {/* News and Featured Businesses Section */}
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12">
+        {/* Featured Businesses */}
+        <div className="lg:col-span-2">
+          {featuredBusinesses.length > 0 && (
+            <section>
+              <h2 className="text-3xl font-bold text-gray-900 mb-8">Featured Waterlooville Businesses</h2>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                {featuredBusinesses.map((business) => (
+                  <BusinessCard key={business.id} business={business} />
+                ))}
+              </div>
+            </section>
+          )}
+        </div>
+
+        {/* News Sidebar */}
+        <div className="lg:col-span-1">
+          <WaterloovilleNews />
+        </div>
+      </div>
 
       {/* Categories Grid */}
       <section className="mb-12">

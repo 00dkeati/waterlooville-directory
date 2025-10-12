@@ -126,10 +126,10 @@ export async function getAreaBySlug(slug: string): Promise<Area | null> {
   return areasCache!.find(a => a.slug === slug) || null
 }
 
-export async function getFeaturedBusinesses(limit: number = 6): Promise<Business[]> {
+export async function getFeaturedBusinesses(limit: number = 6, area?: string): Promise<Business[]> {
   await loadData()
   return businessesCache!
-    .filter(b => b.featured)
+    .filter(b => b.featured && (!area || b.area === area))
     .sort((a, b) => b.rating - a.rating)
     .slice(0, limit)
 }
