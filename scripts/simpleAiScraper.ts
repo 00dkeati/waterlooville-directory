@@ -18,35 +18,44 @@ interface Review {
 // Use AI to extract structured data from raw text
 async function extractWithAI(pageText: string, businessName: string, source: string): Promise<Review[]> {
   if (!OPENAI_API_KEY) {
-    console.log('      ⚠️  No OpenAI key - using pattern matching')
+    console.log('      ⚠️  No OpenAI key - skipping')
+    return []
+  }
+
+  // Only proceed if we have substantial content
+  if (!pageText || pageText.length < 200) {
+    console.log('      ⚠️  Not enough page content')
     return []
   }
 
   try {
-    const prompt = `Extract customer reviews from this ${source} page for "${businessName}".
+    const prompt = `You are extracting customer reviews from a ${source} page about "${businessName}".
 
-Page content:
-${pageText.substring(0, 8000)}
+Here is the page text content:
+${pageText.substring(0, 12000)}
 
-Return a JSON array of reviews with this exact structure:
+Your task: Find and extract ALL customer reviews from this page.
+
+Return a JSON array in this EXACT format:
 [
   {
-    "author_name": "Full Name",
-    "rating": 4.5,
-    "text": "The actual review text...",
-    "date": "2024-01-15",
-    "source": "${source}"
+    "author_name": "Customer Name",
+    "rating": 5,
+    "text": "The full review text exactly as written",
+    "date": "2024-01-15"
   }
 ]
 
-Rules:
-- Extract ALL reviews you can find
-- Use exact review text (don't summarize)
-- Convert ratings to 1-5 scale
-- Parse dates to YYYY-MM-DD format (or "2024-01-01" if unclear)
-- Return ONLY the JSON array
+IMPORTANT:
+- Extract EVERY review you can find (aim for 5-10 reviews)
+- Copy review text EXACTLY as written (don't paraphrase)
+- Ratings are 1-5 stars (convert if needed)
+- For dates: use YYYY-MM-DD format, or "2024-01-01" if unclear
+- If you see "1 week ago", convert to approximate date
+- Return ONLY the JSON array, nothing else
+- If NO reviews found, return: []
 
-If no reviews found, return: []`
+Begin extraction now:`
 
     const response = await fetch('https://api.openai.com/v1/chat/completions', {
       method: 'POST',
@@ -57,32 +66,78 @@ If no reviews found, return: []`
       body: JSON.stringify({
         model: 'gpt-4o-mini',
         messages: [
-          { role: 'system', content: 'You are a precise data extraction assistant. Return only valid JSON.' },
-          { role: 'user', content: prompt }
+          { 
+            role: 'system', 
+            content: 'You are an expert at extracting structured data from web pages. You always return valid JSON arrays.' 
+          },
+          { 
+            role: 'user', 
+            content: prompt 
+          }
         ],
-        temperature: 0,
-        max_tokens: 3000
+        temperature: 0.1,
+        max_tokens: 4000
       })
     })
 
     const data = await response.json()
     
     if (data.error) {
-      console.error(`      OpenAI error: ${data.error.message}`)
+      console.error(`      ❌ OpenAI error: ${data.error.message}`)
       return []
     }
 
-    const content = data.choices[0]?.message?.content || '[]'
+    const content = data.choices[0]?.message?.content || ''
     
-    // Extract JSON from response
-    const jsonMatch = content.match(/\[[\s\S]*\]/)?.[0]
-    if (!jsonMatch) return []
+    console.log(`      🤖 AI response length: ${content.length} chars`)
+    
+    // Extract JSON from response (handle markdown code blocks too)
+    let jsonMatch = content.match(/\[[\s\S]*\]/)?.[0]
+    
+    // Try to find JSON in code blocks
+    if (!jsonMatch) {
+      const codeBlockMatch = content.match(/```(?:json)?\s*(\[[\s\S]*?\])\s*```/)
+      if (codeBlockMatch) jsonMatch = codeBlockMatch[1]
+    }
+    
+    if (!jsonMatch) {
+      console.log(`      ⚠️  No JSON found in AI response`)
+      console.log(`      Response preview: ${content.substring(0, 200)}`)
+      return []
+    }
 
     const reviews = JSON.parse(jsonMatch)
-    return Array.isArray(reviews) ? reviews : []
+    
+    if (!Array.isArray(reviews)) {
+      console.log('      ⚠️  Response is not an array')
+      return []
+    }
+    
+    // Add source to each review and validate
+    const validReviews = reviews
+      .filter(r => r.author_name && r.text && r.rating)
+      .map((r: any) => ({
+        source,
+        author_name: r.author_name,
+        rating: Math.min(5, Math.max(1, Number(r.rating))),
+        text: r.text,
+        date: r.date || new Date().toISOString().split('T')[0]
+      }))
+
+    console.log(`      ✅ Extracted ${validReviews.length} valid reviews`)
+    
+    // Show first review as sample
+    if (validReviews.length > 0) {
+      const sample = validReviews[0]
+      const preview = sample.text.substring(0, 80)
+      console.log(`      📝 Sample: "${preview}${sample.text.length > 80 ? '...' : ''}"`)
+      console.log(`         by ${sample.author_name} (${sample.rating}★)`)
+    }
+
+    return validReviews
 
   } catch (error) {
-    console.error(`      AI extraction error: ${error}`)
+    console.error(`      ❌ Extraction error: ${error}`)
     return []
   }
 }
@@ -91,39 +146,102 @@ If no reviews found, return: []`
 async function scrapeSource(page: any, business: any, source: string): Promise<Review[]> {
   const searchUrls: Record<string, string> = {
     google: `https://www.google.com/maps/search/${encodeURIComponent(business.name + ' Waterlooville')}`,
-    trustpilot: `https://uk.trustpilot.com/search?query=${encodeURIComponent(business.name)}`,
+    trustpilot: `https://uk.trustpilot.com/search?query=${encodeURIComponent(business.name + ' Waterlooville')}`,
     yell: `https://www.yell.com/ucs/UcsSearchAction.do?keywords=${encodeURIComponent(business.name)}&location=Waterlooville`,
-    tripadvisor: `https://www.tripadvisor.co.uk/Search?q=${encodeURIComponent(business.name + ' Waterlooville')}`,
   }
 
   const url = searchUrls[source]
   if (!url) return []
 
   try {
-    console.log(`      Loading ${source}...`)
-    await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 20000 })
-    await page.waitForTimeout(3000)
-
-    // Scroll page to load content
-    await page.evaluate(() => {
-      window.scrollTo(0, document.body.scrollHeight / 2)
+    console.log(`      📍 Scraping ${source}...`)
+    
+    await page.goto(url, { 
+      waitUntil: 'networkidle', 
+      timeout: 30000 
     })
-    await page.waitForTimeout(1500)
+    
+    console.log(`      ⏳ Page loaded, waiting for content...`)
+    await page.waitForTimeout(4000)
 
-    // Get text content
+    // For Google Maps, click on first business result
+    if (source === 'google') {
+      try {
+        // Wait for and click the first business result
+        await page.waitForSelector('a[href*="/maps/place/"]', { timeout: 5000 })
+        const firstResult = page.locator('a[href*="/maps/place/"]').first()
+        await firstResult.click()
+        await page.waitForTimeout(3000)
+        
+        // Try to click Reviews tab
+        try {
+          const reviewsButton = page.locator('button:has-text("Reviews")').first()
+          await reviewsButton.click({ timeout: 2000 })
+          await page.waitForTimeout(2000)
+        } catch (e) {
+          console.log(`      ℹ️  Reviews tab not found, using main page`)
+        }
+        
+        // Scroll to load more reviews
+        for (let i = 0; i < 3; i++) {
+          await page.evaluate(() => window.scrollBy(0, 500))
+          await page.waitForTimeout(1000)
+        }
+      } catch (e) {
+        console.log(`      ⚠️  Could not navigate to business page: ${e}`)
+      }
+    }
+
+    // For Trustpilot, click first result
+    if (source === 'trustpilot') {
+      try {
+        await page.waitForSelector('a[href*="/review/"]', { timeout: 5000 })
+        const firstResult = page.locator('a[href*="/review/"]').first()
+        await firstResult.click()
+        await page.waitForTimeout(3000)
+        
+        // Scroll to load reviews
+        await page.evaluate(() => window.scrollBy(0, 1000))
+        await page.waitForTimeout(2000)
+      } catch (e) {
+        console.log(`      ⚠️  No Trustpilot page found`)
+      }
+    }
+
+    // For Yell, click first business
+    if (source === 'yell') {
+      try {
+        await page.waitForSelector('a.businessCapsule--title', { timeout: 5000 })
+        const firstBusiness = page.locator('a.businessCapsule--title').first()
+        await firstBusiness.click()
+        await page.waitForTimeout(3000)
+        
+        // Try to click reviews tab
+        try {
+          const reviewsTab = page.locator('a:has-text("Reviews")').first()
+          await reviewsTab.click({ timeout: 2000 })
+          await page.waitForTimeout(2000)
+        } catch (e) {
+          console.log(`      ℹ️  Using main page for Yell`)
+        }
+      } catch (e) {
+        console.log(`      ⚠️  No Yell listing found`)
+      }
+    }
+
+    // Get all text content from page
     const pageText = await page.evaluate(() => document.body.innerText)
+    
+    console.log(`      📄 Page content: ${pageText.length} characters`)
+    
+    if (pageText.length < 500) {
+      console.log(`      ⚠️  Page content too short, skipping AI extraction`)
+      return []
+    }
     
     // Use AI to extract reviews
     const reviews = await extractWithAI(pageText, business.name, source)
     
-    if (reviews.length > 0) {
-      console.log(`      ✅ Extracted ${reviews.length} reviews`)
-      // Show first review as sample
-      if (reviews[0]) {
-        console.log(`      📝 Sample: "${reviews[0].text.substring(0, 60)}..."`)
-      }
-    }
-
     return reviews
 
   } catch (error) {
