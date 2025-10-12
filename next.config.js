@@ -1,30 +1,14 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  images: {
-    remotePatterns: [
+  async rewrites() {
+    return [
       {
-        protocol: 'https',
-        hostname: 'images.unsplash.com',
+        source: '/waterlooville-:path*',
+        destination: '/waterlooville-:path*.html',
       },
-      {
-        protocol: 'https',
-        hostname: 'maps.googleapis.com',
-      },
-      {
-        protocol: 'https',
-        hostname: 'lh3.googleusercontent.com',
-      },
-    ],
-    formats: ['image/webp', 'image/avif'],
+    ]
   },
-  
-  typescript: {
-    ignoreBuildErrors: false,
-  },
-  
-  eslint: {
-    ignoreDuringBuilds: false,
-  },
-};
+  trailingSlash: false,
+}
 
-module.exports = nextConfig;
+module.exports = nextConfig
