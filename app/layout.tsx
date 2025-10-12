@@ -94,10 +94,10 @@ export default function RootLayout({
                   </ul>
                 </div>
               </div>
-              <div className="border-t border-gray-700 mt-8 pt-8 text-center text-gray-300">
-                <p>&copy; 2024 Waterlooville Directory. All rights reserved.</p>
-                <p className="text-xs text-gray-500 mt-2">Version 2.0 - Updated Design</p>
-              </div>
+          <div className="border-t border-gray-700 mt-8 pt-8 text-center text-gray-300">
+            <p>&copy; 2024 Waterlooville Directory. All rights reserved.</p>
+            <p className="text-xs text-gray-500 mt-2">Version 2.1 - 270 Verified Waterlooville Businesses (PO7/PO8)</p>
+          </div>
             </div>
           </footer>
         </div>
