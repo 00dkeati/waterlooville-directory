@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "next lint",
     "db:push": "turso db push waterlooville-directory schema.sql",
-    "db:seed": "tsx scripts/importBusinesses.ts"
+    "db:seed": "tsx scripts/importBusinesses.ts",
+    "enrich": "tsx scripts/enrichBusinessData.ts"
   },
   "dependencies": {
     "@googlemaps/google-maps-services-js": "^3.4.2",

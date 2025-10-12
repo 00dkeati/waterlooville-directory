@@ -22,6 +22,37 @@ export interface Business {
   facebook_url?: string
   instagram_url?: string
   twitter_url?: string
+  // Enhanced Google Places data
+  price_level?: number // 0-4 (0=Free, 1=Inexpensive, 2=Moderate, 3=Expensive, 4=Very Expensive)
+  reviews?: GoogleReview[] // Array of actual reviews from Google
+  types?: string[] // All Google types for this business
+  wheelchair_accessible?: boolean
+  takeout?: boolean
+  delivery?: boolean
+  dine_in?: boolean
+  reservable?: boolean
+  serves_breakfast?: boolean
+  serves_lunch?: boolean
+  serves_dinner?: boolean
+  serves_beer?: boolean
+  serves_wine?: boolean
+  serves_vegetarian_food?: boolean
+  outdoor_seating?: boolean
+  good_for_children?: boolean
+  allows_dogs?: boolean
+  payment_options?: string[] // e.g., ['credit_cards', 'debit_cards', 'cash_only']
+  parking_options?: string[] // e.g., ['free_parking', 'paid_parking', 'street_parking']
+  editorial_summary?: string // Google's AI-generated summary
+  current_opening_hours?: string // Human-readable current status
+}
+
+export interface GoogleReview {
+  author_name: string
+  rating: number
+  text: string
+  time: number
+  relative_time_description: string
+  profile_photo_url?: string
 }
 
 export interface Category {
