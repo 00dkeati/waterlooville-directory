@@ -5,15 +5,15 @@ import './globals.css'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://waterloovilledirectory.co.uk'),
-  title: 'Waterlooville Directory - Find Local Businesses',
-  description: 'Discover the best local businesses in Waterlooville and surrounding areas. From plumbers to cafes, find what you need with our comprehensive directory.',
-  keywords: 'Waterlooville, local businesses, directory, Hampshire, Cowplain, Denmead',
+  metadataBase: new URL('https://www.waterlooville.co'),
+  title: 'Waterlooville.co - Local News, Business Directory & Community Guide',
+  description: 'Your local source for Waterlooville news, business reviews, and community information. Independent journalism for the Waterlooville area.',
+  keywords: 'Waterlooville news, local news, Hampshire, business directory, community news, Waterlooville businesses',
   openGraph: {
-    title: 'Waterlooville Directory',
-    description: 'Find the best local businesses in Waterlooville and surrounding areas',
-    url: 'https://waterloovilledirectory.co.uk',
-    siteName: 'Waterlooville Directory',
+    title: 'Waterlooville.co - Local News & Business Directory',
+    description: 'Independent local news and business directory for Waterlooville, Hampshire',
+    url: 'https://www.waterlooville.co',
+    siteName: 'Waterlooville.co',
     locale: 'en_GB',
     type: 'website',
   },
@@ -32,30 +32,30 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <div className="min-h-screen bg-gray-50">
-          <header className="bg-white shadow-sm border-b">
+          <header className="bg-white shadow-sm border-b-2 border-red-600">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <div className="flex justify-between items-center py-4">
                 <div>
-                  <h1 className="text-2xl font-bold text-gray-900">
-                    <a href="/" className="hover:text-blue-600 transition-colors">
-                      Waterlooville Directory
+                  <h1 className="text-3xl font-bold text-gray-900">
+                    <a href="/" className="hover:text-red-600 transition-colors">
+                      Waterlooville.co
                     </a>
                   </h1>
-                  <p className="text-sm text-gray-600">
-                    Find the best local businesses in Waterlooville
+                  <p className="text-sm text-gray-600 font-medium">
+                    Local News • Business Directory • Community Guide
                   </p>
                 </div>
                 <nav className="hidden md:flex space-x-6">
-                  <a href="/search" className="text-gray-700 hover:text-blue-600 transition-colors">
-                    Search
+                  <a href="/editorial" className="text-gray-700 hover:text-red-600 transition-colors font-medium">
+                    News
                   </a>
-                  <a href="/categories" className="text-gray-700 hover:text-blue-600 transition-colors">
-                    Categories
+                  <a href="/categories" className="text-gray-700 hover:text-red-600 transition-colors font-medium">
+                    Directory
                   </a>
-                  <a href="/areas" className="text-gray-700 hover:text-blue-600 transition-colors">
+                  <a href="/areas" className="text-gray-700 hover:text-red-600 transition-colors font-medium">
                     Areas
                   </a>
-                  <a href="/about" className="text-gray-700 hover:text-blue-600 transition-colors">
+                  <a href="/about" className="text-gray-700 hover:text-red-600 transition-colors font-medium">
                     About
                   </a>
                 </nav>
@@ -67,21 +67,21 @@ export default function RootLayout({
             {children}
           </main>
           
-          <footer className="bg-gray-800 text-white py-8 mt-16">
+          <footer className="bg-gray-900 text-white py-8 mt-16">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div>
-                  <h3 className="text-lg font-semibold mb-4">Waterlooville Directory</h3>
+                  <h3 className="text-lg font-bold mb-4">Waterlooville.co</h3>
                   <p className="text-gray-300">
-                    Your trusted local business directory for Waterlooville and surrounding areas.
+                    Independent local news and business directory for Waterlooville, Hampshire. Your trusted source for local information.
                   </p>
                 </div>
                 <div>
                   <h4 className="text-md font-semibold mb-4">Quick Links</h4>
                   <ul className="space-y-2 text-gray-300">
-                    <li><a href="/categories" className="hover:text-white transition-colors">Browse Categories</a></li>
-                    <li><a href="/areas" className="hover:text-white transition-colors">Browse Areas</a></li>
-                    <li><a href="/search" className="hover:text-white transition-colors">Search</a></li>
+                    <li><a href="/editorial" className="hover:text-white transition-colors">Latest News</a></li>
+                    <li><a href="/categories" className="hover:text-white transition-colors">Business Directory</a></li>
+                    <li><a href="/areas" className="hover:text-white transition-colors">Areas</a></li>
                     <li><a href="/contact" className="hover:text-white transition-colors">Contact Us</a></li>
                   </ul>
                 </div>
@@ -95,8 +95,8 @@ export default function RootLayout({
                 </div>
               </div>
           <div className="border-t border-gray-700 mt-8 pt-8 text-center text-gray-300">
-            <p>&copy; 2024 Waterlooville Directory. All rights reserved.</p>
-            <p className="text-xs text-gray-500 mt-2">Version 2.1 - 270 Verified Waterlooville Businesses (PO7/PO8)</p>
+            <p>&copy; 2024 Waterlooville.co. All rights reserved.</p>
+            <p className="text-xs text-gray-500 mt-2">Independent Local News • 270+ Verified Businesses • Serving Waterlooville & Surrounding Areas</p>
           </div>
             </div>
           </footer>

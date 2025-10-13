@@ -14,25 +14,25 @@ export default async function HomePage() {
   return (
     <div>
       {/* Hero Section */}
-      <section className="text-center py-12 bg-gradient-to-r from-blue-600 to-blue-800 text-white rounded-lg mb-12">
+      <section className="text-center py-12 bg-gradient-to-r from-red-600 to-red-800 text-white rounded-lg mb-12">
         <h1 className="text-4xl md:text-6xl font-bold mb-4">
-          Welcome to Waterlooville Directory
+          Waterlooville.co
         </h1>
-        <p className="text-xl md:text-2xl mb-8 text-blue-100">
-          Discover the best local businesses in Waterlooville and surrounding areas
+        <p className="text-xl md:text-2xl mb-8 text-red-100">
+          Local News • Business Directory • Community Guide
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link 
-            href="/categories" 
-            className="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors"
+            href="/editorial" 
+            className="bg-white text-red-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors"
           >
-            Browse Categories
+            Read Latest News
           </Link>
           <Link 
-            href="/areas" 
-            className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-colors"
+            href="/categories" 
+            className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-red-600 transition-colors"
           >
-            Browse Areas
+            Browse Business Directory
           </Link>
         </div>
       </section>
@@ -43,7 +43,7 @@ export default async function HomePage() {
         <div className="lg:col-span-2">
           {featuredBusinesses.length > 0 && (
             <section>
-              <h2 className="text-3xl font-bold text-gray-900 mb-8">⭐ Featured Waterlooville Business</h2>
+              <h2 className="text-3xl font-bold text-gray-900 mb-8">📰 Featured Business</h2>
               <div className="max-w-2xl">
                 {featuredBusinesses.map((business) => (
                   <BusinessCard key={business.id} business={business} />
@@ -135,7 +135,7 @@ export default async function HomePage() {
 
       {/* Local Insights */}
       <section className="bg-white p-8 rounded-lg shadow-md">
-        <h2 className="text-2xl font-bold text-gray-900 mb-6">About Waterlooville Directory</h2>
+        <h2 className="text-2xl font-bold text-gray-900 mb-6">About Waterlooville.co</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div>
             <h3 className="text-xl font-semibold text-gray-900 mb-4">Discover Local Excellence</h3>
