@@ -2,7 +2,7 @@ export const dynamic = 'force-dynamic'
 import { getFeaturedBusinesses, getCategories, getAreas } from '@/lib/db'
 import Link from 'next/link'
 import BusinessCard from '@/components/BusinessCard'
-import WaterloovilleNews from '@/components/WaterloovilleNews'
+import EditorialFeed from '@/components/EditorialFeed'
 
 export default async function HomePage() {
   const [featuredBusinesses, categories, areas] = await Promise.all([
@@ -53,9 +53,9 @@ export default async function HomePage() {
           )}
         </div>
 
-        {/* News Sidebar */}
+        {/* Editorial Sidebar */}
         <div className="lg:col-span-1">
-          <WaterloovilleNews />
+          <EditorialFeed />
         </div>
       </div>
 

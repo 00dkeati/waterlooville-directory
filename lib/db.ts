@@ -25,6 +25,7 @@ export interface Business {
   // Enhanced Google Places data
   price_level?: number // 0-4 (0=Free, 1=Inexpensive, 2=Moderate, 3=Expensive, 4=Very Expensive)
   reviews?: GoogleReview[] // Array of actual reviews from Google
+  aggregated_reviews?: AggregatedReview[] // Array of aggregated reviews from multiple sources
   types?: string[] // All Google types for this business
   wheelchair_accessible?: boolean
   takeout?: boolean
@@ -53,6 +54,14 @@ export interface GoogleReview {
   time: number
   relative_time_description: string
   profile_photo_url?: string
+}
+
+export interface AggregatedReview {
+  author_name: string
+  rating: number
+  text: string
+  date: string
+  source: string
 }
 
 export interface Category {
