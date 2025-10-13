@@ -130,7 +130,7 @@ export default async function EstateAgentsPage() {
         </div>
       </header>
 
-      {/* League Table */}
+      {/* League Table - Compact Card Layout */}
       <section className="bg-white rounded-xl shadow-2xl overflow-hidden mb-8 border-4 border-gray-200">
         {/* Table Header */}
         <div className="bg-gradient-to-r from-blue-600 to-indigo-600 px-6 py-5">
@@ -141,198 +141,157 @@ export default async function EstateAgentsPage() {
           <p className="text-blue-100 mt-2 text-sm font-medium">Ranked by verified Google customer reviews</p>
         </div>
 
-        <div className="overflow-x-auto">
-          <table className="w-full border-collapse">
-            {/* Table Header Row */}
-            <thead>
-              <tr className="bg-gradient-to-r from-gray-800 to-gray-900 text-white border-b-4 border-yellow-400">
-                <th className="px-4 py-4 text-center text-sm font-black uppercase tracking-wider w-20">POS</th>
-                <th className="px-6 py-4 text-left text-sm font-black uppercase tracking-wider">ESTATE AGENT</th>
-                <th className="px-4 py-4 text-center text-sm font-black uppercase tracking-wider w-32">RATING</th>
-                <th className="px-4 py-4 text-center text-sm font-black uppercase tracking-wider w-28">REVIEWS</th>
-                <th className="px-6 py-4 text-left text-sm font-black uppercase tracking-wider w-56">LOCATION</th>
-                <th className="px-4 py-4 text-center text-sm font-black uppercase tracking-wider w-36">DETAILS</th>
-              </tr>
-            </thead>
-            <tbody>
-              {estateAgents.map((agent, index) => {
-                const position = index + 1
-                const insights = getAgentInsights(agent, position)
-                const isTopThree = position <= 3
-                const { positive, negative } = getAgentReviews(agent)
-                
-                return (
-                  <tr 
-                    key={agent.id}
-                    className={`
-                      border-b-2 border-gray-200 transition-all duration-200
-                      ${index % 2 === 0 ? 'bg-gray-50' : 'bg-white'}
-                      ${isTopThree ? 'border-l-8' : 'border-l-4'}
-                      ${position === 1 ? 'border-l-yellow-400 bg-yellow-50' : ''}
-                      ${position === 2 ? 'border-l-gray-400 bg-gray-100' : ''}
-                      ${position === 3 ? 'border-l-orange-400 bg-orange-50' : ''}
-                      ${!isTopThree ? 'border-l-blue-200' : ''}
-                      hover:bg-blue-50 hover:border-l-blue-500
-                    `}
-                  >
-                    {/* Position */}
-                    <td className="px-4 py-5 text-center">
-                      <div className={`
-                        inline-flex items-center justify-center w-12 h-12 rounded-full font-black text-2xl
-                        ${position === 1 ? 'bg-gradient-to-br from-yellow-300 to-yellow-500 text-yellow-900 shadow-lg border-4 border-yellow-600' : ''}
-                        ${position === 2 ? 'bg-gradient-to-br from-gray-300 to-gray-400 text-gray-800 shadow-lg border-4 border-gray-500' : ''}
-                        ${position === 3 ? 'bg-gradient-to-br from-orange-300 to-orange-500 text-orange-900 shadow-lg border-4 border-orange-600' : ''}
-                        ${position > 3 ? 'bg-gradient-to-br from-blue-500 to-indigo-600 text-white shadow-md' : ''}
-                      `}>
-                        {position <= 3 ? getMedal(position) : position}
-                      </div>
-                    </td>
-
-                    {/* Estate Agent Name */}
-                    <td className="px-6 py-5">
-                      <div>
-                        <div className="text-xl font-black text-gray-900 mb-1 leading-tight">
-                          {agent.name.replace('Estate Agents', '').replace('Waterlooville', '').trim()}
+        {/* Compact Card Grid */}
+        <div className="p-6">
+          <div className="grid gap-4">
+            {estateAgents.map((agent, index) => {
+              const position = index + 1
+              const insights = getAgentInsights(agent, position)
+              const isTopThree = position <= 3
+              const { positive, negative } = getAgentReviews(agent)
+              
+              return (
+                <div 
+                  key={agent.id}
+                  className={`
+                    rounded-xl border-2 transition-all duration-200 hover:shadow-lg
+                    ${position === 1 ? 'border-yellow-400 bg-gradient-to-r from-yellow-50 to-yellow-100' : ''}
+                    ${position === 2 ? 'border-gray-400 bg-gradient-to-r from-gray-50 to-gray-100' : ''}
+                    ${position === 3 ? 'border-orange-400 bg-gradient-to-r from-orange-50 to-orange-100' : ''}
+                    ${position > 3 ? 'border-blue-200 bg-white hover:border-blue-400' : ''}
+                  `}
+                >
+                  <div className="p-4">
+                    <div className="flex items-start justify-between mb-4">
+                      {/* Position & Name */}
+                      <div className="flex items-center gap-4">
+                        <div className={`
+                          inline-flex items-center justify-center w-16 h-16 rounded-full font-black text-2xl flex-shrink-0
+                          ${position === 1 ? 'bg-gradient-to-br from-yellow-300 to-yellow-500 text-yellow-900 shadow-lg border-4 border-yellow-600' : ''}
+                          ${position === 2 ? 'bg-gradient-to-br from-gray-300 to-gray-400 text-gray-800 shadow-lg border-4 border-gray-500' : ''}
+                          ${position === 3 ? 'bg-gradient-to-br from-orange-300 to-orange-500 text-orange-900 shadow-lg border-4 border-orange-600' : ''}
+                          ${position > 3 ? 'bg-gradient-to-br from-blue-500 to-indigo-600 text-white shadow-md' : ''}
+                        `}>
+                          {position <= 3 ? getMedal(position) : position}
                         </div>
-                        {insights.length > 0 && (
-                          <div className="space-y-0.5 mt-2">
-                            {insights.map((insight, idx) => (
-                              <div key={idx} className="text-xs font-semibold text-blue-600 flex items-center gap-1">
-                                {insight}
-                              </div>
-                            ))}
-                          </div>
-                        )}
                         
-                        {/* Positive Reviews (3 Best) */}
+                        <div className="flex-1">
+                          <h3 className="text-xl font-black text-gray-900 mb-1">
+                            {agent.name.replace('Estate Agents', '').replace('Waterlooville', '').trim()}
+                          </h3>
+                          {insights.length > 0 && (
+                            <div className="flex flex-wrap gap-2 mt-2">
+                              {insights.map((insight, idx) => (
+                                <span key={idx} className="text-xs font-semibold text-blue-600 bg-blue-100 px-2 py-1 rounded">
+                                  {insight}
+                                </span>
+                              ))}
+                            </div>
+                          )}
+                        </div>
+                      </div>
+
+                      {/* Rating & Stats */}
+                      <div className="flex items-center gap-4">
+                        <div className={`
+                          inline-flex flex-col items-center px-4 py-3 rounded-xl border-2 font-black shadow-lg
+                          ${agent.rating >= 4.8 ? 'bg-gradient-to-br from-green-400 to-green-600 border-green-700 text-white' : ''}
+                          ${agent.rating >= 4.5 && agent.rating < 4.8 ? 'bg-gradient-to-br from-blue-400 to-blue-600 border-blue-700 text-white' : ''}
+                          ${agent.rating >= 4.0 && agent.rating < 4.5 ? 'bg-gradient-to-br from-yellow-300 to-yellow-500 border-yellow-600 text-yellow-900' : ''}
+                          ${agent.rating < 4.0 ? 'bg-gradient-to-br from-gray-300 to-gray-400 border-gray-500 text-gray-800' : ''}
+                        `}>
+                          <div className="flex items-center gap-1">
+                            <span className="text-xl">★</span>
+                            <span className="text-2xl">{agent.rating.toFixed(1)}</span>
+                          </div>
+                          <div className="text-xs mt-1 opacity-90">
+                            {agent.rating >= 4.8 ? 'OUTSTANDING' : agent.rating >= 4.5 ? 'EXCELLENT' : agent.rating >= 4.0 ? 'GOOD' : 'AVERAGE'}
+                          </div>
+                        </div>
+                        
+                        <div className="bg-gradient-to-br from-indigo-100 to-purple-100 border-2 border-indigo-300 rounded-lg px-3 py-2">
+                          <div className="text-2xl font-black text-indigo-900">{agent.review_count}</div>
+                          <div className="text-xs font-bold text-indigo-700 uppercase">Reviews</div>
+                        </div>
+                        
+                        <Link
+                          href={`/biz/${agent.slug}`}
+                          className="px-4 py-2 bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white text-sm font-bold rounded-lg transition-all shadow-md hover:shadow-lg"
+                        >
+                          View →
+                        </Link>
+                      </div>
+                    </div>
+
+                    {/* Reviews Preview */}
+                    {(positive.length > 0 || negative.length > 0) && (
+                      <div className="grid md:grid-cols-2 gap-4 mt-4">
+                        {/* Positive Reviews Preview */}
                         {positive.length > 0 && (
-                          <div className="mt-4">
-                            <div className="text-sm font-black text-green-700 mb-2 flex items-center gap-2">
+                          <div className="bg-green-50 border border-green-200 rounded-lg p-3">
+                            <div className="text-sm font-bold text-green-700 mb-2 flex items-center gap-2">
                               <span>👍</span>
-                              TOP POSITIVE REVIEWS
+                              Positive Reviews ({positive.length})
                             </div>
                             <div className="space-y-2">
-                              {positive.map((review, idx) => (
-                                <div key={idx} className="bg-gradient-to-r from-green-50 to-emerald-50 border-2 border-green-300 rounded-lg p-3 shadow-sm">
-                                  <div className="flex items-start justify-between mb-1">
-                                    <span className="text-yellow-500 text-sm font-bold">{'★'.repeat(review.rating)}{'☆'.repeat(5-review.rating)}</span>
-                                    <span className="text-xs font-semibold text-green-700 uppercase">{review.source}</span>
+                              {positive.slice(0, 2).map((review, idx) => (
+                                <div key={idx} className="bg-white border border-green-300 rounded p-2">
+                                  <div className="flex items-center gap-2 mb-1">
+                                    <span className="text-green-500 text-xs font-bold">{'★'.repeat(review.rating)}</span>
+                                    <span className="text-xs text-green-600 font-medium">{review.source}</span>
                                   </div>
-                                  <p className="text-sm text-gray-800 font-medium leading-relaxed mb-1">
-                                    "{review.text.length > 150 ? review.text.substring(0, 150) + '...' : review.text}"
+                                  <p className="text-xs text-gray-700 leading-relaxed">
+                                    "{review.text.length > 100 ? review.text.substring(0, 100) + '...' : review.text}"
                                   </p>
-                                  <div className="text-xs text-gray-600 font-semibold">
-                                    — {review.author}
-                                  </div>
+                                  <div className="text-xs text-gray-500 mt-1">— {review.author}</div>
                                 </div>
                               ))}
                             </div>
                           </div>
                         )}
-                        
-                        {/* Negative Reviews (3 Worst) - for transparency */}
+
+                        {/* Negative Reviews Preview */}
                         {negative.length > 0 && (
-                          <div className="mt-4">
-                            <div className="text-sm font-black text-orange-700 mb-2 flex items-center gap-2">
+                          <div className="bg-orange-50 border border-orange-200 rounded-lg p-3">
+                            <div className="text-sm font-bold text-orange-700 mb-2 flex items-center gap-2">
                               <span>⚠️</span>
-                              AREAS FOR IMPROVEMENT
+                              Areas for Improvement ({negative.length})
                             </div>
                             <div className="space-y-2">
-                              {negative.map((review, idx) => (
-                                <div key={idx} className="bg-gradient-to-r from-orange-50 to-red-50 border-2 border-orange-300 rounded-lg p-3 shadow-sm">
-                                  <div className="flex items-start justify-between mb-1">
-                                    <span className="text-yellow-500 text-sm font-bold">{'★'.repeat(review.rating)}{'☆'.repeat(5-review.rating)}</span>
-                                    <span className="text-xs font-semibold text-orange-700 uppercase">{review.source}</span>
+                              {negative.slice(0, 2).map((review, idx) => (
+                                <div key={idx} className="bg-white border border-orange-300 rounded p-2">
+                                  <div className="flex items-center gap-2 mb-1">
+                                    <span className="text-orange-500 text-xs font-bold">{'★'.repeat(review.rating)}</span>
+                                    <span className="text-xs text-orange-600 font-medium">{review.source}</span>
                                   </div>
-                                  <p className="text-sm text-gray-800 font-medium leading-relaxed mb-1">
-                                    "{review.text.length > 150 ? review.text.substring(0, 150) + '...' : review.text}"
+                                  <p className="text-xs text-gray-700 leading-relaxed">
+                                    "{review.text.length > 100 ? review.text.substring(0, 100) + '...' : review.text}"
                                   </p>
-                                  <div className="text-xs text-gray-600 font-semibold">
-                                    — {review.author}
-                                  </div>
+                                  <div className="text-xs text-gray-500 mt-1">— {review.author}</div>
                                 </div>
                               ))}
                             </div>
                           </div>
                         )}
-                        
-                        {positive.length === 0 && negative.length === 0 && agent.review_count > 0 && (
-                          <div className="mt-3 bg-yellow-50 border-2 border-yellow-300 rounded-lg p-3">
-                            <div className="text-xs font-semibold text-yellow-900">
-                              📊 {agent.review_count} Google reviews available
-                            </div>
-                            <div className="text-xs text-yellow-700 mt-1">
-                              Run the AI scraper to fetch and display real customer reviews
-                            </div>
-                          </div>
-                        )}
-                        
-                        {positive.length === 0 && negative.length === 0 && agent.review_count === 0 && (
-                          <div className="mt-3 bg-blue-50 border border-blue-200 rounded-lg p-3">
-                            <div className="text-xs font-semibold text-blue-900">
-                              💬 No reviews found yet
-                            </div>
-                            <div className="text-xs text-blue-700 mt-1">
-                              Be the first to leave a review on their business page!
-                            </div>
-                          </div>
-                        )}
                       </div>
-                    </td>
+                    )}
 
-                    {/* Rating */}
-                    <td className="px-4 py-5 text-center">
-                      <div className={`
-                        inline-flex flex-col items-center px-4 py-3 rounded-xl border-4 font-black shadow-lg
-                        ${agent.rating >= 4.8 ? 'bg-gradient-to-br from-green-400 to-green-600 border-green-700 text-white' : ''}
-                        ${agent.rating >= 4.5 && agent.rating < 4.8 ? 'bg-gradient-to-br from-blue-400 to-blue-600 border-blue-700 text-white' : ''}
-                        ${agent.rating >= 4.0 && agent.rating < 4.5 ? 'bg-gradient-to-br from-yellow-300 to-yellow-500 border-yellow-600 text-yellow-900' : ''}
-                        ${agent.rating < 4.0 ? 'bg-gradient-to-br from-gray-300 to-gray-400 border-gray-500 text-gray-800' : ''}
-                      `}>
-                        <div className="flex items-center gap-1">
-                          <span className="text-2xl">★</span>
-                          <span className="text-3xl">{agent.rating.toFixed(1)}</span>
-                        </div>
-                        <div className="text-xs mt-1 opacity-90">
-                          {agent.rating >= 4.8 ? 'OUTSTANDING' : agent.rating >= 4.5 ? 'EXCELLENT' : agent.rating >= 4.0 ? 'GOOD' : 'AVERAGE'}
+                    {/* No Reviews Message */}
+                    {positive.length === 0 && negative.length === 0 && (
+                      <div className="mt-4 p-3 bg-gray-50 border border-gray-200 rounded-lg">
+                        <div className="text-sm text-gray-600 text-center">
+                          {agent.review_count > 0 ? 
+                            `📊 ${agent.review_count} Google reviews available - View full details for more information` :
+                            '💬 No reviews found yet - Be the first to leave a review!'
+                          }
                         </div>
                       </div>
-                    </td>
-
-                    {/* Reviews */}
-                    <td className="px-4 py-5 text-center">
-                      <div className="bg-gradient-to-br from-indigo-100 to-purple-100 border-2 border-indigo-300 rounded-lg px-3 py-2">
-                        <div className="text-3xl font-black text-indigo-900">
-                          {agent.review_count}
-                        </div>
-                        <div className="text-xs font-bold text-indigo-700 uppercase">
-                          Reviews
-                        </div>
-                      </div>
-                    </td>
-
-                    {/* Location */}
-                    <td className="px-6 py-5">
-                      <div className="bg-gray-100 rounded-lg px-4 py-2 border-2 border-gray-300">
-                        <div className="font-bold text-gray-900 text-sm">{agent.address}</div>
-                        <div className="text-xs font-semibold text-gray-600 mt-1">{agent.postcode}</div>
-                      </div>
-                    </td>
-
-                    {/* Action */}
-                    <td className="px-4 py-5 text-center">
-                      <Link
-                        href={`/biz/${agent.slug}`}
-                        className="inline-block px-5 py-3 bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white text-sm font-black rounded-lg transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 uppercase"
-                      >
-                        View →
-                      </Link>
-                    </td>
-                  </tr>
-                )
-              })}
-            </tbody>
-          </table>
+                    )}
+                  </div>
+                </div>
+              )
+            })}
+          </div>
         </div>
 
         {/* Table Footer */}

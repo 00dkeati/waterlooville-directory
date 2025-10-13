@@ -26,11 +26,11 @@ export async function generateMetadata({ params }: CategoryAreaPageProps): Promi
   }
 
   return {
-    title: `Best ${category.name} in ${area.name} | Waterlooville Directory`,
-    description: `Find the best ${category.name.toLowerCase()} in ${area.name}. Professional services, reviews, and contact information for local ${category.name.toLowerCase()}.`,
+    title: `Best ${category.name} in ${area.name} | ${area.name} ${category.name} Directory`,
+    description: `Find the best ${category.name.toLowerCase()} in ${area.name}. Professional services, reviews, and contact information for local ${category.name.toLowerCase()} serving ${area.name} and surrounding areas.`,
     openGraph: {
-      title: `Best ${category.name} in ${area.name}`,
-      description: `Find the best ${category.name.toLowerCase()} in ${area.name}.`,
+      title: `Best ${category.name} in ${area.name} | ${area.name} Directory`,
+      description: `Find the best ${category.name.toLowerCase()} in ${area.name}. Professional services and reviews.`,
     },
   }
 }
@@ -56,15 +56,27 @@ export default async function CategoryAreaPage({ params }: CategoryAreaPageProps
   const faqs = [
     {
       question: `What are the best ${category.name.toLowerCase()} in ${area.name}?`,
-      answer: `Our directory features top-rated ${category.name.toLowerCase()} specifically serving ${area.name} and surrounding areas. Each business has been carefully selected based on customer reviews, local reputation, and service quality.`
+      answer: `Our directory features top-rated ${category.name.toLowerCase()} specifically serving ${area.name} and surrounding areas. Each business has been carefully selected based on customer reviews, local reputation, and service quality. We regularly update our listings to ensure you have access to the most current and reliable information.`
     },
     {
       question: `How do I contact a ${category.name.toLowerCase()} in ${area.name}?`,
-      answer: `Each business listing includes contact information including phone numbers, websites, and addresses. You can click on any business card to view full details and contact information.`
+      answer: `Each business listing includes comprehensive contact information including phone numbers, websites, and addresses. You can click on any business card to view full details and contact information. Many businesses also offer online booking systems for your convenience.`
     },
     {
       question: `Are these ${category.name.toLowerCase()} reliable and trustworthy?`,
-      answer: `Yes, all businesses in our directory are verified local establishments with genuine customer reviews and ratings. We regularly monitor and update our listings to ensure quality and reliability.`
+      answer: `Yes, all businesses in our directory are verified local establishments with genuine customer reviews and ratings from multiple platforms including Google Reviews and Trustpilot. We regularly monitor and update our listings to ensure quality and reliability.`
+    },
+    {
+      question: `Do these ${category.name.toLowerCase()} serve the entire ${area.name} area?`,
+      answer: `Most of the ${category.name.toLowerCase()} listed here serve ${area.name} and surrounding areas. Contact details are provided so you can confirm service coverage for your specific location before booking or making an appointment.`
+    },
+    {
+      question: `What should I look for when choosing a ${category.name.toLowerCase()} in ${area.name}?`,
+      answer: `Consider factors like customer reviews, years of experience, service range, pricing transparency, and availability. Our directory provides detailed information to help you make an informed decision. Reading recent customer reviews can give you valuable insights into the quality of service.`
+    },
+    {
+      question: `How often is the ${category.name} directory for ${area.name} updated?`,
+      answer: `We regularly update our directory to ensure accuracy and include new businesses. Customer reviews and ratings are refreshed frequently, and we remove businesses that no longer meet our quality standards.`
     }
   ]
 
@@ -134,10 +146,47 @@ export default async function CategoryAreaPage({ params }: CategoryAreaPageProps
 
               {/* Local Insights */}
               <section className="bg-blue-50 p-6 rounded-lg mb-8">
-                <h3 className="text-xl font-semibold text-gray-900 mb-4">About {area.name}</h3>
-                <p className="text-gray-700 leading-relaxed">
+                <h3 className="text-xl font-semibold text-gray-900 mb-4">About {category.name} in {area.name}</h3>
+                <p className="text-gray-700 leading-relaxed mb-4">
                   {area.description || `${area.name} is a vibrant area with a strong community of ${category.name.toLowerCase()}, serving local residents and businesses. The area benefits from experienced professionals who understand the local market and provide personalized service to their customers.`}
                 </p>
+                <p className="text-gray-700 leading-relaxed mb-4">
+                  Our directory features carefully selected {category.name.toLowerCase()} in {area.name} that have been chosen based on their reputation, customer reviews, and commitment to quality service. Each business listed here has demonstrated excellence in their field and maintains high standards of customer satisfaction.
+                </p>
+                <p className="text-gray-700 leading-relaxed">
+                  Whether you're a resident of {area.name} looking for reliable local services, or someone visiting the area in need of professional assistance, our comprehensive listings provide all the information you need to make informed decisions about which {category.name.toLowerCase()} to choose.
+                </p>
+              </section>
+
+              {/* Service Quality Section */}
+              <section className="bg-white border border-gray-200 p-6 rounded-lg mb-8">
+                <h3 className="text-xl font-semibold text-gray-900 mb-4">What Makes These {category.name} Special?</h3>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div>
+                    <h4 className="font-semibold text-gray-900 mb-2">Local Expertise</h4>
+                    <p className="text-gray-700 text-sm leading-relaxed">
+                      Each {category.name.toLowerCase()} in {area.name} has deep knowledge of the local area, understanding the specific needs and preferences of residents in this community.
+                    </p>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-gray-900 mb-2">Proven Track Record</h4>
+                    <p className="text-gray-700 text-sm leading-relaxed">
+                      All listed businesses have established reputations with positive customer reviews and ratings from multiple platforms, ensuring quality and reliability.
+                    </p>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-gray-900 mb-2">Community Focus</h4>
+                    <p className="text-gray-700 text-sm leading-relaxed">
+                      These {category.name.toLowerCase()} are committed to serving the {area.name} community with personalized attention and local understanding.
+                    </p>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-gray-900 mb-2">Easy Contact</h4>
+                    <p className="text-gray-700 text-sm leading-relaxed">
+                      All businesses provide clear contact information, making it easy to reach out for quotes, consultations, or to book services.
+                    </p>
+                  </div>
+                </div>
               </section>
             </>
           ) : (

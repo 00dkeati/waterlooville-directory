@@ -50,12 +50,48 @@ export default async function AreasPage() {
 
         <div className="mt-12 bg-blue-50 p-6 rounded-lg">
           <h3 className="text-xl font-semibold text-gray-900 mb-4">About Our Coverage</h3>
-          <p className="text-gray-700 leading-relaxed">
+          <p className="text-gray-700 leading-relaxed mb-4">
             Our directory covers Waterlooville and all surrounding areas in Hampshire. 
             Whether you're in the town center or in one of the nearby villages, 
             you'll find local businesses that serve your area with professional, 
             reliable service.
           </p>
+          <p className="text-gray-700 leading-relaxed mb-4">
+            Each area in our directory has been carefully researched to ensure we include the best local businesses and services. From the bustling town center of Waterlooville to the quieter residential areas like Cowplain, Denmead, and Purbrook, our comprehensive coverage means you can find what you need close to home.
+          </p>
+          <p className="text-gray-700 leading-relaxed">
+            We regularly update our listings to include new businesses and remove those that no longer meet our quality standards. Our goal is to provide you with the most current and reliable information about local services in your area.
+          </p>
+        </div>
+
+        <div className="mt-8 bg-white border border-gray-200 p-6 rounded-lg">
+          <h3 className="text-xl font-semibold text-gray-900 mb-4">Why Choose Local Businesses?</h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div>
+              <h4 className="font-semibold text-gray-900 mb-2">Community Support</h4>
+              <p className="text-gray-700 text-sm leading-relaxed">
+                Supporting local businesses helps strengthen the community and keeps money circulating locally, benefiting everyone in the area.
+              </p>
+            </div>
+            <div>
+              <h4 className="font-semibold text-gray-900 mb-2">Personal Service</h4>
+              <p className="text-gray-700 text-sm leading-relaxed">
+                Local businesses often provide more personalized service and have a better understanding of the specific needs of the area.
+              </p>
+            </div>
+            <div>
+              <h4 className="font-semibold text-gray-900 mb-2">Local Knowledge</h4>
+              <p className="text-gray-700 text-sm leading-relaxed">
+                Local businesses understand the area's unique characteristics and can provide more relevant advice and services.
+              </p>
+            </div>
+            <div>
+              <h4 className="font-semibold text-gray-900 mb-2">Quick Response</h4>
+              <p className="text-gray-700 text-sm leading-relaxed">
+                Being nearby means faster response times and easier communication for ongoing projects or service needs.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </>

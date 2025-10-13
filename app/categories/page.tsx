@@ -47,6 +47,49 @@ export default async function CategoriesPage() {
             </Link>
           ))}
         </div>
+
+        <div className="mt-12 bg-blue-50 p-6 rounded-lg">
+          <h3 className="text-xl font-semibold text-gray-900 mb-4">About Our Business Categories</h3>
+          <p className="text-gray-700 leading-relaxed mb-4">
+            Our directory organizes local businesses into clear categories to make it easy for you to find exactly what you need. Each category includes carefully selected businesses that have been chosen for their quality, reliability, and commitment to excellent customer service.
+          </p>
+          <p className="text-gray-700 leading-relaxed mb-4">
+            From essential services like plumbers and electricians to leisure activities like restaurants and gyms, we cover all the businesses that make Waterlooville and surrounding areas great places to live and work. Our categories are designed to match the way people actually search for local services.
+          </p>
+          <p className="text-gray-700 leading-relaxed">
+            Each business listing includes detailed information including contact details, customer reviews, ratings, and service descriptions to help you make informed decisions about which businesses to choose.
+          </p>
+        </div>
+
+        <div className="mt-8 bg-white border border-gray-200 p-6 rounded-lg">
+          <h3 className="text-xl font-semibold text-gray-900 mb-4">How We Choose Our Businesses</h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div>
+              <h4 className="font-semibold text-gray-900 mb-2">Quality Standards</h4>
+              <p className="text-gray-700 text-sm leading-relaxed">
+                We only include businesses that meet high standards of service quality and customer satisfaction.
+              </p>
+            </div>
+            <div>
+              <h4 className="font-semibold text-gray-900 mb-2">Customer Reviews</h4>
+              <p className="text-gray-700 text-sm leading-relaxed">
+                Businesses must have positive customer reviews and ratings from multiple platforms to be included.
+              </p>
+            </div>
+            <div>
+              <h4 className="font-semibold text-gray-900 mb-2">Local Presence</h4>
+              <p className="text-gray-700 text-sm leading-relaxed">
+                All businesses must have a genuine local presence and serve the Waterlooville area effectively.
+              </p>
+            </div>
+            <div>
+              <h4 className="font-semibold text-gray-900 mb-2">Regular Updates</h4>
+              <p className="text-gray-700 text-sm leading-relaxed">
+                We regularly review and update our listings to ensure they remain current and accurate.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </>
   )

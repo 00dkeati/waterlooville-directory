@@ -135,13 +135,51 @@ export default async function HomePage() {
 
       {/* Local Insights */}
       <section className="bg-white p-8 rounded-lg shadow-md">
-        <h2 className="text-2xl font-bold text-gray-900 mb-4">About Waterlooville</h2>
-        <p className="text-gray-700 leading-relaxed">
-          Waterlooville is a vibrant town in Hampshire, England, known for its strong community spirit and excellent local businesses. 
-          Whether you're looking for professional services like plumbers and electricians, or want to enjoy great food and drink at local cafes and restaurants, 
-          our directory helps you find exactly what you need. From the historic center to surrounding areas like Cowplain, Denmead, and Purbrook, 
-          discover the best that Waterlooville has to offer.
-        </p>
+        <h2 className="text-2xl font-bold text-gray-900 mb-6">About Waterlooville Directory</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div>
+            <h3 className="text-xl font-semibold text-gray-900 mb-4">Discover Local Excellence</h3>
+            <p className="text-gray-700 leading-relaxed mb-4">
+              Waterlooville is a vibrant town in Hampshire, England, known for its strong community spirit and excellent local businesses. 
+              Our comprehensive directory connects you with the best services, restaurants, shops, and professionals in the area.
+            </p>
+            <p className="text-gray-700 leading-relaxed">
+              Whether you're looking for professional services like plumbers and electricians, or want to enjoy great food and drink at local cafes and restaurants, 
+              our directory helps you find exactly what you need with detailed reviews, contact information, and location details.
+            </p>
+          </div>
+          <div>
+            <h3 className="text-xl font-semibold text-gray-900 mb-4">Covering All Areas</h3>
+            <p className="text-gray-700 leading-relaxed mb-4">
+              From the historic town center to surrounding areas like Cowplain, Denmead, and Purbrook, 
+              our directory covers all the key locations where local businesses serve the community.
+            </p>
+            <p className="text-gray-700 leading-relaxed">
+              Each business listing includes verified contact details, customer reviews, ratings, and comprehensive information to help you make informed decisions about local services and establishments.
+            </p>
+          </div>
+        </div>
+        
+        <div className="mt-8 pt-6 border-t border-gray-200">
+          <h3 className="text-xl font-semibold text-gray-900 mb-4">Why Choose Our Directory?</h3>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="text-center">
+              <div className="text-3xl mb-2">⭐</div>
+              <h4 className="font-semibold text-gray-900 mb-2">Verified Reviews</h4>
+              <p className="text-sm text-gray-600">Real customer feedback from multiple platforms including Google Reviews and Trustpilot</p>
+            </div>
+            <div className="text-center">
+              <div className="text-3xl mb-2">📍</div>
+              <h4 className="font-semibold text-gray-900 mb-2">Local Focus</h4>
+              <p className="text-sm text-gray-600">Concentrated on Waterlooville and surrounding areas for the most relevant results</p>
+            </div>
+            <div className="text-center">
+              <div className="text-3xl mb-2">🔄</div>
+              <h4 className="font-semibold text-gray-900 mb-2">Always Updated</h4>
+              <p className="text-sm text-gray-600">Regular updates ensure you get the most current information about local businesses</p>
+            </div>
+          </div>
+        </div>
       </section>
     </div>
   )

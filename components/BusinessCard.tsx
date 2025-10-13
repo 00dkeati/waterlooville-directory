@@ -63,6 +63,11 @@ export default function BusinessCard({ business }: BusinessCardProps) {
         type: 'automotive service',
         qualities: ['expert mechanics', 'honest pricing', 'quality repairs'],
         what: 'keeping your vehicle running smoothly with professional care'
+      },
+      'estate-agents': { 
+        type: 'estate agent',
+        qualities: ['professional service', 'local expertise', 'market knowledge'],
+        what: 'helping you buy, sell, or rent properties with expert guidance'
       }
     }
 
@@ -171,6 +176,68 @@ export default function BusinessCard({ business }: BusinessCardProps) {
             {generateOverview()}
           </p>
         </div>
+
+        {/* Customer Reviews for Estate Agents */}
+        {business.category === 'estate-agents' && business.aggregated_reviews && business.aggregated_reviews.length > 0 && (
+          <div className="mb-4">
+            <h4 className="text-sm font-semibold text-gray-900 mb-3 flex items-center gap-2">
+              <span>💬</span>
+              Customer Reviews
+            </h4>
+            <div className="grid grid-cols-1 gap-3">
+              {/* Positive Reviews */}
+              {business.aggregated_reviews.filter(review => review.rating >= 4).slice(0, 2).map((review, index) => (
+                <div key={index} className="p-3 bg-green-50 border border-green-200 rounded-lg">
+                  <div className="flex items-start justify-between mb-2">
+                    <div className="flex items-center gap-2">
+                      <span className="font-medium text-green-800 text-sm">{review.author_name}</span>
+                      <div className="flex">
+                        {Array.from({ length: 5 }, (_, i) => (
+                          <span key={i} className={`text-xs ${i < review.rating ? 'text-green-500' : 'text-gray-300'}`}>★</span>
+                        ))}
+                      </div>
+                    </div>
+                    <span className="text-xs text-green-600 font-medium">{review.source}</span>
+                  </div>
+                  <p className="text-green-700 text-xs leading-relaxed line-clamp-2">
+                    "{review.text}"
+                  </p>
+                </div>
+              ))}
+              
+              {/* Negative Reviews */}
+              {business.aggregated_reviews.filter(review => review.rating <= 2).slice(0, 1).map((review, index) => (
+                <div key={index} className="p-3 bg-orange-50 border border-orange-200 rounded-lg">
+                  <div className="flex items-start justify-between mb-2">
+                    <div className="flex items-center gap-2">
+                      <span className="font-medium text-orange-800 text-sm">{review.author_name}</span>
+                      <div className="flex">
+                        {Array.from({ length: 5 }, (_, i) => (
+                          <span key={i} className={`text-xs ${i < review.rating ? 'text-orange-500' : 'text-gray-300'}`}>★</span>
+                        ))}
+                      </div>
+                    </div>
+                    <span className="text-xs text-orange-600 font-medium">{review.source}</span>
+                  </div>
+                  <p className="text-orange-700 text-xs leading-relaxed line-clamp-2">
+                    "{review.text}"
+                  </p>
+                </div>
+              ))}
+            </div>
+            
+            {/* Review Summary */}
+            <div className="mt-3 p-2 bg-gray-50 rounded-lg">
+              <div className="flex items-center justify-between text-xs text-gray-600">
+                <span>
+                  <span className="font-medium text-green-700">{business.aggregated_reviews.filter(r => r.rating >= 4).length}</span> positive, 
+                  <span className="font-medium text-orange-700 ml-1">{business.aggregated_reviews.filter(r => r.rating <= 2).length}</span> negative reviews
+                </span>
+                <span className="text-gray-500">Balanced view</span>
+              </div>
+            </div>
+          </div>
+        )}
 
         {/* Contact Information */}
         <div className="space-y-2.5 mb-4">
