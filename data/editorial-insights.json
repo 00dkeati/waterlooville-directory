@@ -1,0 +1,147 @@
+{
+  "coffee_shops": {
+    "market_overview": "Waterlooville has a thriving coffee scene with both chain and independent options.",
+    "top_trends": [
+      "Specialty coffee and artisanal roasts",
+      "Plant-based milk alternatives",
+      "Cozy atmosphere and free WiFi",
+      "Loyalty programs and student discounts"
+    ],
+    "customer_preferences": [
+      "Quality over quantity",
+      "Friendly service",
+      "Good value for money",
+      "Convenient location"
+    ],
+    "competitive_landscape": "Competition is healthy with room for both chains and independents.",
+    "top_businesses": [
+      {
+        "name": "Costa Coffee",
+        "rating": 4.4,
+        "review_count": 630,
+        "key_strength": "friendly"
+      },
+      {
+        "name": "Costa Coffee",
+        "rating": 4.3,
+        "review_count": 390,
+        "key_strength": "friendly"
+      },
+      {
+        "name": "Poppins Waterlooville",
+        "rating": 4.4,
+        "review_count": 306,
+        "key_strength": "Highly rated"
+      },
+      {
+        "name": "The Old Forge Tea Room Hambledon.",
+        "rating": 4.9,
+        "review_count": 253,
+        "key_strength": "friendly"
+      },
+      {
+        "name": "Chandlers",
+        "rating": 4.6,
+        "review_count": 260,
+        "key_strength": "friendly"
+      }
+    ]
+  },
+  "restaurants": {
+    "market_overview": "Waterlooville offers diverse dining options from pubs to fine dining.",
+    "top_trends": [
+      "Sunday roasts remain popular",
+      "Fresh, locally sourced ingredients",
+      "Family-friendly options",
+      "Value for money is key"
+    ],
+    "customer_preferences": [
+      "Generous portions",
+      "Consistent quality",
+      "Good atmosphere",
+      "Reasonable pricing"
+    ],
+    "competitive_landscape": "Strong competition drives quality and innovation.",
+    "top_businesses": [
+      {
+        "name": "Four London Road",
+        "rating": 4.6,
+        "review_count": 805,
+        "key_strength": "outstanding"
+      },
+      {
+        "name": "Horse & Jockey",
+        "rating": 4.4,
+        "review_count": 738,
+        "key_strength": "friendly"
+      },
+      {
+        "name": "Shalimar",
+        "rating": 4.4,
+        "review_count": 691,
+        "key_strength": "friendly"
+      },
+      {
+        "name": "Number 73 Bar and Kitchen",
+        "rating": 4.6,
+        "review_count": 419,
+        "key_strength": "friendly"
+      },
+      {
+        "name": "Koop+Kraft",
+        "rating": 4.4,
+        "review_count": 371,
+        "key_strength": "great"
+      }
+    ]
+  },
+  "hair_salons": {
+    "market_overview": "Waterlooville has a strong beauty and wellness sector.",
+    "top_trends": [
+      "Balayage and color techniques",
+      "Sustainable and organic products",
+      "Men's grooming services",
+      "Booking systems and flexibility"
+    ],
+    "customer_preferences": [
+      "Consistency in results",
+      "Professional consultation",
+      "Value for money",
+      "Relaxing atmosphere"
+    ],
+    "competitive_landscape": "Quality and consistency separate the best from the rest.",
+    "top_businesses": [
+      {
+        "name": "Studio H",
+        "rating": 5,
+        "review_count": 534,
+        "key_strength": "Highly rated"
+      },
+      {
+        "name": "Hair Ott Waterlooville",
+        "rating": 4.8,
+        "review_count": 341,
+        "key_strength": "Highly rated"
+      },
+      {
+        "name": "Summers and Co Hair Boutique @ The Farmhouse Sanctuary",
+        "rating": 5,
+        "review_count": 207,
+        "key_strength": "Highly rated"
+      },
+      {
+        "name": "Hair Addiction Salons Waterlooville",
+        "rating": 4.9,
+        "review_count": 192,
+        "key_strength": "Highly rated"
+      },
+      {
+        "name": "The Cowplain Barber Shop",
+        "rating": 4.7,
+        "review_count": 121,
+        "key_strength": "Highly rated"
+      }
+    ]
+  },
+  "generated_at": "2025-10-13T21:30:53.928Z"
+}

@@ -228,35 +228,40 @@
     "content": [
       {
         "type": "paragraph",
-        "text": "Waterlooville's coffee culture is more vibrant than you might think. From chain giants to independent gems, there's a surprising variety for a town of 60,000 people. We've drunk approximately 47 lattes in the last week to bring you this definitive guide."
-      },
-      {
-        "type": "paragraph",
-        "text": "The question everyone's asking: can the independents compete with the chains? We set out to find the answer, one espresso shot at a time."
+        "text": "Waterlooville's coffee scene is thriving in 2025. With over 1,800 reviews across our top 5 coffee spots, we've analyzed the data to bring you the definitive guide to where you should be getting your daily caffeine fix."
       },
       {
         "type": "heading",
-        "text": "The Chain Gang"
+        "text": "The Numbers Don't Lie"
       },
       {
         "type": "paragraph",
-        "text": "Let's address the elephant in the room: the chains. Costa, Starbucks, and others have a significant presence in Waterlooville. They're convenient, consistent, and you know exactly what you're getting."
+        "text": "Based on real customer reviews and ratings, here's what the data tells us about Waterlooville's coffee scene:"
       },
       {
-        "type": "paragraph",
-        "text": "But here's the thing—consistency isn't always exciting. While the chains deliver a reliable cup every time, they lack the character and community feel that makes a coffee shop special."
+        "type": "list",
+        "items": [
+          "**Costa Coffee** leads with 630 reviews and a 4.4-star rating - the go-to for consistency",
+          "**The Old Forge Tea Room** in Hambledon scores highest at 4.9 stars (253 reviews) - the hidden gem",
+          "**Poppins Waterlooville** brings independent charm with 4.4 stars (306 reviews)",
+          "**Chandlers** offers great value with 4.6 stars (260 reviews) - friendly service is their strength"
+        ]
       },
       {
         "type": "heading",
-        "text": "The Local Champions"
+        "text": "What Customers Really Want"
       },
       {
         "type": "paragraph",
-        "text": "Waterlooville's independent coffee shops are where the magic happens. These are places where the barista knows your order, the pastries are baked fresh daily, and the atmosphere actually makes you want to stay and chat."
+        "text": "After analyzing hundreds of reviews, the top customer preferences are clear: quality over quantity, friendly service, good value for money, and convenient location. It's not just about the coffee—it's about the experience."
+      },
+      {
+        "type": "heading",
+        "text": "The Independent Advantage"
       },
       {
         "type": "paragraph",
-        "text": "What impressed us most was the quality. Several independent cafes in Waterlooville are using better beans and pulling better shots than their corporate competitors—and often at a similar price point."
+        "text": "While Costa dominates with volume, the independents like The Old Forge Tea Room and Poppins are winning on atmosphere and character. Reviewers consistently praise their friendly service, cozy atmosphere, and the personal touch you just don't get at chains."
       },
       {
         "type": "heading",
@@ -264,11 +269,11 @@
       },
       {
         "type": "paragraph",
-        "text": "For a quick, reliable coffee on your commute? The chains do the job. But if you want a coffee experience that supports local business and delivers superior quality? Waterlooville's independent cafes are where you should be spending your money."
+        "text": "For a quick, reliable coffee on your commute? Costa delivers. But if you want an experience that supports local business and offers something special? The Old Forge Tea Room (4.9⭐) and Poppins (4.4⭐) are where you should be heading."
       },
       {
         "type": "callout",
-        "text": "☕ **Coffee Lover's Tip:** Visit independent cafes on weekday mornings. They're quieter, you'll get more attention from the baristas, and you'll often score the best pastries before they sell out."
+        "text": "☕ **Pro Tip:** The Old Forge Tea Room in nearby Hambledon has the highest rating (4.9 stars) in the area. Worth the short drive for coffee lovers seeking perfection."
       }
     ],
     "relatedBusinesses": [],
@@ -352,47 +357,45 @@
     "content": [
       {
         "type": "paragraph",
-        "text": "There's a special kind of trust required when someone's coming at you with scissors and hair dye. In Waterlooville, we're lucky to have a thriving hair and beauty scene—from traditional barbershops to modern salons offering everything from balayage to Brazilian blow-dries."
-      },
-      {
-        "type": "paragraph",
-        "text": "But how do you find YOUR salon? The one where they remember how you like your coffee, understand your hair type, and don't try to talk you into a style that'll look ridiculous at your age?"
+        "text": "Waterlooville has a thriving hair and beauty scene with over 1,300 reviews across our top 5 salons. We've analyzed the data to find out which salons are delivering the best results—and which ones have earned their customers' loyalty."
       },
       {
         "type": "heading",
-        "text": "What to Look For"
+        "text": "The Top Performers"
       },
       {
         "type": "paragraph",
-        "text": "The best salons in Waterlooville share common traits: they listen more than they talk, they're honest about what will and won't work with your hair, they do proper consultations, and crucially—they're consistent. That amazing haircut you got once is worthless if they can't replicate it."
+        "text": "Based on real customer reviews, here are Waterlooville's standout salons:"
+      },
+      {
+        "type": "list",
+        "items": [
+          "**Studio H** - Perfect 5.0 stars (534 reviews) - The gold standard",
+          "**Summers and Co Hair Boutique** - Perfect 5.0 stars (207 reviews) - Luxury meets quality",
+          "**Hair Addiction Salons** - 4.9 stars (192 reviews) - Consistently excellent",
+          "**Hair Ott Waterlooville** - 4.8 stars (341 reviews) - Great value and quality",
+          "**The Cowplain Barber Shop** - 4.7 stars (121 reviews) - Best for men's cuts"
+        ]
       },
       {
         "type": "heading",
-        "text": "Price vs Value"
+        "text": "What Makes Them Special"
       },
       {
         "type": "paragraph",
-        "text": "Here's the uncomfortable truth: the cheapest haircut isn't always the best value. We've heard countless stories of people spending £15 on a cut, hating it, then spending £60 to get it fixed elsewhere. That's not saving money—that's throwing it away."
+        "text": "The top-rated salons in Waterlooville share key strengths: consistency in results, professional consultation, value for money, and a relaxing atmosphere. Studio H and Summers and Co have achieved perfect 5-star ratings by consistently delivering on all fronts."
+      },
+      {
+        "type": "heading",
+        "text": "The Verdict"
       },
       {
         "type": "paragraph",
-        "text": "That said, expensive doesn't automatically mean better. Some of Waterlooville's best stylists work in mid-range salons, charging £30-40 for cuts that rival anything you'd get in Portsmouth or Chichester."
+        "text": "If you're looking for the absolute best, Studio H is your answer—534 reviews and a perfect 5-star rating speaks volumes. For luxury treatments, Summers and Co Hair Boutique at The Farmhouse Sanctuary offers a unique experience. And for men, The Cowplain Barber Shop delivers quality cuts at great prices."
       },
       {
         "type": "callout",
-        "text": "✂️ **Insider Tip:** Most Waterlooville salons offer student discounts or cheaper appointments with junior stylists. If you're brave and have a forgiving workplace, this can be a great way to find a talented stylist before they get booked solid."
-      },
-      {
-        "type": "heading",
-        "text": "The Salon Test"
-      },
-      {
-        "type": "paragraph",
-        "text": "Walk past the salon at a busy time—Saturday morning, say. Look at the clients walking out. Are they happy? Are the styles varied or does everyone have the same 'salon cut'? Most importantly, do the styles suit the clients, or do they look like they've just escaped from a wedding in 1987?"
-      },
-      {
-        "type": "paragraph",
-        "text": "And here's a pro move: book a simple blow-dry first, before committing to a cut or colour. It's a low-risk way to test the salon's vibe, cleanliness, and whether you click with the stylist."
+        "text": "✂️ **Pro Tip:** Studio H has over 500 reviews and maintains a perfect 5-star rating. Book well in advance—they're popular for a reason."
       }
     ],
     "relatedBusinesses": [],
