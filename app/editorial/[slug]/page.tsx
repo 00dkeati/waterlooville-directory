@@ -32,7 +32,7 @@ interface EditorialArticle {
 
 async function getArticle(slug: string): Promise<EditorialArticle | null> {
   const articlesData = await import('@/data/editorial-articles.json')
-  const articles: EditorialArticle[] = articlesData.default
+  const articles: EditorialArticle[] = articlesData.default as EditorialArticle[]
   return articles.find(article => article.slug === slug) || null
 }
 
@@ -259,7 +259,7 @@ async function BusinessSpotlight({ businessSlug }: { businessSlug: string }) {
 
 export async function generateStaticParams() {
   const articlesData = await import('@/data/editorial-articles.json')
-  const articles: EditorialArticle[] = articlesData.default
+  const articles: EditorialArticle[] = articlesData.default as EditorialArticle[]
   
   return articles.map((article) => ({
     slug: article.slug,

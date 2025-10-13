@@ -1,5 +1,5 @@
 import { notFound } from 'next/navigation'
-import { getBusinessBySlug, getCategoryBySlug, getAreaBySlug, getFeaturedBusinesses, getBusinessesByCategoryAndArea } from '@/lib/db'
+import { getBusinessBySlug, getCategoryBySlug, getAreaBySlug, getFeaturedBusinesses, getBusinessesByCategoryAndArea, Business } from '@/lib/db'
 import Breadcrumbs from '@/components/Breadcrumbs'
 import RelatedLinks from '@/components/RelatedLinks'
 import FAQ from '@/components/FAQ'
@@ -17,7 +17,7 @@ interface BusinessPageProps {
 }
 
 export async function generateMetadata({ params }: BusinessPageProps): Promise<Metadata> {
-  const business = await getBusinessBySlug(params.slug)
+  const business: Business | null = await getBusinessBySlug(params.slug)
   
   if (!business) {
     return {
@@ -45,7 +45,7 @@ export async function generateMetadata({ params }: BusinessPageProps): Promise<M
 }
 
 export default async function BusinessPage({ params }: BusinessPageProps) {
-  const business = await getBusinessBySlug(params.slug)
+  const business: Business | null = await getBusinessBySlug(params.slug)
   
   if (!business) {
     notFound()

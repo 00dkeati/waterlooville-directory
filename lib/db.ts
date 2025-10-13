@@ -87,15 +87,15 @@ let areasCache: Area[] | null = null
 async function loadData() {
   if (!businessesCache) {
     const businesses = await import('@/public/data/businesses.json')
-    businessesCache = businesses.default
+    businessesCache = businesses.default as Business[]
   }
   if (!categoriesCache) {
     const categories = await import('@/public/data/categories.json')
-    categoriesCache = categories.default
+    categoriesCache = categories.default as Category[]
   }
   if (!areasCache) {
     const areas = await import('@/public/data/areas.json')
-    areasCache = areas.default
+    areasCache = areas.default as Area[]
   }
 }
 
