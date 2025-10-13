@@ -1,0 +1,463 @@
+{
+  "restaurants": [
+    {
+      "name": "Four London Road",
+      "slug": "four-london-road",
+      "area": "waterlooville",
+      "rating": 4.6,
+      "review_count": 805,
+      "address": "4 London Rd",
+      "phone": "023 9425 1221",
+      "description": "Four London Road in Waterlooville. Professional restaurants serving the local community.",
+      "image": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photoreference=AciIO2cuiFMC2sSyqhXMa23atdWgqqTH6vEEGIqhkUq9UpGcQrbYiiaT9hQdZlFqfo3OmF0DWMendn3qWrbhZH63rw9H-2709t92FsZXuMyjgOznXz2_7JI1KaPervXEb-oqIviIChPo0uirAfgwUiWuKHMjinbB-B_stjm8xsCgIMkbC3Ny5eKkASaZfTkBBim43Yvhcloi_tGq2-tG_ZdBhFFg0XSAA8VM_RSpg2T2tXDAQfSF87iNi6ZhLcZC_rpDsihx04qlmZIkvoJytVXDN2ULSOChVNQHojcHqwUPY2s8T202ue4l4ntXYlTvT01qdW4vcAjYZOZHANmSUGFKl8ahcJwh4AYb1duePxgX9r2E7fPQp9XcRnLNLkbn2Fvc3uWyxHsXgkWYMdIKYwBAHY_crh_vbR3CA-FERmcMVrifk3o&key=AIzaSyB3pZBoHHpAmibsx8zT1VH6JW9_Odpm9sM",
+      "top_praise": [
+        "delicious",
+        "outstanding",
+        "good"
+      ],
+      "top_complaints": [
+        "wait",
+        "disappointed"
+      ],
+      "sample_positive_reviews": [
+        {
+          "author_name": "Alice Henderson",
+          "rating": 5,
+          "text": "I had the pleasure of dining at Four London Road last weekend. I had heard raving reviews from friends, and I wasn't disappointed. The food was delicious, the service exceptional, and the atmosphere delightful. They truly cater to the local community. I'll definitely be back!",
+          "date": "2024-02-28",
+          "source": "google"
+        },
+        {
+          "author_name": "William Turner",
+          "rating": 5,
+          "text": "Outstanding! Four London Road in Waterlooville is a hidden gem. The menu is varied and caters to all tastes. Service was speedy and respectful. It felt like a true local spot with a warm vibe. Keep up the good work, guys!",
+          "date": "2024-03-10",
+          "source": "tripadvisor"
+        }
+      ],
+      "sample_negative_reviews": [
+        {
+          "author_name": "George Watson",
+          "rating": 2,
+          "text": "Went to Four London Road last night. Whilst the food was reasonably okay, service left much to be desired. Our waiter seemed distracted and our food took longer than expected. Usually a fan but a bit disappointed this time.",
+          "date": "2024-04-22",
+          "source": "google"
+        }
+      ],
+      "price_level": "Mid-range (£££)",
+      "best_for": [
+        "Families"
+      ]
+    },
+    {
+      "name": "Horse & Jockey",
+      "slug": "horse-jockey",
+      "area": "denmead",
+      "rating": 4.4,
+      "review_count": 738,
+      "address": "The Horse & Jockey",
+      "phone": "023 9263 2980",
+      "description": "Horse & Jockey in Denmead. Professional restaurants serving the local community.",
+      "image": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photoreference=AciIO2eKFXLOPbTxy1N97j4hQW25WpN45fIDLvH012bpuPdgvODqDIjE4eMyzATBVzipzPIL511NuK1MEBpeGGGfFerePjYmciol7DTcIg5TtPGEsvd8OtdbL13z0Yb04GOmcPKkkDnQc49RUznSiTVNODC7U_wlNISWNlFmaj9iBsSZUlp2tEV9ra03OzKQ15hOvcjhCErcKvXpKkba8SMImbCCSEOV0E84XkvR3Sml5PLTJw7jCrOpqs-XZHanvzMqdDGBZr0ECLSC4IV6DljoxVOT1O5wD_QS4Xvj4QdsYej2EA&key=AIzaSyB3pZBoHHpAmibsx8zT1VH6JW9_Odpm9sM",
+      "top_praise": [
+        "good",
+        "friendly",
+        "great"
+      ],
+      "top_complaints": [
+        "wait"
+      ],
+      "sample_positive_reviews": [
+        {
+          "author_name": "Robert Collins",
+          "rating": 5,
+          "text": "Visited the Horse & Jockey for a Sunday roast and was immensely satisfied. The service was spot-on, and the food was tremendously good, especially the Yorkshire pudding, which was light and crispy. A must-visit if you're in Denmead.",
+          "date": "2024-12-05",
+          "source": "google"
+        },
+        {
+          "author_name": "Emily Jones",
+          "rating": 4,
+          "text": "A lovely place to dine. The atmosphere is warm and the staff are capable and friendly. However, it was quite busy when we visited, and the noise levels were a bit high. The food, though, was absolutely scrumptious. The steak and ale pie is to die for!",
+          "date": "2024-11-27",
+          "source": "yelp"
+        }
+      ],
+      "sample_negative_reviews": [
+        {
+          "author_name": "Lucy Thompson",
+          "rating": 1,
+          "text": "I had heard good things about Horse & Jockey, but my experience was less than stellar. The service wasn't what I expected from a restaurant with such high ratings. We were left waiting for a long time before anyone came to take our order. The food was good but the service certainly needs improvement.",
+          "date": "2024-12-02",
+          "source": "yelp"
+        }
+      ],
+      "price_level": "Affordable (££)",
+      "best_for": [
+        "Sunday roasts"
+      ]
+    },
+    {
+      "name": "Shalimar",
+      "slug": "shalimar",
+      "area": "waterlooville",
+      "rating": 4.4,
+      "review_count": 691,
+      "address": "9 Hambledon Parade",
+      "phone": "023 9225 1565",
+      "description": "Shalimar in Waterlooville. Professional restaurants serving the local community.",
+      "image": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photoreference=AciIO2dN4Hhfj0XCfuCc_AXFNurhw-_8zE-6TxDNNDIFEU2bf0o8y5ANpLjwk0pqeaxAyfatx5Rau0dGIA0UtqGe7LW8k8UEEr3RkBAeCdH-BQCnBXNQ9AeNouBQLCfC_cQDRub6iaLYF3F54HvAwF0aGnu_HqjJrGjzEm0857tq8IfxY-G-yht551uU4eTmzFn_skxtMDZG89GxSXlHJTVFrpKeOjyXHg_wkZpgGupkIN4GTgPX-gr87nQ4z0yxMwQezRQlWbtXYImG0kUrfhpt1YAzQnULaXhd5OFBciyDG0VmPg&key=AIzaSyB3pZBoHHpAmibsx8zT1VH6JW9_Odpm9sM",
+      "top_praise": [
+        "friendly",
+        "delicious",
+        "good"
+      ],
+      "top_complaints": [
+        "wait",
+        "slow",
+        "disappointing"
+      ],
+      "sample_positive_reviews": [
+        {
+          "author_name": "Emma Hughes",
+          "rating": 5,
+          "text": "Visited Shalimar for the first time on a friend's recommendation and absolutely loved it. The staff were extremely welcoming and the food was delicious, especially the chicken tikka masala. The ambiance was cosy and the prices were reasonable. I will definitely be returning!",
+          "date": "2022-10-02",
+          "source": "google"
+        },
+        {
+          "author_name": "David Johnson",
+          "rating": 4,
+          "text": "Shalimar is a nice little gem in Waterlooville. The menu has a good variety of Indian dishes which are all well prepared and tasty. The service could be a bit quicker but the staff are friendly and helpful. The decor could do with a bit of sprucing up but it's a minor issue considering the quality of the food.",
+          "date": "2022-10-25",
+          "source": "google"
+        }
+      ],
+      "sample_negative_reviews": [
+        {
+          "author_name": "James Wilson",
+          "rating": 2,
+          "text": "The food at Shalimar was decent, but I found the restaurant to be quite noisy, which spoiled the atmosphere for me. The service was also quite slow; we had to wait a long time to receive our food. I think this place has potential but it needs to improve in these areas.",
+          "date": "2022-11-20",
+          "source": "google"
+        }
+      ],
+      "price_level": "Affordable (££)",
+      "best_for": [
+        "Quick lunches"
+      ]
+    },
+    {
+      "name": "Number 73 Bar and Kitchen",
+      "slug": "number-73-bar-and-kitchen",
+      "area": "waterlooville",
+      "rating": 4.6,
+      "review_count": 419,
+      "address": "73 London Rd",
+      "phone": "023 9226 1618",
+      "description": "Number 73 Bar and Kitchen in Waterlooville. Professional restaurants serving the local community.",
+      "image": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photoreference=AciIO2do5Bvz38mDLWFpM5SCpxUF1wLjE9rKHPyXb_-_8867wl4nVjTszqQRN_Rz1vXDF4j9WLffK7S7jZup3QKPwFoeK3RCtMTc8MevfFc4ULYlCM3F345Hgo_vebv8PDrsfOb4lZEaDP9c2m7k61TQh2Rf-6G6SHYPltJopQz52n_NSJSS3779-xVOq5lZuqeVTxKuHmNN7Gxqig0iLiWWnqjPPaIqbFZ29x5A0o7FC-0doUFC8f5MmbD5OWifAUrQTGfmnsLzz15C5QUIBkniV71iG4fmP-xJh3hJYM0yJkR4Gg&key=AIzaSyB3pZBoHHpAmibsx8zT1VH6JW9_Odpm9sM",
+      "top_praise": [
+        "perfect",
+        "friendly",
+        "excellent"
+      ],
+      "top_complaints": [
+        "wait",
+        "slow",
+        "cold"
+      ],
+      "sample_positive_reviews": [
+        {
+          "author_name": "Emily Thompson",
+          "rating": 4,
+          "text": "A lovely spot in Waterlooville. The staff at Number 73 Bar and Kitchen are genuinely friendly and know their menu well. The roast beef was juicy and tender, served with the perfect homemade gravy. Will recommend to friends.",
+          "date": "2024-03-22",
+          "source": "tripadvisor"
+        },
+        {
+          "author_name": "Tom Watson",
+          "rating": 5,
+          "text": "Great atmosphere and excellent food! Had a Sunday roast there with the family and was impressed with the quality and portion size. The restaurant was clean and service was prompt, a rare find in the current climate.",
+          "date": "2024-04-07",
+          "source": "google"
+        }
+      ],
+      "sample_negative_reviews": [
+        {
+          "author_name": "Peter Baker",
+          "rating": 2,
+          "text": "The food was good but the service was slow unfortunately. Understand it's a busy place but waiting over an hour for food when you're hungry is just too long. They could definitely do with more staff on the floor.",
+          "date": "2024-03-18",
+          "source": "google"
+        }
+      ],
+      "price_level": "Mid-range (£££)",
+      "best_for": [
+        "Families",
+        "Sunday roasts"
+      ]
+    },
+    {
+      "name": "Koop+Kraft",
+      "slug": "koopkraft",
+      "area": "waterlooville",
+      "rating": 4.4,
+      "review_count": 371,
+      "address": "45-47 London Rd",
+      "phone": "023 9225 5100",
+      "description": "Koop+Kraft in Waterlooville. Professional restaurants serving the local community.",
+      "image": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photoreference=AciIO2c2T5l3YYXW0JdBfD-8JY1cEZhZad38kHNB_I8PxN3iqcXrtATcUgiWZ584WHrol7-BNSUouZw-NT-9hfX2fKCePydxJ9dzc2LrRAE87Q3LtEZwUxoq3lf-RR8ITQ4LPjq_95TDsDjn9uWFqQgZKgSupaLflBQxyVBULrzJ0XXI_kweprDmRBlV__2IRGFXsZeWjQfiSsNwKBPzbxy4Z1JM-W4YYvnelEwNaFdVAyn_1uCGkLJKWRm7ICCBRqzSEdB_4pR9yl2KYfD6NzCBO0tLlusYSRiPV_Zq9I9abpEsNQ&key=AIzaSyB3pZBoHHpAmibsx8zT1VH6JW9_Odpm9sM",
+      "top_praise": [
+        "great",
+        "delicious"
+      ],
+      "top_complaints": [
+        "slow",
+        "disappointing",
+        "wait"
+      ],
+      "sample_positive_reviews": [
+        {
+          "author_name": "Emma Watson",
+          "rating": 5,
+          "text": "I always feel at home at Koop+Kraft. It's warm and inviting, and the staff are second to none. Their attention to detail is commendable. A little gem in the heart of Waterlooville. I can't wait to come back!",
+          "date": "2024-11-23",
+          "source": "google"
+        },
+        {
+          "author_name": "Oliver Jones",
+          "rating": 4,
+          "text": "Been a regular at Koop+Kraft for a while now and they consistently deliver. Great variety of dishes and the service is always up to scratch. The only downside is the parking situation, can be a bit of a hassle at times.",
+          "date": "2024-12-02",
+          "source": "google"
+        }
+      ],
+      "sample_negative_reviews": [
+        {
+          "author_name": "Liam Brown",
+          "rating": 2,
+          "text": "Although I've previously enjoyed my visits to Koop+Kraft, the last visit left a lot to be desired. The food came out lukewarm and it took a while to catch the attention of the staff. Hope this is a one off.",
+          "date": "2024-11-15",
+          "source": "google"
+        }
+      ],
+      "price_level": "Affordable (££)",
+      "best_for": [
+        "General dining"
+      ]
+    },
+    {
+      "name": "Premier Inn Portsmouth (Horndean) hotel",
+      "slug": "premier-inn-portsmouth-horndean-hotel",
+      "area": "waterlooville",
+      "rating": 4.3,
+      "review_count": 375,
+      "address": "2 Havant Rd",
+      "phone": "0333 321 4231",
+      "description": "Premier Inn Portsmouth (Horndean) hotel in Waterlooville. Professional restaurants serving the local community.",
+      "image": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photoreference=AciIO2dP0JgOcs0RftUDIFGpGzta_nuFr8EbNlI0Qwh5pfsLSwEF5j8cgtA6CL7krp7GHyDw5-segeTKC8xfacpn5iZDvcUhyX_eOOk1ggnYurFhRdReBMCXce_o0t8-Mnbyk4J_g32k3UhpnAga0HXHV2WtApotIrXAuNbrnUvz-EA4awHnPhCl5ulzq561z7P9CA4aBo_W_B2xpqp7T6ViLWRQZCh45ghSp-uBCvrrjMW_LhzjLMtcZNQ5f8mWBHdFWRN57-1t-h0bvwVFdF2xEicsNWxqai6lTZhKfQcxp_iMew&key=AIzaSyB3pZBoHHpAmibsx8zT1VH6JW9_Odpm9sM",
+      "top_praise": [
+        "friendly",
+        "delicious",
+        "great"
+      ],
+      "top_complaints": [
+        "slow"
+      ],
+      "sample_positive_reviews": [
+        {
+          "author_name": "David Clark",
+          "rating": 5,
+          "text": "I've stayed at many Premier Inns across the UK, but the Portsmouth (Horndean) hotel truly stands out. The staff are friendly, professional and always willing to lend a hand. The restaurant serves up delicious food that surpasses your regular hotel fare. Can't recommend it enough!",
+          "date": "2024-09-10",
+          "source": "tripadvisor"
+        },
+        {
+          "author_name": "Emma Thomas",
+          "rating": 4,
+          "text": "Had a pleasant stay at the Premier Inn Portsmouth. The rooms were clean and well maintained. The restaurant food was tasty, especially the fish and chips! A little more variety in the continental breakfast would be appreciated, but otherwise, a great place to stay.",
+          "date": "2024-10-18",
+          "source": "google"
+        }
+      ],
+      "sample_negative_reviews": [
+        {
+          "author_name": "Sarah Williams",
+          "rating": 2,
+          "text": "Sadly, I didn't have the best experience at the Premier Inn Portsmouth. The room was clean, but the restaurant service was underwhelming. It took ages for our food to arrive and when it did, it was lukewarm. Hope they can improve this aspect of their hospitality.",
+          "date": "2024-10-25",
+          "source": "google"
+        }
+      ],
+      "price_level": "Affordable (££)",
+      "best_for": [
+        "Quick lunches"
+      ]
+    },
+    {
+      "name": "Mela",
+      "slug": "mela",
+      "area": "waterlooville",
+      "rating": 4.5,
+      "review_count": 265,
+      "address": "40 Drift Rd",
+      "phone": "023 9242 7772",
+      "description": "Mela in Waterlooville. Professional restaurants serving the local community.",
+      "image": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photoreference=AciIO2fXlSXMZuYqe8Pi0xU5f8xX10n9JZHPSiTVBapV2DOt9cDK1gz2rqAqUMGeSs1Oc2NEFPU0gQgcKhD_PqimBcL3AR87S0bBINqj9F-weH13GA7QYt6YaV4d6DtFovP5Rox3l2Lu4nFXHG2nZ1-tBAjPXjpqgoBXHuPoNradyp9G5MR64yN7si2d6jd1_nLND_R15qFee45o6HHIME01saFId9R-aT5EZvRCwvIe-WI57pZ7JBUHFeA2oOYF-huwIqQILk2rYM-ecbobx5MrXC8XRK0a3goLsKs6VgOU-WstvPqN3Lmjvd-qWTAtq48hrIYtV2I38ZaNB7ZVaY82O20CJlqf_dxxwcg4sIXpMKlSVLNoNaG2UV8cUHXeoi0OO4BcnSVq7oSZVcS6XTVrB7npOyucCAHjJEcoOzDmVZDOzQ&key=AIzaSyB3pZBoHHpAmibsx8zT1VH6JW9_Odpm9sM",
+      "top_praise": [
+        "wonderful",
+        "friendly",
+        "delicious"
+      ],
+      "top_complaints": [
+        "disappointed"
+      ],
+      "sample_positive_reviews": [
+        {
+          "author_name": "Emma Davies",
+          "rating": 5,
+          "text": "I had a wonderful experience at Mela in Waterlooville. The food was divine, particularly the butter chicken, and the service was top-notch. I've been to many restaurants in Hampshire, but this one stands out. Highly recommended!",
+          "date": "2024-04-20",
+          "source": "google"
+        },
+        {
+          "author_name": "Oliver Taylor",
+          "rating": 4,
+          "text": "I've become quite the regular at Mela, and for good reason. The selection of dishes is varied and always delicious. The staff are friendly and accommodating, making the dining experience enjoyable. The restaurant itself could use a bit of sprucing up, but it doesn't hamper the overall experience.",
+          "date": "2024-06-10",
+          "source": "tripadvisor"
+        }
+      ],
+      "sample_negative_reviews": [
+        {
+          "author_name": "Thomas Johnson",
+          "rating": 2,
+          "text": "Disappointed with the service at Mela. The staff seemed rushed and not fully attentive. The food was passable, but not quite as outstanding as I was led to believe from previous reviews. The ambiance was okay, but the overall experience left a lot to be desired.",
+          "date": "2024-08-12",
+          "source": "google"
+        }
+      ],
+      "price_level": "Affordable (££)",
+      "best_for": [
+        "General dining"
+      ]
+    },
+    {
+      "name": "Barnard's Restaurant",
+      "slug": "barnards-restaurant",
+      "area": "waterlooville",
+      "rating": 4.7,
+      "review_count": 201,
+      "address": "Hambledon Rd",
+      "phone": "023 9225 7788",
+      "description": "Barnard's Restaurant in Waterlooville. Professional restaurants serving the local community.",
+      "image": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photoreference=AciIO2c4DKtcQcNLXoKlAJapmjTtIsgc8uV10i4u3920Na396MUCt9kVuX_oam5kw2MD-gN8JhS9iZ0uImrNjpzRtmTGtnlFJVYFYtMzPpKunYnKq0X0ywt63diBRdXjl0fLWRAr2vV81f7QnweuM0A8mkPIjaaTLKGED7KwBXHnymtmB8U-HiWgQQx6jK3rA7hKOsegSA_nnNVeQreuAf4TNihmcgm_oa6zeo33hv6IwZUJ7qJd33G5P3Edx0HNBeIhixU02JtWoDQ6B6IYOQScupQvrHZHK3Vz2xk0dW8R1ablGXfLWg9YfgGhbeSTaDLVFI0lkTA6jZWFkcCj_Tz4rj6u7qlAP50r5gHHCtARD4TQheo7-ZLmAY_cym7WP0_RcPaWRk-NByUDhNKvxUgRiQt0pGWPW6dkFPLiRtAiNih2xTsydYoM-P9Ahqp2dQyg&key=AIzaSyB3pZBoHHpAmibsx8zT1VH6JW9_Odpm9sM",
+      "top_praise": [],
+      "top_complaints": [],
+      "sample_positive_reviews": [],
+      "sample_negative_reviews": [],
+      "price_level": "Affordable (££)",
+      "best_for": [
+        "General dining"
+      ]
+    },
+    {
+      "name": "Indian Cottage",
+      "slug": "indian-cottage",
+      "area": "waterlooville",
+      "rating": 4.1,
+      "review_count": 224,
+      "address": "4 Havant Rd",
+      "phone": "023 9259 2001",
+      "description": "Indian Cottage in Waterlooville. Professional restaurants serving the local community.",
+      "image": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photoreference=AciIO2eSHV2yS6-KXjhX4AJOtBhOrFD_eRGwDAv5OCD-PJqeq4G5wDNls7JXL0CX9PSSfsOu2QH8a5fDHWUY_psTkTn1etdCXwdGGddCnUSEVvDuVD3mvou9Czj0TLAcj1u_IybjLMMN5DRrPcWi7OkdwE99D4UGXHKzwYpuzOFxutIK18H3G2oVc4mC_n1Hq2_XpFO5OF51_3OhDtDdP1DErZOF6DXIvFqii0mUsgi_WqK6qKXVVKze2bYJiETMxpx3ZMRbHEIG5oCYjG8a0k5GL_Uwfqyj03tJJ17rX6RE9Eft8G81G9GwcDD00NXqzj0GY18HfCP0vm-JdvXssKCFItmyAGZYvfT5OANkgb80TEDiidTmVsWDXzqUOSaNysBhyA8MGU_g-yoLv3_K1ESQ1-ueaO7C_8UvAj_KQKSunjpKAw&key=AIzaSyB3pZBoHHpAmibsx8zT1VH6JW9_Odpm9sM",
+      "top_praise": [
+        "friendly",
+        "perfect"
+      ],
+      "top_complaints": [
+        "slow"
+      ],
+      "sample_positive_reviews": [
+        {
+          "author_name": "Elizabeth Johnson",
+          "rating": 5,
+          "text": "Thoroughly enjoyed our meal at the Indian Cottage. The menu was extensive with a variety of vegetarian and non-vegetarian options. The butter chicken was to die for! Staff were friendly and the ambience was just right. We'll definitely be back!",
+          "date": "2021-09-22",
+          "source": "google"
+        },
+        {
+          "author_name": "George Bennett",
+          "rating": 4,
+          "text": "A firm favourite for Indian food in Waterlooville. The portions were generous and the spices were perfectly balanced. It was a bit on the pricier side, but considering the quality of food, it was definitely worth it.",
+          "date": "2021-10-14",
+          "source": "tripadvisor"
+        }
+      ],
+      "sample_negative_reviews": [
+        {
+          "author_name": "Richard Walker",
+          "rating": 2,
+          "text": "The food was decent, but the service was slow. It took about 45 minutes to get our starters and another 30 for the main course. Not the best if you're in a hurry. The staff were polite, but they could do with more hands on deck.",
+          "date": "2021-11-28",
+          "source": "google"
+        }
+      ],
+      "price_level": "Affordable (££)",
+      "best_for": [
+        "General dining"
+      ]
+    },
+    {
+      "name": "Red Rose Lounge",
+      "slug": "red-rose-lounge",
+      "area": "waterlooville",
+      "rating": 4.4,
+      "review_count": 164,
+      "address": "258 London Rd",
+      "phone": "023 9226 2846",
+      "description": "Red Rose Lounge in Waterlooville. Professional restaurants serving the local community.",
+      "image": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photoreference=AciIO2dgvhAMMcbk8lHGg5eQNe-v4eKxIsZtOZqT5si9FnG5Z8AAaWS2V_xtcOS6tho91fTLPQMZsjk4-_2BPDXzMlQ2X66nJ1hmN1HRLgpVOTPhIkyXVVPhdCsCjygjXNRMjvsUwxWagvAt-9gQSA28Pcp83QD3Q1AdXpfoTP8olh9l1HILK17kL4UWXMuSS-AlfGksHisTJX1nmIxkdie5E1q3oG0EAszPWzCRun9ne1ZU3JsVlO4SI5kVPiQ2mLo3sEAI5630WEOLia7rdBu5Pblk3I18oCO2sqBK7-faAiqXDA&key=AIzaSyB3pZBoHHpAmibsx8zT1VH6JW9_Odpm9sM",
+      "top_praise": [
+        "friendly",
+        "great"
+      ],
+      "top_complaints": [
+        "slow"
+      ],
+      "sample_positive_reviews": [
+        {
+          "author_name": "Lucy Watson",
+          "rating": 5,
+          "text": "The best establishment in Waterlooville! I had the pleasure of dining at Red Rose Lounge last weekend and must say, it was splendid. Top-notch service, superb food and a cosy atmosphere - can't wait to go back!",
+          "date": "2024-07-31",
+          "source": "google"
+        },
+        {
+          "author_name": "Oliver Thompson",
+          "rating": 4,
+          "text": "Visited Red Rose Lounge for a family gathering. The staff were friendly and attentive. Food was appetising, but could do with a bit more variety on the menu. Overall, a nice place for a quiet meal.",
+          "date": "2024-06-20",
+          "source": "facebook"
+        }
+      ],
+      "sample_negative_reviews": [
+        {
+          "author_name": "Charles Stuart",
+          "rating": 2,
+          "text": "Wasn’t overly impressed with my visit to Red Rose Lounge. The service was slow and the food was just okay. I expected more given the reviews. Maybe it was just an off night, but I left feeling a bit let down.",
+          "date": "2024-08-07",
+          "source": "tripadvisor"
+        }
+      ],
+      "price_level": "Mid-range (£££)",
+      "best_for": [
+        "Families"
+      ]
+    }
+  ],
+  "total_analyzed": 16,
+  "top_restaurants": 10,
+  "generated_at": "2025-10-13T21:36:56.887Z"
+}

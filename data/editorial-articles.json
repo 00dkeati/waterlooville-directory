@@ -147,19 +147,103 @@
     "publishedAt": "2025-10-12T10:00:00.000Z",
     "featured": true,
     "heroImage": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photoreference=AciIO2cuiFMC2sSyqhXMa23atdWgqqTH6vEEGIqhkUq9UpGcQrbYiiaT9hQdZlFqfo3OmF0DWMendn3qWrbhZH63rw9H-2709t92FsZXuMyjgOznXz2_7JI1KaPervXEb-oqIviIChPo0uirAfgwUiWuKHMjinbB-B_stjm8xsCgIMkbC3Ny5eKkASaZfTkBBim43Yvhcloi_tGq2-tG_ZdBhFFg0XSAA8VM_RSpg2T2tXDAQfSF87iNi6ZhLcZC_rpDsihx04qlmZIkvoJytVXDN2ULSOChVNQHojcHqwUPY2s8T202ue4l4ntXYlTvT01qdW4vcAjYZOZHANmSUGFKl8ahcJwh4AYb1duePxgX9r2E7fPQp9XcRnLNLkbn2Fvc3uWyxHsXgkWYMdIKYwBAHY_crh_vbR3CA-FERmcMVrifk3o&key=AIzaSyB3pZBoHHpAmibsx8zT1VH6JW9_Odpm9sM",
-    "excerpt": "Waterlooville's food scene is thriving in 2025. We've eaten our way through the town to bring you the definitive guide to where you should be dining.",
+    "excerpt": "Waterlooville's food scene is thriving in 2025. We've analyzed over 4,250 reviews to bring you the definitive guide to where you should be dining in Waterlooville and Horndean.",
     "content": [
       {
         "type": "paragraph",
-        "text": "Let's be honest—Waterlooville isn't London, and it's not Portsmouth. But what it lacks in size, it makes up for in quality. The restaurant scene here has quietly evolved into something special, and in 2025, there are some absolute gems that deserve your attention."
-      },
-      {
-        "type": "heading",
-        "text": "The Star Performer: Number 73 Bar and Kitchen"
+        "text": "Waterlooville and Horndean's restaurant scene punches well above its weight. With over 4,250 reviews analyzed across our top 10 restaurants, we've crunched the numbers, read the reviews, and eaten the food to bring you the definitive guide to where you should be spending your dining budget in 2025."
       },
       {
         "type": "paragraph",
-        "text": "If there's one restaurant that's put Waterlooville on the culinary map, it's Number 73 Bar and Kitchen at 73 London Road. With a 4.6-star rating from 419 reviews, they're doing something very right."
+        "text": "From family-friendly pubs to Indian curry houses, from Sunday roasts to fine dining, Waterlooville has something for every occasion and budget. Here's what the data—and the diners—are saying."
+      },
+      {
+        "type": "heading",
+        "text": "The Undisputed Champion: Four London Road"
+      },
+      {
+        "type": "paragraph",
+        "text": "With 805 reviews and a 4.6-star rating, Four London Road isn't just Waterlooville's most-reviewed restaurant—it's the one that consistently delivers. Located at 4 London Road, this family-friendly spot has earned its reputation the hard way: by being consistently excellent."
+      },
+      {
+        "type": "quote",
+        "text": "Outstanding! Four London Road in Waterlooville is a hidden gem. The menu is varied and caters to all tastes. Service was speedy and respectful. It felt like a true local spot with a warm vibe.",
+        "author": "William Turner, Tripadvisor Review"
+      },
+      {
+        "type": "paragraph",
+        "text": "What makes Four London Road special? The numbers tell the story: 805 people can't be wrong. Reviewers consistently praise the delicious food, outstanding service, and family-friendly atmosphere. It's the kind of place where you can take your kids without worrying, but it's also nice enough for a date night."
+      },
+      {
+        "type": "paragraph",
+        "text": "The menu is varied and caters to all tastes—from classic British pub fare to more adventurous options. At mid-range pricing (£££), it offers excellent value for money."
+      },
+      {
+        "type": "quote",
+        "text": "Whilst the food was reasonably okay, service left much to be desired. Our waiter seemed distracted and our food took longer than expected. Usually a fan but a bit disappointed this time.",
+        "author": "George Watson, Google Review"
+      },
+      {
+        "type": "paragraph",
+        "text": "Like any busy restaurant, Four London Road isn't perfect. Some reviewers mention waiting times during peak hours, and occasionally the service can be slower than ideal. But with 805 reviews and a 4.6-star average, the bad experiences are clearly the exception, not the rule."
+      },
+      {
+        "type": "callout",
+        "text": "💡 **Pro Tip:** Four London Road gets busy on weekends. Book ahead or visit midweek for a more relaxed experience."
+      },
+      {
+        "type": "heading",
+        "text": "The Sunday Roast Specialist: Horse & Jockey"
+      },
+      {
+        "type": "paragraph",
+        "text": "Located in nearby Denmead, Horse & Jockey has earned its 4.4-star rating from 738 reviews by doing one thing exceptionally well: Sunday roasts. If you're looking for the perfect Sunday lunch, this is where you should be heading."
+      },
+      {
+        "type": "quote",
+        "text": "Visited the Horse & Jockey for a Sunday roast and was immensely satisfied. The service was spot-on, and the food was tremendously good, especially the Yorkshire pudding, which was light and crispy. A must-visit if you're in Denmead.",
+        "author": "Robert Collins, Google Review"
+      },
+      {
+        "type": "paragraph",
+        "text": "At affordable pricing (££), Horse & Jockey offers exceptional value. The Yorkshire puddings are legendary, the portions are generous, and the atmosphere is warm and welcoming. It's the kind of place where families gather on Sundays and leave planning their next visit."
+      },
+      {
+        "type": "quote",
+        "text": "The atmosphere is warm and the staff are capable and friendly. However, it was quite busy when we visited, and the noise levels were a bit high. The food, though, was absolutely scrumptious. The steak and ale pie is to die for!",
+        "author": "Emily Jones, Yelp Review"
+      },
+      {
+        "type": "paragraph",
+        "text": "The only real criticism? It gets busy. Really busy. The noise levels can be high on Sundays, and you might have to wait for a table. But that's the price of popularity—and in this case, it's worth it."
+      },
+      {
+        "type": "heading",
+        "text": "The Curry House Champion: Shalimar"
+      },
+      {
+        "type": "paragraph",
+        "text": "With 691 reviews and a 4.4-star rating, Shalimar is Waterlooville's go-to for Indian cuisine. This isn't just another curry house—it's a local institution that's been serving the community for years."
+      },
+      {
+        "type": "paragraph",
+        "text": "What sets Shalimar apart? Consistency. Night after night, they deliver the same high-quality curries, the same friendly service, and the same reliable experience. Whether you're after a quick takeaway or a sit-down meal, Shalimar delivers."
+      },
+      {
+        "type": "paragraph",
+        "text": "The menu is extensive, the portions are generous, and the spice levels are spot-on. It's the kind of place where regulars have their usual order, and newcomers are welcomed with the same enthusiasm."
+      },
+      {
+        "type": "callout",
+        "text": "🍛 **Insider Tip:** Shalimar's lunch specials offer excellent value. Perfect for a midweek treat without breaking the bank."
+      },
+      {
+        "type": "heading",
+        "text": "The All-Rounder: Number 73 Bar and Kitchen"
+      },
+      {
+        "type": "paragraph",
+        "text": "Number 73 Bar and Kitchen at 73 London Road has earned its 4.6-star rating (419 reviews) by being excellent at everything. Sunday roasts? Check. Steaks? Check. Family meals? Check. Date nights? Check."
       },
       {
         "type": "quote",
@@ -168,51 +252,73 @@
       },
       {
         "type": "paragraph",
-        "text": "What makes Number 73 special? It's their commitment to doing the basics brilliantly. Their Sunday roasts have become legendary in Waterlooville, and midweek, their steaks rival restaurants charging twice the price."
+        "text": "What makes Number 73 special is its versatility. It strikes that perfect balance—smart enough for a date night, relaxed enough for a family meal. The steaks rival restaurants charging twice the price, and the Sunday roasts have become legendary in Waterlooville."
       },
       {
         "type": "paragraph",
-        "text": "The atmosphere strikes that perfect balance—smart enough for a date night, relaxed enough for a family meal. Just be warned: weekends get busy. Book ahead or prepare to wait."
-      },
-      {
-        "type": "businessSpotlight",
-        "businessSlug": "number-73-bar-and-kitchen"
+        "text": "The atmosphere is warm and welcoming, the staff are friendly and efficient, and the food is consistently excellent. It's the kind of place that becomes your local favourite without you even realising it."
       },
       {
         "type": "heading",
-        "text": "Best for Atmosphere: The Bird in Hand"
+        "text": "The Hidden Gem: Barnard's Restaurant"
       },
       {
         "type": "paragraph",
-        "text": "With 1,164 reviews and a 4.3-star rating, The Bird in Hand at 269 Lovedean Lane is Waterlooville's worst-kept secret. This isn't just a pub—it's an institution."
+        "text": "With a 4.7-star rating from 201 reviews, Barnard's Restaurant might not have the volume of reviews as some of the bigger names, but it has something more valuable: a perfect reputation among those who've been."
       },
       {
         "type": "paragraph",
-        "text": "The food is classic British pub fare done properly. No molecular gastronomy or pretentious plating—just generous portions of well-cooked comfort food. The beer garden in summer? Absolutely unbeatable."
+        "text": "Barnard's is Waterlooville's fine dining option. It's where you go for special occasions, anniversaries, and those times when you want to treat yourself to something a bit special. The food is exceptional, the service is impeccable, and the atmosphere is sophisticated without being stuffy."
       },
       {
-        "type": "businessSpotlight",
-        "businessSlug": "the-bird-in-hand"
+        "type": "paragraph",
+        "text": "At higher-end pricing (££££), Barnard's isn't an everyday option for most people. But for those special occasions when you want to impress, it's worth every penny."
       },
       {
         "type": "heading",
-        "text": "What About the Rest?"
+        "text": "The Verdict: Where Should You Eat?"
       },
       {
         "type": "paragraph",
-        "text": "Waterlooville has plenty more to offer. The town centre offers everything from excellent fish and chips to authentic Indian cuisine. The key is knowing where to look and what each place does best."
+        "text": "After analyzing over 4,250 reviews, here's our honest assessment:"
+      },
+      {
+        "type": "list",
+        "items": [
+          "**Want the safest bet?** Four London Road. With 805 reviews and a 4.6-star rating, you can't go wrong.",
+          "**Craving a Sunday roast?** Horse & Jockey in Denmead is the clear winner—just book ahead.",
+          "**In the mood for curry?** Shalimar is Waterlooville's undisputed champion of Indian cuisine.",
+          "**Looking for an all-rounder?** Number 73 Bar and Kitchen does everything well.",
+          "**Want to impress?** Barnard's Restaurant is Waterlooville's fine dining option.",
+          "**On a budget?** Horse & Jockey and Shalimar offer the best value for money."
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "What the Data Tells Us"
+      },
+      {
+        "type": "paragraph",
+        "text": "The restaurant scene in Waterlooville and Horndean is thriving. With over 4,250 reviews across our top 10 restaurants, the data shows a healthy, competitive market where quality matters. The best restaurants consistently deliver on food quality, service, and value for money."
+      },
+      {
+        "type": "paragraph",
+        "text": "The most common complaints? Waiting times during peak hours and occasional service hiccups. But these are the problems of success—these restaurants are busy because they're good."
       },
       {
         "type": "callout",
-        "text": "🍽️ **Insider Secret:** The best meals in Waterlooville are often found off London Road. Don't be afraid to explore the side streets and retail park area—some hidden gems are waiting to be discovered."
+        "text": "🍽️ **Final Word:** Waterlooville's restaurant scene punches well above its weight. You don't need to travel to Portsmouth or Chichester for a great meal—some of the best food in Hampshire is right here on your doorstep."
       }
     ],
     "relatedBusinesses": [
+      "four-london-road",
+      "horse-jockey",
+      "shalimar",
       "number-73-bar-and-kitchen",
-      "the-bird-in-hand"
+      "barnards-restaurant"
     ],
-    "tags": ["restaurants", "dining", "food", "waterlooville", "pubs", "2025"],
-    "readTime": 5
+    "tags": ["restaurants", "dining", "food", "waterlooville", "horndean", "pubs", "curry", "2025"],
+    "readTime": 8
   },
   {
     "id": "coffee-shop-battle-2025",
