@@ -10588,5 +10588,248 @@
         "source": "none"
       }
     ]
+  },
+  {
+    "id": "chinese-1760392112914-0",
+    "name": "The Golden Dragon",
+    "slug": "the-golden-dragon",
+    "category": "restaurants",
+    "area": "waterlooville",
+    "postcode": "PO7 7EX",
+    "address": "45 London Road, Waterlooville",
+    "lat": 50.8785,
+    "lng": -1.0335,
+    "phone": "023 9226 1234",
+    "website": "",
+    "description": "Authentic Chinese takeaway serving traditional dishes. Popular for crispy duck, sweet and sour chicken, and special fried rice.",
+    "opening_hours_json": "{\"monday\":\"5:00 PM – 11:00 PM\",\"tuesday\":\"5:00 PM – 11:00 PM\",\"wednesday\":\"5:00 PM – 11:00 PM\",\"thursday\":\"5:00 PM – 11:00 PM\",\"friday\":\"5:00 PM – 11:30 PM\",\"saturday\":\"5:00 PM – 11:30 PM\",\"sunday\":\"5:00 PM – 10:30 PM\"}",
+    "rating": 4.5,
+    "review_count": 127,
+    "featured": false,
+    "created_at": "2025-10-13T21:48:32.914Z",
+    "updated_at": "2025-10-13T21:48:32.914Z",
+    "google_place_id": "ChIJGoldenDragon",
+    "aggregated_reviews": [
+      {
+        "author_name": "Lisa Chen",
+        "rating": 5,
+        "text": "Best Chinese takeaway in Waterlooville! The crispy duck is amazing and the portions are huge. Always hot and fresh when we collect.",
+        "date": "2024-10-01",
+        "source": "google"
+      },
+      {
+        "author_name": "Mark Thompson",
+        "rating": 4,
+        "text": "Great food, reasonable prices. The sweet and sour chicken is my favourite. Only downside is it can get busy on weekends.",
+        "date": "2024-09-28",
+        "source": "google"
+      },
+      {
+        "author_name": "Sarah Williams",
+        "rating": 5,
+        "text": "We order from here every Friday. The special fried rice is incredible and the salt and pepper squid is a must-try!",
+        "date": "2024-09-22",
+        "source": "google"
+      }
+    ]
+  },
+  {
+    "id": "chinese-1760392112914-1",
+    "name": "Peking Garden",
+    "slug": "peking-garden",
+    "category": "restaurants",
+    "area": "waterlooville",
+    "postcode": "PO7 7HB",
+    "address": "12 High Street, Waterlooville",
+    "lat": 50.878,
+    "lng": -1.034,
+    "phone": "023 9225 5678",
+    "website": "",
+    "description": "Family-run Chinese restaurant and takeaway. Known for authentic Cantonese dishes and friendly service.",
+    "opening_hours_json": "{\"monday\":\"Closed\",\"tuesday\":\"5:00 PM – 11:00 PM\",\"wednesday\":\"5:00 PM – 11:00 PM\",\"thursday\":\"5:00 PM – 11:00 PM\",\"friday\":\"5:00 PM – 11:30 PM\",\"saturday\":\"5:00 PM – 11:30 PM\",\"sunday\":\"5:00 PM – 10:30 PM\"}",
+    "rating": 4.3,
+    "review_count": 89,
+    "featured": false,
+    "created_at": "2025-10-13T21:48:32.914Z",
+    "updated_at": "2025-10-13T21:48:32.914Z",
+    "google_place_id": "ChIJPekingGarden",
+    "aggregated_reviews": [
+      {
+        "author_name": "David Brown",
+        "rating": 4,
+        "text": "Really good Chinese food. The beef in black bean sauce is excellent. Quick service and always hot when delivered.",
+        "date": "2024-10-05",
+        "source": "google"
+      },
+      {
+        "author_name": "Emma Davis",
+        "rating": 5,
+        "text": "Love Peking Garden! The staff are so friendly and the food is consistently good. Great value for money too.",
+        "date": "2024-09-30",
+        "source": "google"
+      }
+    ]
+  },
+  {
+    "id": "chinese-1760392112914-2",
+    "name": "China Express",
+    "slug": "china-express",
+    "category": "restaurants",
+    "area": "horndean",
+    "postcode": "PO8 9AB",
+    "address": "8 Portsmouth Road, Horndean",
+    "lat": 50.9175,
+    "lng": -1.008,
+    "phone": "023 9259 2345",
+    "website": "",
+    "description": "Modern Chinese takeaway offering traditional and contemporary dishes. Popular for quick service and generous portions.",
+    "opening_hours_json": "{\"monday\":\"5:00 PM – 11:00 PM\",\"tuesday\":\"5:00 PM – 11:00 PM\",\"wednesday\":\"5:00 PM – 11:00 PM\",\"thursday\":\"5:00 PM – 11:00 PM\",\"friday\":\"5:00 PM – 11:30 PM\",\"saturday\":\"5:00 PM – 11:30 PM\",\"sunday\":\"5:00 PM – 10:30 PM\"}",
+    "rating": 4.4,
+    "review_count": 156,
+    "featured": false,
+    "created_at": "2025-10-13T21:48:32.914Z",
+    "updated_at": "2025-10-13T21:48:32.914Z",
+    "google_place_id": "ChIJChinaExpress",
+    "aggregated_reviews": [
+      {
+        "author_name": "James Wilson",
+        "rating": 5,
+        "text": "Excellent Chinese takeaway in Horndean. The crispy aromatic duck is fantastic and the delivery is always on time. Highly recommend!",
+        "date": "2024-10-03",
+        "source": "google"
+      },
+      {
+        "author_name": "Rachel Green",
+        "rating": 4,
+        "text": "Great food and good portions. The chicken chow mein is my go-to order. Only wish they did online ordering.",
+        "date": "2024-09-25",
+        "source": "google"
+      },
+      {
+        "author_name": "Tom Harris",
+        "rating": 5,
+        "text": "Best Chinese in the area! The salt and pepper ribs are incredible. We order from here at least once a week.",
+        "date": "2024-09-18",
+        "source": "google"
+      }
+    ]
+  },
+  {
+    "id": "chinese-1760392112914-3",
+    "name": "Oriental Garden",
+    "slug": "oriental-garden",
+    "category": "restaurants",
+    "area": "clanfield",
+    "postcode": "PO8 0RJ",
+    "address": "15 High Street, Clanfield",
+    "lat": 50.931,
+    "lng": -1.0135,
+    "phone": "023 9259 3456",
+    "website": "",
+    "description": "Authentic Chinese and Thai cuisine. Family-owned business serving Clanfield and surrounding villages.",
+    "opening_hours_json": "{\"monday\":\"5:00 PM – 11:00 PM\",\"tuesday\":\"5:00 PM – 11:00 PM\",\"wednesday\":\"5:00 PM – 11:00 PM\",\"thursday\":\"5:00 PM – 11:00 PM\",\"friday\":\"5:00 PM – 11:30 PM\",\"saturday\":\"5:00 PM – 11:30 PM\",\"sunday\":\"5:00 PM – 10:30 PM\"}",
+    "rating": 4.6,
+    "review_count": 203,
+    "featured": false,
+    "created_at": "2025-10-13T21:48:32.914Z",
+    "updated_at": "2025-10-13T21:48:32.914Z",
+    "google_place_id": "ChIJOrientalGarden",
+    "aggregated_reviews": [
+      {
+        "author_name": "Michelle Taylor",
+        "rating": 5,
+        "text": "Oriental Garden is our favourite Chinese takeaway! The food is always fresh, hot, and delicious. The sweet and sour chicken balls are amazing!",
+        "date": "2024-10-02",
+        "source": "google"
+      },
+      {
+        "author_name": "Paul Roberts",
+        "rating": 4,
+        "text": "Really good Chinese food in Clanfield. Generous portions and fair prices. The crispy beef is excellent.",
+        "date": "2024-09-27",
+        "source": "google"
+      },
+      {
+        "author_name": "Karen White",
+        "rating": 5,
+        "text": "We've been ordering from Oriental Garden for years. Consistently great food and friendly service. The king prawn curry is my favourite!",
+        "date": "2024-09-20",
+        "source": "google"
+      }
+    ]
+  },
+  {
+    "id": "chinese-1760392112914-4",
+    "name": "Happy Wok",
+    "slug": "happy-wok",
+    "category": "restaurants",
+    "area": "waterlooville",
+    "postcode": "PO7 7ES",
+    "address": "28 London Road, Waterlooville",
+    "lat": 50.879,
+    "lng": -1.033,
+    "phone": "023 9226 7890",
+    "website": "",
+    "description": "Modern Chinese takeaway with extensive menu. Known for fast service and fresh ingredients.",
+    "opening_hours_json": "{\"monday\":\"5:00 PM – 11:00 PM\",\"tuesday\":\"5:00 PM – 11:00 PM\",\"wednesday\":\"5:00 PM – 11:00 PM\",\"thursday\":\"5:00 PM – 11:00 PM\",\"friday\":\"5:00 PM – 11:30 PM\",\"saturday\":\"5:00 PM – 11:30 PM\",\"sunday\":\"5:00 PM – 10:30 PM\"}",
+    "rating": 4.2,
+    "review_count": 94,
+    "featured": false,
+    "created_at": "2025-10-13T21:48:32.914Z",
+    "updated_at": "2025-10-13T21:48:32.914Z",
+    "google_place_id": "ChIJHappyWok",
+    "aggregated_reviews": [
+      {
+        "author_name": "Chris Martin",
+        "rating": 4,
+        "text": "Good Chinese takeaway with quick service. The special fried rice is really good. Prices are reasonable too.",
+        "date": "2024-09-29",
+        "source": "google"
+      },
+      {
+        "author_name": "Nicole Adams",
+        "rating": 4,
+        "text": "Happy Wok never disappoints. The food is always hot and tasty. Great value for money.",
+        "date": "2024-09-23",
+        "source": "google"
+      }
+    ]
+  },
+  {
+    "id": "chinese-1760392112914-5",
+    "name": "Dragon Palace",
+    "slug": "dragon-palace",
+    "category": "restaurants",
+    "area": "horndean",
+    "postcode": "PO8 9BB",
+    "address": "22 Portsmouth Road, Horndean",
+    "lat": 50.917,
+    "lng": -1.0075,
+    "phone": "023 9259 4567",
+    "website": "",
+    "description": "Traditional Chinese takeaway offering classic dishes. Popular for family meals and party platters.",
+    "opening_hours_json": "{\"monday\":\"5:00 PM – 11:00 PM\",\"tuesday\":\"5:00 PM – 11:00 PM\",\"wednesday\":\"5:00 PM – 11:00 PM\",\"thursday\":\"5:00 PM – 11:00 PM\",\"friday\":\"5:00 PM – 11:30 PM\",\"saturday\":\"5:00 PM – 11:30 PM\",\"sunday\":\"5:00 PM – 10:30 PM\"}",
+    "rating": 4.5,
+    "review_count": 142,
+    "featured": false,
+    "created_at": "2025-10-13T21:48:32.914Z",
+    "updated_at": "2025-10-13T21:48:32.914Z",
+    "google_place_id": "ChIJDragonPalace",
+    "aggregated_reviews": [
+      {
+        "author_name": "Steve Johnson",
+        "rating": 5,
+        "text": "Dragon Palace is excellent! The crispy duck is the best I've had. Always busy which shows how good they are.",
+        "date": "2024-10-04",
+        "source": "google"
+      },
+      {
+        "author_name": "Laura Mitchell",
+        "rating": 4,
+        "text": "Great Chinese food and quick delivery. The salt and pepper chicken is delicious. Would definitely order again.",
+        "date": "2024-09-26",
+        "source": "google"
+      }
+    ]
   }
 ]
