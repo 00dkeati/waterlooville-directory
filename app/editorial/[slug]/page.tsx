@@ -4,13 +4,15 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { getBusinessBySlug } from '@/lib/db'
 import BusinessCard from '@/components/BusinessCard'
+import ChineseTakeawayLeagueTable from '@/components/ChineseTakeawayLeagueTable'
 
 interface ArticleContent {
-  type: 'paragraph' | 'heading' | 'quote' | 'businessSpotlight' | 'list' | 'callout'
+  type: 'paragraph' | 'heading' | 'quote' | 'businessSpotlight' | 'list' | 'callout' | 'leagueTable'
   text?: string
   author?: string
   businessSlug?: string
   items?: string[]
+  takeaways?: any[]
 }
 
 interface EditorialArticle {
@@ -186,6 +188,13 @@ export default async function EditorialArticlePage({ params }: { params: { slug:
                       <p className="text-gray-800">
                         {block.text}
                       </p>
+                    </div>
+                  )
+                
+                case 'leagueTable':
+                  return (
+                    <div key={index} className="my-12">
+                      <ChineseTakeawayLeagueTable takeaways={block.takeaways || []} />
                     </div>
                   )
                 
