@@ -405,14 +405,20 @@ export default async function BusinessPage({ params }: BusinessPageProps) {
                 </div>
               )}
 
-              <a 
-                href={business.lat && business.lng ? `https://www.google.com/maps/dir/?api=1&destination=${business.lat},${business.lng}` : '#'}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block w-full text-center bg-white text-blue-600 py-3 px-6 rounded-lg font-bold hover:bg-blue-50 transition-colors"
-              >
-                Get Directions →
-              </a>
+              {business.lat && business.lng ? (
+                <a 
+                  href={`https://www.google.com/maps/dir/?api=1&destination=${business.lat},${business.lng}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block w-full text-center bg-white text-blue-600 py-3 px-6 rounded-lg font-bold hover:bg-blue-50 transition-colors"
+                >
+                  Get Directions →
+                </a>
+              ) : (
+                <div className="block w-full text-center bg-gray-100 text-gray-400 py-3 px-6 rounded-lg font-bold cursor-not-allowed">
+                  Directions Unavailable
+                </div>
+              )}
             </div>
           </section>
 
