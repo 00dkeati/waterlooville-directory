@@ -338,193 +338,271 @@
       },
       {
         "type": "paragraph",
-        "text": "Using advanced AI-powered analysis, we've scraped and analyzed hundreds of real customer reviews from across the web to bring you the definitive guide to the best Chinese takeaways in your area. Here's our honest, data-driven assessment."
+        "text": "Using advanced AI-powered analysis, we've scraped and analyzed hundreds of real customer reviews from across the web to bring you the definitive guide to the best Chinese takeaways in your area. Here's our honest, data-driven assessment based on weighted scores that consider both rating and review volume."
       },
       {
-        "type": "heading",
-        "text": "The Undisputed Champion: New Golden Leaf, Waterlooville"
-      },
-      {
-        "type": "paragraph",
-        "text": "With a 4.5-star rating from 192 reviews, New Golden Leaf at 7 The Kestrels, Eagle Avenue (PO8 9GX) is the top-ranked Chinese takeaway in our analysis. With a weighted score of 23.68, it's not just popular—it's consistently excellent."
-      },
-      {
-        "type": "quote",
-        "text": "Such good Chinese and excellent portions.",
-        "author": "5-Star Customer Review"
-      },
-      {
-        "type": "paragraph",
-        "text": "What makes New Golden Leaf special? Customers consistently praise the excellent portions, consistent quality, friendly staff, and good pricing. The food is described as 'fantastic' and 'almost perfect' by regular customers. At £10-20 per person, it offers great value for money."
-      },
-      {
-        "type": "quote",
-        "text": "The food and service is almost perfect (as far as a Chinese takeaway goes). I've never had a bad meal here.",
-        "author": "5-Star Customer Review"
-      },
-      {
-        "type": "paragraph",
-        "text": "However, be aware that some customers have reported issues with raw chicken being served and missing items from orders. While these appear to be isolated incidents, it's worth checking your order carefully when it arrives."
-      },
-      {
-        "type": "callout",
-        "text": "🥡 **Pro Tip:** New Golden Leaf accepts cash only. Make sure you have cash on hand when ordering."
-      },
-      {
-        "type": "heading",
-        "text": "The Runner-Up: Noodle Bar Chinese Takeaway, Waterlooville"
-      },
-      {
-        "type": "paragraph",
-        "text": "Coming in at number 2 with a 4.5-star rating from 160 reviews, Noodle Bar Chinese Takeaway at 115 London Road (PO7 7DZ) is a strong contender. With a weighted score of 22.87, it's consistently rated highly by customers."
-      },
-      {
-        "type": "quote",
-        "text": "Never had a bad meal from here - our 'go to' for every takeaway. Best chicken satay skewers you'll ever find.",
-        "author": "Amber Louise, 5-Star Review"
-      },
-      {
-        "type": "paragraph",
-        "text": "What makes Noodle Bar special? Their chicken satay skewers are legendary, and customers rave about the Pad Thai. The food is consistently good, the kitchen is spotless, portions are generous, and prices are reasonable. Delivery is often on time, making it a reliable choice."
-      },
-      {
-        "type": "quote",
-        "text": "Very good food has the cool boxes and everything super good pricing too love the pad Thai from there",
-        "author": "Jack, Local Guide"
-      },
-      {
-        "type": "paragraph",
-        "text": "However, some customers have reported inconsistent food quality, with some dishes being greasy and overcooked. The 'munch box' has received particularly poor reviews, so you might want to avoid that specific item."
-      },
-      {
-        "type": "heading",
-        "text": "The Solid Performer: The Light Chinese Takeaway, Waterlooville"
-      },
-      {
-        "type": "paragraph",
-        "text": "Ranked number 3 with a 4.1-star rating from 147 reviews, The Light Chinese Takeaway at 61 London Road (PO7 7EX) is a solid choice. With a weighted score of 20.49, it's consistently reliable."
-      },
-      {
-        "type": "quote",
-        "text": "We tried this Chinese for the first time yesterday and we were really happy with it. We've tried various local Chinese but this one has become a favourite.",
-        "author": "5-Star Customer Review"
-      },
-      {
-        "type": "paragraph",
-        "text": "Customers praise the good food, quick delivery, and friendly staff. The food is consistently hot and fresh, making it a reliable choice for a quick Chinese takeaway."
-      },
-      {
-        "type": "paragraph",
-        "text": "However, some customers have reported inconsistent food quality, long delivery times, and poor customer service. There have been complaints about soggy chicken balls, cold chips, and rude staff when issues are raised."
-      },
-      {
-        "type": "callout",
-        "text": "🥡 **Pro Tip:** If you're pre-ordering, be aware that some customers have experienced significant delays even with advance booking."
-      },
-      {
-        "type": "heading",
-        "text": "The Established Choice: Jade Garden, Waterlooville"
-      },
-      {
-        "type": "paragraph",
-        "text": "Ranked number 4 with a 3.9-star rating from 150 reviews, Jade Garden at 5 Queens Parade, London Road (PO7 7EB) is an established choice. With a weighted score of 19.57, it's been serving the community for years."
-      },
-      {
-        "type": "quote",
-        "text": "I have been coming here for a few years now, the food is absolutely amazing, the best chinese I have ever been to and I have tried a few.",
-        "author": "Kerry Brackstone, 5-Star Review"
-      },
-      {
-        "type": "paragraph",
-        "text": "Customers praise the amazing, tasty, clean, and well-priced food. The staff are friendly and the delivery/pickup service is efficient. The food is described as tasting 'very clean with no slop'."
-      },
-      {
-        "type": "paragraph",
-        "text": "However, some customers have raised concerns about inconsistent food quality, with complaints about bland food, soggy dishes, undercooked items, and even finding hair in food. Service issues have also been reported, including slow service and mixed orders."
-      },
-      {
-        "type": "heading",
-        "text": "The Local Favourite: Kim & Laurie, Waterlooville"
-      },
-      {
-        "type": "paragraph",
-        "text": "Ranked number 5 with a 4.2-star rating from 80 reviews, Kim & Laurie at 3 Lavender Road (PO7 8NS) is a local favourite. With a weighted score of 18.46, it's been serving the community for almost 20 years."
-      },
-      {
-        "type": "quote",
-        "text": "Been coming here for almost 20 years. Still the best around. The food is always cooked to perfection. Highly recommend the beef in black bean sauce!",
-        "author": "Emma Goffe, 5-Star Review"
-      },
-      {
-        "type": "paragraph",
-        "text": "What makes Kim & Laurie special? Customers consistently praise the good food that's cooked to perfection, with excellent portions and specific dishes like beef in black bean sauce and special curry being highly recommended."
-      },
-      {
-        "type": "paragraph",
-        "text": "However, some customers have reported rude staff, long waiting times, and occasional order mistakes with forgotten items. There have also been complaints about tough or chewy meat."
-      },
-      {
-        "type": "heading",
-        "text": "The Purbrook Option: New Purbrook Garden"
-      },
-      {
-        "type": "paragraph",
-        "text": "Ranked number 6 with a 4.1-star rating from 77 reviews, New Purbrook Garden at 8 London Road, Purbrook (PO7 5LJ) is the go-to Chinese takeaway for Purbrook residents."
-      },
-      {
-        "type": "quote",
-        "text": "The best Chinese takeaway I have found since moving to the area a year ago and I've tried a few. Plenty of flavor and options. Very friendly staff. I fully recommend.",
-        "author": "Leigh Nichols, 5-Star Review"
-      },
-      {
-        "type": "paragraph",
-        "text": "Customers praise the good flavor, variety of options, and friendly staff. It's a solid choice for those living in or near Purbrook."
-      },
-      {
-        "type": "paragraph",
-        "text": "However, some customers have reported food quality issues, with complaints about old or refried crispy shredded chicken, dried and tasteless chips, and slow delivery times."
-      },
-      {
-        "type": "heading",
-        "text": "The Horndean Choice: Lucky House"
-      },
-      {
-        "type": "paragraph",
-        "text": "Ranked number 7 with a 3.5-star rating from 122 reviews, Lucky House at 2A London Road, Horndean (PO8 0BZ) is the only Chinese takeaway serving the Horndean area. With a weighted score of 16.84, it's the go-to option for Horndean residents."
-      },
-      {
-        "type": "quote",
-        "text": "Best Chinese I ever had! The chicken ball is so crispy, the chicken is so tender! The curry sauce is better than all other shop around the area.",
-        "author": "5-Star Customer Review"
-      },
-      {
-        "type": "paragraph",
-        "text": "Customers praise the good food quality, large portions, and quick delivery. The chicken balls are described as crispy, the chicken is tender, and the curry sauce is highly rated."
-      },
-      {
-        "type": "paragraph",
-        "text": "However, some customers have reported inconsistent food quality, with complaints about bland dishes, soggy and undercooked chicken balls, and missing items from orders. Some customers have also complained that all dishes taste the same."
-      },
-      {
-        "type": "heading",
-        "text": "The Hidden Gem: Hakka Kitchen, Waterlooville"
-      },
-      {
-        "type": "paragraph",
-        "text": "Ranked number 8 with a 4.3-star rating from 44 reviews, Hakka Kitchen at 75B London Road (PO7 7EL) is a hidden gem. With a weighted score of 16.37, it has fewer reviews but consistently high ratings."
-      },
-      {
-        "type": "quote",
-        "text": "Best Chinese I've ever had! Everything was cooked to perfection and full of flavour. Delivery was fast and I would highly recommend.",
-        "author": "Emma Goffe, 5-Star Review"
-      },
-      {
-        "type": "paragraph",
-        "text": "Customers rave about the excellent food quality, fresh tasting food, hot food, speedy delivery, friendly service, good portions, great curry sauce, and good value for money."
-      },
-      {
-        "type": "paragraph",
-        "text": "However, some customers have reported late delivery, cold food, fatty ribs, tasteless chow mein, soggy pancake rolls, and rice not being included with curry meals."
+        "type": "leagueTable",
+        "takeaways": [
+          {
+            "rank": 1,
+            "name": "New Golden Leaf",
+            "location": "Waterlooville",
+            "address": "7 The Kestrels, Eagle Ave, PO8 9GX",
+            "phone": "02392 226 2958",
+            "rating": 4.5,
+            "reviewCount": 192,
+            "weightedScore": 23.68,
+            "priceRange": "£10-20",
+            "image": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=PLACEHOLDER_NEW_GOLDEN_LEAF&key=YOUR_API_KEY",
+            "positiveReviews": [
+              {
+                "author": "5-Star Customer",
+                "rating": 5,
+                "text": "Such good Chinese and excellent portions."
+              },
+              {
+                "author": "5-Star Customer",
+                "rating": 5,
+                "text": "The food and service is almost perfect (as far as a Chinese takeaway goes). I've never had a bad meal here."
+              }
+            ],
+            "negativeReviews": [
+              {
+                "author": "1-Star Customer",
+                "rating": 1,
+                "text": "AVOID AT ALL COSTS!! You do not want to order from here we got served up raw chicken and got very ill, also missing items after spending over £50 with them!"
+              }
+            ],
+            "strengths": ["Excellent portions", "Consistent quality", "Friendly staff", "Good pricing"],
+            "weaknesses": ["Cash only", "Occasional quality issues"]
+          },
+          {
+            "rank": 2,
+            "name": "Noodle Bar Chinese Takeaway",
+            "location": "Waterlooville",
+            "address": "115 London Rd, PO7 7DZ",
+            "phone": "02392 258 117",
+            "rating": 4.5,
+            "reviewCount": 160,
+            "weightedScore": 22.87,
+            "priceRange": "£10-20",
+            "image": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=PLACEHOLDER_NOODLE_BAR&key=YOUR_API_KEY",
+            "positiveReviews": [
+              {
+                "author": "Amber Louise",
+                "rating": 5,
+                "text": "Never had a bad meal from here - our 'go to' for every takeaway. Best chicken satay skewers you'll ever find."
+              },
+              {
+                "author": "Jack",
+                "rating": 5,
+                "text": "Very good food has the cool boxes and everything super good pricing too love the pad Thai from there"
+              }
+            ],
+            "negativeReviews": [
+              {
+                "author": "Sean Jones",
+                "rating": 1,
+                "text": "Absolutely disgusting. Do not order the munch box, it's terrible. Nothing like you're expecting, greasy, cold, horrible Chinese food."
+              }
+            ],
+            "strengths": ["Best chicken satay skewers", "Excellent Pad Thai", "Spotless kitchen", "Good value"],
+            "weaknesses": ["Inconsistent quality", "Munch box is poor"]
+          },
+          {
+            "rank": 3,
+            "name": "The Light Chinese Takeaway",
+            "location": "Waterlooville",
+            "address": "61 London Rd, PO7 7EX",
+            "phone": "02392 263 453",
+            "rating": 4.1,
+            "reviewCount": 147,
+            "weightedScore": 20.49,
+            "priceRange": "£10-20",
+            "image": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=PLACEHOLDER_LIGHT&key=YOUR_API_KEY",
+            "positiveReviews": [
+              {
+                "author": "5-Star Customer",
+                "rating": 5,
+                "text": "We tried this Chinese for the first time yesterday and we were really happy with it. We've tried various local Chinese but this one has become a favourite."
+              },
+              {
+                "author": "5-Star Customer",
+                "rating": 5,
+                "text": "The light Chinese takeaway is such a lovely restaurant the staff are always so polite and delivery is always so fast, would definitely recommend."
+              }
+            ],
+            "negativeReviews": [
+              {
+                "author": "1-Star Customer",
+                "rating": 1,
+                "text": "I ordered from there tonight WILL NOT BE ORDERING FROM THERE AGAIN when delivery turned up delivery driver was fine but the food was awful. The chicken balls were soggy and the chips were cold."
+              }
+            ],
+            "strengths": ["Good food", "Quick delivery", "Friendly staff"],
+            "weaknesses": ["Inconsistent quality", "Long delivery times", "Poor customer service"]
+          },
+          {
+            "rank": 4,
+            "name": "Jade Garden",
+            "location": "Waterlooville",
+            "address": "5 Queens Parade, London Rd, PO7 7EB",
+            "phone": "02392 262 121",
+            "rating": 3.9,
+            "reviewCount": 150,
+            "weightedScore": 19.57,
+            "priceRange": "£20-30",
+            "image": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=PLACEHOLDER_JADE_GARDEN&key=YOUR_API_KEY",
+            "positiveReviews": [
+              {
+                "author": "Kerry Brackstone",
+                "rating": 5,
+                "text": "I have been coming here for a few years now, the food is absolutely amazing, the best chinese I have ever been to and I have tried a few."
+              },
+              {
+                "author": "David Wickett",
+                "rating": 5,
+                "text": "Had numerous dining experiences there and the takeaway didn't disappoint either. Food tastes very clean with no slop."
+              }
+            ],
+            "negativeReviews": [
+              {
+                "author": "Trevor Hutcheson",
+                "rating": 2,
+                "text": "The restaurant has gone down hill, when we arrived there was one other table in use, over £6.00 for 3/4s of a pint of lager."
+              }
+            ],
+            "strengths": ["Amazing food", "Clean taste", "Friendly staff"],
+            "weaknesses": ["High drink prices", "Inconsistent quality", "Service issues"]
+          },
+          {
+            "rank": 5,
+            "name": "Kim & Laurie",
+            "location": "Waterlooville",
+            "address": "3 Lavender Rd, PO7 8NS",
+            "phone": "02392 252 512",
+            "rating": 4.2,
+            "reviewCount": 80,
+            "weightedScore": 18.46,
+            "priceRange": "£10-20",
+            "image": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=PLACEHOLDER_KIM_LAURIE&key=YOUR_API_KEY",
+            "positiveReviews": [
+              {
+                "author": "Emma Goffe",
+                "rating": 5,
+                "text": "Been coming here for almost 20 years. Still the best around. The food is always cooked to perfection. Highly recommend the beef in black bean sauce!"
+              },
+              {
+                "author": "Mark Theobald",
+                "rating": 5,
+                "text": "Always have had great food here never any issues best around in my opinion"
+              }
+            ],
+            "negativeReviews": [
+              {
+                "author": "Emily Bish",
+                "rating": 1,
+                "text": "Rude staff. My dad ordered a portion of chips. He told the man serving that he had been waiting 20 mins and inquired in a friendly manner roughly how long it will be. The guy serving accused him of lying about waiting 20 mins."
+              }
+            ],
+            "strengths": ["20 years experience", "Cooked to perfection", "Excellent portions"],
+            "weaknesses": ["Rude staff", "Long waiting times", "Occasional mistakes"]
+          },
+          {
+            "rank": 6,
+            "name": "New Purbrook Garden",
+            "location": "Purbrook",
+            "address": "8 London Rd, Purbrook, PO7 5LJ",
+            "phone": "02392 258 445",
+            "rating": 4.1,
+            "reviewCount": 77,
+            "weightedScore": 17.86,
+            "priceRange": "Not specified",
+            "image": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=PLACEHOLDER_PURBROOK&key=YOUR_API_KEY",
+            "positiveReviews": [
+              {
+                "author": "Leigh Nichols",
+                "rating": 5,
+                "text": "The best Chinese takeaway I have found since moving to the area a year ago and I've tried a few. Plenty of flavor and options. Very friendly staff. I fully recommend."
+              }
+            ],
+            "negativeReviews": [
+              {
+                "author": "Dawn Djokey",
+                "rating": 1,
+                "text": "I've purchased from New Purbrook Garden this evening for my daughter birthday and the food was the worst food I've had. It was very obvious that the Crispy shredded chicken was days old and refried again and was oil soaked and hard."
+              }
+            ],
+            "strengths": ["Good flavor", "Variety of options", "Friendly staff"],
+            "weaknesses": ["Food quality issues", "Slow delivery"]
+          },
+          {
+            "rank": 7,
+            "name": "Lucky House",
+            "location": "Horndean",
+            "address": "2A London Rd, Horndean, PO8 0BZ",
+            "phone": "02392 599 749",
+            "rating": 3.5,
+            "reviewCount": 122,
+            "weightedScore": 16.84,
+            "priceRange": "£10-20",
+            "image": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=PLACEHOLDER_LUCKY_HOUSE&key=YOUR_API_KEY",
+            "positiveReviews": [
+              {
+                "author": "5-Star Customer",
+                "rating": 5,
+                "text": "Best Chinese I ever had! The chicken ball is so crispy, the chicken is so tender! The curry sauce is better than all other shop around the area."
+              },
+              {
+                "author": "5-Star Customer",
+                "rating": 5,
+                "text": "Lovely food and amazing service. This is our number one takeaway that we go to. The curry is amazing."
+              }
+            ],
+            "negativeReviews": [
+              {
+                "author": "1-Star Customer",
+                "rating": 1,
+                "text": "I've ordered from lucky house for at least 10 years and the food has always been Lovely, but this past year the food has gone down hill. I ordered chicken fried rice which tasted and smelt like an old ash tray."
+              }
+            ],
+            "strengths": ["Large portions", "Quick delivery", "Good curry sauce"],
+            "weaknesses": ["Inconsistent quality", "Bland dishes", "Missing items"]
+          },
+          {
+            "rank": 8,
+            "name": "Hakka Kitchen",
+            "location": "Waterlooville",
+            "address": "75B London Rd, PO7 7EL",
+            "phone": "02392 250 430",
+            "rating": 4.3,
+            "reviewCount": 44,
+            "weightedScore": 16.37,
+            "priceRange": "£10-20",
+            "image": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=PLACEHOLDER_HAKKA&key=YOUR_API_KEY",
+            "positiveReviews": [
+              {
+                "author": "Emma Goffe",
+                "rating": 5,
+                "text": "Best Chinese I've ever had! Everything was cooked to perfection and full of flavour. Delivery was fast and I would highly recommend."
+              },
+              {
+                "author": "Becky",
+                "rating": 5,
+                "text": "Love hakka Always amazing tasting food never fatty and always on time"
+              }
+            ],
+            "negativeReviews": [
+              {
+                "author": "Laura Curtis",
+                "rating": 3,
+                "text": "The ribs were fatty and gristly I asked for no carrots in chow mein but they were in there the chow mein was tasteless even with BBQ sauce"
+              }
+            ],
+            "strengths": ["Excellent food quality", "Fresh tasting", "Speedy delivery", "Good portions"],
+            "weaknesses": ["Late delivery", "Cold food", "Fatty ribs"]
+          }
+        ]
       },
       {
         "type": "heading",
