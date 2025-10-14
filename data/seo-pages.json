@@ -519,6 +519,1200 @@
       "intro": "Looking for accommodation in or near Waterlooville? Find hotels and lodging options.",
       "sections": []
     }
+  },
+  {
+    "slug": "waterlooville-sainsburys",
+    "title": "Waterlooville Sainsbury's - Store Guide, Opening Hours & Services 2024",
+    "h1": "Waterlooville Sainsbury's Store",
+    "description": "Complete guide to Waterlooville Sainsbury's including opening hours, petrol station, pharmacy, café, click & collect and store services. Find everything you need at Sainsbury's Waterlooville.",
+    "keywords": ["waterlooville sainsburys", "sainsburys waterlooville", "sainsburys waterlooville opening times", "waterlooville sainsburys petrol", "sainsburys waterlooville pharmacy", "sainsburys waterlooville cafe"],
+    "category": "shopping",
+    "content": {
+      "intro": "Sainsbury's Waterlooville is a major supermarket in the heart of Waterlooville town centre, offering groceries, clothing, household items, and a range of additional services including a petrol station, pharmacy, and café.",
+      "sections": [
+        {
+          "title": "Store Information",
+          "items": ["Opening Hours", "Location & Parking", "Store Services"]
+        },
+        {
+          "title": "Additional Services",
+          "items": ["Petrol Station", "Pharmacy", "Café", "Click & Collect"]
+        }
+      ],
+      "detailedGuide": {
+        "storeDetails": {
+          "address": "London Road, Waterlooville, PO7 3DU",
+          "phone": "0345 600 0000",
+          "openingHours": {
+            "monday": "7am - 10pm",
+            "tuesday": "7am - 10pm",
+            "wednesday": "7am - 10pm",
+            "thursday": "7am - 10pm",
+            "friday": "7am - 10pm",
+            "saturday": "7am - 10pm",
+            "sunday": "10am - 4pm"
+          },
+          "parking": "Free parking available on-site",
+          "accessibility": "Wheelchair accessible with disabled parking bays and trolleys available"
+        },
+        "departments": [
+          {
+            "name": "Grocery",
+            "description": "Fresh fruit and vegetables, meat, fish, dairy, bakery, frozen foods, and household essentials",
+            "features": ["Fresh produce daily", "Local products", "Organic range", "Free-from options"]
+          },
+          {
+            "name": "Clothing & Home",
+            "description": "TU clothing range, home accessories, and seasonal items",
+            "features": ["TU clothing for all ages", "Home accessories", "Seasonal collections"]
+          },
+          {
+            "name": "Pharmacy",
+            "description": "Prescription services, over-the-counter medicines, and health advice",
+            "features": ["Prescription collection", "Health advice", "Vaccinations", "Health checks"]
+          },
+          {
+            "name": "Café",
+            "description": "Hot and cold drinks, sandwiches, snacks, and light meals",
+            "features": ["Free WiFi", "Family-friendly", "Baby changing facilities"]
+          }
+        ],
+        "services": [
+          {
+            "name": "Petrol Station",
+            "description": "Self-service petrol station with competitive prices",
+            "location": "Adjacent to main store",
+            "payment": "Pay at pump or in-store",
+            "openingHours": "6am - 11pm daily"
+          },
+          {
+            "name": "Click & Collect",
+            "description": "Order online and collect from store",
+            "process": "Order online at sainsburys.co.uk, select collection time, collect from designated area",
+            "benefits": "Free collection, same-day slots available, flexible collection times"
+          },
+          {
+            "name": "Home Delivery",
+            "description": "Groceries delivered to your door",
+            "process": "Order online, choose delivery slot, groceries delivered to your home",
+            "benefits": "Flexible delivery slots, same-day delivery available, no minimum spend"
+          },
+          {
+            "name": "Nectar Points",
+            "description": "Collect Nectar points on every shop",
+            "benefits": "1 point per £1 spent, bonus points on selected items, redeem points in-store"
+          }
+        ],
+        "shoppingTips": [
+          "Best time to shop: Early morning (7am-9am) or late evening (8pm-10pm) for quieter shopping",
+          "Parking: Free parking available, but can be busy during peak times",
+          "Accessibility: Wheelchair accessible with wide aisles and disabled parking",
+          "Delivery: Order online for home delivery or click & collect",
+          "Nectar Card: Always bring your Nectar card to collect points on every purchase",
+          "Pharmacy: Book appointments in advance for vaccinations and health checks"
+        ],
+        "storeFeatures": [
+          "Self-service checkouts for quick shopping",
+          "Bakery with fresh bread daily",
+          "Butcher counter with fresh meat",
+          "Fish counter with fresh fish",
+          "Deli counter with cooked meats and cheeses",
+          "Baby & toddler section with essentials",
+          "Pet food and accessories",
+          "Gift cards available",
+          "Cash machine available",
+          "Customer toilets and baby changing facilities"
+        ]
+      }
+    }
+  },
+  {
+    "slug": "houses-for-sale-waterlooville",
+    "title": "Houses for Sale Waterlooville - Property Guide 2024",
+    "h1": "Houses for Sale in Waterlooville",
+    "description": "Find houses for sale in Waterlooville PO7 and PO8. Browse property listings, new builds, and connect with trusted local estate agents. Complete property guide.",
+    "keywords": ["houses for sale waterlooville", "waterlooville houses for sale", "property for sale waterlooville", "waterlooville property", "houses waterlooville", "waterlooville po7", "waterlooville po8"],
+    "category": "property",
+    "content": {
+      "intro": "Waterlooville offers a range of properties for sale, from traditional family homes to modern new builds. With excellent transport links, good schools, and a thriving community, Waterlooville is a popular choice for families and professionals.",
+      "sections": [
+        {
+          "title": "Property Types",
+          "items": ["Detached Houses", "Semi-Detached Houses", "Terraced Houses", "Flats & Apartments", "New Builds"]
+        },
+        {
+          "title": "Areas",
+          "items": ["Waterlooville Town Centre", "Cowplain", "Denmead", "Purbrook", "Havant"]
+        },
+        {
+          "title": "Property Search",
+          "items": ["Browse Listings", "New Builds", "Estate Agents"]
+        }
+      ],
+      "detailedGuide": {
+        "propertyTypes": [
+          {
+            "type": "Detached Houses",
+            "description": "Spacious family homes with gardens and driveways",
+            "priceRange": "£350,000 - £600,000+",
+            "features": ["3-5 bedrooms", "Large gardens", "Driveways", "Garages"],
+            "idealFor": "Families looking for space and privacy"
+          },
+          {
+            "type": "Semi-Detached Houses",
+            "description": "Popular family homes with good-sized gardens",
+            "priceRange": "£250,000 - £450,000",
+            "features": ["3-4 bedrooms", "Rear gardens", "Driveways", "Garages"],
+            "idealFor": "Growing families and first-time buyers"
+          },
+          {
+            "type": "Terraced Houses",
+            "description": "Affordable family homes in established areas",
+            "priceRange": "£200,000 - £350,000",
+            "features": ["2-3 bedrooms", "Rear gardens", "Parking"],
+            "idealFor": "First-time buyers and young professionals"
+          },
+          {
+            "type": "Flats & Apartments",
+            "description": "Modern apartments and converted flats",
+            "priceRange": "£150,000 - £300,000",
+            "features": ["1-2 bedrooms", "Modern fixtures", "Communal areas"],
+            "idealFor": "Young professionals and downsizers"
+          },
+          {
+            "type": "New Builds",
+            "description": "Modern homes with contemporary features",
+            "priceRange": "£300,000 - £500,000+",
+            "features": ["Energy efficient", "Modern kitchens", "En-suite bathrooms", "Warranties"],
+            "idealFor": "Buyers seeking modern, low-maintenance homes"
+          }
+        ],
+        "popularAreas": [
+          {
+            "name": "Waterlooville Town Centre",
+            "description": "Convenient location with shops, schools, and transport links",
+            "postcode": "PO7 3DU",
+            "propertyTypes": ["Semi-detached", "Terraced", "Flats"],
+            "averagePrice": "£250,000 - £400,000",
+            "keyFeatures": ["Walking distance to shops", "Good schools nearby", "Regular bus services"],
+            "idealFor": "Families and professionals"
+          },
+          {
+            "name": "Cowplain",
+            "description": "Popular residential area with good schools",
+            "postcode": "PO8",
+            "propertyTypes": ["Detached", "Semi-detached", "Terraced"],
+            "averagePrice": "£300,000 - £500,000",
+            "keyFeatures": ["Family-friendly", "Good schools", "Green spaces"],
+            "idealFor": "Families with children"
+          },
+          {
+            "name": "Denmead",
+            "description": "Village setting with countryside views",
+            "postcode": "PO7",
+            "propertyTypes": ["Detached", "Semi-detached"],
+            "averagePrice": "£350,000 - £600,000",
+            "keyFeatures": ["Rural location", "Large gardens", "Peaceful setting"],
+            "idealFor": "Families seeking countryside living"
+          },
+          {
+            "name": "Purbrook",
+            "description": "Well-connected area with good transport links",
+            "postcode": "PO7",
+            "propertyTypes": ["Semi-detached", "Terraced", "Flats"],
+            "averagePrice": "£250,000 - £400,000",
+            "keyFeatures": ["Close to Portsmouth", "Good transport links", "Local amenities"],
+            "idealFor": "Commuters and professionals"
+          }
+        ],
+        "buyingProcess": [
+          {
+            "step": 1,
+            "title": "Get a Mortgage Agreement in Principle",
+            "description": "Speak to a mortgage advisor or bank to get pre-approved for a mortgage",
+            "duration": "1-2 weeks"
+          },
+          {
+            "step": 2,
+            "title": "Find a Property",
+            "description": "Browse listings online and view properties with estate agents",
+            "duration": "2-12 weeks"
+          },
+          {
+            "step": 3,
+            "title": "Make an Offer",
+            "description": "Submit an offer through the estate agent",
+            "duration": "1-3 days"
+          },
+          {
+            "step": 4,
+            "title": "Instruct a Solicitor",
+            "description": "Choose a conveyancing solicitor to handle legal work",
+            "duration": "1 week"
+          },
+          {
+            "step": 5,
+            "title": "Arrange a Survey",
+            "description": "Book a property survey to check for any issues",
+            "duration": "2-3 weeks"
+          },
+          {
+            "step": 6,
+            "title": "Exchange Contracts",
+            "description": "Sign contracts and pay deposit",
+            "duration": "4-8 weeks"
+          },
+          {
+            "step": 7,
+            "title": "Complete the Purchase",
+            "description": "Final payment and collect keys",
+            "duration": "1-2 weeks"
+          }
+        ],
+        "buyingTips": [
+          "Get mortgage advice early to understand your budget",
+          "View multiple properties to compare prices and features",
+          "Research the local area including schools, transport, and amenities",
+          "Get a full survey to identify any potential issues",
+          "Budget for additional costs including stamp duty, legal fees, and surveys",
+          "Consider using a local estate agent who knows the area well",
+          "Be prepared to move quickly on popular properties",
+          "Ask questions about the property's history and any recent work"
+        ],
+        "additionalCosts": [
+          "Stamp Duty Land Tax (SDLT)",
+          "Legal fees (£500 - £1,500)",
+          "Survey costs (£300 - £1,500)",
+          "Mortgage arrangement fees (£0 - £1,999)",
+          "Removal costs (£300 - £1,500)",
+          "Building insurance",
+          "Contents insurance",
+          "Council tax"
+        ]
+      }
+    }
+  },
+  {
+    "slug": "waterlooville-argos",
+    "title": "Waterlooville Argos - Store Guide, Opening Hours & Click & Collect 2024",
+    "h1": "Waterlooville Argos Store",
+    "description": "Complete guide to Waterlooville Argos including opening hours, click & collect, store location, and product range. Find electronics, furniture, toys and home goods at Argos Waterlooville.",
+    "keywords": ["waterlooville argos", "argos waterlooville", "argos waterlooville opening times", "argos waterlooville click and collect", "argos waterlooville store"],
+    "category": "shopping",
+    "content": {
+      "intro": "Argos Waterlooville is a popular catalogue retailer in the town centre, offering a wide range of products including electronics, furniture, toys, home goods, and more. Order online for same-day collection or browse in-store.",
+      "sections": [
+        {
+          "title": "Store Information",
+          "items": ["Opening Hours", "Location & Parking", "Store Services"]
+        },
+        {
+          "title": "Product Categories",
+          "items": ["Electronics", "Furniture", "Toys & Games", "Home & Garden", "Sports & Leisure"]
+        }
+      ],
+      "detailedGuide": {
+        "storeDetails": {
+          "address": "London Road, Waterlooville, PO7 3DU",
+          "phone": "0345 640 3030",
+          "openingHours": {
+            "monday": "9am - 5:30pm",
+            "tuesday": "9am - 5:30pm",
+            "wednesday": "9am - 5:30pm",
+            "thursday": "9am - 7pm",
+            "friday": "9am - 7pm",
+            "saturday": "9am - 5:30pm",
+            "sunday": "10am - 4pm"
+          },
+          "parking": "Free parking available nearby",
+          "accessibility": "Wheelchair accessible with assistance available"
+        },
+        "productCategories": [
+          {
+            "name": "Electronics",
+            "description": "TVs, laptops, tablets, phones, gaming consoles, and accessories",
+            "popularItems": ["Smart TVs", "Laptops", "Tablets", "Gaming Consoles", "Headphones"],
+            "priceRange": "£20 - £2,000+",
+            "features": ["Latest technology", "Brand names", "Extended warranties available"]
+          },
+          {
+            "name": "Furniture",
+            "description": "Living room, bedroom, dining room furniture and storage",
+            "popularItems": ["Sofas", "Beds", "Dining Tables", "Wardrobes", "Bookcases"],
+            "priceRange": "£50 - £1,500+",
+            "features": ["Fast delivery", "Assembly service available", "0% finance options"]
+          },
+          {
+            "name": "Toys & Games",
+            "description": "Toys for all ages, board games, outdoor toys, and video games",
+            "popularItems": ["Lego", "Action Figures", "Board Games", "Bikes", "Video Games"],
+            "priceRange": "£5 - £500+",
+            "features": ["Age-appropriate toys", "Popular brands", "Educational toys"]
+          },
+          {
+            "name": "Home & Garden",
+            "description": "Kitchen appliances, home accessories, garden furniture, and tools",
+            "popularItems": ["Kitchen Appliances", "Home Decor", "Garden Furniture", "BBQs", "Tools"],
+            "priceRange": "£10 - £800+",
+            "features": ["Home essentials", "Garden equipment", "Seasonal items"]
+          },
+          {
+            "name": "Sports & Leisure",
+            "description": "Fitness equipment, sports gear, camping equipment, and bikes",
+            "popularItems": ["Exercise Bikes", "Treadmills", "Camping Gear", "Bikes", "Sports Equipment"],
+            "priceRange": "£20 - £1,000+",
+            "features": ["Fitness equipment", "Outdoor gear", "Sports accessories"]
+          }
+        ],
+        "services": [
+          {
+            "name": "Click & Collect",
+            "description": "Order online and collect from store the same day",
+            "process": "Browse online, add to basket, select collection time, pay online, collect from store",
+            "benefits": "Same-day collection available, flexible collection times, free collection",
+            "timeToCollect": "Usually ready within 30 minutes - 2 hours"
+          },
+          {
+            "name": "Home Delivery",
+            "description": "Products delivered to your door",
+            "process": "Order online, select delivery date, products delivered to your home",
+            "benefits": "Convenient delivery, flexible slots, large items delivered",
+            "deliveryOptions": "Standard delivery (3-7 days), named day delivery, fast track delivery"
+          },
+          {
+            "name": "Tech Support",
+            "description": "Expert advice and support for electronics",
+            "services": ["Product advice", "Technical support", "Set-up help", "Troubleshooting"],
+            "benefits": "Expert knowledge, free advice, product recommendations"
+          },
+          {
+            "name": "Assembly Service",
+            "description": "Professional assembly of furniture and large items",
+            "process": "Book assembly service when purchasing furniture",
+            "benefits": "Professional assembly, stress-free setup, guaranteed work",
+            "cost": "From £15 depending on item"
+          },
+          {
+            "name": "Extended Warranties",
+            "description": "Extended protection for electronics and appliances",
+            "coverage": "Extended warranty periods, accidental damage cover, breakdown cover",
+            "benefits": "Peace of mind, comprehensive cover, easy claims process"
+          }
+        ],
+        "shoppingTips": [
+          "Use Click & Collect for same-day pickup and avoid delivery charges",
+          "Check online stock before visiting store",
+          "Sign up for Argos newsletter for exclusive offers and sales",
+          "Use Argos app for easy browsing and ordering",
+          "Take advantage of 0% finance on furniture and large purchases",
+          "Compare prices online before buying",
+          "Check product reviews before purchasing",
+          "Ask staff for advice on products and alternatives",
+          "Keep receipts for returns and warranties",
+          "Join Argos Card for flexible payment options"
+        ],
+        "storeFeatures": [
+          "Browse catalogues in-store",
+          "Order kiosks for self-service ordering",
+          "Customer service desk for assistance",
+          "Returns and exchanges service",
+          "Gift cards available",
+          "Baby & toddler essentials",
+          "Pet supplies",
+          "Seasonal items and gifts",
+          "Clearance section for bargains",
+          "Student discounts available"
+        ]
+      }
+    }
+  },
+  {
+    "slug": "waterlooville-estate-agents",
+    "title": "Waterlooville Estate Agents - Property Professionals 2024",
+    "h1": "Waterlooville Estate Agents",
+    "description": "Find trusted Waterlooville estate agents for buying, selling, and renting property. Expert local knowledge and professional service for all your property needs in PO7 and PO8.",
+    "keywords": ["waterlooville estate agents", "estate agents waterlooville", "waterlooville estate agent", "property agents waterlooville", "waterlooville letting agents"],
+    "category": "property",
+    "content": {
+      "intro": "Waterlooville has several reputable estate agents offering expert advice on buying, selling, and renting property. With local knowledge and professional service, these agents help make your property journey smooth and successful.",
+      "sections": [
+        {
+          "title": "Services Offered",
+          "items": ["Property Sales", "Property Rentals", "Property Valuations", "Property Management"]
+        },
+        {
+          "title": "Areas Covered",
+          "items": ["Waterlooville", "Cowplain", "Denmead", "Purbrook", "Havant"]
+        }
+      ],
+      "detailedGuide": {
+        "services": [
+          {
+            "name": "Property Sales",
+            "description": "Expert assistance with selling your property",
+            "services": [
+              "Free property valuations",
+              "Professional photography and marketing",
+              "Property viewings",
+              "Negotiation support",
+              "Sales progression",
+              "Legal coordination"
+            ],
+            "benefits": [
+              "Local market knowledge",
+              "Competitive pricing",
+              "Professional marketing",
+              "Smooth sales process"
+            ]
+          },
+          {
+            "name": "Property Rentals",
+            "description": "Comprehensive rental services for landlords and tenants",
+            "services": [
+              "Tenant find service",
+              "Property management",
+              "Tenant referencing",
+              "Inventory services",
+              "Rent collection",
+              "Maintenance coordination"
+            ],
+            "benefits": [
+              "Quality tenants",
+              "Regular rental income",
+              "Property maintenance",
+              "Legal compliance"
+            ]
+          },
+          {
+            "name": "Property Valuations",
+            "description": "Accurate property valuations for sales, rentals, and mortgages",
+            "services": [
+              "Sales valuations",
+              "Rental valuations",
+              "Market appraisals",
+              "Investment analysis"
+            ],
+            "benefits": [
+              "Accurate pricing",
+              "Market insights",
+              "Investment advice",
+              "Competitive positioning"
+            ]
+          },
+          {
+            "name": "Property Management",
+            "description": "Complete property management services for landlords",
+            "services": [
+              "Tenant management",
+              "Rent collection",
+              "Maintenance coordination",
+              "Legal compliance",
+              "Regular inspections",
+              "Financial reporting"
+            ],
+            "benefits": [
+              "Stress-free management",
+              "Regular income",
+              "Property protection",
+              "Legal compliance"
+            ]
+          }
+        ],
+        "choosingAnEstateAgent": {
+          "factors": [
+            {
+              "factor": "Local Knowledge",
+              "description": "Choose an agent with extensive knowledge of the local area",
+              "importance": "Essential for accurate valuations and finding the right buyers"
+            },
+            {
+              "factor": "Reputation",
+              "description": "Research online reviews and ask for recommendations",
+              "importance": "Indicates quality of service and customer satisfaction"
+            },
+            {
+              "factor": "Marketing",
+              "description": "Check their marketing strategy and online presence",
+              "importance": "Effective marketing leads to faster sales and better prices"
+            },
+            {
+              "factor": "Fees",
+              "description": "Compare fees and understand what's included",
+              "importance": "Ensure you're getting value for money"
+            },
+            {
+              "factor": "Communication",
+              "description": "Choose an agent who communicates clearly and regularly",
+              "importance": "Good communication ensures a smooth process"
+            },
+            {
+              "factor": "Experience",
+              "description": "Look for agents with proven track records",
+              "importance": "Experience leads to better results and fewer problems"
+            }
+          ],
+          "questionsToAsk": [
+            "What is your success rate for selling properties?",
+            "How do you market properties?",
+            "What are your fees and what's included?",
+            "How long does it typically take to sell a property?",
+            "Can you provide references from recent clients?",
+            "What areas do you cover?",
+            "Do you offer property management services?",
+            "What is your approach to negotiations?"
+          ]
+        },
+        "sellingWithAnEstateAgent": {
+          "steps": [
+            {
+              "step": 1,
+              "title": "Initial Consultation",
+              "description": "Agent visits your property to assess and discuss requirements",
+              "duration": "1-2 hours"
+            },
+            {
+              "step": 2,
+              "title": "Property Valuation",
+              "description": "Agent provides a professional valuation based on market conditions",
+              "duration": "1 week"
+            },
+            {
+              "step": 3,
+              "title": "Marketing Preparation",
+              "description": "Professional photography, floor plans, and marketing materials created",
+              "duration": "1-2 weeks"
+            },
+            {
+              "step": 4,
+              "title": "Property Launch",
+              "description": "Property listed on major portals and marketed to potential buyers",
+              "duration": "Ongoing"
+            },
+            {
+              "step": 5,
+              "title": "Viewings",
+              "description": "Agent arranges and conducts property viewings",
+              "duration": "2-8 weeks"
+            },
+            {
+              "step": 6,
+              "title": "Offer Negotiation",
+              "description": "Agent negotiates offers on your behalf",
+              "duration": "1-2 weeks"
+            },
+            {
+              "step": 7,
+              "title": "Sales Progression",
+              "description": "Agent coordinates with solicitors and manages the sales process",
+              "duration": "8-12 weeks"
+            },
+            {
+              "step": 8,
+              "title": "Completion",
+              "description": "Keys handed over and sale completed",
+              "duration": "1 day"
+            }
+          ],
+          "tips": [
+            "Get valuations from 3 different agents",
+            "Choose an agent with good online presence",
+            "Ask about their marketing strategy",
+            "Ensure they have good local knowledge",
+            "Check their track record and reviews",
+            "Understand their fees and what's included",
+            "Choose an agent you feel comfortable with",
+            "Ask about their communication process"
+          ]
+        },
+        "feesAndCharges": {
+          "typicalFees": [
+            {
+              "service": "Sales Commission",
+              "range": "1% - 3% of sale price",
+              "notes": "Usually payable on completion"
+            },
+            {
+              "service": "Tenant Find",
+              "range": "50% - 100% of first month's rent",
+              "notes": "One-time fee for finding tenants"
+            },
+            {
+              "service": "Property Management",
+              "range": "8% - 15% of monthly rent",
+              "notes": "Ongoing monthly fee"
+            },
+            {
+              "service": "Additional Services",
+              "range": "Varies",
+              "notes": "Photography, EPC, floor plans may be extra"
+            }
+          ],
+          "whatToCheck": [
+            "What's included in the fee",
+            "When fees are payable",
+            "Any additional charges",
+            "Cancellation terms",
+            "Minimum contract period",
+            "Payment structure"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "slug": "nurseries-in-waterlooville",
+    "title": "Nurseries in Waterlooville - Childcare & Early Years Guide 2024",
+    "h1": "Nurseries in Waterlooville",
+    "description": "Find nurseries and childcare in Waterlooville. Browse Ofsted-rated nurseries, preschools, and early years settings for children aged 0-5 in PO7 and PO8 areas.",
+    "keywords": ["nurseries in waterlooville", "waterlooville nursery", "waterlooville nurseries", "waterlooville childcare", "waterlooville preschool", "waterlooville early years"],
+    "category": "education",
+    "content": {
+      "intro": "Waterlooville offers excellent nursery and childcare options for children from birth to 5 years. With Ofsted-rated settings, experienced staff, and a focus on early years development, you'll find quality childcare to suit your family's needs.",
+      "sections": [
+        {
+          "title": "Types of Nurseries",
+          "items": ["Day Nurseries", "Preschools", "Childminders", "Forest Schools"]
+        },
+        {
+          "title": "Age Groups",
+          "items": ["Babies (0-2 years)", "Toddlers (2-3 years)", "Preschool (3-5 years)"]
+        },
+        {
+          "title": "Services",
+          "items": ["Full Day Care", "Sessional Care", "Wrap-Around Care", "Holiday Care"]
+        }
+      ],
+      "detailedGuide": {
+        "typesOfNurseries": [
+          {
+            "type": "Day Nurseries",
+            "description": "Full-time childcare for children from birth to 5 years",
+            "hours": "Typically 7am - 6pm, Monday to Friday",
+            "ages": "0-5 years",
+            "features": [
+              "Full day care",
+              "Meals included",
+              "Outdoor play areas",
+              "Qualified staff",
+              "Early Years Foundation Stage (EYFS) curriculum"
+            ],
+            "idealFor": "Working parents needing full-time childcare"
+          },
+          {
+            "type": "Preschools",
+            "description": "Sessional care for children aged 2-5 years",
+            "hours": "Typically 9am - 3pm, term-time only",
+            "ages": "2-5 years",
+            "features": [
+              "Sessional care",
+              "Educational focus",
+              "School preparation",
+              "Social development",
+              "EYFS curriculum"
+            ],
+            "idealFor": "Parents wanting part-time childcare and school preparation"
+          },
+          {
+            "type": "Childminders",
+            "description": "Home-based childcare for small groups of children",
+            "hours": "Flexible hours to suit parents",
+            "ages": "0-5 years",
+            "features": [
+              "Home environment",
+              "Small groups",
+              "Flexible hours",
+              "Personal care",
+              "Family setting"
+            ],
+            "idealFor": "Parents wanting home-based care with flexibility"
+          },
+          {
+            "type": "Forest Schools",
+            "description": "Outdoor-based learning and play",
+            "hours": "Sessional or full day",
+            "ages": "2-5 years",
+            "features": [
+              "Outdoor learning",
+              "Nature-based activities",
+              "Physical development",
+              "Risk-taking in safe environment",
+              "Environmental awareness"
+            ],
+            "idealFor": "Parents wanting outdoor-focused education"
+          }
+        ],
+        "choosingANursery": {
+          "factors": [
+            {
+              "factor": "Ofsted Rating",
+              "description": "Check the Ofsted inspection report and rating",
+              "ratings": ["Outstanding", "Good", "Requires Improvement", "Inadequate"],
+              "importance": "Indicates quality of care and education"
+            },
+            {
+              "factor": "Location",
+              "description": "Consider distance from home and work",
+              "considerations": ["Travel time", "Parking availability", "Drop-off convenience"],
+              "importance": "Affects daily routine and convenience"
+            },
+            {
+              "factor": "Opening Hours",
+              "description": "Ensure hours fit your work schedule",
+              "considerations": ["Early drop-off", "Late pick-up", "Holiday care"],
+              "importance": "Must accommodate your work commitments"
+            },
+            {
+              "factor": "Fees",
+              "description": "Understand all costs and what's included",
+              "considerations": ["Daily rate", "Meals", "Nappies", "Trips", "Deposits"],
+              "importance": "Budget planning and affordability"
+            },
+            {
+              "factor": "Staff Qualifications",
+              "description": "Check staff qualifications and ratios",
+              "considerations": ["Qualified teachers", "Early years qualifications", "Staff-to-child ratios"],
+              "importance": "Ensures quality care and education"
+            },
+            {
+              "factor": "Facilities",
+              "description": "Visit to see facilities and resources",
+              "considerations": ["Indoor space", "Outdoor play areas", "Equipment", "Safety"],
+              "importance": "Affects child's experience and development"
+            },
+            {
+              "factor": "Philosophy",
+              "description": "Understand the nursery's approach to learning",
+              "considerations": ["Teaching methods", "Discipline approach", "Parent involvement"],
+              "importance": "Must align with your values and expectations"
+            }
+          ],
+          "questionsToAsk": [
+            "What is your Ofsted rating and when was your last inspection?",
+            "What are your opening hours and holiday arrangements?",
+            "What are your fees and what's included?",
+            "What qualifications do your staff have?",
+            "What is your staff-to-child ratio?",
+            "What is your settling-in process?",
+            "How do you communicate with parents?",
+            "What is your approach to learning and development?",
+            "How do you handle challenging behavior?",
+            "What security measures are in place?",
+            "What is your illness policy?",
+            "Can I see a typical daily routine?"
+          ]
+        },
+        "earlyYearsFoundationStage": {
+          "description": "The EYFS is the statutory framework for early years education in England",
+          "areasOfLearning": [
+            {
+              "area": "Communication and Language",
+              "description": "Developing speaking, listening, and understanding skills"
+            },
+            {
+              "area": "Physical Development",
+              "description": "Developing gross and fine motor skills and understanding health"
+            },
+            {
+              "area": "Personal, Social and Emotional Development",
+              "description": "Developing confidence, self-awareness, and relationships"
+            },
+            {
+              "area": "Literacy",
+              "description": "Developing reading and writing skills"
+            },
+            {
+              "area": "Mathematics",
+              "description": "Developing number, shape, space, and measure skills"
+            },
+            {
+              "area": "Understanding the World",
+              "description": "Developing knowledge of people, places, and technology"
+            },
+            {
+              "area": "Expressive Arts and Design",
+              "description": "Developing creativity through art, music, and imaginative play"
+            }
+          ],
+          "assessment": [
+            "Ongoing observations and assessments",
+            "Two-year progress check",
+            "Early Years Foundation Stage Profile at age 5"
+          ]
+        },
+        "fundingAndSupport": {
+          "fundingOptions": [
+            {
+              "name": "15 Hours Free Childcare",
+              "description": "15 hours free childcare for 3-4 year olds",
+              "eligibility": "All children aged 3-4",
+              "when": "From the term after child's 3rd birthday"
+            },
+            {
+              "name": "30 Hours Free Childcare",
+              "description": "30 hours free childcare for 3-4 year olds",
+              "eligibility": "Working parents meeting income criteria",
+              "when": "From the term after child's 3rd birthday"
+            },
+            {
+              "name": "Tax-Free Childcare",
+              "description": "Government contribution to childcare costs",
+              "eligibility": "Working parents with children under 12",
+              "benefit": "Up to £2,000 per child per year"
+            },
+            {
+              "name": "Childcare Vouchers",
+              "description": "Salary sacrifice scheme for childcare",
+              "eligibility": "Employer must offer scheme",
+              "benefit": "Tax and NI savings"
+            }
+          ],
+          "howToApply": [
+            "Check eligibility online at gov.uk",
+            "Apply through HMRC",
+            "Receive code to give to nursery",
+            "Nursery verifies and claims funding"
+          ]
+        },
+        "settlingIn": {
+          "tips": [
+            "Start with short sessions and gradually increase",
+            "Stay positive and confident about the nursery",
+            "Establish a consistent drop-off routine",
+            "Bring a comfort object from home",
+            "Communicate with staff about your child's needs",
+            "Be patient - settling can take several weeks",
+            "Trust the staff - they're experienced with settling children",
+            "Keep goodbyes brief and positive",
+            "Ask for updates during the day if you're concerned",
+            "Celebrate small achievements"
+          ],
+          "typicalSettlingInPeriod": "2-4 weeks for most children"
+        }
+      }
+    }
+  },
+  {
+    "slug": "waterlooville-letting-agents",
+    "title": "Waterlooville Letting Agents - Rental Property Specialists 2024",
+    "h1": "Waterlooville Letting Agents",
+    "description": "Find trusted Waterlooville letting agents for renting property. Expert tenant find, property management, and rental services for landlords and tenants in PO7 and PO8.",
+    "keywords": ["waterlooville letting agents", "letting agents waterlooville", "waterlooville rental agents", "property letting waterlooville", "waterlooville estate agents"],
+    "category": "property",
+    "content": {
+      "intro": "Waterlooville letting agents provide comprehensive rental services for both landlords and tenants. From finding tenants and property management to helping tenants find their perfect rental home, these professionals make renting simple and stress-free.",
+      "sections": [
+        {
+          "title": "Services for Landlords",
+          "items": ["Tenant Find", "Property Management", "Tenant Referencing", "Rent Collection"]
+        },
+        {
+          "title": "Services for Tenants",
+          "items": ["Property Search", "Viewings", "Application Support", "Move-In Assistance"]
+        },
+        {
+          "title": "Areas Covered",
+          "items": ["Waterlooville", "Cowplain", "Denmead", "Purbrook", "Havant"]
+        }
+      ],
+      "detailedGuide": {
+        "servicesForLandlords": [
+          {
+            "service": "Tenant Find",
+            "description": "Complete service to find and secure quality tenants",
+            "included": [
+              "Property photography and floor plans",
+              "Marketing on major portals (Rightmove, Zoopla)",
+              "Tenant viewings",
+              "Tenant referencing and credit checks",
+              "Tenancy agreement preparation",
+              "Move-in coordination"
+            ],
+            "fees": "Typically 50-100% of first month's rent",
+            "benefits": [
+              "Quality tenants",
+              "Fast lettings",
+              "Professional marketing",
+              "Legal compliance"
+            ]
+          },
+          {
+            "service": "Property Management",
+            "description": "Complete property management service",
+            "included": [
+              "Tenant management",
+              "Rent collection",
+              "Property maintenance coordination",
+              "Regular property inspections",
+              "Legal compliance",
+              "Financial reporting"
+            ],
+            "fees": "Typically 8-15% of monthly rent",
+            "benefits": [
+              "Stress-free management",
+              "Regular rental income",
+              "Property protection",
+              "Legal compliance"
+            ]
+          },
+          {
+            "service": "Tenant Referencing",
+            "description": "Comprehensive tenant checks and references",
+            "included": [
+              "Credit checks",
+              "Employment verification",
+              "Previous landlord references",
+              "Affordability assessment",
+              "Right to rent checks"
+            ],
+            "fees": "Usually included in tenant find fee",
+            "benefits": [
+              "Quality tenants",
+              "Reduced risk",
+              "Legal compliance",
+              "Peace of mind"
+            ]
+          },
+          {
+            "service": "Inventory Services",
+            "description": "Professional property inventories",
+            "included": [
+              "Detailed property inventory",
+              "Photographic evidence",
+              "Condition reports",
+              "Check-in and check-out reports"
+            ],
+            "fees": "Typically £100-300 depending on property size",
+            "benefits": [
+              "Property protection",
+              "Dispute resolution",
+              "Legal evidence",
+              "Fair deposit returns"
+            ]
+          }
+        ],
+        "servicesForTenants": [
+          {
+            "service": "Property Search",
+            "description": "Help finding your perfect rental property",
+            "included": [
+              "Access to available properties",
+              "Property matching to requirements",
+              "Viewing arrangements",
+              "Property information and advice"
+            ],
+            "fees": "Free for tenants",
+            "benefits": [
+              "Wide choice of properties",
+              "Expert advice",
+              "Convenient viewings",
+              "Local knowledge"
+            ]
+          },
+          {
+            "service": "Application Support",
+            "description": "Help with rental applications",
+            "included": [
+              "Application form guidance",
+              "Reference support",
+              "Document checking",
+              "Communication with landlord"
+            ],
+            "fees": "Free for tenants",
+            "benefits": [
+              "Smooth application process",
+              "Professional presentation",
+              "Faster approvals",
+              "Reduced stress"
+            ]
+          },
+          {
+            "service": "Move-In Assistance",
+            "description": "Support during the move-in process",
+            "included": [
+              "Check-in coordination",
+              "Inventory review",
+              "Key handover",
+              "Utility setup guidance"
+            ],
+            "fees": "Free for tenants",
+            "benefits": [
+              "Smooth move-in",
+              "Clear documentation",
+              "Problem identification",
+              "Peace of mind"
+            ]
+          }
+        ],
+        "rentingProcess": {
+          "forTenants": [
+            {
+              "step": 1,
+              "title": "Register Your Requirements",
+              "description": "Tell the letting agent what you're looking for",
+              "duration": "1 day"
+            },
+            {
+              "step": 2,
+              "title": "View Properties",
+              "description": "Arrange viewings of suitable properties",
+              "duration": "1-2 weeks"
+            },
+            {
+              "step": 3,
+              "title": "Make an Application",
+              "description": "Submit application form with required documents",
+              "duration": "1 day"
+            },
+            {
+              "step": 4,
+              "title": "References and Checks",
+              "description": "Agent conducts tenant referencing",
+              "duration": "3-5 days"
+            },
+            {
+              "step": 5,
+              "title": "Tenancy Agreement",
+              "description": "Sign tenancy agreement and pay deposits",
+              "duration": "2-3 days"
+            },
+            {
+              "step": 6,
+              "title": "Move In",
+              "description": "Collect keys and complete check-in",
+              "duration": "1 day"
+            }
+          ],
+          "forLandlords": [
+            {
+              "step": 1,
+              "title": "Property Valuation",
+              "description": "Agent provides rental valuation",
+              "duration": "1 day"
+            },
+            {
+              "step": 2,
+              "title": "Marketing",
+              "description": "Property marketed on portals and social media",
+              "duration": "1-2 weeks"
+            },
+            {
+              "step": 3,
+              "title": "Viewings",
+              "description": "Agent arranges and conducts viewings",
+              "duration": "1-2 weeks"
+            },
+            {
+              "step": 4,
+              "title": "Tenant Selection",
+              "description": "Agent selects suitable tenant",
+              "duration": "2-3 days"
+            },
+            {
+              "step": 5,
+              "title": "Tenant Referencing",
+              "description": "Agent conducts tenant checks",
+              "duration": "3-5 days"
+            },
+            {
+              "step": 6,
+              "title": "Tenancy Setup",
+              "description": "Tenancy agreement signed and move-in arranged",
+              "duration": "3-5 days"
+            }
+          ]
+        },
+        "tenancyAgreements": {
+          "types": [
+            {
+              "type": "Assured Shorthold Tenancy (AST)",
+              "description": "Most common type of tenancy",
+              "duration": "Usually 6-12 months",
+              "features": [
+                "Fixed term",
+                "Landlord can end tenancy after fixed term",
+                "Tenant has security during fixed term",
+                "Deposit protection required"
+              ]
+            },
+            {
+              "type": "Rolling Tenancy",
+              "description": "Month-to-month tenancy after fixed term",
+              "duration": "Ongoing",
+              "features": [
+                "Flexible",
+                "Either party can end with notice",
+                "Same terms as original tenancy",
+                "No fixed end date"
+              ]
+            }
+          ],
+          "keyTerms": [
+            "Rent amount and payment date",
+            "Tenancy duration",
+            "Deposit amount and protection",
+            "Landlord and tenant responsibilities",
+            "Notice periods",
+            "Property condition",
+            "Rules and restrictions"
+          ]
+        },
+        "deposits": {
+          "amount": "Usually 4-6 weeks' rent",
+          "protection": "Must be protected in government-approved scheme",
+          "schemes": [
+            "Deposit Protection Service (DPS)",
+            "Tenancy Deposit Scheme (TDS)",
+            "MyDeposits"
+          ],
+          "return": "Returned within 10 days of tenancy ending, minus any deductions",
+          "deductions": "Can be made for damage, cleaning, or unpaid rent"
+        },
+        "tenantRights": [
+          "Right to live in property without harassment",
+          "Right to quiet enjoyment",
+          "Right to have repairs carried out",
+          "Right to challenge unfair charges",
+          "Right to know landlord's contact details",
+          "Right to have deposit protected",
+          "Right to reasonable notice for visits",
+          "Right to challenge unfair eviction"
+        ],
+        "landlordResponsibilities": [
+          "Ensure property is safe and habitable",
+          "Carry out necessary repairs",
+          "Provide gas safety certificate",
+          "Provide energy performance certificate",
+          "Protect tenant deposit",
+          "Give proper notice for visits",
+          "Comply with fire safety regulations",
+          "Provide tenant with landlord contact details"
+        ],
+        "tipsForTenants": [
+          "Start looking 4-6 weeks before you need to move",
+          "Have all documents ready (ID, payslips, references)",
+          "View multiple properties to compare",
+          "Read tenancy agreement carefully before signing",
+          "Take photos at check-in for your records",
+          "Report any issues immediately",
+          "Keep records of all communications",
+          "Understand your rights and responsibilities",
+          "Get contents insurance",
+          "Build a good relationship with your landlord"
+        ],
+        "tipsForLandlords": [
+          "Use a reputable letting agent",
+          "Set competitive rent based on market rates",
+          "Ensure property is in good condition",
+          "Carry out thorough tenant referencing",
+          "Protect tenant deposit in approved scheme",
+          "Provide all required certificates",
+          "Respond to repairs promptly",
+          "Conduct regular inspections",
+          "Keep detailed records",
+          "Consider landlord insurance"
+        ]
+      }
+    }
   }
 ]
 
