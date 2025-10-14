@@ -353,7 +353,7 @@
             "reviewCount": 192,
             "weightedScore": 23.68,
             "priceRange": "£10-20",
-            "image": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=PLACEHOLDER_NEW_GOLDEN_LEAF&key=YOUR_API_KEY",
+            "image": "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=400&h=300&fit=crop",
             "positiveReviews": [
               {
                 "author": "5-Star Customer",
@@ -386,7 +386,7 @@
             "reviewCount": 160,
             "weightedScore": 22.87,
             "priceRange": "£10-20",
-            "image": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=PLACEHOLDER_NOODLE_BAR&key=YOUR_API_KEY",
+            "image": "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=400&h=300&fit=crop",
             "positiveReviews": [
               {
                 "author": "Amber Louise",
@@ -419,7 +419,7 @@
             "reviewCount": 147,
             "weightedScore": 20.49,
             "priceRange": "£10-20",
-            "image": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=PLACEHOLDER_LIGHT&key=YOUR_API_KEY",
+            "image": "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=400&h=300&fit=crop",
             "positiveReviews": [
               {
                 "author": "5-Star Customer",
@@ -452,7 +452,7 @@
             "reviewCount": 150,
             "weightedScore": 19.57,
             "priceRange": "£20-30",
-            "image": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=PLACEHOLDER_JADE_GARDEN&key=YOUR_API_KEY",
+            "image": "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=400&h=300&fit=crop",
             "positiveReviews": [
               {
                 "author": "Kerry Brackstone",
@@ -485,7 +485,7 @@
             "reviewCount": 80,
             "weightedScore": 18.46,
             "priceRange": "£10-20",
-            "image": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=PLACEHOLDER_KIM_LAURIE&key=YOUR_API_KEY",
+            "image": "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=400&h=300&fit=crop",
             "positiveReviews": [
               {
                 "author": "Emma Goffe",
@@ -518,7 +518,7 @@
             "reviewCount": 77,
             "weightedScore": 17.86,
             "priceRange": "Not specified",
-            "image": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=PLACEHOLDER_PURBROOK&key=YOUR_API_KEY",
+            "image": "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=400&h=300&fit=crop",
             "positiveReviews": [
               {
                 "author": "Leigh Nichols",
@@ -546,7 +546,7 @@
             "reviewCount": 122,
             "weightedScore": 16.84,
             "priceRange": "£10-20",
-            "image": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=PLACEHOLDER_LUCKY_HOUSE&key=YOUR_API_KEY",
+            "image": "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=400&h=300&fit=crop",
             "positiveReviews": [
               {
                 "author": "5-Star Customer",
@@ -579,7 +579,7 @@
             "reviewCount": 44,
             "weightedScore": 16.37,
             "priceRange": "£10-20",
-            "image": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=PLACEHOLDER_HAKKA&key=YOUR_API_KEY",
+            "image": "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=400&h=300&fit=crop",
             "positiveReviews": [
               {
                 "author": "Emma Goffe",
