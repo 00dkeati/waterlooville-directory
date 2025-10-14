@@ -1,5 +1,7 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
+import Image from 'next/image'
+import Link from 'next/link'
 import './globals.css'
 
 const inter = Inter({ subsets: ['latin'] })
@@ -35,15 +37,17 @@ export default function RootLayout({
           <header className="bg-white shadow-sm border-b-2 border-red-600">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <div className="flex justify-between items-center py-4">
-                <div>
-                  <h1 className="text-3xl font-bold text-gray-900">
-                    <a href="/" className="hover:text-red-600 transition-colors">
-                      Waterlooville.co
-                    </a>
-                  </h1>
-                  <p className="text-sm text-gray-600 font-medium">
-                    Local News • Business Directory • Community Guide
-                  </p>
+                <div className="flex items-center">
+                  <Link href="/" className="hover:opacity-80 transition-opacity">
+                    <Image 
+                      src="/logo.png" 
+                      alt="Waterlooville.co - Local News, Business Directory & Community Guide" 
+                      width={200}
+                      height={60}
+                      priority
+                      className="h-auto"
+                    />
+                  </Link>
                 </div>
                 <nav className="hidden md:flex space-x-6">
                   <a href="/editorial" className="text-gray-700 hover:text-red-600 transition-colors font-medium">
