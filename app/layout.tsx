@@ -5,15 +5,15 @@ import './globals.css'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://waterloovilledirectory.co.uk'),
-  title: 'Waterlooville Directory - Local Business Directory & Community Guide',
-  description: 'Your local source for Waterlooville businesses, services, and community information. Find the best local businesses in Waterlooville, Hampshire.',
-  keywords: 'Waterlooville directory, Waterlooville businesses, Hampshire directory, local business directory, Waterlooville services, PO7, PO8',
+  metadataBase: new URL('https://waterlooville.co'),
+  title: 'Waterlooville - Local News, Business Directory & Community Guide',
+  description: 'Your complete guide to Waterlooville, Hampshire. Local news, business directory, shops, restaurants, services, and community information for Waterlooville PO7 and PO8.',
+  keywords: 'Waterlooville, Waterlooville Hampshire, Waterlooville directory, Waterlooville news, Waterlooville businesses, Waterlooville shops, Waterlooville PO7, Waterlooville PO8, Waterlooville postcode, Waterlooville map, Waterlooville weather, Waterlooville guide, Waterlooville information',
   openGraph: {
-    title: 'Waterlooville Directory - Local Business Directory',
-    description: 'Find the best local businesses and services in Waterlooville, Hampshire',
-    url: 'https://waterloovilledirectory.co.uk',
-    siteName: 'Waterlooville Directory',
+    title: 'Waterlooville - Local News, Business Directory & Community Guide',
+    description: 'Your complete guide to Waterlooville, Hampshire. Local news, business directory, and community information.',
+    url: 'https://waterlooville.co',
+    siteName: 'Waterlooville.co',
     locale: 'en_GB',
     type: 'website',
   },

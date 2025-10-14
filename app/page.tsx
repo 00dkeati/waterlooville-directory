@@ -1,8 +1,27 @@
 export const dynamic = 'force-dynamic'
+import { Metadata } from 'next'
 import { getFeaturedBusinesses, getCategories, getAreas } from '@/lib/db'
 import Link from 'next/link'
 import BusinessCard from '@/components/BusinessCard'
 import EditorialFeed from '@/components/EditorialFeed'
+import WaterloovilleSchema from '@/components/WaterloovilleSchema'
+
+export const metadata: Metadata = {
+  title: 'Waterlooville - Local News, Business Directory & Community Guide',
+  description: 'Your complete guide to Waterlooville, Hampshire. Local news, business directory, shops, restaurants, services, and community information for Waterlooville PO7 and PO8 areas.',
+  keywords: 'Waterlooville, Waterlooville Hampshire, Waterlooville directory, Waterlooville news, Waterlooville businesses, Waterlooville shops, Waterlooville PO7, Waterlooville PO8, Waterlooville postcode, Waterlooville map, Waterlooville weather, Waterlooville guide',
+  openGraph: {
+    title: 'Waterlooville - Local News, Business Directory & Community Guide',
+    description: 'Your complete guide to Waterlooville, Hampshire. Local news, business directory, and community information.',
+    url: 'https://waterlooville.co',
+    siteName: 'Waterlooville.co',
+    locale: 'en_GB',
+    type: 'website',
+  },
+  alternates: {
+    canonical: 'https://waterlooville.co',
+  },
+}
 
 export default async function HomePage() {
   const [featuredBusinesses, categories, areas] = await Promise.all([
@@ -13,6 +32,7 @@ export default async function HomePage() {
 
   return (
     <div>
+      <WaterloovilleSchema />
       {/* Hero Section */}
       <section className="text-center py-12 bg-gradient-to-r from-red-600 to-red-800 text-white rounded-lg mb-12">
         <h1 className="text-4xl md:text-6xl font-bold mb-4">
@@ -133,35 +153,92 @@ export default async function HomePage() {
         </div>
       </section>
 
+      {/* About Waterlooville - Comprehensive Guide */}
+      <section className="bg-gradient-to-br from-blue-50 to-indigo-50 p-8 rounded-lg shadow-lg mb-12">
+        <h2 className="text-3xl font-bold text-gray-900 mb-6">Welcome to Waterlooville</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div>
+            <h3 className="text-xl font-semibold text-gray-900 mb-4">About Waterlooville, Hampshire</h3>
+            <p className="text-gray-700 leading-relaxed mb-4">
+              <strong>Waterlooville</strong> is a thriving market town located in Hampshire, England, approximately 8 miles north of Portsmouth. 
+              With a population of over 60,000 residents, Waterlooville serves as a major commercial and residential hub for the surrounding areas 
+              including Cowplain, Denmead, Purbrook, and Havant.
+            </p>
+            <p className="text-gray-700 leading-relaxed mb-4">
+              The town of Waterlooville is well-known for its strong community spirit, excellent local businesses, and convenient location. 
+              Waterlooville's town centre (PO7 3DU) features a mix of independent shops, cafes, and major retailers including Sainsbury's, 
+              Argos, and Marks & Spencer, while the Wellington Retail Park offers additional shopping opportunities with stores like ASDA, 
+              Waitrose, and Matalan.
+            </p>
+            <p className="text-gray-700 leading-relaxed">
+              Waterlooville is served by the PO7 and PO8 postcode areas and benefits from excellent transport links via the A3(M) motorway, 
+              making it easily accessible from Portsmouth, Southampton, and London. The area is also well-served by regular bus services 
+              connecting Waterlooville to surrounding towns and cities.
+            </p>
+          </div>
+          <div>
+            <h3 className="text-xl font-semibold text-gray-900 mb-4">What Makes Waterlooville Special</h3>
+            <ul className="space-y-3 text-gray-700">
+              <li className="flex items-start">
+                <span className="text-red-600 mr-2">✓</span>
+                <span><strong>Excellent Shopping:</strong> Waterlooville offers diverse shopping from town centre boutiques to major retail parks</span>
+              </li>
+              <li className="flex items-start">
+                <span className="text-red-600 mr-2">✓</span>
+                <span><strong>Dining Scene:</strong> Waterlooville boasts numerous restaurants, cafes, pubs, and takeaways serving diverse cuisines</span>
+              </li>
+              <li className="flex items-start">
+                <span className="text-red-600 mr-2">✓</span>
+                <span><strong>Local Services:</strong> Comprehensive range of professional services from plumbers to estate agents in Waterlooville</span>
+              </li>
+              <li className="flex items-start">
+                <span className="text-red-600 mr-2">✓</span>
+                <span><strong>Healthcare:</strong> Waterlooville has excellent healthcare facilities including doctors, dentists, and vets</span>
+              </li>
+              <li className="flex items-start">
+                <span className="text-red-600 mr-2">✓</span>
+                <span><strong>Education:</strong> Waterlooville offers quality schools and nurseries for families</span>
+              </li>
+              <li className="flex items-start">
+                <span className="text-red-600 mr-2">✓</span>
+                <span><strong>Community:</strong> Strong community with local events, groups, and facilities in Waterlooville</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
       {/* Local Insights */}
-      <section className="bg-white p-8 rounded-lg shadow-md">
+      <section className="bg-white p-8 rounded-lg shadow-md mb-12">
         <h2 className="text-2xl font-bold text-gray-900 mb-6">About Waterlooville.co</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div>
             <h3 className="text-xl font-semibold text-gray-900 mb-4">Discover Local Excellence</h3>
             <p className="text-gray-700 leading-relaxed mb-4">
-              Waterlooville is a vibrant town in Hampshire, England, known for its strong community spirit and excellent local businesses. 
-              Our comprehensive directory connects you with the best services, restaurants, shops, and professionals in the area.
+              Waterlooville.co is your comprehensive guide to everything Waterlooville has to offer. We provide local news, 
+              a complete business directory, and community information to help you make the most of living in or visiting Waterlooville.
             </p>
             <p className="text-gray-700 leading-relaxed">
-              Whether you're looking for professional services like plumbers and electricians, or want to enjoy great food and drink at local cafes and restaurants, 
-              our directory helps you find exactly what you need with detailed reviews, contact information, and location details.
+              Whether you're looking for professional services like plumbers and electricians in Waterlooville, or want to enjoy 
+              great food and drink at local cafes and restaurants, our directory helps you find exactly what you need with detailed 
+              reviews, contact information, and location details for businesses throughout Waterlooville.
             </p>
           </div>
           <div>
             <h3 className="text-xl font-semibold text-gray-900 mb-4">Covering All Areas</h3>
             <p className="text-gray-700 leading-relaxed mb-4">
-              From the historic town center to surrounding areas like Cowplain, Denmead, and Purbrook, 
-              our directory covers all the key locations where local businesses serve the community.
+              From the historic Waterlooville town centre (PO7 3DU) to surrounding areas like Cowplain, Denmead, and Purbrook, 
+              our directory covers all the key locations where local businesses serve the Waterlooville community.
             </p>
             <p className="text-gray-700 leading-relaxed">
-              Each business listing includes verified contact details, customer reviews, ratings, and comprehensive information to help you make informed decisions about local services and establishments.
+              Each business listing includes verified contact details, customer reviews, ratings, and comprehensive information 
+              to help you make informed decisions about local services and establishments in Waterlooville.
             </p>
           </div>
         </div>
         
         <div className="mt-8 pt-6 border-t border-gray-200">
-          <h3 className="text-xl font-semibold text-gray-900 mb-4">Why Choose Our Directory?</h3>
+          <h3 className="text-xl font-semibold text-gray-900 mb-4">Why Choose Waterlooville.co?</h3>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="text-center">
               <div className="text-3xl mb-2">⭐</div>
@@ -176,8 +253,45 @@ export default async function HomePage() {
             <div className="text-center">
               <div className="text-3xl mb-2">🔄</div>
               <h4 className="font-semibold text-gray-900 mb-2">Always Updated</h4>
-              <p className="text-sm text-gray-600">Regular updates ensure you get the most current information about local businesses</p>
+              <p className="text-sm text-gray-600">Regular updates ensure you get the most current information about Waterlooville businesses</p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Quick Facts About Waterlooville */}
+      <section className="bg-white p-8 rounded-lg shadow-md">
+        <h2 className="text-2xl font-bold text-gray-900 mb-6">Quick Facts About Waterlooville</h2>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="border-l-4 border-red-600 pl-4">
+            <h4 className="font-semibold text-gray-900 mb-2">📍 Location</h4>
+            <p className="text-gray-700 text-sm">Waterlooville, Hampshire, England</p>
+            <p className="text-gray-600 text-sm">8 miles north of Portsmouth</p>
+          </div>
+          <div className="border-l-4 border-red-600 pl-4">
+            <h4 className="font-semibold text-gray-900 mb-2">📮 Postcodes</h4>
+            <p className="text-gray-700 text-sm">PO7 (Waterlooville)</p>
+            <p className="text-gray-700 text-sm">PO8 (Cowplain, Denmead)</p>
+          </div>
+          <div className="border-l-4 border-red-600 pl-4">
+            <h4 className="font-semibold text-gray-900 mb-2">👥 Population</h4>
+            <p className="text-gray-700 text-sm">Over 60,000 residents</p>
+            <p className="text-gray-600 text-sm">Growing community</p>
+          </div>
+          <div className="border-l-4 border-red-600 pl-4">
+            <h4 className="font-semibold text-gray-900 mb-2">🛍️ Shopping</h4>
+            <p className="text-gray-700 text-sm">Town centre & retail park</p>
+            <p className="text-gray-600 text-sm">Major retailers & independents</p>
+          </div>
+          <div className="border-l-4 border-red-600 pl-4">
+            <h4 className="font-semibold text-gray-900 mb-2">🚗 Transport</h4>
+            <p className="text-gray-700 text-sm">A3(M) motorway access</p>
+            <p className="text-gray-600 text-sm">Regular bus services</p>
+          </div>
+          <div className="border-l-4 border-red-600 pl-4">
+            <h4 className="font-semibold text-gray-900 mb-2">🏠 Property</h4>
+            <p className="text-gray-700 text-sm">Mix of housing types</p>
+            <p className="text-gray-600 text-sm">Family-friendly area</p>
           </div>
         </div>
       </section>
