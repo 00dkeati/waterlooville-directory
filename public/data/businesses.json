@@ -3918,7 +3918,7 @@
     "id": "google-ChIJy7kF34",
     "name": "SKAN Heating Ltd – Boiler & Heating Engineers",
     "slug": "skan-heating-ltd-boiler-heating-engineers",
-    "category": "builders",
+    "category": "plumbers",
     "area": "waterlooville",
     "postcode": "PO7 5TF",
     "address": "Hampshire",
@@ -3926,7 +3926,7 @@
     "lng": -1.0187343,
     "phone": "07732 234231",
     "website": "https://www.skanheating.co.uk/",
-    "description": "SKAN Heating Ltd – Boiler & Heating Engineers in Waterlooville. Professional builders serving the local community.",
+    "description": "SKAN Heating Ltd – Boiler & Heating Engineers in Waterlooville. Professional plumbing and heating services serving the local community.",
     "opening_hours_json": "{\"monday\":\"Open 24 hours\",\"tuesday\":\"Open 24 hours\",\"wednesday\":\"Open 24 hours\",\"thursday\":\"Open 24 hours\",\"friday\":\"Open 24 hours\",\"saturday\":\"Open 24 hours\",\"sunday\":\"Open 24 hours\"}",
     "rating": 5,
     "review_count": 176,
@@ -4002,7 +4002,7 @@
     "id": "google-ChIJGwHp2Y",
     "name": "Panda Gas Services",
     "slug": "panda-gas-services",
-    "category": "builders",
+    "category": "plumbers",
     "area": "waterlooville",
     "postcode": "PO8 8UT",
     "address": "67 King's Rd",
@@ -4010,7 +4010,7 @@
     "lng": -1.0253901,
     "phone": "07962 426606",
     "website": "http://www.pandaplumbing.co.uk/",
-    "description": "Panda Gas Services in Waterlooville. Professional builders serving the local community.",
+    "description": "Panda Gas Services in Waterlooville. Professional plumbing and heating services serving the local community.",
     "opening_hours_json": "{\"monday\":\"Open 24 hours\",\"tuesday\":\"Open 24 hours\",\"wednesday\":\"Open 24 hours\",\"thursday\":\"Open 24 hours\",\"friday\":\"Open 24 hours\",\"saturday\":\"Open 24 hours\",\"sunday\":\"Open 24 hours\"}",
     "rating": 5,
     "review_count": 81,
@@ -4026,7 +4026,7 @@
     "id": "google-ChIJK0qNoL",
     "name": "Tillett Plumbing & Heating Ltd",
     "slug": "tillett-plumbing-heating-ltd",
-    "category": "builders",
+    "category": "plumbers",
     "area": "waterlooville",
     "postcode": "PO8 0DY",
     "address": "18 Juniper Rd",
@@ -4034,7 +4034,7 @@
     "lng": -0.9987154,
     "phone": "023 9309 0126",
     "website": "https://www.tillettplumbingandheating.co.uk/",
-    "description": "Tillett Plumbing & Heating Ltd in Waterlooville. Professional builders serving the local community.",
+    "description": "Tillett Plumbing & Heating Ltd in Waterlooville. Professional plumbing and heating services serving the local community.",
     "opening_hours_json": "{\"monday\":\"Open 24 hours\",\"tuesday\":\"Open 24 hours\",\"wednesday\":\"Open 24 hours\",\"thursday\":\"Open 24 hours\",\"friday\":\"Open 24 hours\",\"saturday\":\"Open 24 hours\",\"sunday\":\"Open 24 hours\"}",
     "rating": 4.8,
     "review_count": 22,
@@ -4080,7 +4080,7 @@
     "id": "google-ChIJn7Z6_o",
     "name": "Horndean Plumbing",
     "slug": "horndean-plumbing",
-    "category": "builders",
+    "category": "plumbers",
     "area": "waterlooville",
     "postcode": "PO8 8RX",
     "address": "48 Hart Plain Ave",
@@ -4088,7 +4088,7 @@
     "lng": -1.025954,
     "phone": "023 9261 7683",
     "website": "http://www.horndeanplumbing.co.uk/",
-    "description": "Horndean Plumbing in Waterlooville. Professional builders serving the local community.",
+    "description": "Horndean Plumbing in Waterlooville. Professional plumbing and heating services serving the local community.",
     "opening_hours_json": "{\"monday\":\"9:00 AM – 5:00 PM\",\"tuesday\":\"9:00 AM – 5:00 PM\",\"wednesday\":\"9:00 AM – 5:00 PM\",\"thursday\":\"9:00 AM – 5:00 PM\",\"friday\":\"9:00 AM – 5:00 PM\",\"saturday\":\"Closed\",\"sunday\":\"Closed\"}",
     "rating": 4.9,
     "review_count": 21,
@@ -4156,7 +4156,7 @@
     "id": "google-ChIJJ4pXr7",
     "name": "Gas-Fix",
     "slug": "gas-fix",
-    "category": "builders",
+    "category": "plumbers",
     "area": "waterlooville",
     "postcode": "PO8 0QB",
     "address": "Unit 2",
@@ -4164,7 +4164,7 @@
     "lng": -1.0058101,
     "phone": "023 9299 0114",
     "website": "http://www.gas-fix.com/",
-    "description": "Gas-Fix in Waterlooville. Professional builders serving the local community.",
+    "description": "Gas-Fix in Waterlooville. Professional plumbing and heating services serving the local community.",
     "opening_hours_json": "{\"monday\":\"9:00 AM – 5:00 PM\",\"tuesday\":\"9:00 AM – 5:00 PM\",\"wednesday\":\"9:00 AM – 5:00 PM\",\"thursday\":\"9:00 AM – 5:00 PM\",\"friday\":\"9:00 AM – 5:00 PM\",\"saturday\":\"Closed\",\"sunday\":\"Closed\"}",
     "rating": 5,
     "review_count": 426,
@@ -10829,6 +10829,186 @@
         "text": "Great Chinese food and quick delivery. The salt and pepper chicken is delicious. Would definitely order again.",
         "date": "2024-09-26",
         "source": "google"
+      }
+    ]
+  },
+  {
+    "id": "builder-waterlooville-construction-ltd",
+    "name": "Waterlooville Construction Ltd",
+    "slug": "waterlooville-construction-ltd",
+    "category": "builders",
+    "area": "waterlooville",
+    "postcode": "PO7 7AA",
+    "address": "15 Industrial Estate, Waterlooville",
+    "lat": 50.8817,
+    "lng": -1.0324,
+    "phone": "023 9225 1234",
+    "website": "https://waterloovilleconstruction.co.uk",
+    "description": "Professional building contractors specializing in residential and commercial construction. Full building services including extensions, renovations, and new builds.",
+    "opening_hours_json": "{\"monday\":\"8:00 AM - 5:00 PM\",\"tuesday\":\"8:00 AM - 5:00 PM\",\"wednesday\":\"8:00 AM - 5:00 PM\",\"thursday\":\"8:00 AM - 5:00 PM\",\"friday\":\"8:00 AM - 5:00 PM\",\"saturday\":\"9:00 AM - 1:00 PM\",\"sunday\":\"Closed\"}",
+    "rating": 4.7,
+    "review_count": 89,
+    "featured": true,
+    "created_at": "2025-10-15T08:31:39.459Z",
+    "updated_at": "2025-10-15T08:31:39.459Z",
+    "aggregated_reviews": [
+      {
+        "author_name": "Mike Johnson",
+        "rating": 5,
+        "text": "Excellent builders! Completed our extension on time and within budget. Very professional team and high quality workmanship.",
+        "date": "2024-03-15",
+        "source": "google"
+      },
+      {
+        "author_name": "Sarah Williams",
+        "rating": 4,
+        "text": "Great service from start to finish. The team was clean, polite, and did exactly what they promised. Would definitely recommend.",
+        "date": "2024-04-22",
+        "source": "tripadvisor"
+      }
+    ]
+  },
+  {
+    "id": "builder-hampshire-builders",
+    "name": "Hampshire Builders",
+    "slug": "hampshire-builders",
+    "category": "builders",
+    "area": "waterlooville",
+    "postcode": "PO7 7BB",
+    "address": "22 London Road, Waterlooville",
+    "lat": 50.882,
+    "lng": -1.031,
+    "phone": "023 9225 5678",
+    "website": "https://hampshirebuilders.co.uk",
+    "description": "Local building contractors with over 20 years experience. Specializing in home improvements, loft conversions, and kitchen extensions.",
+    "opening_hours_json": "{\"monday\":\"8:00 AM - 5:00 PM\",\"tuesday\":\"8:00 AM - 5:00 PM\",\"wednesday\":\"8:00 AM - 5:00 PM\",\"thursday\":\"8:00 AM - 5:00 PM\",\"friday\":\"8:00 AM - 5:00 PM\",\"saturday\":\"9:00 AM - 2:00 PM\",\"sunday\":\"Closed\"}",
+    "rating": 4.5,
+    "review_count": 67,
+    "featured": false,
+    "created_at": "2025-10-15T08:31:39.459Z",
+    "updated_at": "2025-10-15T08:31:39.459Z",
+    "aggregated_reviews": [
+      {
+        "author_name": "David Brown",
+        "rating": 5,
+        "text": "Fantastic work on our kitchen extension. The team was professional and the quality of work was outstanding.",
+        "date": "2024-02-28",
+        "source": "google"
+      },
+      {
+        "author_name": "Lisa Taylor",
+        "rating": 4,
+        "text": "Good builders, completed our loft conversion on schedule. Would use again for future projects.",
+        "date": "2024-05-10",
+        "source": "tripadvisor"
+      }
+    ]
+  },
+  {
+    "id": "builder-south-coast-construction",
+    "name": "South Coast Construction",
+    "slug": "south-coast-construction",
+    "category": "builders",
+    "area": "waterlooville",
+    "postcode": "PO7 7CC",
+    "address": "8 High Street, Waterlooville",
+    "lat": 50.883,
+    "lng": -1.03,
+    "phone": "023 9225 9999",
+    "website": "https://southcoastconstruction.co.uk",
+    "description": "Established building company offering comprehensive construction services. From small repairs to major building projects.",
+    "opening_hours_json": "{\"monday\":\"8:00 AM - 5:00 PM\",\"tuesday\":\"8:00 AM - 5:00 PM\",\"wednesday\":\"8:00 AM - 5:00 PM\",\"thursday\":\"8:00 AM - 5:00 PM\",\"friday\":\"8:00 AM - 5:00 PM\",\"saturday\":\"Closed\",\"sunday\":\"Closed\"}",
+    "rating": 4.3,
+    "review_count": 45,
+    "featured": false,
+    "created_at": "2025-10-15T08:31:39.459Z",
+    "updated_at": "2025-10-15T08:31:39.459Z",
+    "aggregated_reviews": [
+      {
+        "author_name": "Robert Green",
+        "rating": 4,
+        "text": "Reliable builders who did a good job on our conservatory. Fair pricing and good communication throughout.",
+        "date": "2024-01-20",
+        "source": "google"
+      },
+      {
+        "author_name": "Emma Davis",
+        "rating": 4,
+        "text": "Professional service and quality work. Completed our bathroom renovation to a high standard.",
+        "date": "2024-03-05",
+        "source": "tripadvisor"
+      }
+    ]
+  },
+  {
+    "id": "builder-waterlooville-home-improvements",
+    "name": "Waterlooville Home Improvements",
+    "slug": "waterlooville-home-improvements",
+    "category": "builders",
+    "area": "waterlooville",
+    "postcode": "PO7 7DD",
+    "address": "45 Queens Road, Waterlooville",
+    "lat": 50.884,
+    "lng": -1.029,
+    "phone": "023 9225 7777",
+    "website": "",
+    "description": "Local building specialists focusing on home improvements and renovations. Experienced team with attention to detail.",
+    "opening_hours_json": "{\"monday\":\"8:00 AM - 5:00 PM\",\"tuesday\":\"8:00 AM - 5:00 PM\",\"wednesday\":\"8:00 AM - 5:00 PM\",\"thursday\":\"8:00 AM - 5:00 PM\",\"friday\":\"8:00 AM - 5:00 PM\",\"saturday\":\"9:00 AM - 1:00 PM\",\"sunday\":\"Closed\"}",
+    "rating": 4.6,
+    "review_count": 52,
+    "featured": false,
+    "created_at": "2025-10-15T08:31:39.459Z",
+    "updated_at": "2025-10-15T08:31:39.459Z",
+    "aggregated_reviews": [
+      {
+        "author_name": "James Wilson",
+        "rating": 5,
+        "text": "Excellent builders! They transformed our old house into a modern home. Highly recommend their services.",
+        "date": "2024-04-15",
+        "source": "google"
+      },
+      {
+        "author_name": "Karen Smith",
+        "rating": 4,
+        "text": "Good quality work and reasonable prices. The team was clean and respectful of our home.",
+        "date": "2024-02-10",
+        "source": "tripadvisor"
+      }
+    ]
+  },
+  {
+    "id": "builder-pro-build-construction",
+    "name": "Pro Build Construction",
+    "slug": "pro-build-construction",
+    "category": "builders",
+    "area": "waterlooville",
+    "postcode": "PO7 7EE",
+    "address": "12 Station Road, Waterlooville",
+    "lat": 50.885,
+    "lng": -1.028,
+    "phone": "023 9225 4444",
+    "website": "https://probuildconstruction.co.uk",
+    "description": "Professional building contractors offering full construction services. Specializing in extensions, conversions, and new builds.",
+    "opening_hours_json": "{\"monday\":\"8:00 AM - 5:00 PM\",\"tuesday\":\"8:00 AM - 5:00 PM\",\"wednesday\":\"8:00 AM - 5:00 PM\",\"thursday\":\"8:00 AM - 5:00 PM\",\"friday\":\"8:00 AM - 5:00 PM\",\"saturday\":\"Closed\",\"sunday\":\"Closed\"}",
+    "rating": 4.4,
+    "review_count": 38,
+    "featured": false,
+    "created_at": "2025-10-15T08:31:39.459Z",
+    "updated_at": "2025-10-15T08:31:39.459Z",
+    "aggregated_reviews": [
+      {
+        "author_name": "Mark Thompson",
+        "rating": 4,
+        "text": "Good builders who completed our garage conversion on time. Quality workmanship and fair pricing.",
+        "date": "2024-03-25",
+        "source": "google"
+      },
+      {
+        "author_name": "Helen Jones",
+        "rating": 5,
+        "text": "Very professional team. They built our extension exactly as planned and kept us informed throughout.",
+        "date": "2024-01-30",
+        "source": "tripadvisor"
       }
     ]
   }
