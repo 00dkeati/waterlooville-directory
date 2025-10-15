@@ -6,7 +6,7 @@ export const dynamic = 'force-dynamic'
 export const revalidate = 3600 // Revalidate every hour
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const baseUrl = 'https://waterloovilledirectory.co.uk'
+  const baseUrl = 'https://waterlooville.co'
   
   // Get all data from database
   const [categories, areas, allBusinesses] = await Promise.all([
