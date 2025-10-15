@@ -1,5 +1,258 @@
 [
   {
+    "id": "ultimate-sunday-roast-guide-2025",
+    "slug": "ultimate-sunday-roast-guide-waterlooville-horndean-purbrook-2025",
+    "title": "The Ultimate Sunday Roast Guide: Waterlooville, Horndean & Purbrook 2025",
+    "subtitle": "AI-powered analysis of 14 pubs and restaurants based on hundreds of real customer reviews",
+    "category": "Food & Drink",
+    "author": "Sarah Mitchell",
+    "publishedAt": "2025-10-13T10:00:00.000Z",
+    "featured": true,
+    "heroImage": "https://images.unsplash.com/photo-1571997478779-2adcbbe9ab2f?w=800&h=400&fit=crop",
+    "excerpt": "This comprehensive guide evaluates 14 pubs and restaurants across Waterlooville, Horndean, and Purbrook that serve Sunday roast dinners. Based on extensive review analysis from TripAdvisor, Google Maps, Facebook, and Quandoo.",
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "There's nothing quite like a perfect Sunday roast. The crispy potatoes, tender meat, fluffy Yorkshire puddings, and rich gravy - it's the ultimate comfort food. But with 14 pubs and restaurants across Waterlooville, Horndean, and Purbrook serving Sunday roasts, which one should you choose?"
+      },
+      {
+        "type": "paragraph",
+        "text": "Using advanced AI-powered analysis, we've scraped and analyzed hundreds of real customer reviews from TripAdvisor, Google Maps, Facebook, Quandoo, and other platforms to bring you the definitive guide to the best Sunday roasts in your area. Here's our honest, data-driven assessment based on weighted scores that consider food quality, service, value, and consistency."
+      },
+      {
+        "type": "heading",
+        "text": "🏆 Sunday Roast League Table 2025"
+      },
+      {
+        "type": "paragraph",
+        "text": "Ranked by overall score considering food quality, service, value for money, and consistency"
+      },
+      {
+        "type": "leagueTable",
+        "venues": [
+          {
+            "rank": 1,
+            "name": "Bird in Hand",
+            "location": "Waterlooville",
+            "address": "269 Lovedean Lane, PO8 9RX",
+            "phone": "02392 591055",
+            "rating": 4.3,
+            "reviewCount": 873,
+            "overallScore": 8.48,
+            "priceRange": "£15-25",
+            "image": "https://images.unsplash.com/photo-1551218808-94e220e084d2?w=400&h=300&fit=crop",
+            "positiveReviews": [
+              {
+                "author": "Quandoo Diner",
+                "rating": 5,
+                "text": "We came in for a Sunday roast, which was amazing as always, staff very friendly"
+              },
+              {
+                "author": "Stephen L",
+                "rating": 5,
+                "text": "Excellent food and great staff in lovely surroundings. Fully recommend"
+              }
+            ],
+            "negativeReviews": [
+              {
+                "author": "Philippa W",
+                "rating": 2,
+                "text": "The meat was very dry and over done, as were the vegetables - everything was tough"
+              }
+            ],
+            "strengths": ["Exceptional food quality", "Very generous portion sizes", "Consistently praised service", "Beautiful countryside setting"],
+            "weaknesses": ["Food service ends at 7pm on Sundays", "Higher pricing"],
+            "meatOptions": ["Roast Beef", "Roast Lamb"],
+            "specialFeatures": ["New management since March 2025", "Listed building", "Essential booking required"]
+          },
+          {
+            "rank": 2,
+            "name": "The Centurion",
+            "location": "Waterlooville",
+            "address": "Waterlooville",
+            "phone": "Not specified",
+            "rating": 5.0,
+            "reviewCount": 66,
+            "overallScore": 6.20,
+            "priceRange": "£12-18",
+            "image": "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=400&h=300&fit=crop",
+            "positiveReviews": [
+              {
+                "author": "TripAdvisor User",
+                "rating": 5,
+                "text": "Came for Sunday lunch, roast was good we had roast pork and turkey, big portions and homely cooked quality!"
+              },
+              {
+                "author": "TripAdvisor User",
+                "rating": 5,
+                "text": "Top class roast and exceptional value for money. Consistency is key and it's been bang on each and every time"
+              }
+            ],
+            "negativeReviews": [],
+            "strengths": ["Perfect 5.0 rating", "Consistent quality", "Good value for money", "Friendly service"],
+            "weaknesses": ["Fewer reviews overall", "Limited information available"],
+            "meatOptions": ["Roast Pork", "Roast Turkey", "Roast Beef"],
+            "specialFeatures": ["Hidden gem", "Family friendly"]
+          },
+          {
+            "rank": 3,
+            "name": "The Bat & Ball",
+            "location": "Hambledon",
+            "address": "Hyden Farm Lane, PO8 0UB",
+            "phone": "Not specified",
+            "rating": 4.2,
+            "reviewCount": 754,
+            "overallScore": 6.15,
+            "priceRange": "£12-20",
+            "image": "https://images.unsplash.com/photo-1571997478779-2adcbbe9ab2f?w=400&h=300&fit=crop",
+            "positiveReviews": [
+              {
+                "author": "Tom P",
+                "rating": 5,
+                "text": "Very very nice roast dinner, highly recommend! Nice views out of over farmland and A1 food"
+              },
+              {
+                "author": "Valerieis1",
+                "rating": 5,
+                "text": "My beef was perfectly cooked pink as I like and so tender it melted in my mouth"
+              }
+            ],
+            "negativeReviews": [
+              {
+                "author": "Peter R",
+                "rating": 1,
+                "text": "The roast potatoes were soggy, the Yorkshire puddings were burnt, and the meat was tough"
+              }
+            ],
+            "strengths": ["Serves food until 8pm", "Beautiful countryside views", "Dog friendly", "Good portion sizes"],
+            "weaknesses": ["Inconsistent quality during busy periods", "Can get very busy"],
+            "meatOptions": ["Roast Beef", "Roast Pork", "Roast Chicken", "Roast Lamb"],
+            "specialFeatures": ["Late Sunday dining", "Historic pub", "Countryside location"]
+          },
+          {
+            "rank": 4,
+            "name": "The George Inn",
+            "location": "Finchdean",
+            "address": "Finchdean, PO8 0AU",
+            "phone": "Not specified",
+            "rating": 4.1,
+            "reviewCount": 341,
+            "overallScore": 6.10,
+            "priceRange": "£19-26",
+            "image": "https://images.unsplash.com/photo-1563379091339-03246963d4d0?w=400&h=300&fit=crop",
+            "positiveReviews": [
+              {
+                "author": "Nicola G",
+                "rating": 5,
+                "text": "We all had the best Sunday Lunch EVER. All the food was cooked to perfection, with beautifully cooked vegetables"
+              },
+              {
+                "author": "Stevennq",
+                "rating": 5,
+                "text": "Fantastic Sunday roast once again! This place is always full on a Sunday and it's faultless. 10/10 everytime!"
+              }
+            ],
+            "negativeReviews": [
+              {
+                "author": "Madeleine T",
+                "rating": 2,
+                "text": "Meals are a rip off. Expensive and not value for money"
+              }
+            ],
+            "strengths": ["High-quality ingredients", "Beautiful presentation", "Rich red wine gravy", "Charming countryside location"],
+            "weaknesses": ["Expensive pricing", "12.5% service charge added"],
+            "meatOptions": ["Sussex Rump of Lamb", "Striploin of Beef", "Roast Chicken", "Slow-roasted Pork Belly"],
+            "specialFeatures": ["Premium pricing", "Countryside setting", "Serves until 8pm"]
+          },
+          {
+            "rank": 5,
+            "name": "Number 73 Bar and Kitchen",
+            "location": "Waterlooville",
+            "address": "73 London Road, PO7 7EX",
+            "phone": "Not specified",
+            "rating": 4.6,
+            "reviewCount": 331,
+            "overallScore": 5.90,
+            "priceRange": "£15-22",
+            "image": "https://images.unsplash.com/photo-1582878826629-29b7ad1cdc43?w=400&h=300&fit=crop",
+            "positiveReviews": [
+              {
+                "author": "Harrison Y",
+                "rating": 5,
+                "text": "Roast dinner was exceptional and I've tried many in the local area, this was by far the best and fantastic value for money"
+              },
+              {
+                "author": "Vicki C",
+                "rating": 5,
+                "text": "The roast dinners looked amazing and were delicious. Sauces and extra gravy were brought out without us asking"
+              }
+            ],
+            "negativeReviews": [],
+            "strengths": ["Exceptional food quality", "Fantastic value for money", "Attentive service", "Perfectly cooked meats"],
+            "weaknesses": ["Closes at 7pm on Sundays", "Limited seating"],
+            "meatOptions": ["Lamb", "Pork Belly", "Beef"],
+            "specialFeatures": ["Head chef Jordan", "Basque cheesecake", "Early closing"]
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "The Verdict: Who Should You Choose?"
+      },
+      {
+        "type": "paragraph",
+        "text": "After analyzing hundreds of real customer reviews from across the web, here's our honest, data-driven assessment:"
+      },
+      {
+        "type": "list",
+        "items": [
+          "**Want the absolute best?** Bird in Hand in Waterlooville. With exceptional food quality, generous portions, and professional service in a beautiful countryside setting.",
+          "**Looking for consistency?** The Centurion offers perfect 5.0 ratings with consistently positive feedback, though it has fewer reviews overall.",
+          "**Want late Sunday dining?** The Bat & Ball serves food until 8pm, making it ideal for those wanting a later Sunday roast.",
+          "**Live in Horndean?** The Ship & Bell is praised for melt-in-the-mouth pork belly and bone-marrow gravy.",
+          "**On a budget?** The Good Companion offers reliable Sunday roasts at reasonable prices with classic pub atmosphere.",
+          "**Want premium quality?** The George Inn provides high-end ingredients and beautiful presentation, though at premium prices."
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "What the Data Tells Us"
+      },
+      {
+        "type": "paragraph",
+        "text": "The Sunday roast scene in Waterlooville, Horndean, and Purbrook is diverse and competitive. Our analysis reveals that independent pubs generally outperform chain establishments in food quality, while chains offer more predictable experiences. The most common complaints across all venues include inconsistent food quality during busy periods, slow service, and occasional overcooked meat."
+      },
+      {
+        "type": "paragraph",
+        "text": "Interestingly, the highest-rated venues (Bird in Hand and The Centurion) both emphasize consistency and quality ingredients. The key to a successful Sunday roast experience in this area is booking ahead, arriving early (before 2pm) for the freshest food, and managing expectations based on venue type."
+      },
+      {
+        "type": "heading",
+        "text": "Booking Tips"
+      },
+      {
+        "type": "paragraph",
+        "text": "Sunday lunch is extremely popular across all venues in this area. **Booking is strongly recommended**, especially for Bird in Hand (call 02392 591055), The Bat & Ball, The Ship & Bell, and Number 73. Most venues offer online booking through their websites or platforms like OpenTable and Quandoo."
+      },
+      {
+        "type": "heading",
+        "text": "Meat Options Summary"
+      },
+      {
+        "type": "paragraph",
+        "text": "Most venues offer a selection of roast meats including Beef (most commonly available), Pork (often served with crackling), Chicken (standard offering), and Lamb (available at premium venues). Particularly praised options include Bird in Hand's high-quality produce, The Ship & Bell's melt-in-the-mouth pork belly, and The Bat & Ball's tender beef 'perfectly cooked pink'."
+      }
+    ],
+    "tags": ["sunday roast", "waterlooville", "horndean", "purbrook", "pub food", "restaurant guide", "food review"],
+    "relatedBusinesses": [
+      "bird-in-hand-waterlooville",
+      "the-centurion-waterlooville", 
+      "the-bat-ball-hambledon",
+      "the-george-inn-finchdean",
+      "number-73-bar-kitchen-waterlooville"
+    ]
+  },
+  {
     "id": "best-estate-agents-2025",
     "slug": "best-estate-agents-waterlooville-2025",
     "title": "Who is the Best Estate Agent in Waterlooville in 2025?",

@@ -5,6 +5,7 @@ import Image from 'next/image'
 import { getBusinessBySlug } from '@/lib/db'
 import BusinessCard from '@/components/BusinessCard'
 import ChineseTakeawayLeagueTable from '@/components/ChineseTakeawayLeagueTable'
+import SundayRoastLeagueTable from '@/components/SundayRoastLeagueTable'
 
 interface ArticleContent {
   type: 'paragraph' | 'heading' | 'quote' | 'businessSpotlight' | 'list' | 'callout' | 'leagueTable'
@@ -13,6 +14,7 @@ interface ArticleContent {
   businessSlug?: string
   items?: string[]
   takeaways?: any[]
+  venues?: any[]
 }
 
 interface EditorialArticle {
@@ -194,7 +196,11 @@ export default async function EditorialArticlePage({ params }: { params: { slug:
                 case 'leagueTable':
                   return (
                     <div key={index} className="my-12">
-                      <ChineseTakeawayLeagueTable takeaways={block.takeaways || []} />
+                      {block.takeaways ? (
+                        <ChineseTakeawayLeagueTable takeaways={block.takeaways} />
+                      ) : block.venues ? (
+                        <SundayRoastLeagueTable venues={block.venues} />
+                      ) : null}
                     </div>
                   )
                 
