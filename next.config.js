@@ -2,7 +2,7 @@
 const nextConfig = {
   // Performance optimizations
   experimental: {
-    optimizeCss: true,
+    // optimizeCss: true, // Disabled - causing critters module error
     optimizePackageImports: ['@/components', '@/lib'],
   },
   
