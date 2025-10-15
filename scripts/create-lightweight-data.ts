@@ -26,9 +26,9 @@ async function createLightweightBusinessData() {
       rating: business.rating,
       review_count: business.review_count,
       featured: business.featured,
+      images: business.images, // Include images for directory pages
       // Remove heavy fields
       // opening_hours_json: removed
-      // images: removed (load separately if needed)
       // aggregated_reviews: removed
       // google_place_id: removed
       // All other optional fields removed
