@@ -91,6 +91,7 @@ export default function RootLayout({
                     <li><a href="/editorial" className="hover:text-white transition-colors">Latest News</a></li>
                     <li><a href="/categories" className="hover:text-white transition-colors">Business Directory</a></li>
                     <li><a href="/areas" className="hover:text-white transition-colors">Areas</a></li>
+                    <li><a href="/blog" className="hover:text-white transition-colors">Blog</a></li>
                     <li><a href="/contact" className="hover:text-white transition-colors">Contact Us</a></li>
                   </ul>
                 </div>

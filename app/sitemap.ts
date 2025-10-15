@@ -42,6 +42,12 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       priority: 0.8,
     },
     {
+      url: `${baseUrl}/blog`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
+      priority: 0.8,
+    },
+    {
       url: `${baseUrl}/search`,
       lastModified: new Date(),
       changeFrequency: 'weekly',
@@ -126,6 +132,20 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     }
   } catch (error) {
     console.error('Error loading editorial articles for sitemap:', error)
+  }
+
+  // Add blog articles
+  try {
+    // For sitemap generation, we'll add a placeholder blog entry
+    // Individual blog articles will be added dynamically when they exist
+    sitemap.push({
+      url: `${baseUrl}/blog`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
+      priority: 0.8,
+    })
+  } catch (error) {
+    console.error('Error adding blog to sitemap:', error)
   }
 
   return sitemap
