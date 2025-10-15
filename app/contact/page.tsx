@@ -34,16 +34,16 @@ export default function ContactPage() {
                 <div>
                   <h3 className="font-semibold text-gray-900 mb-2">Email</h3>
                   <p className="text-gray-700">
-                    <a href="mailto:info@waterloovilledirectory.co.uk" className="text-blue-600 hover:text-blue-800">
-                      info@waterloovilledirectory.co.uk
+                    <a href="mailto:dean@waterlooville.co" className="text-blue-600 hover:text-blue-800">
+                      dean@waterlooville.co
                     </a>
                   </p>
                 </div>
                 <div>
                   <h3 className="font-semibold text-gray-900 mb-2">Website</h3>
                   <p className="text-gray-700">
-                    <a href="https://waterloovilledirectory.co.uk" className="text-blue-600 hover:text-blue-800">
-                      waterloovilledirectory.co.uk
+                    <a href="https://waterlooville.co" className="text-blue-600 hover:text-blue-800">
+                      waterlooville.co
                     </a>
                   </p>
                 </div>

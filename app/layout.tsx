@@ -90,11 +90,16 @@ export default function RootLayout({
                   </ul>
                 </div>
                 <div>
-                  <h4 className="text-md font-semibold mb-4">Popular Categories</h4>
+                  <h4 className="text-md font-semibold mb-4">Contact Us</h4>
                   <ul className="space-y-2 text-gray-300">
-                    <li><a href="/plumbers" className="hover:text-white transition-colors">Plumbers</a></li>
-                    <li><a href="/cafes" className="hover:text-white transition-colors">Cafes</a></li>
-                    <li><a href="/restaurants" className="hover:text-white transition-colors">Restaurants</a></li>
+                    <li>
+                      <a href="mailto:dean@waterlooville.co" className="hover:text-white transition-colors flex items-center">
+                        <span className="mr-2">📧</span>
+                        dean@waterlooville.co
+                      </a>
+                    </li>
+                    <li><a href="/contact" className="hover:text-white transition-colors">Contact Form</a></li>
+                    <li><a href="/about" className="hover:text-white transition-colors">About Us</a></li>
                   </ul>
                 </div>
               </div>
