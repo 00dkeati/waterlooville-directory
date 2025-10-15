@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import { Business } from '@/lib/db'
 
 interface BusinessCardProps {
@@ -124,10 +125,13 @@ export default function BusinessCard({ business }: BusinessCardProps) {
       {/* Business Image */}
       {business.images && business.images.length > 0 && (
         <div className="relative h-56 w-full overflow-hidden">
-          <img
+          <Image
             src={business.images[0]}
             alt={`${business.name} business image`}
-            className="w-full h-full object-cover"
+            fill
+            className="object-cover"
+            loading="lazy"
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           />
           {/* Rating Badge Overlay */}
           <div className="absolute top-3 right-3 bg-white/95 backdrop-blur-sm px-3 py-1.5 rounded-full shadow-lg">

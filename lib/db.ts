@@ -78,108 +78,140 @@ export interface Area {
   description: string
 }
 
-// Cache for data
+// Cache for data with TTL
 let businessesCache: Business[] | null = null
+let businessesLightweightCache: any[] | null = null
 let categoriesCache: Category[] | null = null
 let areasCache: Area[] | null = null
+let cacheTimestamp: number = 0
+const CACHE_TTL = 5 * 60 * 1000 // 5 minutes
 
-// Helper to load JSON data
-async function loadData() {
-  if (!businessesCache) {
-    const businesses = await import('@/public/data/businesses.json')
-    businessesCache = businesses.default as Business[]
+// Helper to load lightweight JSON data with caching (for listings)
+async function loadLightweightData() {
+  const now = Date.now()
+  
+  // Check if cache is still valid
+  if (businessesLightweightCache && categoriesCache && areasCache && (now - cacheTimestamp) < CACHE_TTL) {
+    return
   }
-  if (!categoriesCache) {
+  
+  if (!businessesLightweightCache || (now - cacheTimestamp) >= CACHE_TTL) {
+    const businesses = await import('@/public/data/businesses-lightweight.json')
+    businessesLightweightCache = businesses.default
+  }
+  if (!categoriesCache || (now - cacheTimestamp) >= CACHE_TTL) {
     const categories = await import('@/public/data/categories.json')
     categoriesCache = categories.default as Category[]
   }
-  if (!areasCache) {
+  if (!areasCache || (now - cacheTimestamp) >= CACHE_TTL) {
     const areas = await import('@/public/data/areas.json')
     areasCache = areas.default as Area[]
   }
+  
+  cacheTimestamp = now
+}
+
+// Helper to load full JSON data with caching (for detailed views)
+async function loadFullData() {
+  const now = Date.now()
+  
+  if (!businessesCache || (now - cacheTimestamp) >= CACHE_TTL) {
+    const businesses = await import('@/public/data/businesses.json')
+    businessesCache = businesses.default as Business[]
+  }
+  if (!categoriesCache || (now - cacheTimestamp) >= CACHE_TTL) {
+    const categories = await import('@/public/data/categories.json')
+    categoriesCache = categories.default as Category[]
+  }
+  if (!areasCache || (now - cacheTimestamp) >= CACHE_TTL) {
+    const areas = await import('@/public/data/areas.json')
+    areasCache = areas.default as Area[]
+  }
+  
+  cacheTimestamp = now
 }
 
 export async function getBusinessBySlug(slug: string): Promise<Business | null> {
-  await loadData()
+  await loadFullData()
   return businessesCache!.find(b => b.slug === slug) || null
 }
 
 export async function getBusinessesByCategory(category: string, limit?: number): Promise<Business[]> {
-  await loadData()
-  let filtered = businessesCache!.filter(b => b.category === category)
+  await loadLightweightData()
+  let filtered = businessesLightweightCache!.filter(b => b.category === category)
   
   if (limit) {
     filtered = filtered.slice(0, limit)
   }
   
-  return filtered
+  return filtered as Business[]
 }
 
 export async function getBusinessesByCategoryAndArea(category: string, area: string, limit?: number): Promise<Business[]> {
-  await loadData()
-  let filtered = businessesCache!.filter(b => b.category === category && b.area === area)
+  await loadLightweightData()
+  let filtered = businessesLightweightCache!.filter(b => b.category === category && b.area === area)
   
   if (limit) {
     filtered = filtered.slice(0, limit)
   }
   
-  return filtered
+  return filtered as Business[]
 }
 
 export async function getBusinessesByArea(area: string, limit?: number): Promise<Business[]> {
-  await loadData()
-  let filtered = businessesCache!.filter(b => b.area === area)
+  await loadLightweightData()
+  let filtered = businessesLightweightCache!.filter(b => b.area === area)
   
   if (limit) {
     filtered = filtered.slice(0, limit)
   }
   
-  return filtered
+  return filtered as Business[]
 }
 
 export async function searchBusinesses(query: string): Promise<Business[]> {
-  await loadData()
+  await loadLightweightData()
   const lowerQuery = query.toLowerCase()
   
-  return businessesCache!.filter(b => 
+  return businessesLightweightCache!.filter(b => 
     b.name.toLowerCase().includes(lowerQuery) ||
     b.description.toLowerCase().includes(lowerQuery) ||
     b.category.toLowerCase().includes(lowerQuery) ||
     b.area.toLowerCase().includes(lowerQuery)
-  )
+  ) as Business[]
 }
 
 export async function getCategories(): Promise<Category[]> {
-  await loadData()
+  await loadLightweightData()
   return categoriesCache!
 }
 
 export async function getCategoryBySlug(slug: string): Promise<Category | null> {
-  await loadData()
+  await loadLightweightData()
   return categoriesCache!.find(c => c.slug === slug) || null
 }
 
 export async function getAreas(): Promise<Area[]> {
-  await loadData()
+  await loadLightweightData()
   return areasCache!
 }
 
 export async function getAreaBySlug(slug: string): Promise<Area | null> {
-  await loadData()
+  await loadLightweightData()
   return areasCache!.find(a => a.slug === slug) || null
 }
 
 export async function getFeaturedBusinesses(limit: number = 6, area?: string): Promise<Business[]> {
-  await loadData()
-  return businessesCache!
+  await loadLightweightData()
+  return businessesLightweightCache!
     .filter(b => b.featured && (!area || b.area === area))
     .sort((a, b) => b.rating - a.rating)
-    .slice(0, limit)
+    .slice(0, limit) as Business[]
 }
 
 export async function getBusinesses(categoryOrLimit?: string | number, area?: string): Promise<Business[]> {
-  await loadData()
-  let businesses = businessesCache!
+  await loadLightweightData()
+  let businesses = businessesLightweightCache!
   
   // If first arg is a string, it's a category filter
   if (typeof categoryOrLimit === 'string') {
@@ -195,5 +227,5 @@ export async function getBusinesses(categoryOrLimit?: string | number, area?: st
     businesses = businesses.slice(0, categoryOrLimit)
   }
   
-  return businesses
+  return businesses as Business[]
 }

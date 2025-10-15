@@ -1,4 +1,5 @@
-export const dynamic = 'force-dynamic'
+// Enable static generation for better performance
+export const revalidate = 3600 // Revalidate every hour
 import { Metadata } from 'next'
 import { getFeaturedBusinesses, getCategories, getAreas } from '@/lib/db'
 import Link from 'next/link'
@@ -24,11 +25,14 @@ export const metadata: Metadata = {
 }
 
 export default async function HomePage() {
-  const [featuredBusinesses, categories, areas] = await Promise.all([
-    getFeaturedBusinesses(1, 'waterlooville'), // Only show 1 Waterlooville business
-    getCategories(),
-    getAreas()
+  // Load only essential data for homepage
+  const [featuredBusinesses, categories] = await Promise.all([
+    getFeaturedBusinesses(3, 'waterlooville'), // Show 3 featured businesses
+    getCategories()
   ])
+
+  // Limit categories to top 6 for performance
+  const topCategories = categories.slice(0, 6)
 
   return (
     <div>
@@ -83,7 +87,7 @@ export default async function HomePage() {
       <section className="mb-12">
         <h2 className="text-3xl font-bold text-gray-900 mb-8">Browse by Category</h2>
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
-          {categories.map((category) => (
+          {topCategories.map((category) => (
             <Link
               key={category.id}
               href={`/${category.slug}`}
@@ -100,13 +104,19 @@ export default async function HomePage() {
         </div>
       </section>
 
-      {/* Areas Grid */}
+      {/* Areas Grid - Static for performance */}
       <section className="mb-12">
         <h2 className="text-3xl font-bold text-gray-900 mb-8">Browse by Area</h2>
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
-          {areas.map((area) => (
+          {[
+            { name: 'Waterlooville', slug: 'waterlooville' },
+            { name: 'Cowplain', slug: 'cowplain' },
+            { name: 'Denmead', slug: 'denmead' },
+            { name: 'Purbrook', slug: 'purbrook' },
+            { name: 'Horndean', slug: 'horndean' }
+          ].map((area) => (
             <Link
-              key={area.id}
+              key={area.slug}
               href={`/area/${area.slug}`}
               className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow text-center group"
             >
