@@ -106,7 +106,7 @@ async function findPlacesAndGetPhotos() {
       results.push({
         name: takeaway.name,
         found: false,
-        reason: `Error: ${error.message}`
+        reason: `Error: ${error instanceof Error ? error.message : 'Unknown error'}`
       })
     }
   }
