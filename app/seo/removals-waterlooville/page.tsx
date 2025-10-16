@@ -5,18 +5,18 @@ import Link from 'next/link'
 
 export const metadata: Metadata = {
   title: 'Removals Waterlooville - Waterlooville Directory',
-  description: 'Moving can be one of life's most significant events, often accompanied by a mix of excitement and stress. When relocating to or from Waterlooville, Hampshire, c...',
+  description: 'Moving can be one of life\'s most significant events, often accompanied by a mix of excitement and stress. When relocating to or from Waterlooville, Hampshire, choosing the right removals company is crucial.',
   keywords: 'removals waterlooville, Waterlooville, Hampshire, local guide, removals waterlooville in Waterlooville',
   openGraph: {
     title: 'Removals Waterlooville - Waterlooville Directory',
-    description: 'Moving can be one of life's most significant events, often accompanied by a mix of excitement and stress. When relocating to or from Waterlooville, Hampshire, c...',
+    description: 'Moving can be one of life\'s most significant events, often accompanied by a mix of excitement and stress. When relocating to or from Waterlooville, Hampshire, choosing the right removals company is crucial.',
     type: 'article',
     locale: 'en_GB',
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Removals Waterlooville - Waterlooville Directory',
-    description: 'Moving can be one of life's most significant events, often accompanied by a mix of excitement and stress. When relocating to or from Waterlooville, Hampshire, c...',
+    description: 'Moving can be one of life\'s most significant events, often accompanied by a mix of excitement and stress. When relocating to or from Waterlooville, Hampshire, choosing the right removals company is crucial.',
   },
 }
 

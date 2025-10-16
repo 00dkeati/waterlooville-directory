@@ -5,18 +5,18 @@ import Link from 'next/link'
 
 export const metadata: Metadata = {
   title: 'Waterlooville Sainsburys - Waterlooville Directory',
-  description: 'For residents and visitors alike, **Sainsbury's Waterlooville** stands as a cornerstone of convenience and quality, offering a comprehensive shopping experience...',
+  description: 'For residents and visitors alike, Sainsbury\'s Waterlooville stands as a cornerstone of convenience and quality, offering a comprehensive shopping experience.',
   keywords: 'waterlooville sainsburys, Waterlooville, Hampshire, local guide, waterlooville sainsburys in Waterlooville',
   openGraph: {
     title: 'Waterlooville Sainsburys - Waterlooville Directory',
-    description: 'For residents and visitors alike, **Sainsbury's Waterlooville** stands as a cornerstone of convenience and quality, offering a comprehensive shopping experience...',
+    description: 'For residents and visitors alike, Sainsbury\'s Waterlooville stands as a cornerstone of convenience and quality, offering a comprehensive shopping experience.',
     type: 'article',
     locale: 'en_GB',
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Waterlooville Sainsburys - Waterlooville Directory',
-    description: 'For residents and visitors alike, **Sainsbury's Waterlooville** stands as a cornerstone of convenience and quality, offering a comprehensive shopping experience...',
+    description: 'For residents and visitors alike, Sainsbury\'s Waterlooville stands as a cornerstone of convenience and quality, offering a comprehensive shopping experience.',
   },
 }
 

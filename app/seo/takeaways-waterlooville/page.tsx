@@ -5,18 +5,18 @@ import Link from 'next/link'
 
 export const metadata: Metadata = {
   title: 'Takeaways Waterlooville - Waterlooville Directory',
-  description: 'Waterlooville, a vibrant town in Hampshire, offers a diverse and exciting array of takeaway options to satisfy every craving. Whether you're in the mood for a c...',
+  description: 'Waterlooville, a vibrant town in Hampshire, offers a diverse and exciting array of takeaway options to satisfy every craving. Whether you\'re in the mood for a classic fish and chips or exotic cuisine, Waterlooville has it all.',
   keywords: 'takeaways waterlooville, Waterlooville, Hampshire, local guide, takeaways waterlooville in Waterlooville',
   openGraph: {
     title: 'Takeaways Waterlooville - Waterlooville Directory',
-    description: 'Waterlooville, a vibrant town in Hampshire, offers a diverse and exciting array of takeaway options to satisfy every craving. Whether you're in the mood for a c...',
+    description: 'Waterlooville, a vibrant town in Hampshire, offers a diverse and exciting array of takeaway options to satisfy every craving. Whether you\'re in the mood for a classic fish and chips or exotic cuisine, Waterlooville has it all.',
     type: 'article',
     locale: 'en_GB',
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Takeaways Waterlooville - Waterlooville Directory',
-    description: 'Waterlooville, a vibrant town in Hampshire, offers a diverse and exciting array of takeaway options to satisfy every craving. Whether you're in the mood for a c...',
+    description: 'Waterlooville, a vibrant town in Hampshire, offers a diverse and exciting array of takeaway options to satisfy every craving. Whether you\'re in the mood for a classic fish and chips or exotic cuisine, Waterlooville has it all.',
   },
 }
 

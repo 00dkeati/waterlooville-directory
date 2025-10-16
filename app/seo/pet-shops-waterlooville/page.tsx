@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Pet Shops Waterlooville - Waterlooville Directory',
-    description: 'Located in Wellington Retail Park, Jollyes Waterlooville stands out as a comprehensive pet care destination. Known as 'The Pet People,' Jollyes offers an extens...',
+    description: 'Located in Wellington Retail Park, Jollyes Waterlooville stands out as a comprehensive pet care destination. Known as \'The Pet People,\' Jollyes offers an extensive range of pet supplies and services.',
   },
 }
 

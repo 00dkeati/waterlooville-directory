@@ -5,18 +5,18 @@ import Link from 'next/link'
 
 export const metadata: Metadata = {
   title: 'Waterlooville Wickes - Waterlooville Directory',
-  description: 'Wickes is renowned for its comprehensive selection of trade-quality DIY and home improvement products. At the Waterlooville branch, you'll find everything from ...',
+  description: 'Wickes is renowned for its comprehensive selection of trade-quality DIY and home improvement products. At the Waterlooville branch, you\'ll find everything from building materials to tools.',
   keywords: 'waterlooville wickes, Waterlooville, Hampshire, local guide, waterlooville wickes in Waterlooville',
   openGraph: {
     title: 'Waterlooville Wickes - Waterlooville Directory',
-    description: 'Wickes is renowned for its comprehensive selection of trade-quality DIY and home improvement products. At the Waterlooville branch, you'll find everything from ...',
+    description: 'Wickes is renowned for its comprehensive selection of trade-quality DIY and home improvement products. At the Waterlooville branch, you\'ll find everything from building materials to tools.',
     type: 'article',
     locale: 'en_GB',
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Waterlooville Wickes - Waterlooville Directory',
-    description: 'Wickes is renowned for its comprehensive selection of trade-quality DIY and home improvement products. At the Waterlooville branch, you'll find everything from ...',
+    description: 'Wickes is renowned for its comprehensive selection of trade-quality DIY and home improvement products. At the Waterlooville branch, you\'ll find everything from building materials to tools.',
   },
 }
 

@@ -5,18 +5,18 @@ import Link from 'next/link'
 
 export const metadata: Metadata = {
   title: 'Waterlooville Estate Agents - Waterlooville Directory',
-  description: 'Navigating the property market, whether you're buying, selling, or letting, requires expertise and local knowledge. In Waterlooville, a vibrant community with a...',
+  description: 'Navigating the property market, whether you\'re buying, selling, or letting, requires expertise and local knowledge. In Waterlooville, a vibrant community with a strong property market, choosing the right estate agent is crucial.',
   keywords: 'waterlooville estate agents, Waterlooville, Hampshire, local guide, waterlooville estate agents in Waterlooville',
   openGraph: {
     title: 'Waterlooville Estate Agents - Waterlooville Directory',
-    description: 'Navigating the property market, whether you're buying, selling, or letting, requires expertise and local knowledge. In Waterlooville, a vibrant community with a...',
+    description: 'Navigating the property market, whether you\'re buying, selling, or letting, requires expertise and local knowledge. In Waterlooville, a vibrant community with a strong property market, choosing the right estate agent is crucial.',
     type: 'article',
     locale: 'en_GB',
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Waterlooville Estate Agents - Waterlooville Directory',
-    description: 'Navigating the property market, whether you're buying, selling, or letting, requires expertise and local knowledge. In Waterlooville, a vibrant community with a...',
+    description: 'Navigating the property market, whether you\'re buying, selling, or letting, requires expertise and local knowledge. In Waterlooville, a vibrant community with a strong property market, choosing the right estate agent is crucial.',
   },
 }
 

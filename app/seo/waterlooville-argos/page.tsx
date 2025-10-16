@@ -5,18 +5,18 @@ import Link from 'next/link'
 
 export const metadata: Metadata = {
   title: 'Waterlooville Argos - Waterlooville Directory',
-  description: 'The Waterlooville Argos is situated within the Sainsbury's Superstore at Hambledon Road, PO7 7UL. This co-location provides a seamless shopping trip, allowing c...',
+  description: 'The Waterlooville Argos is situated within the Sainsbury\'s Superstore at Hambledon Road, PO7 7UL. This co-location provides a seamless shopping trip, allowing customers to combine grocery shopping with Argos purchases.',
   keywords: 'waterlooville argos, Waterlooville, Hampshire, local guide, waterlooville argos in Waterlooville',
   openGraph: {
     title: 'Waterlooville Argos - Waterlooville Directory',
-    description: 'The Waterlooville Argos is situated within the Sainsbury's Superstore at Hambledon Road, PO7 7UL. This co-location provides a seamless shopping trip, allowing c...',
+    description: 'The Waterlooville Argos is situated within the Sainsbury\'s Superstore at Hambledon Road, PO7 7UL. This co-location provides a seamless shopping trip, allowing customers to combine grocery shopping with Argos purchases.',
     type: 'article',
     locale: 'en_GB',
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Waterlooville Argos - Waterlooville Directory',
-    description: 'The Waterlooville Argos is situated within the Sainsbury's Superstore at Hambledon Road, PO7 7UL. This co-location provides a seamless shopping trip, allowing c...',
+    description: 'The Waterlooville Argos is situated within the Sainsbury\'s Superstore at Hambledon Road, PO7 7UL. This co-location provides a seamless shopping trip, allowing customers to combine grocery shopping with Argos purchases.',
   },
 }
 

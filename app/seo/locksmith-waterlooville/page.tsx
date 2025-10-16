@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Locksmith Waterlooville - Waterlooville Directory',
-    description: 'When you find yourself in a bind with a lock issue in Waterlooville, whether it's a lockout, a broken key, or a need for enhanced security, having a reliable lo...',
+    description: 'When you find yourself in a bind with a lock issue in Waterlooville, whether it\'s a lockout, a broken key, or a need for enhanced security, having a reliable locksmith is essential.',
   },
 }
 

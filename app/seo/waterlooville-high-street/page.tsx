@@ -5,18 +5,18 @@ import Link from 'next/link'
 
 export const metadata: Metadata = {
   title: 'Waterlooville High Street - Waterlooville Directory',
-  description: '[1] 'Apocalyptic wasteland' town with 'worst high street in Britain'. _The Mirror_. https://www.mirror.co.uk/news/uk-news/apocalyptic-wasteland-town-worst-high-...',
+  description: 'Waterlooville High Street offers a variety of shops, services, and amenities for local residents. Despite challenges faced by many high streets, Waterlooville continues to serve its community with essential retail and service options.',
   keywords: 'waterlooville high street, Waterlooville, Hampshire, local guide, waterlooville high street in Waterlooville',
   openGraph: {
     title: 'Waterlooville High Street - Waterlooville Directory',
-    description: '[1] 'Apocalyptic wasteland' town with 'worst high street in Britain'. _The Mirror_. https://www.mirror.co.uk/news/uk-news/apocalyptic-wasteland-town-worst-high-...',
+    description: 'Waterlooville High Street offers a variety of shops, services, and amenities for local residents. Despite challenges faced by many high streets, Waterlooville continues to serve its community with essential retail and service options.',
     type: 'article',
     locale: 'en_GB',
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Waterlooville High Street - Waterlooville Directory',
-    description: '[1] 'Apocalyptic wasteland' town with 'worst high street in Britain'. _The Mirror_. https://www.mirror.co.uk/news/uk-news/apocalyptic-wasteland-town-worst-high-...',
+    description: 'Waterlooville High Street offers a variety of shops, services, and amenities for local residents. Despite challenges faced by many high streets, Waterlooville continues to serve its community with essential retail and service options.',
   },
 }
 

@@ -5,18 +5,18 @@ import Link from 'next/link'
 
 export const metadata: Metadata = {
   title: 'Waterlooville New Builds - Waterlooville Directory',
-  description: 'Waterlooville is rapidly becoming one of Hampshire's most sought-after locations for new build homes, and at the heart of this vibrant growth is Berewood Hampsh...',
+  description: 'Waterlooville is rapidly becoming one of Hampshire\'s most sought-after locations for new build homes, and at the heart of this vibrant growth is Berewood Hampshire.',
   keywords: 'waterlooville new builds, Waterlooville, Hampshire, local guide, waterlooville new builds in Waterlooville',
   openGraph: {
     title: 'Waterlooville New Builds - Waterlooville Directory',
-    description: 'Waterlooville is rapidly becoming one of Hampshire's most sought-after locations for new build homes, and at the heart of this vibrant growth is Berewood Hampsh...',
+    description: 'Waterlooville is rapidly becoming one of Hampshire\'s most sought-after locations for new build homes, and at the heart of this vibrant growth is Berewood Hampshire.',
     type: 'article',
     locale: 'en_GB',
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Waterlooville New Builds - Waterlooville Directory',
-    description: 'Waterlooville is rapidly becoming one of Hampshire's most sought-after locations for new build homes, and at the heart of this vibrant growth is Berewood Hampsh...',
+    description: 'Waterlooville is rapidly becoming one of Hampshire\'s most sought-after locations for new build homes, and at the heart of this vibrant growth is Berewood Hampshire.',
   },
 }
 

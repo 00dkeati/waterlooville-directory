@@ -5,18 +5,18 @@ import Link from 'next/link'
 
 export const metadata: Metadata = {
   title: 'Waterlooville Asda - Waterlooville Directory',
-  description: 'The Asda Waterlooville Superstore's strategic location on Portland Road makes it easily accessible for shoppers from various parts of Waterlooville and the surr...',
+  description: 'The Asda Waterlooville Superstore\'s strategic location on Portland Road makes it easily accessible for shoppers from various parts of Waterlooville and the surrounding areas.',
   keywords: 'waterlooville asda, Waterlooville, Hampshire, local guide, waterlooville asda in Waterlooville',
   openGraph: {
     title: 'Waterlooville Asda - Waterlooville Directory',
-    description: 'The Asda Waterlooville Superstore's strategic location on Portland Road makes it easily accessible for shoppers from various parts of Waterlooville and the surr...',
+    description: 'The Asda Waterlooville Superstore\'s strategic location on Portland Road makes it easily accessible for shoppers from various parts of Waterlooville and the surrounding areas.',
     type: 'article',
     locale: 'en_GB',
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Waterlooville Asda - Waterlooville Directory',
-    description: 'The Asda Waterlooville Superstore's strategic location on Portland Road makes it easily accessible for shoppers from various parts of Waterlooville and the surr...',
+    description: 'The Asda Waterlooville Superstore\'s strategic location on Portland Road makes it easily accessible for shoppers from various parts of Waterlooville and the surrounding areas.',
   },
 }
 

@@ -5,18 +5,18 @@ import Link from 'next/link'
 
 export const metadata: Metadata = {
   title: 'Secondary Schools Waterlooville - Waterlooville Directory',
-  description: 'Several secondary schools in the Waterlooville area have received 'Good' ratings from Ofsted, indicating a strong commitment to providing quality education. The...',
+  description: 'Several secondary schools in the Waterlooville area have received \'Good\' ratings from Ofsted, indicating a strong commitment to providing quality education. The local education system offers excellent opportunities for students.',
   keywords: 'secondary schools waterlooville, Waterlooville, Hampshire, local guide, secondary schools waterlooville in Waterlooville',
   openGraph: {
     title: 'Secondary Schools Waterlooville - Waterlooville Directory',
-    description: 'Several secondary schools in the Waterlooville area have received 'Good' ratings from Ofsted, indicating a strong commitment to providing quality education. The...',
+    description: 'Several secondary schools in the Waterlooville area have received \'Good\' ratings from Ofsted, indicating a strong commitment to providing quality education. The local education system offers excellent opportunities for students.',
     type: 'article',
     locale: 'en_GB',
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Secondary Schools Waterlooville - Waterlooville Directory',
-    description: 'Several secondary schools in the Waterlooville area have received 'Good' ratings from Ofsted, indicating a strong commitment to providing quality education. The...',
+    description: 'Several secondary schools in the Waterlooville area have received \'Good\' ratings from Ofsted, indicating a strong commitment to providing quality education. The local education system offers excellent opportunities for students.',
   },
 }
 

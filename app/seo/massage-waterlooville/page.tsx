@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Massage Waterlooville - Waterlooville Directory',
-    description: 'Massage therapy is far more than just a luxurious treat; it's a vital component of a holistic approach to health. The physical benefits are extensive, including...',
+    description: 'Massage therapy is far more than just a luxurious treat; it\'s a vital component of a holistic approach to health. The physical benefits are extensive, including improved circulation, reduced muscle tension, and enhanced relaxation.',
   },
 }
 

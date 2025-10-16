@@ -5,18 +5,18 @@ import Link from 'next/link'
 
 export const metadata: Metadata = {
   title: 'Waterlooville Town Centre - Waterlooville Directory',
-  description: 'The town's name itself tells a fascinating story, reputedly originating from a pub known as 'Heroes of Waterloo' [1]. In 1815, soldiers returning from the Battl...',
+  description: 'The town\'s name itself tells a fascinating story, reputedly originating from a pub known as \'Heroes of Waterloo\'. In 1815, soldiers returning from the Battle of Waterloo established this community.',
   keywords: 'waterlooville town centre, Waterlooville, Hampshire, local guide, waterlooville town centre in Waterlooville',
   openGraph: {
     title: 'Waterlooville Town Centre - Waterlooville Directory',
-    description: 'The town's name itself tells a fascinating story, reputedly originating from a pub known as 'Heroes of Waterloo' [1]. In 1815, soldiers returning from the Battl...',
+    description: 'The town\'s name itself tells a fascinating story, reputedly originating from a pub known as \'Heroes of Waterloo\'. In 1815, soldiers returning from the Battle of Waterloo established this community.',
     type: 'article',
     locale: 'en_GB',
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Waterlooville Town Centre - Waterlooville Directory',
-    description: 'The town's name itself tells a fascinating story, reputedly originating from a pub known as 'Heroes of Waterloo' [1]. In 1815, soldiers returning from the Battl...',
+    description: 'The town\'s name itself tells a fascinating story, reputedly originating from a pub known as \'Heroes of Waterloo\'. In 1815, soldiers returning from the Battle of Waterloo established this community.',
   },
 }
 
