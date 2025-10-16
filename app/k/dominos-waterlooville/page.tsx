@@ -2,12 +2,12 @@ import { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'domino's waterlooville | Complete Guide to Waterlooville',
-  description: 'Everything you need to know about domino's waterlooville. Local information, services, and community updates for Waterlooville residents.',
-  keywords: 'domino's waterlooville, waterlooville, hampshire, local information, community',
+  title: 'domino\'s waterlooville | Complete Guide to Waterlooville',
+  description: 'Everything you need to know about domino\'s waterlooville. Local information, services, and community updates for Waterlooville residents.',
+  keywords: 'domino\'s waterlooville, waterlooville, hampshire, local information, community',
   openGraph: {
-    title: 'domino's waterlooville | Complete Guide to Waterlooville',
-    description: 'Everything you need to know about domino's waterlooville. Local information, services, and community updates for Waterlooville residents.',
+    title: 'domino\'s waterlooville | Complete Guide to Waterlooville',
+    description: 'Everything you need to know about domino\'s waterlooville. Local information, services, and community updates for Waterlooville residents.',
     url: 'https://waterlooville.co/k/dominos-waterlooville',
     type: 'website',
   },

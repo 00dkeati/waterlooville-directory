@@ -35,6 +35,11 @@
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/seo/hairdresser-waterlooville/page.js"
+    ],
+    "/mens-barbers/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/mens-barbers/page.js"
     ]
   }
 }

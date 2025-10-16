@@ -5,11 +5,11 @@ import Link from 'next/link'
 
 export const metadata: Metadata = {
   title: 'Electrician Waterlooville - Waterlooville Directory',
-  description: 'Electricians in Waterlooville provide a wide array of services designed to keep your property's electrical systems running smoothly and safely. Based on local l...',
+  description: 'Electricians in Waterlooville provide a wide array of services designed to keep your property\'s electrical systems running smoothly and safely. Based on local listings and customer reviews, Waterlooville offers reliable electrical services.',
   keywords: 'electrician waterlooville, Waterlooville, Hampshire, local guide, electrician waterlooville in Waterlooville',
   openGraph: {
     title: 'Electrician Waterlooville - Waterlooville Directory',
-    description: 'Electricians in Waterlooville provide a wide array of services designed to keep your property's electrical systems running smoothly and safely. Based on local l...',
+    description: 'Electricians in Waterlooville provide a wide array of services designed to keep your property\'s electrical systems running smoothly and safely. Based on local listings and customer reviews, Waterlooville offers reliable electrical services.',
     type: 'article',
     locale: 'en_GB',
   },

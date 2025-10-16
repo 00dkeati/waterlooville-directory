@@ -1,3 +1,4 @@
 {
-  "/seo/hairdresser-waterlooville/page": "app/seo/hairdresser-waterlooville/page.js"
+  "/api/editorial/route": "app/api/editorial/route.js",
+  "/mens-barbers/page": "app/mens-barbers/page.js"
 }

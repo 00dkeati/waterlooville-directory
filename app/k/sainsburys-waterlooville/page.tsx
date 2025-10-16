@@ -2,12 +2,12 @@ import { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'sainsbury's waterlooville | Store Information & Shopping Guide',
-  description: 'Complete guide to sainsbury's waterlooville. Store details, opening hours, location, and shopping information for Waterlooville.',
-  keywords: 'sainsbury's waterlooville, waterlooville, hampshire, local information, community',
+  title: 'sainsbury\'s waterlooville | Store Information & Shopping Guide',
+  description: 'Complete guide to sainsbury\'s waterlooville. Store details, opening hours, location, and shopping information for Waterlooville.',
+  keywords: 'sainsbury\'s waterlooville, waterlooville, hampshire, local information, community',
   openGraph: {
-    title: 'sainsbury's waterlooville | Store Information & Shopping Guide',
-    description: 'Complete guide to sainsbury's waterlooville. Store details, opening hours, location, and shopping information for Waterlooville.',
+    title: 'sainsbury\'s waterlooville | Store Information & Shopping Guide',
+    description: 'Complete guide to sainsbury\'s waterlooville. Store details, opening hours, location, and shopping information for Waterlooville.',
     url: 'https://waterlooville.co/k/sainsburys-waterlooville',
     type: 'website',
   },

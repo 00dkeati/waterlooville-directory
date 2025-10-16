@@ -2,12 +2,12 @@ import { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'mcdonald's waterlooville | Complete Guide to Waterlooville',
-  description: 'Everything you need to know about mcdonald's waterlooville. Local information, services, and community updates for Waterlooville residents.',
-  keywords: 'mcdonald's waterlooville, waterlooville, hampshire, local information, community',
+  title: 'mcdonald\'s waterlooville | Complete Guide to Waterlooville',
+  description: 'Everything you need to know about mcdonald\'s waterlooville. Local information, services, and community updates for Waterlooville residents.',
+  keywords: 'mcdonald\'s waterlooville, waterlooville, hampshire, local information, community',
   openGraph: {
-    title: 'mcdonald's waterlooville | Complete Guide to Waterlooville',
-    description: 'Everything you need to know about mcdonald's waterlooville. Local information, services, and community updates for Waterlooville residents.',
+    title: 'mcdonald\'s waterlooville | Complete Guide to Waterlooville',
+    description: 'Everything you need to know about mcdonald\'s waterlooville. Local information, services, and community updates for Waterlooville residents.',
     url: 'https://waterlooville.co/k/mcdonalds-waterlooville',
     type: 'website',
   },

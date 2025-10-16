@@ -5,11 +5,11 @@ import Link from 'next/link'
 
 export const metadata: Metadata = {
   title: 'Cafes Waterlooville - Waterlooville Directory',
-  description: 'Waterlooville, a charming town in Hampshire, offers a delightful array of cafes, each with its unique character and appeal. Whether you're seeking a cozy spot f...',
+  description: 'Waterlooville, a charming town in Hampshire, offers a delightful array of cafes, each with its unique character and appeal. Whether you\'re seeking a cozy spot for coffee or a family-friendly environment, Waterlooville\'s cafe scene has something for everyone.',
   keywords: 'cafes waterlooville, Waterlooville, Hampshire, local guide, cafes waterlooville in Waterlooville',
   openGraph: {
     title: 'Cafes Waterlooville - Waterlooville Directory',
-    description: 'Waterlooville, a charming town in Hampshire, offers a delightful array of cafes, each with its unique character and appeal. Whether you're seeking a cozy spot f...',
+    description: 'Waterlooville, a charming town in Hampshire, offers a delightful array of cafes, each with its unique character and appeal. Whether you\'re seeking a cozy spot for coffee or a family-friendly environment, Waterlooville\'s cafe scene has something for everyone.',
     type: 'article',
     locale: 'en_GB',
   },
