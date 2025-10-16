@@ -4,6 +4,7 @@ import Image from 'next/image'
 import Breadcrumbs from '@/components/Breadcrumbs'
 import BusinessCard from '@/components/BusinessCard'
 import FAQ from '@/components/FAQ'
+import { getBusinesses } from '@/lib/db'
 
 export const dynamic = 'force-dynamic'
 export const revalidate = 3600
@@ -24,38 +25,12 @@ export const metadata: Metadata = {
   },
 }
 
-interface Business {
-  id: string
-  name: string
-  slug: string
-  category: string
-  area: string
-  postcode: string
-  address: string
-  lat?: number
-  lng?: number
-  phone: string
-  website: string
-  description: string
-  rating: number
-  review_count: number
-  featured: boolean
-  images: string[]
-  aggregated_reviews: Array<{
-    author_name: string
-    rating: number
-    text: string
-    date: string
-    source: string
-  }>
-}
-
-async function getCarpenters(): Promise<Business[]> {
+async function getCarpenters() {
   try {
-    const businessesData = await import('@/public/data/businesses-lightweight.json')
-    return businessesData.default.filter((business: Business) => 
+    const allBusinesses = await getBusinesses()
+    return allBusinesses.filter(business => 
       business.category === 'carpenters'
-    ).sort((a: Business, b: Business) => {
+    ).sort((a, b) => {
       // Sort by rating (descending), then by review count (descending)
       if (b.rating !== a.rating) return b.rating - a.rating
       return b.review_count - a.review_count
