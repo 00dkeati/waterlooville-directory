@@ -162,6 +162,18 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       priority: 0.8,
     },
     {
+      url: `${baseUrl}/seo/dog-walks-near-waterlooville`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/seo/dog-walker-waterlooville`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
+      priority: 0.8,
+    },
+    {
       url: `${baseUrl}/seo/doctor-waterlooville`,
       lastModified: new Date(),
       changeFrequency: 'weekly',
@@ -397,6 +409,12 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     },
     {
       url: `${baseUrl}/seo/waterlooville-wickes`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/seo/walks-with-water-for-dogs-near-me`,
       lastModified: new Date(),
       changeFrequency: 'weekly',
       priority: 0.8,
