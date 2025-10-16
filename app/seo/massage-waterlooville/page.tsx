@@ -5,11 +5,11 @@ import Link from 'next/link'
 
 export const metadata: Metadata = {
   title: 'Massage Waterlooville - Waterlooville Directory',
-  description: 'Massage therapy is far more than just a luxurious treat; it's a vital component of a holistic approach to health. The physical benefits are extensive, including...',
+  description: 'Massage therapy is far more than just a luxurious treat; it\'s a vital component of a holistic approach to health. The physical benefits are extensive, including improved circulation, reduced muscle tension, and enhanced relaxation.',
   keywords: 'massage waterlooville, Waterlooville, Hampshire, local guide, massage waterlooville in Waterlooville',
   openGraph: {
     title: 'Massage Waterlooville - Waterlooville Directory',
-    description: 'Massage therapy is far more than just a luxurious treat; it's a vital component of a holistic approach to health. The physical benefits are extensive, including...',
+    description: 'Massage therapy is far more than just a luxurious treat; it\'s a vital component of a holistic approach to health. The physical benefits are extensive, including improved circulation, reduced muscle tension, and enhanced relaxation.',
     type: 'article',
     locale: 'en_GB',
   },

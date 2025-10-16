@@ -5,11 +5,11 @@ import Link from 'next/link'
 
 export const metadata: Metadata = {
   title: 'Pet Shops Waterlooville - Waterlooville Directory',
-  description: 'Located in Wellington Retail Park, Jollyes Waterlooville stands out as a comprehensive pet care destination. Known as 'The Pet People,' Jollyes offers an extens...',
+  description: 'Located in Wellington Retail Park, Jollyes Waterlooville stands out as a comprehensive pet care destination. Known as \'The Pet People,\' Jollyes offers an extensive range of pet supplies and services.',
   keywords: 'pet shops waterlooville, Waterlooville, Hampshire, local guide, pet shops waterlooville in Waterlooville',
   openGraph: {
     title: 'Pet Shops Waterlooville - Waterlooville Directory',
-    description: 'Located in Wellington Retail Park, Jollyes Waterlooville stands out as a comprehensive pet care destination. Known as 'The Pet People,' Jollyes offers an extens...',
+    description: 'Located in Wellington Retail Park, Jollyes Waterlooville stands out as a comprehensive pet care destination. Known as \'The Pet People,\' Jollyes offers an extensive range of pet supplies and services.',
     type: 'article',
     locale: 'en_GB',
   },

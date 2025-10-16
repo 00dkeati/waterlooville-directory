@@ -5,11 +5,11 @@ import Link from 'next/link'
 
 export const metadata: Metadata = {
   title: 'Locksmith Waterlooville - Waterlooville Directory',
-  description: 'When you find yourself in a bind with a lock issue in Waterlooville, whether it's a lockout, a broken key, or a need for enhanced security, having a reliable lo...',
+  description: 'When you find yourself in a bind with a lock issue in Waterlooville, whether it\'s a lockout, a broken key, or a need for enhanced security, having a reliable locksmith is essential.',
   keywords: 'locksmith waterlooville, Waterlooville, Hampshire, local guide, locksmith waterlooville in Waterlooville',
   openGraph: {
     title: 'Locksmith Waterlooville - Waterlooville Directory',
-    description: 'When you find yourself in a bind with a lock issue in Waterlooville, whether it's a lockout, a broken key, or a need for enhanced security, having a reliable lo...',
+    description: 'When you find yourself in a bind with a lock issue in Waterlooville, whether it\'s a lockout, a broken key, or a need for enhanced security, having a reliable locksmith is essential.',
     type: 'article',
     locale: 'en_GB',
   },

@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Electrician Waterlooville - Waterlooville Directory',
-    description: 'Electricians in Waterlooville provide a wide array of services designed to keep your property's electrical systems running smoothly and safely. Based on local l...',
+    description: 'Electricians in Waterlooville provide a wide array of services designed to keep your property\'s electrical systems running smoothly and safely. Based on local listings and customer reviews, Waterlooville offers reliable electrical services.',
   },
 }
 
