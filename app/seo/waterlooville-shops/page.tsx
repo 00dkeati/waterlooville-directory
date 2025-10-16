@@ -1,0 +1,98 @@
+
+import { Metadata } from 'next'
+import Image from 'next/image'
+import Link from 'next/link'
+
+export const metadata: Metadata = {
+  title: 'Waterlooville Shops - Waterlooville Directory',
+  description: 'Discover the best services and information in Waterlooville, Hampshire.',
+  keywords: 'waterlooville shops, Waterlooville, Hampshire, local guide, waterlooville shops in Waterlooville',
+  openGraph: {
+    title: 'Waterlooville Shops - Waterlooville Directory',
+    description: 'Discover the best services and information in Waterlooville, Hampshire.',
+    type: 'article',
+    locale: 'en_GB',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Waterlooville Shops - Waterlooville Directory',
+    description: 'Discover the best services and information in Waterlooville, Hampshire.',
+  },
+}
+
+export default function WaterloovilleshopsPage() {
+  return (
+    <div className="container mx-auto px-4 py-8">
+      {/* Hero Section */}
+      <div className="mb-8">
+        <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+          Waterlooville Shops
+        </h1>
+        <p className="text-xl text-gray-600 mb-6">
+          Discover the best services and information in Waterlooville, Hampshire.
+        </p>
+        
+        {/* Featured Images */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
+          
+          <div className="relative h-48 rounded-lg overflow-hidden">
+            <Image
+              src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800&h=400&fit=crop"
+              alt="waterlooville shops in Waterlooville"
+              fill
+              className="object-cover"
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            />
+          </div>
+          
+          <div className="relative h-48 rounded-lg overflow-hidden">
+            <Image
+              src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=800&h=400&fit=crop"
+              alt="waterlooville shops in Waterlooville"
+              fill
+              className="object-cover"
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            />
+          </div>
+          
+        </div>
+      </div>
+
+      {/* Main Content */}
+      <div className="prose prose-lg max-w-none">
+        <div dangerouslySetInnerHTML={{ __html: `<h1>Waterlooville Shops</h1></p><p><strong>Target Keyword:</strong> waterlooville shops</p><p>Waterlooville, a vibrant town in Hampshire, offers a diverse and engaging shopping experience for both residents and visitors. From well-known retail parks to charming local boutiques and bustling markets, the town caters to a wide array of shopping needs and preferences.</p><p>One of the key shopping destinations is The Boulevard, which hosts a collection of local businesses and established brands, providing a convenient and pleasant environment for shoppers. Additionally, Wellington Retail Park, situated on the edge of Waterlooville, features larger stores such as TK Maxx and Sainsbury's Superstore, making it ideal for those looking for fashion, homeware, and groceries all in one place. The presence of ample free parking, particularly near The Boulevard, significantly enhances the accessibility and appeal of Waterlooville's shopping areas.</p><p>Beyond the larger retail hubs, Waterlooville boasts unique independent shops that add character and a personal touch to the retail landscape. The Waterlooville Market, for instance, offers a traditional shopping experience, while specialty stores like The Pink Party Shop and The Celebration Store cater to specific needs, from party supplies and balloons to cards and gifts. These local businesses contribute to the town's community feel and provide distinctive items not found in larger chains.</p><p>The town also sees initiatives like the Waterlooville Pop Up Shop, supported by Havant Borough Council, which provides opportunities for emerging local businesses to showcase their products and services. This dynamic approach ensures that the shopping scene remains fresh and continues to evolve, offering new discoveries for shoppers.</p><p>Whether you're searching for everyday essentials, a unique gift, or simply enjoy browsing, Waterlooville's shops provide a comprehensive and enjoyable retail journey, blending convenience with community spirit and variety.` }} />
+      </div>
+
+      {/* Related Links */}
+      <div className="mt-12 bg-gray-50 rounded-lg p-6">
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Explore More in Waterlooville</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          <Link href="/categories" className="block bg-white hover:bg-gray-100 p-4 rounded-lg shadow transition-colors">
+            <h3 className="text-xl font-bold text-blue-700">Browse Categories</h3>
+            <p className="text-gray-600">Discover all business categories in Waterlooville</p>
+          </Link>
+          <Link href="/areas" className="block bg-white hover:bg-gray-100 p-4 rounded-lg shadow transition-colors">
+            <h3 className="text-xl font-bold text-blue-700">Explore Areas</h3>
+            <p className="text-gray-600">Find businesses in different areas of Waterlooville</p>
+          </Link>
+          <Link href="/search" className="block bg-white hover:bg-gray-100 p-4 rounded-lg shadow transition-colors">
+            <h3 className="text-xl font-bold text-blue-700">Search Directory</h3>
+            <p className="text-gray-600">Search for specific businesses and services</p>
+          </Link>
+        </div>
+      </div>
+
+      {/* Local Business CTA */}
+      <div className="mt-8 bg-blue-50 border-l-4 border-blue-400 text-blue-800 p-4 rounded">
+        <p className="font-bold">Looking for waterlooville shops services?</p>
+        <p>Browse our directory of local businesses offering waterlooville shops in Waterlooville and surrounding areas.</p>
+        <Link 
+          href="/search?q=waterlooville%20shops" 
+          className="inline-block mt-2 bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition-colors"
+        >
+          Find Local Businesses →
+        </Link>
+      </div>
+    </div>
+  )
+}

@@ -1,0 +1,586 @@
+[
+  {
+    "keyword": "waterlooville",
+    "category": "general",
+    "priority": "high",
+    "searchVolume": "high",
+    "difficulty": "medium",
+    "intent": "informational"
+  },
+  {
+    "keyword": "waterlooville uk",
+    "category": "general",
+    "priority": "high",
+    "searchVolume": "high",
+    "difficulty": "low",
+    "intent": "informational"
+  },
+  {
+    "keyword": "weather in waterlooville",
+    "category": "weather",
+    "priority": "high",
+    "searchVolume": "high",
+    "difficulty": "low",
+    "intent": "informational"
+  },
+  {
+    "keyword": "bbc weather waterlooville",
+    "category": "weather",
+    "priority": "high",
+    "searchVolume": "high",
+    "difficulty": "low",
+    "intent": "informational"
+  },
+  {
+    "keyword": "keydell nurseries waterlooville",
+    "category": "business",
+    "priority": "medium",
+    "searchVolume": "medium",
+    "difficulty": "low",
+    "intent": "commercial"
+  },
+  {
+    "keyword": "havant and waterlooville",
+    "category": "sports",
+    "priority": "high",
+    "searchVolume": "high",
+    "difficulty": "medium",
+    "intent": "informational"
+  },
+  {
+    "keyword": "waterlooville football club",
+    "category": "sports",
+    "priority": "high",
+    "searchVolume": "high",
+    "difficulty": "medium",
+    "intent": "informational"
+  },
+  {
+    "keyword": "waterlooville tip",
+    "category": "services",
+    "priority": "high",
+    "searchVolume": "high",
+    "difficulty": "low",
+    "intent": "informational"
+  },
+  {
+    "keyword": "horizon waterlooville",
+    "category": "business",
+    "priority": "high",
+    "searchVolume": "high",
+    "difficulty": "low",
+    "intent": "commercial"
+  },
+  {
+    "keyword": "asda waterlooville superstore",
+    "category": "shopping",
+    "priority": "high",
+    "searchVolume": "high",
+    "difficulty": "low",
+    "intent": "commercial"
+  },
+  {
+    "keyword": "homes for sale waterlooville",
+    "category": "property",
+    "priority": "high",
+    "searchVolume": "high",
+    "difficulty": "high",
+    "intent": "commercial"
+  },
+  {
+    "keyword": "houses to buy in waterlooville",
+    "category": "property",
+    "priority": "high",
+    "searchVolume": "high",
+    "difficulty": "high",
+    "intent": "commercial"
+  },
+  {
+    "keyword": "sainsbury's waterlooville",
+    "category": "shopping",
+    "priority": "high",
+    "searchVolume": "high",
+    "difficulty": "low",
+    "intent": "commercial"
+  },
+  {
+    "keyword": "waterlooville halfords",
+    "category": "shopping",
+    "priority": "medium",
+    "searchVolume": "medium",
+    "difficulty": "low",
+    "intent": "commercial"
+  },
+  {
+    "keyword": "waterlooville horizon",
+    "category": "business",
+    "priority": "high",
+    "searchVolume": "high",
+    "difficulty": "low",
+    "intent": "commercial"
+  },
+  {
+    "keyword": "waterlooville houses for sale",
+    "category": "property",
+    "priority": "high",
+    "searchVolume": "high",
+    "difficulty": "high",
+    "intent": "commercial"
+  },
+  {
+    "keyword": "waterlooville sainsburys",
+    "category": "shopping",
+    "priority": "high",
+    "searchVolume": "high",
+    "difficulty": "low",
+    "intent": "commercial"
+  },
+  {
+    "keyword": "jobs waterlooville",
+    "category": "jobs",
+    "priority": "high",
+    "searchVolume": "high",
+    "difficulty": "medium",
+    "intent": "commercial"
+  },
+  {
+    "keyword": "waterlooville asda",
+    "category": "shopping",
+    "priority": "high",
+    "searchVolume": "high",
+    "difficulty": "low",
+    "intent": "commercial"
+  },
+  {
+    "keyword": "waterlooville wickes",
+    "category": "shopping",
+    "priority": "medium",
+    "searchVolume": "medium",
+    "difficulty": "low",
+    "intent": "commercial"
+  },
+  {
+    "keyword": "argos waterlooville",
+    "category": "shopping",
+    "priority": "medium",
+    "searchVolume": "medium",
+    "difficulty": "low",
+    "intent": "commercial"
+  },
+  {
+    "keyword": "met office waterlooville",
+    "category": "weather",
+    "priority": "high",
+    "searchVolume": "high",
+    "difficulty": "low",
+    "intent": "informational"
+  },
+  {
+    "keyword": "rightmove waterlooville",
+    "category": "property",
+    "priority": "high",
+    "searchVolume": "high",
+    "difficulty": "high",
+    "intent": "commercial"
+  },
+  {
+    "keyword": "the chairmakers waterlooville",
+    "category": "business",
+    "priority": "medium",
+    "searchVolume": "low",
+    "difficulty": "low",
+    "intent": "commercial"
+  },
+  {
+    "keyword": "toyota waterlooville",
+    "category": "automotive",
+    "priority": "medium",
+    "searchVolume": "medium",
+    "difficulty": "low",
+    "intent": "commercial"
+  },
+  {
+    "keyword": "waterlooville argos",
+    "category": "shopping",
+    "priority": "medium",
+    "searchVolume": "medium",
+    "difficulty": "low",
+    "intent": "commercial"
+  },
+  {
+    "keyword": "waterlooville golf club",
+    "category": "sports",
+    "priority": "high",
+    "searchVolume": "high",
+    "difficulty": "medium",
+    "intent": "commercial"
+  },
+  {
+    "keyword": "waterlooville jobs",
+    "category": "jobs",
+    "priority": "high",
+    "searchVolume": "high",
+    "difficulty": "medium",
+    "intent": "commercial"
+  },
+  {
+    "keyword": "bird in hand waterlooville",
+    "category": "business",
+    "priority": "medium",
+    "searchVolume": "medium",
+    "difficulty": "low",
+    "intent": "commercial"
+  },
+  {
+    "keyword": "havant and waterlooville standings",
+    "category": "sports",
+    "priority": "medium",
+    "searchVolume": "medium",
+    "difficulty": "low",
+    "intent": "informational"
+  },
+  {
+    "keyword": "horizon leisure centre waterlooville",
+    "category": "business",
+    "priority": "high",
+    "searchVolume": "high",
+    "difficulty": "low",
+    "intent": "commercial"
+  },
+  {
+    "keyword": "jobs waterlooville hampshire",
+    "category": "jobs",
+    "priority": "high",
+    "searchVolume": "high",
+    "difficulty": "medium",
+    "intent": "commercial"
+  },
+  {
+    "keyword": "library waterlooville",
+    "category": "services",
+    "priority": "medium",
+    "searchVolume": "medium",
+    "difficulty": "low",
+    "intent": "informational"
+  },
+  {
+    "keyword": "the exchange waterlooville",
+    "category": "business",
+    "priority": "medium",
+    "searchVolume": "medium",
+    "difficulty": "low",
+    "intent": "commercial"
+  },
+  {
+    "keyword": "the red lion waterlooville",
+    "category": "business",
+    "priority": "medium",
+    "searchVolume": "medium",
+    "difficulty": "low",
+    "intent": "commercial"
+  },
+  {
+    "keyword": "waterlooville vacancies",
+    "category": "jobs",
+    "priority": "high",
+    "searchVolume": "high",
+    "difficulty": "medium",
+    "intent": "commercial"
+  },
+  {
+    "keyword": "berewood primary waterlooville",
+    "category": "education",
+    "priority": "medium",
+    "searchVolume": "low",
+    "difficulty": "low",
+    "intent": "informational"
+  },
+  {
+    "keyword": "havant and waterlooville twitter",
+    "category": "sports",
+    "priority": "low",
+    "searchVolume": "low",
+    "difficulty": "low",
+    "intent": "informational"
+  },
+  {
+    "keyword": "puregym waterlooville",
+    "category": "business",
+    "priority": "high",
+    "searchVolume": "high",
+    "difficulty": "low",
+    "intent": "commercial"
+  },
+  {
+    "keyword": "waterlooville matalan",
+    "category": "shopping",
+    "priority": "medium",
+    "searchVolume": "medium",
+    "difficulty": "low",
+    "intent": "commercial"
+  },
+  {
+    "keyword": "bungalows for sale in waterlooville",
+    "category": "property",
+    "priority": "high",
+    "searchVolume": "high",
+    "difficulty": "high",
+    "intent": "commercial"
+  },
+  {
+    "keyword": "domino's waterlooville",
+    "category": "food",
+    "priority": "medium",
+    "searchVolume": "medium",
+    "difficulty": "low",
+    "intent": "commercial"
+  },
+  {
+    "keyword": "fareham and waterlooville",
+    "category": "general",
+    "priority": "medium",
+    "searchVolume": "medium",
+    "difficulty": "low",
+    "intent": "informational"
+  },
+  {
+    "keyword": "home bargains waterlooville",
+    "category": "shopping",
+    "priority": "medium",
+    "searchVolume": "medium",
+    "difficulty": "low",
+    "intent": "commercial"
+  },
+  {
+    "keyword": "jobs waterlooville part time",
+    "category": "jobs",
+    "priority": "high",
+    "searchVolume": "high",
+    "difficulty": "medium",
+    "intent": "commercial"
+  },
+  {
+    "keyword": "pets at home waterlooville",
+    "category": "shopping",
+    "priority": "medium",
+    "searchVolume": "medium",
+    "difficulty": "low",
+    "intent": "commercial"
+  },
+  {
+    "keyword": "tk maxx waterlooville",
+    "category": "shopping",
+    "priority": "medium",
+    "searchVolume": "medium",
+    "difficulty": "low",
+    "intent": "commercial"
+  },
+  {
+    "keyword": "waterlooville dfs",
+    "category": "shopping",
+    "priority": "medium",
+    "searchVolume": "medium",
+    "difficulty": "low",
+    "intent": "commercial"
+  },
+  {
+    "keyword": "waterlooville jobs part time",
+    "category": "jobs",
+    "priority": "high",
+    "searchVolume": "high",
+    "difficulty": "medium",
+    "intent": "commercial"
+  },
+  {
+    "keyword": "waterlooville kwik fit",
+    "category": "automotive",
+    "priority": "medium",
+    "searchVolume": "medium",
+    "difficulty": "low",
+    "intent": "commercial"
+  },
+  {
+    "keyword": "waterlooville m&s",
+    "category": "shopping",
+    "priority": "medium",
+    "searchVolume": "medium",
+    "difficulty": "low",
+    "intent": "commercial"
+  },
+  {
+    "keyword": "waterlooville pets at home",
+    "category": "shopping",
+    "priority": "medium",
+    "searchVolume": "medium",
+    "difficulty": "low",
+    "intent": "commercial"
+  },
+  {
+    "keyword": "waterlooville protest",
+    "category": "news",
+    "priority": "medium",
+    "searchVolume": "medium",
+    "difficulty": "low",
+    "intent": "informational"
+  },
+  {
+    "keyword": "waterlooville specsavers",
+    "category": "health",
+    "priority": "medium",
+    "searchVolume": "medium",
+    "difficulty": "low",
+    "intent": "commercial"
+  },
+  {
+    "keyword": "weather waterlooville met office",
+    "category": "weather",
+    "priority": "high",
+    "searchVolume": "high",
+    "difficulty": "low",
+    "intent": "informational"
+  },
+  {
+    "keyword": "yeomans nissan waterlooville",
+    "category": "automotive",
+    "priority": "medium",
+    "searchVolume": "medium",
+    "difficulty": "low",
+    "intent": "commercial"
+  },
+  {
+    "keyword": "bungalow for sale waterlooville",
+    "category": "property",
+    "priority": "high",
+    "searchVolume": "high",
+    "difficulty": "high",
+    "intent": "commercial"
+  },
+  {
+    "keyword": "bungalows for sale waterlooville",
+    "category": "property",
+    "priority": "high",
+    "searchVolume": "high",
+    "difficulty": "high",
+    "intent": "commercial"
+  },
+  {
+    "keyword": "estate agents waterlooville",
+    "category": "property",
+    "priority": "high",
+    "searchVolume": "high",
+    "difficulty": "high",
+    "intent": "commercial"
+  },
+  {
+    "keyword": "hair salon waterlooville",
+    "category": "beauty",
+    "priority": "medium",
+    "searchVolume": "medium",
+    "difficulty": "low",
+    "intent": "commercial"
+  },
+  {
+    "keyword": "hairdressers waterlooville",
+    "category": "beauty",
+    "priority": "medium",
+    "searchVolume": "medium",
+    "difficulty": "low",
+    "intent": "commercial"
+  },
+  {
+    "keyword": "jobs in waterlooville part time",
+    "category": "jobs",
+    "priority": "high",
+    "searchVolume": "high",
+    "difficulty": "medium",
+    "intent": "commercial"
+  },
+  {
+    "keyword": "mcdonald's waterlooville",
+    "category": "food",
+    "priority": "medium",
+    "searchVolume": "medium",
+    "difficulty": "low",
+    "intent": "commercial"
+  },
+  {
+    "keyword": "recycling centre waterlooville",
+    "category": "services",
+    "priority": "high",
+    "searchVolume": "high",
+    "difficulty": "low",
+    "intent": "informational"
+  },
+  {
+    "keyword": "the george inn waterlooville",
+    "category": "business",
+    "priority": "medium",
+    "searchVolume": "low",
+    "difficulty": "low",
+    "intent": "commercial"
+  },
+  {
+    "keyword": "vine medical group waterlooville",
+    "category": "health",
+    "priority": "medium",
+    "searchVolume": "medium",
+    "difficulty": "low",
+    "intent": "commercial"
+  },
+  {
+    "keyword": "waterlooville dominos",
+    "category": "food",
+    "priority": "medium",
+    "searchVolume": "medium",
+    "difficulty": "low",
+    "intent": "commercial"
+  },
+  {
+    "keyword": "waterlooville estate agents",
+    "category": "property",
+    "priority": "high",
+    "searchVolume": "high",
+    "difficulty": "high",
+    "intent": "commercial"
+  },
+  {
+    "keyword": "waterlooville hairdressers",
+    "category": "beauty",
+    "priority": "medium",
+    "searchVolume": "medium",
+    "difficulty": "low",
+    "intent": "commercial"
+  },
+  {
+    "keyword": "waterlooville mcdonalds",
+    "category": "food",
+    "priority": "medium",
+    "searchVolume": "medium",
+    "difficulty": "low",
+    "intent": "commercial"
+  },
+  {
+    "keyword": "waterlooville property for sale",
+    "category": "property",
+    "priority": "high",
+    "searchVolume": "high",
+    "difficulty": "high",
+    "intent": "commercial"
+  },
+  {
+    "keyword": "waterlooville sports bar",
+    "category": "business",
+    "priority": "medium",
+    "searchVolume": "medium",
+    "difficulty": "low",
+    "intent": "commercial"
+  },
+  {
+    "keyword": "weather in waterlooville 10 days",
+    "category": "weather",
+    "priority": "high",
+    "searchVolume": "high",
+    "difficulty": "low",
+    "intent": "informational"
+  }
+]

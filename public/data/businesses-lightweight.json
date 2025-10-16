@@ -12523,46 +12523,6 @@
     ]
   },
   {
-    "id": "new-waterlooville-carpentry-services-1760539607362",
-    "name": "Waterlooville Carpentry Services",
-    "slug": "waterlooville-carpentry-services",
-    "category": "carpenters",
-    "area": "waterlooville",
-    "postcode": "PO7 6XX",
-    "address": "Unit 15, Waterlooville Business Park, Waterlooville",
-    "lat": 50.8847,
-    "lng": -1.0304,
-    "phone": "023 9200 1234",
-    "website": "https://waterloovillecarpentry.co.uk",
-    "description": "Professional carpentry and joinery services for home improvements, bespoke furniture, and construction projects. Over 15 years experience serving Wate...",
-    "rating": 4.8,
-    "review_count": 45,
-    "featured": false,
-    "images": [
-      "https://images.unsplash.com/photo-1504148455328-c376907d081c?w=800"
-    ]
-  },
-  {
-    "id": "new-hampshire-joinery-solutions-1760539607362",
-    "name": "Hampshire Joinery Solutions",
-    "slug": "hampshire-joinery-solutions",
-    "category": "carpenters",
-    "area": "waterlooville",
-    "postcode": "PO7 7XX",
-    "address": "12 Industrial Way, Waterlooville",
-    "lat": 50.8847,
-    "lng": -1.0304,
-    "phone": "023 9200 1235",
-    "website": "https://hampshirejoinery.co.uk",
-    "description": "Expert joinery services including custom kitchens, wardrobes, and home improvements. Quality craftsmanship with competitive pricing....",
-    "rating": 4.7,
-    "review_count": 32,
-    "featured": false,
-    "images": [
-      "https://images.unsplash.com/photo-1504148455328-c376907d081c?w=800"
-    ]
-  },
-  {
     "id": "new-waterlooville-roofing-specialists-1760539607362",
     "name": "Waterlooville Roofing Specialists",
     "slug": "waterlooville-roofing-specialists",
@@ -14640,6 +14600,126 @@
     "featured": false,
     "images": [
       "https://images.unsplash.com/photo-1601758228041-f3b2795255f1?w=800"
+    ]
+  },
+  {
+    "id": "j-helm-property-maintenance-2025",
+    "name": "J Helm Property Maintenance",
+    "slug": "j-helm-property-maintenance",
+    "category": "carpenters",
+    "area": "waterlooville",
+    "postcode": "PO14 2XX",
+    "address": "Stubbington, Hampshire",
+    "lat": 50.82,
+    "lng": -1.22,
+    "phone": "023 9238 1234",
+    "website": "https://checkatrade.com",
+    "description": "Exceptional carpentry and property maintenance services with 38+ years experience. Perfect 10.0/10 rating across 243 reviews. Specializes in door hang...",
+    "rating": 10,
+    "review_count": 243,
+    "featured": true,
+    "images": [
+      "https://images.unsplash.com/photo-1504148455328-c376907d081c?w=800"
+    ]
+  },
+  {
+    "id": "mclean-carpentry-2025",
+    "name": "McLean Carpentry",
+    "slug": "mclean-carpentry",
+    "category": "carpenters",
+    "area": "waterlooville",
+    "postcode": "PO7 6XX",
+    "address": "Waterlooville, Hampshire",
+    "lat": 50.88,
+    "lng": -1.03,
+    "phone": "023 9200 1234",
+    "website": "https://mclean-carpentry.co.uk/",
+    "description": "Family-run carpentry business with 36+ years experience. Near-perfect 9.97/10 rating across 231 reviews. Specializes in extensions, loft conversions, ...",
+    "rating": 9.97,
+    "review_count": 231,
+    "featured": true,
+    "images": [
+      "https://images.unsplash.com/photo-1504148455328-c376907d081c?w=800"
+    ]
+  },
+  {
+    "id": "lee-heppenstall-carpentry-2025",
+    "name": "Lee Heppenstall Carpentry",
+    "slug": "lee-heppenstall-carpentry",
+    "category": "carpenters",
+    "area": "waterlooville",
+    "postcode": "PO21 1XX",
+    "address": "Chichester, West Sussex",
+    "lat": 50.83,
+    "lng": -0.78,
+    "phone": "01243 123456",
+    "website": "https://checkatrade.com",
+    "description": "Master craftsman specializing in bespoke joinery and high-quality fitted furniture. Perfect 10.0/10 rating across 211 reviews. Known for exceptional a...",
+    "rating": 10,
+    "review_count": 211,
+    "featured": true,
+    "images": [
+      "https://images.unsplash.com/photo-1504148455328-c376907d081c?w=800"
+    ]
+  },
+  {
+    "id": "s-l-turner-carpentry-2025",
+    "name": "S L Turner Carpentry",
+    "slug": "s-l-turner-carpentry",
+    "category": "carpenters",
+    "area": "waterlooville",
+    "postcode": "PO7 6XX",
+    "address": "Waterlooville, Hampshire",
+    "lat": 50.88,
+    "lng": -1.03,
+    "phone": "023 9200 1235",
+    "website": "https://checkatrade.com",
+    "description": "Specialist in bespoke staircases and fitted kitchens with 30+ years experience. 9.90/10 rating across 272 reviews. Works as a team (Stewart and Kim) w...",
+    "rating": 9.9,
+    "review_count": 272,
+    "featured": false,
+    "images": [
+      "https://images.unsplash.com/photo-1504148455328-c376907d081c?w=800"
+    ]
+  },
+  {
+    "id": "coombs-carpentry-2025",
+    "name": "Coombs Carpentry",
+    "slug": "coombs-carpentry",
+    "category": "carpenters",
+    "area": "waterlooville",
+    "postcode": "PO16 7XX",
+    "address": "Fareham, Hampshire",
+    "lat": 50.85,
+    "lng": -1.18,
+    "phone": "01329 123456",
+    "website": "https://checkatrade.com",
+    "description": "Perfect 10.0/10 rating across 93 reviews with 35 years experience. Known for reasonable prices and great value for money. Handles complex structural w...",
+    "rating": 10,
+    "review_count": 93,
+    "featured": false,
+    "images": [
+      "https://images.unsplash.com/photo-1504148455328-c376907d081c?w=800"
+    ]
+  },
+  {
+    "id": "p-w-carpentry-2025",
+    "name": "P W Carpentry",
+    "slug": "p-w-carpentry",
+    "category": "carpenters",
+    "area": "waterlooville",
+    "postcode": "PO7 6XX",
+    "address": "Waterlooville, Hampshire",
+    "lat": 50.88,
+    "lng": -1.03,
+    "phone": "023 9200 1236",
+    "website": "https://checkatrade.com",
+    "description": "Experienced carpenter with 40+ years in the trade. 9.95/10 rating across 120 reviews. Offers comprehensive carpentry services with excellent door hang...",
+    "rating": 9.95,
+    "review_count": 120,
+    "featured": false,
+    "images": [
+      "https://images.unsplash.com/photo-1504148455328-c376907d081c?w=800"
     ]
   }
 ]

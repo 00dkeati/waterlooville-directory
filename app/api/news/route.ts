@@ -10,6 +10,13 @@ export async function GET() {
     
     const localNews = [
       {
+        title: "Best Carpenters & Joiners in Waterlooville - Expert Woodwork Services",
+        description: "Discover Waterlooville's most skilled craftsmen with perfect ratings. From bespoke furniture to major extensions, featuring top-rated carpenters with decades of experience.",
+        url: "/carpenters",
+        publishedAt: new Date(Date.now() - 30 * 60 * 1000).toISOString(),
+        source: "Waterlooville Directory"
+      },
+      {
         title: "Waterlooville Shopping Guide - Find All Local Shops",
         description: "Discover all the shops in Waterlooville including Sainsburys, ASDA, Waitrose, M&S, Argos and more at the retail park and town centre.",
         url: "/w/waterlooville-shops",

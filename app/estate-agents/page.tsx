@@ -1,5 +1,6 @@
 import { Metadata } from 'next'
 import Link from 'next/link'
+import Image from 'next/image'
 import { getBusinesses } from '@/lib/db'
 
 export const metadata: Metadata = {
@@ -101,49 +102,49 @@ export default async function EstateAgentsPage() {
 
   return (
     <div className="max-w-7xl mx-auto">
-      {/* Hero Section */}
-      <header className="bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-2xl p-8 md:p-12 mb-12">
+      {/* Hero Section - Mobile Optimized */}
+      <header className="bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-2xl p-6 sm:p-8 md:p-12 mb-8 sm:mb-12">
         <div className="flex items-center gap-3 mb-4">
-          <span className="text-5xl">🏡</span>
-          <h1 className="text-4xl md:text-5xl font-bold">
+          <span className="text-4xl sm:text-5xl">🏡</span>
+          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
             Waterlooville Estate Agents League Table
           </h1>
         </div>
-        <p className="text-xl md:text-2xl text-blue-100 mb-6">
+        <p className="text-lg sm:text-xl md:text-2xl text-blue-100 mb-6">
           Compare the best estate agents in Waterlooville based on real Google reviews
         </p>
         
-        {/* Quick Stats */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-8">
-          <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4">
-            <div className="text-3xl font-bold">{estateAgents.length}</div>
-            <div className="text-blue-100">Estate Agents</div>
+        {/* Quick Stats - Mobile Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-6 sm:mt-8">
+          <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 text-center sm:text-left">
+            <div className="text-2xl sm:text-3xl font-bold">{estateAgents.length}</div>
+            <div className="text-blue-100 text-sm sm:text-base">Estate Agents</div>
           </div>
-          <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4">
-            <div className="text-3xl font-bold">{avgRating.toFixed(1)}⭐</div>
-            <div className="text-blue-100">Average Rating</div>
+          <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 text-center sm:text-left">
+            <div className="text-2xl sm:text-3xl font-bold">{avgRating.toFixed(1)}⭐</div>
+            <div className="text-blue-100 text-sm sm:text-base">Average Rating</div>
           </div>
-          <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4">
-            <div className="text-3xl font-bold">{totalReviews.toLocaleString()}</div>
-            <div className="text-blue-100">Total Reviews</div>
+          <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 text-center sm:text-left">
+            <div className="text-2xl sm:text-3xl font-bold">{totalReviews.toLocaleString()}</div>
+            <div className="text-blue-100 text-sm sm:text-base">Total Reviews</div>
           </div>
         </div>
       </header>
 
       {/* League Table - Compact Card Layout */}
       <section className="bg-white rounded-xl shadow-2xl overflow-hidden mb-8 border-4 border-gray-200">
-        {/* Table Header */}
-        <div className="bg-gradient-to-r from-blue-600 to-indigo-600 px-6 py-5">
-          <h2 className="text-3xl font-black text-white flex items-center gap-3">
-            <span className="text-4xl">🏆</span>
-            OFFICIAL LEAGUE TABLE 2024
+        {/* Table Header - Mobile Optimized */}
+        <div className="bg-gradient-to-r from-blue-600 to-indigo-600 px-4 sm:px-6 py-4 sm:py-5">
+          <h2 className="text-xl sm:text-2xl md:text-3xl font-black text-white flex items-center gap-2 sm:gap-3">
+            <span className="text-2xl sm:text-3xl md:text-4xl">🏆</span>
+            <span className="leading-tight">OFFICIAL LEAGUE TABLE 2024</span>
           </h2>
-          <p className="text-blue-100 mt-2 text-sm font-medium">Ranked by verified Google customer reviews</p>
+          <p className="text-blue-100 mt-2 text-xs sm:text-sm font-medium">Ranked by verified Google customer reviews</p>
         </div>
 
-        {/* Compact Card Grid */}
-        <div className="p-6">
-          <div className="grid gap-4">
+        {/* Compact Card Grid - Mobile Optimized */}
+        <div className="p-4 sm:p-6">
+          <div className="grid gap-3 sm:gap-4">
             {estateAgents.map((agent, index) => {
               const position = index + 1
               const insights = getAgentInsights(agent, position)
@@ -161,12 +162,14 @@ export default async function EstateAgentsPage() {
                     ${position > 3 ? 'border-blue-200 bg-white hover:border-blue-400' : ''}
                   `}
                 >
-                  <div className="p-4">
-                    <div className="flex items-start justify-between mb-4">
-                      {/* Position & Name */}
-                      <div className="flex items-center gap-4">
+                  <div className="p-3 sm:p-4">
+                    {/* Mobile-First Layout */}
+                    <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4 mb-4">
+                      {/* Left Side: Position, Image, Name */}
+                      <div className="flex items-start gap-3 sm:gap-4 flex-1">
+                        {/* Position Badge */}
                         <div className={`
-                          inline-flex items-center justify-center w-16 h-16 rounded-full font-black text-2xl flex-shrink-0
+                          inline-flex items-center justify-center w-12 h-12 sm:w-16 sm:h-16 rounded-full font-black text-lg sm:text-2xl flex-shrink-0
                           ${position === 1 ? 'bg-gradient-to-br from-yellow-300 to-yellow-500 text-yellow-900 shadow-lg border-4 border-yellow-600' : ''}
                           ${position === 2 ? 'bg-gradient-to-br from-gray-300 to-gray-400 text-gray-800 shadow-lg border-4 border-gray-500' : ''}
                           ${position === 3 ? 'bg-gradient-to-br from-orange-300 to-orange-500 text-orange-900 shadow-lg border-4 border-orange-600' : ''}
@@ -174,13 +177,31 @@ export default async function EstateAgentsPage() {
                         `}>
                           {position <= 3 ? getMedal(position) : position}
                         </div>
+
+                        {/* Business Image */}
+                        <div className="relative w-16 h-16 sm:w-20 sm:h-20 rounded-lg overflow-hidden flex-shrink-0">
+                          {agent.images && agent.images.length > 0 ? (
+                            <Image
+                              src={agent.images[0]}
+                              alt={`${agent.name} business photo`}
+                              fill
+                              className="object-cover"
+                              sizes="(max-width: 640px) 64px, 80px"
+                            />
+                          ) : (
+                            <div className="w-full h-full bg-gradient-to-br from-blue-100 to-indigo-200 flex items-center justify-center">
+                              <span className="text-2xl">🏢</span>
+                            </div>
+                          )}
+                        </div>
                         
-                        <div className="flex-1">
-                          <h3 className="text-xl font-black text-gray-900 mb-1">
+                        {/* Business Name & Insights */}
+                        <div className="flex-1 min-w-0">
+                          <h3 className="text-lg sm:text-xl font-black text-gray-900 mb-1 leading-tight">
                             {agent.name.replace('Estate Agents', '').replace('Waterlooville', '').trim()}
                           </h3>
                           {insights.length > 0 && (
-                            <div className="flex flex-wrap gap-2 mt-2">
+                            <div className="flex flex-wrap gap-1 sm:gap-2 mt-2">
                               {insights.map((insight, idx) => (
                                 <span key={idx} className="text-xs font-semibold text-blue-600 bg-blue-100 px-2 py-1 rounded">
                                   {insight}
@@ -191,41 +212,44 @@ export default async function EstateAgentsPage() {
                         </div>
                       </div>
 
-                      {/* Rating & Stats */}
-                      <div className="flex items-center gap-4">
+                      {/* Right Side: Rating & Stats - Mobile Stack */}
+                      <div className="flex flex-col sm:flex-row items-start sm:items-center gap-3 sm:gap-4">
+                        {/* Rating Badge */}
                         <div className={`
-                          inline-flex flex-col items-center px-4 py-3 rounded-xl border-2 font-black shadow-lg
+                          inline-flex flex-col items-center px-3 py-2 sm:px-4 sm:py-3 rounded-xl border-2 font-black shadow-lg
                           ${agent.rating >= 4.8 ? 'bg-gradient-to-br from-green-400 to-green-600 border-green-700 text-white' : ''}
                           ${agent.rating >= 4.5 && agent.rating < 4.8 ? 'bg-gradient-to-br from-blue-400 to-blue-600 border-blue-700 text-white' : ''}
                           ${agent.rating >= 4.0 && agent.rating < 4.5 ? 'bg-gradient-to-br from-yellow-300 to-yellow-500 border-yellow-600 text-yellow-900' : ''}
                           ${agent.rating < 4.0 ? 'bg-gradient-to-br from-gray-300 to-gray-400 border-gray-500 text-gray-800' : ''}
                         `}>
                           <div className="flex items-center gap-1">
-                            <span className="text-xl">★</span>
-                            <span className="text-2xl">{agent.rating.toFixed(1)}</span>
+                            <span className="text-lg sm:text-xl">★</span>
+                            <span className="text-xl sm:text-2xl">{agent.rating.toFixed(1)}</span>
                           </div>
                           <div className="text-xs mt-1 opacity-90">
                             {agent.rating >= 4.8 ? 'OUTSTANDING' : agent.rating >= 4.5 ? 'EXCELLENT' : agent.rating >= 4.0 ? 'GOOD' : 'AVERAGE'}
                           </div>
                         </div>
                         
+                        {/* Reviews Count */}
                         <div className="bg-gradient-to-br from-indigo-100 to-purple-100 border-2 border-indigo-300 rounded-lg px-3 py-2">
-                          <div className="text-2xl font-black text-indigo-900">{agent.review_count}</div>
+                          <div className="text-xl sm:text-2xl font-black text-indigo-900">{agent.review_count}</div>
                           <div className="text-xs font-bold text-indigo-700 uppercase">Reviews</div>
                         </div>
                         
+                        {/* View Button */}
                         <Link
                           href={`/biz/${agent.slug}`}
-                          className="px-4 py-2 bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white text-sm font-bold rounded-lg transition-all shadow-md hover:shadow-lg"
+                          className="px-3 py-2 sm:px-4 sm:py-2 bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white text-sm font-bold rounded-lg transition-all shadow-md hover:shadow-lg whitespace-nowrap"
                         >
                           View →
                         </Link>
                       </div>
                     </div>
 
-                    {/* Reviews Preview */}
+                    {/* Reviews Preview - Mobile Optimized */}
                     {(positive.length > 0 || negative.length > 0) && (
-                      <div className="grid md:grid-cols-2 gap-4 mt-4">
+                      <div className="grid grid-cols-1 lg:grid-cols-2 gap-3 sm:gap-4 mt-4">
                         {/* Positive Reviews Preview */}
                         {positive.length > 0 && (
                           <div className="bg-green-50 border border-green-200 rounded-lg p-3">
@@ -241,7 +265,7 @@ export default async function EstateAgentsPage() {
                                     <span className="text-xs text-green-600 font-medium">{review.source}</span>
                                   </div>
                                   <p className="text-xs text-gray-700 leading-relaxed">
-                                    "{review.text.length > 100 ? review.text.substring(0, 100) + '...' : review.text}"
+                                    "{review.text.length > 80 ? review.text.substring(0, 80) + '...' : review.text}"
                                   </p>
                                   <div className="text-xs text-gray-500 mt-1">— {review.author}</div>
                                 </div>
@@ -265,7 +289,7 @@ export default async function EstateAgentsPage() {
                                     <span className="text-xs text-orange-600 font-medium">{review.source}</span>
                                   </div>
                                   <p className="text-xs text-gray-700 leading-relaxed">
-                                    "{review.text.length > 100 ? review.text.substring(0, 100) + '...' : review.text}"
+                                    "{review.text.length > 80 ? review.text.substring(0, 80) + '...' : review.text}"
                                   </p>
                                   <div className="text-xs text-gray-500 mt-1">— {review.author}</div>
                                 </div>
