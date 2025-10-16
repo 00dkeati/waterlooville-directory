@@ -37,7 +37,10 @@ interface BlogArticle {
 
 async function getBlogArticles(): Promise<BlogArticle[]> {
   try {
-    const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3002'
+    // Use the correct base URL for production or development
+    const baseUrl = process.env.NODE_ENV === 'production' 
+      ? 'https://www.waterlooville.co'
+      : (process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000')
     const response = await fetch(`${baseUrl}/api/blog`, {
       next: { revalidate: 3600 }, // Revalidate every hour
     })
