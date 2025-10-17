@@ -1,5 +1,6 @@
 import TopNav from "./(site)/components/TopNav";
 import { getFeatureArticle, getLatestArticles, getTopCategories } from "@/lib/data";
+import Image from "next/image";
 
 export default async function HomePage() {
   const [featureArticle, latestArticles, categories] = await Promise.all([
@@ -20,29 +21,55 @@ export default async function HomePage() {
             
             {featureArticle && (
               <div className="mb-8">
-                <div className="bg-gradient-to-r from-green-600 to-green-700 rounded-lg p-6 text-white">
-                  <div className="flex items-center mb-3">
-                    <span className="bg-white text-green-600 px-3 py-1 rounded-full text-sm font-semibold">
-                      {featureArticle.kicker || 'Featured'}
-                    </span>
+                <div className="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden">
+                  <div className="md:flex">
+                    {/* Featured Article Image */}
+                    {featureArticle.imageUrl && (
+                      <div className="md:w-1/2 relative h-64 md:h-auto">
+                        <Image
+                          src={featureArticle.imageUrl}
+                          alt={featureArticle.title}
+                          fill
+                          className="object-cover"
+                          sizes="(max-width: 768px) 100vw, 50vw"
+                          priority
+                        />
+                        <div className="absolute top-4 left-4">
+                          <span className="bg-green-600 text-white px-3 py-1 rounded-full text-sm font-semibold">
+                            {featureArticle.kicker || 'Featured'}
+                          </span>
+                        </div>
+                      </div>
+                    )}
+                    
+                    {/* Featured Article Content */}
+                    <div className={`p-6 ${featureArticle.imageUrl ? 'md:w-1/2' : 'w-full'} bg-gradient-to-r from-green-600 to-green-700 text-white`}>
+                      {!featureArticle.imageUrl && (
+                        <div className="flex items-center mb-3">
+                          <span className="bg-white text-green-600 px-3 py-1 rounded-full text-sm font-semibold">
+                            {featureArticle.kicker || 'Featured'}
+                          </span>
+                        </div>
+                      )}
+                      <h2 className="text-2xl font-bold mb-3">
+                        <a href={`/editorial/${featureArticle.slug}`} className="hover:text-green-100 transition-colors">
+                          {featureArticle.title}
+                        </a>
+                      </h2>
+                      {featureArticle.excerpt && (
+                        <p className="text-green-100 mb-4">{featureArticle.excerpt}</p>
+                      )}
+                      <a 
+                        href={`/editorial/${featureArticle.slug}`}
+                        className="inline-flex items-center bg-white text-green-600 px-4 py-2 rounded-lg font-semibold hover:bg-green-50 transition-colors"
+                      >
+                        Read more
+                        <svg className="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                        </svg>
+                      </a>
+                    </div>
                   </div>
-                  <h2 className="text-2xl font-bold mb-3">
-                    <a href={`/editorial/${featureArticle.slug}`} className="hover:text-green-100 transition-colors">
-                      {featureArticle.title}
-                    </a>
-                  </h2>
-                  {featureArticle.excerpt && (
-                    <p className="text-green-100 mb-4">{featureArticle.excerpt}</p>
-                  )}
-                  <a 
-                    href={`/editorial/${featureArticle.slug}`}
-                    className="inline-flex items-center bg-white text-green-600 px-4 py-2 rounded-lg font-semibold hover:bg-green-50 transition-colors"
-                  >
-                    Read more
-                    <svg className="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                    </svg>
-                  </a>
                 </div>
               </div>
             )}
@@ -50,25 +77,48 @@ export default async function HomePage() {
             {/* Latest Articles Grid */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {latestArticles.slice(0, 6).map((article) => (
-                <article key={article.slug} className="bg-gray-50 rounded-lg p-4 hover:bg-gray-100 transition-colors">
-                  <div className="flex items-center mb-2">
-                    <span className="bg-green-100 text-green-700 px-2 py-1 rounded text-xs font-semibold">
-                      {article.kicker || 'News'}
-                    </span>
-                  </div>
-                  <h3 className="font-semibold text-gray-900 mb-2 line-clamp-2">
-                    <a href={`/editorial/${article.slug}`} className="hover:text-green-600 transition-colors">
-                      {article.title}
-                    </a>
-                  </h3>
-                  {article.excerpt && (
-                    <p className="text-gray-600 text-sm mb-3 line-clamp-2">{article.excerpt}</p>
+                <article key={article.slug} className="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden hover:shadow-md transition-shadow">
+                  {/* Article Image */}
+                  {article.imageUrl && (
+                    <div className="relative h-48 w-full">
+                      <Image
+                        src={article.imageUrl}
+                        alt={article.title}
+                        fill
+                        className="object-cover"
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                      />
+                      <div className="absolute top-3 left-3">
+                        <span className="bg-green-600 text-white px-2 py-1 rounded text-xs font-semibold">
+                          {article.kicker || 'News'}
+                        </span>
+                      </div>
+                    </div>
                   )}
-                  <div className="flex items-center justify-between text-xs text-gray-500">
-                    <span>{article.publishedAt ? new Date(article.publishedAt).toLocaleDateString('en-GB') : 'Recent'}</span>
-                    <a href={`/editorial/${article.slug}`} className="text-green-600 hover:text-green-700 font-medium">
-                      Read →
-                    </a>
+                  
+                  {/* Article Content */}
+                  <div className="p-4">
+                    {!article.imageUrl && (
+                      <div className="flex items-center mb-2">
+                        <span className="bg-green-100 text-green-700 px-2 py-1 rounded text-xs font-semibold">
+                          {article.kicker || 'News'}
+                        </span>
+                      </div>
+                    )}
+                    <h3 className="font-semibold text-gray-900 mb-2 line-clamp-2">
+                      <a href={`/editorial/${article.slug}`} className="hover:text-green-600 transition-colors">
+                        {article.title}
+                      </a>
+                    </h3>
+                    {article.excerpt && (
+                      <p className="text-gray-600 text-sm mb-3 line-clamp-2">{article.excerpt}</p>
+                    )}
+                    <div className="flex items-center justify-between text-xs text-gray-500">
+                      <span>{article.publishedAt ? new Date(article.publishedAt).toLocaleDateString('en-GB') : 'Recent'}</span>
+                      <a href={`/editorial/${article.slug}`} className="text-green-600 hover:text-green-700 font-medium">
+                        Read →
+                      </a>
+                    </div>
                   </div>
                 </article>
               ))}
