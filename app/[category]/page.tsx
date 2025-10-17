@@ -33,8 +33,9 @@ export async function generateMetadata({ params }: CategoryPageProps): Promise<M
 }
 
 export default async function CategoryPage({ params }: CategoryPageProps) {
-  // Exclude 'seo' from being treated as a category to avoid routing conflicts
-  if (params.category === 'seo') {
+  // Exclude specific pages from being treated as categories to avoid routing conflicts
+  const excludedPaths = ['seo', 'driving-guide', 'guide-driving-instructors-waterlooville', 'driving-instructors-waterlooville', 'guides']
+  if (excludedPaths.includes(params.category)) {
     notFound()
   }
   
