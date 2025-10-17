@@ -95,7 +95,7 @@ export default function RootLayout({
         <link rel="dns-prefetch" href="https://maps.googleapis.com" />
       </head>
       <body className={`${inter.className} antialiased`}>
-        <div className="min-h-screen bg-gray-50">
+        <div className="min-h-screen bg-cream-50">
           {children}
         </div>
       </body>

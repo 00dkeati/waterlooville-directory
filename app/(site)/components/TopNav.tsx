@@ -29,8 +29,8 @@ export default function TopNav() {
     <>
       <nav className={`sticky top-0 z-50 transition-all duration-200 ${
         isScrolled 
-          ? 'bg-white/90 backdrop-blur-md shadow-sm supports-[backdrop-filter]:bg-white/60 border-b-2 border-red-600' 
-          : 'bg-white border-b-2 border-red-600'
+          ? 'bg-white/95 backdrop-blur-md shadow-sm supports-[backdrop-filter]:bg-white/80 border-b border-green-200' 
+          : 'bg-white border-b border-green-200'
       }`}>
         <div className="container mx-auto max-w-6xl px-4">
           <div className="flex items-center justify-between h-16">
@@ -52,7 +52,7 @@ export default function TopNav() {
                 <Link
                   key={item.href}
                   href={item.href}
-                  className="text-gray-700 hover:text-red-600 font-medium transition-colors"
+                  className="text-gray-700 hover:text-green-600 font-medium transition-colors"
                 >
                   {item.label}
                 </Link>
@@ -64,7 +64,7 @@ export default function TopNav() {
               {/* Search Icon */}
               <button
                 onClick={() => setIsSearchOpen(!isSearchOpen)}
-                className="p-2 text-gray-600 hover:text-red-600 transition-colors"
+                className="p-2 text-gray-600 hover:text-green-600 transition-colors"
                 aria-label="Search"
               >
                 <Search className="w-5 h-5" />
@@ -73,7 +73,7 @@ export default function TopNav() {
               {/* Mobile Menu Button */}
               <button
                 onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-                className="md:hidden p-2 text-gray-600 hover:text-red-600 transition-colors"
+                className="md:hidden p-2 text-gray-600 hover:text-green-600 transition-colors"
                 aria-label="Menu"
               >
                 {isMobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
@@ -88,12 +88,12 @@ export default function TopNav() {
                 <input
                   type="search"
                   placeholder="Search businesses, services..."
-                  className="w-full px-4 py-3 pr-12 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-transparent"
+                  className="w-full px-4 py-3 pr-12 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent"
                   autoFocus
                 />
                 <button
                   type="submit"
-                  className="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-400 hover:text-red-600"
+                  className="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-400 hover:text-green-600"
                 >
                   <Search className="w-5 h-5" />
                 </button>
@@ -109,7 +109,7 @@ export default function TopNav() {
                   <Link
                     key={item.href}
                     href={item.href}
-                    className="text-gray-700 hover:text-red-600 font-medium transition-colors py-2"
+                    className="text-gray-700 hover:text-green-600 font-medium transition-colors py-2"
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
                     {item.label}
@@ -120,33 +120,6 @@ export default function TopNav() {
           )}
         </div>
       </nav>
-
-      {/* Mobile Topic Strip */}
-      <div className="md:hidden bg-gray-50 border-b border-gray-200">
-        <div className="container mx-auto max-w-6xl px-4">
-          <div className="flex overflow-x-auto scrollbar-hide py-3 space-x-3">
-            {[
-              { label: 'News', href: '/editorial', icon: '📰' },
-              { label: 'Directory', href: '/categories', icon: '📋' },
-              { label: 'Plumbers', href: '/plumbers', icon: '🔧' },
-              { label: 'Cafés', href: '/coffee-shops', icon: '☕' },
-              { label: 'Vets', href: '/vets', icon: '🐕' },
-              { label: 'Hairdressers', href: '/hairdressers', icon: '✂️' },
-              { label: 'Restaurants', href: '/restaurants', icon: '🍽️' },
-              { label: 'Estate Agents', href: '/estate-agents', icon: '🏠' }
-            ].map((topic) => (
-              <Link
-                key={topic.href}
-                href={topic.href}
-                className="flex-shrink-0 flex items-center space-x-2 px-3 py-2 bg-white rounded-full border border-gray-200 hover:border-red-300 hover:bg-red-50 transition-colors"
-              >
-                <span className="text-sm">{topic.icon}</span>
-                <span className="text-sm font-medium text-gray-700 whitespace-nowrap">{topic.label}</span>
-              </Link>
-            ))}
-          </div>
-        </div>
-      </div>
     </>
   );
 }
