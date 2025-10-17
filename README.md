@@ -18,3 +18,4 @@ A comprehensive local business directory and community guide for Waterlooville, 
 - Build issues resolved
 - All TypeScript errors fixed
 # Trigger fresh deployment
+# Deployment fix
