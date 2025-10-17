@@ -62,7 +62,9 @@ export default async function BusinessPage({ params }: BusinessPageProps) {
   const filteredSimilarBusinesses = similarBusinesses.filter(b => b.id !== business.id).slice(0, 3)
 
   const formatRating = (rating: number) => {
-    return '★'.repeat(Math.floor(rating)) + '☆'.repeat(5 - Math.floor(rating))
+    // Ensure rating is between 0 and 5
+    const safeRating = Math.max(0, Math.min(5, rating || 0))
+    return '★'.repeat(Math.floor(safeRating)) + '☆'.repeat(5 - Math.floor(safeRating))
   }
 
   // Generate AI Overview
@@ -162,10 +164,10 @@ export default async function BusinessPage({ params }: BusinessPageProps) {
       "latitude": business.lat,
       "longitude": business.lng
     } : undefined,
-    "aggregateRating": business.rating > 0 ? {
+    "aggregateRating": (business.rating || 0) > 0 ? {
       "@type": "AggregateRating",
-      "ratingValue": business.rating,
-      "reviewCount": business.review_count
+      "ratingValue": Math.max(0, Math.min(5, business.rating || 0)),
+      "reviewCount": business.review_count || 0
     } : undefined,
     "openingHours": business.opening_hours_json ? JSON.parse(business.opening_hours_json) : undefined
   }
@@ -208,7 +210,7 @@ export default async function BusinessPage({ params }: BusinessPageProps) {
                   {formatRating(business.rating)}
                 </span>
                 <span className="text-gray-700 font-semibold">
-                  {business.rating.toFixed(1)} ({business.review_count} reviews)
+                  {(business.rating || 0).toFixed(1)} ({business.review_count || 0} reviews)
                 </span>
               </div>
               {isOpenNow() !== null && (
