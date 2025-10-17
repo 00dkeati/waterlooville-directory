@@ -1,5 +1,31 @@
 import { Business, Article, Category, Area } from './types';
-import { getCategories, getAreas as getAreasFromDb, getFeaturedBusinesses as getFeaturedBiz } from './db';
+import { getCategories, getAreas as getAreasFromDb, getFeaturedBusinesses as getFeaturedBiz, getBusinessBySlug } from './db';
+
+// Helper function to get business image for an article
+async function getArticleBusinessImage(article: any): Promise<string | undefined> {
+  try {
+    // If article already has a heroImage, use it
+    if (article.heroImage && article.heroImage !== 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&h=400&fit=crop') {
+      return article.heroImage;
+    }
+
+    // If article has related businesses, try to get image from first business
+    if (article.relatedBusinesses && article.relatedBusinesses.length > 0) {
+      const firstBusinessSlug = article.relatedBusinesses[0];
+      const business = await getBusinessBySlug(firstBusinessSlug);
+      
+      if (business && business.images && business.images.length > 0) {
+        return business.images[0];
+      }
+    }
+
+    // Fallback to default image
+    return 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&h=400&fit=crop';
+  } catch (error) {
+    console.error('Error getting business image for article:', error);
+    return 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&h=400&fit=crop';
+  }
+}
 
 // Get featured article (most recent featured editorial article)
 export async function getFeatureArticle(): Promise<Article | null> {
@@ -13,11 +39,14 @@ export async function getFeatureArticle(): Promise<Article | null> {
     
     if (!featured) return null;
     
+    // Get business image for the article
+    const businessImage = await getArticleBusinessImage(featured);
+    
     return {
       slug: featured.slug,
       title: featured.title,
       excerpt: featured.excerpt,
-      imageUrl: featured.heroImage,
+      imageUrl: businessImage,
       publishedAt: featured.publishedAt,
       kicker: featured.category || 'Local Guide',
       category: featured.category,
@@ -37,21 +66,30 @@ export async function getLatestArticles(n = 9): Promise<Article[]> {
     const articlesData = await import('@/data/editorial-articles.json');
     const articles: any[] = articlesData.default;
     
-    return articles
+    const latestArticles = articles
       .sort((a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime())
-      .slice(0, n)
-      .map(article => ({
-        slug: article.slug,
-        title: article.title,
-        excerpt: article.excerpt,
-        imageUrl: article.heroImage,
-        publishedAt: article.publishedAt,
-        kicker: article.category || 'Local News',
-        category: article.category,
-        author: article.author,
-        featured: article.featured,
-        readTime: article.readTime
-      }));
+      .slice(0, n);
+
+    // Get business images for all articles
+    const articlesWithImages = await Promise.all(
+      latestArticles.map(async (article) => {
+        const businessImage = await getArticleBusinessImage(article);
+        return {
+          slug: article.slug,
+          title: article.title,
+          excerpt: article.excerpt,
+          imageUrl: businessImage,
+          publishedAt: article.publishedAt,
+          kicker: article.category || 'Local News',
+          category: article.category,
+          author: article.author,
+          featured: article.featured,
+          readTime: article.readTime
+        };
+      })
+    );
+    
+    return articlesWithImages;
   } catch (error) {
     console.error('Error fetching latest articles:', error);
     return [];
@@ -71,19 +109,27 @@ export async function getMostRead(n = 8): Promise<Article[]> {
       .sort((a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime());
     
     const combined = [...featured, ...recent].slice(0, n);
+
+    // Get business images for all articles
+    const articlesWithImages = await Promise.all(
+      combined.map(async (article) => {
+        const businessImage = await getArticleBusinessImage(article);
+        return {
+          slug: article.slug,
+          title: article.title,
+          excerpt: article.excerpt,
+          imageUrl: businessImage,
+          publishedAt: article.publishedAt,
+          kicker: article.category || 'Local News',
+          category: article.category,
+          author: article.author,
+          featured: article.featured,
+          readTime: article.readTime
+        };
+      })
+    );
     
-    return combined.map(article => ({
-      slug: article.slug,
-      title: article.title,
-      excerpt: article.excerpt,
-      imageUrl: article.heroImage,
-      publishedAt: article.publishedAt,
-      kicker: article.category || 'Local News',
-      category: article.category,
-      author: article.author,
-      featured: article.featured,
-      readTime: article.readTime
-    }));
+    return articlesWithImages;
   } catch (error) {
     console.error('Error fetching most read articles:', error);
     return [];
