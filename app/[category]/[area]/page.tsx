@@ -36,8 +36,9 @@ export async function generateMetadata({ params }: CategoryAreaPageProps): Promi
 }
 
 export default async function CategoryAreaPage({ params }: CategoryAreaPageProps) {
-  // Exclude 'seo' from being treated as a category to avoid routing conflicts
-  if (params.category === 'seo') {
+  // Exclude specific pages from being treated as category/area combinations
+  const excludedCategories = ['seo', 'guides']
+  if (excludedCategories.includes(params.category)) {
     notFound()
   }
   
