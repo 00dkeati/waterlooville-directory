@@ -15,7 +15,7 @@ export default function Section({ title, seeAllHref, children }: SectionProps) {
         {seeAllHref && (
           <Link
             href={seeAllHref}
-            className="flex items-center space-x-1 text-blue-600 hover:text-blue-700 font-medium transition-colors group"
+            className="flex items-center space-x-1 text-red-600 hover:text-red-700 font-medium transition-colors group"
           >
             <span>See all</span>
             <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />

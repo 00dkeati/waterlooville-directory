@@ -31,13 +31,13 @@ export default function HeroDirectory({ initialService = '', initialArea = '' }:
 
   return (
     <section className="mb-8">
-      <div className="bg-gradient-to-r from-blue-600 to-indigo-600 rounded-2xl p-6 lg:p-8 text-white">
+      <div className="bg-gradient-to-r from-red-600 to-red-700 rounded-2xl p-6 lg:p-8 text-white">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-3xl lg:text-4xl font-bold mb-4">
             Waterlooville's Local Directory & News
           </h1>
           
-          <p className="text-lg text-blue-100 mb-8">
+          <p className="text-lg text-red-100 mb-8">
             Find trusted local businesses, read the latest news, and discover what's happening in your community.
           </p>
 
@@ -56,7 +56,7 @@ export default function HeroDirectory({ initialService = '', initialArea = '' }:
                   placeholder="Service or business type"
                   value={service}
                   onChange={(e) => setService(e.target.value)}
-                  className="block w-full pl-10 pr-3 py-3 border border-gray-300 rounded-lg text-gray-900 placeholder-gray-500 focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                  className="block w-full pl-10 pr-3 py-3 border border-gray-300 rounded-lg text-gray-900 placeholder-gray-500 focus:ring-2 focus:ring-red-500 focus:border-transparent"
                 />
               </div>
 
@@ -72,7 +72,7 @@ export default function HeroDirectory({ initialService = '', initialArea = '' }:
                   placeholder="Area or postcode"
                   value={area}
                   onChange={(e) => setArea(e.target.value)}
-                  className="block w-full pl-10 pr-3 py-3 border border-gray-300 rounded-lg text-gray-900 placeholder-gray-500 focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                  className="block w-full pl-10 pr-3 py-3 border border-gray-300 rounded-lg text-gray-900 placeholder-gray-500 focus:ring-2 focus:ring-red-500 focus:border-transparent"
                 />
               </div>
 
@@ -80,7 +80,7 @@ export default function HeroDirectory({ initialService = '', initialArea = '' }:
               <button
                 type="submit"
                 disabled={isSubmitting || (!service.trim() && !area.trim())}
-                className="w-full bg-white text-blue-600 font-semibold py-3 px-6 rounded-lg hover:bg-gray-50 disabled:opacity-50 disabled:cursor-not-allowed transition-colors focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-blue-600"
+                className="w-full bg-white text-red-600 font-semibold py-3 px-6 rounded-lg hover:bg-gray-50 disabled:opacity-50 disabled:cursor-not-allowed transition-colors focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-red-600"
               >
                 {isSubmitting ? 'Searching...' : 'Search Directory'}
               </button>
@@ -88,7 +88,7 @@ export default function HeroDirectory({ initialService = '', initialArea = '' }:
           </form>
 
           {/* Trust Strip */}
-          <div className="mt-6 flex flex-wrap items-center justify-center gap-6 text-sm text-blue-100">
+          <div className="mt-6 flex flex-wrap items-center justify-center gap-6 text-sm text-red-100">
             <span className="flex items-center gap-2">
               <span className="w-2 h-2 bg-green-400 rounded-full"></span>
               500+ businesses

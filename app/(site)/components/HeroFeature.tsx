@@ -40,7 +40,7 @@ export default function HeroFeature({ article }: HeroFeatureProps) {
             {/* Kicker */}
             {article.kicker && (
               <div className="absolute top-4 left-4">
-                <span className="inline-block px-3 py-1 text-sm font-semibold text-white bg-blue-600 rounded-full">
+                <span className="inline-block px-3 py-1 text-sm font-semibold text-white bg-red-600 rounded-full">
                   {article.kicker}
                 </span>
               </div>
@@ -82,7 +82,7 @@ export default function HeroFeature({ article }: HeroFeatureProps) {
 
               <Link
                 href={`/editorial/${article.slug}`}
-                className="inline-flex items-center px-4 py-2 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition-colors focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2"
+                className="inline-flex items-center px-4 py-2 bg-red-600 text-white font-medium rounded-lg hover:bg-red-700 transition-colors focus-visible:ring-2 focus-visible:ring-red-500 focus-visible:ring-offset-2"
               >
                 Read more
                 <svg className="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">

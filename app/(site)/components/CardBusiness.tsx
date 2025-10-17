@@ -49,7 +49,7 @@ export default function CardBusiness({ item }: CardBusinessProps) {
 
           {/* Content */}
           <div className="p-4 flex flex-col h-full">
-            <h3 className="text-lg font-bold text-gray-900 mb-2 group-hover:text-blue-600 transition-colors line-clamp-1">
+            <h3 className="text-lg font-bold text-gray-900 mb-2 group-hover:text-red-600 transition-colors line-clamp-1">
               {item.name}
             </h3>
             
@@ -84,7 +84,7 @@ export default function CardBusiness({ item }: CardBusinessProps) {
 
             {/* CTA */}
             <div className="mt-auto">
-              <span className="inline-flex items-center text-blue-600 font-medium text-sm group-hover:text-blue-700">
+              <span className="inline-flex items-center text-red-600 font-medium text-sm group-hover:text-red-700">
                 View details
                 <svg className="ml-1 w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />

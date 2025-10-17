@@ -15,14 +15,14 @@ export default function TopicStrip({ topics }: TopicStripProps) {
             <Link
               key={topic.slug}
               href={`/${topic.slug}`}
-              className="flex items-center space-x-2 px-4 py-2 bg-gray-50 hover:bg-blue-50 border border-gray-200 hover:border-blue-300 rounded-full transition-colors group"
+              className="flex items-center space-x-2 px-4 py-2 bg-gray-50 hover:bg-red-50 border border-gray-200 hover:border-red-300 rounded-full transition-colors group"
             >
               {topic.icon && (
                 <span className="text-lg group-hover:scale-110 transition-transform">
                   {topic.icon}
                 </span>
               )}
-              <span className="font-medium text-gray-700 group-hover:text-blue-700">
+              <span className="font-medium text-gray-700 group-hover:text-red-700">
                 {topic.label}
               </span>
             </Link>

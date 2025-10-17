@@ -15,77 +15,42 @@ export default function FooterLinks() {
   ];
 
   return (
-    <footer className="border-t border-gray-200 py-8">
-      <div className="container mx-auto max-w-6xl px-4">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {/* Quick Links */}
+    <footer className="bg-gray-900 text-white py-8 mt-16">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
-            <h3 className="font-semibold text-gray-900 mb-4">Quick Links</h3>
-            <ul className="space-y-2">
-              {quickLinks.map((link) => (
-                <li key={link.href}>
-                  <Link 
-                    href={link.href}
-                    className="text-gray-600 hover:text-blue-600 transition-colors"
-                  >
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Legal */}
-          <div>
-            <h3 className="font-semibold text-gray-900 mb-4">Legal</h3>
-            <ul className="space-y-2">
-              {legalLinks.map((link) => (
-                <li key={link.href}>
-                  <Link 
-                    href={link.href}
-                    className="text-gray-600 hover:text-blue-600 transition-colors"
-                  >
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* About */}
-          <div>
-            <h3 className="font-semibold text-gray-900 mb-4">About</h3>
-            <p className="text-gray-600 text-sm leading-relaxed">
-              Waterlooville.co is your local directory and news source, connecting residents 
-              with trusted businesses and keeping you informed about community events and stories.
+            <h3 className="text-lg font-bold mb-4">Waterlooville.co</h3>
+            <p className="text-gray-300">
+              Independent local news and business directory for Waterlooville, Hampshire. Your trusted source for local information.
             </p>
           </div>
-
-          {/* Contact */}
           <div>
-            <h3 className="font-semibold text-gray-900 mb-4">Get in Touch</h3>
-            <div className="space-y-2 text-sm text-gray-600">
-              <p>📧 hello@waterlooville.co</p>
-              <p>📞 023 9225 1234</p>
-              <p>📍 Waterlooville, Hampshire</p>
-            </div>
+            <h4 className="text-md font-semibold mb-4">Quick Links</h4>
+            <ul className="space-y-2 text-gray-300">
+              <li><a href="/editorial" className="hover:text-white transition-colors">Latest News</a></li>
+              <li><a href="/categories" className="hover:text-white transition-colors">Business Directory</a></li>
+              <li><a href="/areas" className="hover:text-white transition-colors">Areas</a></li>
+              <li><a href="/blog" className="hover:text-white transition-colors">Blog</a></li>
+              <li><a href="/contact" className="hover:text-white transition-colors">Contact Us</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 className="text-md font-semibold mb-4">Contact Us</h4>
+            <ul className="space-y-2 text-gray-300">
+              <li>
+                <a href="mailto:dean@waterlooville.co" className="hover:text-white transition-colors flex items-center">
+                  <span className="mr-2">📧</span>
+                  dean@waterlooville.co
+                </a>
+              </li>
+              <li><a href="/contact" className="hover:text-white transition-colors">Contact Form</a></li>
+              <li><a href="/about" className="hover:text-white transition-colors">About Us</a></li>
+            </ul>
           </div>
         </div>
-
-        <div className="border-t border-gray-200 mt-8 pt-6">
-          <div className="flex flex-col md:flex-row items-center justify-between">
-            <p className="text-gray-500 text-sm">
-              © 2025 Waterlooville.co. All rights reserved.
-            </p>
-            <div className="flex items-center space-x-4 mt-4 md:mt-0">
-              <Link href="/sitemap" className="text-gray-500 hover:text-blue-600 text-sm">
-                Sitemap
-              </Link>
-              <Link href="/rss" className="text-gray-500 hover:text-blue-600 text-sm">
-                RSS
-              </Link>
-            </div>
-          </div>
+        <div className="border-t border-gray-700 mt-8 pt-8 text-center text-gray-300">
+          <p>&copy; 2024 Waterlooville.co. All rights reserved.</p>
+          <p className="text-xs text-gray-500 mt-2">Independent Local News • 270+ Verified Businesses • Serving Waterlooville & Surrounding Areas</p>
         </div>
       </div>
     </footer>

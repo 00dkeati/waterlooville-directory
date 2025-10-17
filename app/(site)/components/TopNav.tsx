@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { Search, Menu, X } from 'lucide-react';
 
 export default function TopNav() {
@@ -20,25 +21,29 @@ export default function TopNav() {
   const navItems = [
     { label: 'News', href: '/editorial' },
     { label: 'Directory', href: '/categories' },
-    { label: 'Events', href: '/events' },
-    { label: 'Guides', href: '/guides' }
+    { label: 'Areas', href: '/areas' },
+    { label: 'About', href: '/about' }
   ];
 
   return (
     <>
       <nav className={`sticky top-0 z-50 transition-all duration-200 ${
         isScrolled 
-          ? 'bg-white/90 backdrop-blur-md shadow-sm supports-[backdrop-filter]:bg-white/60' 
-          : 'bg-white'
+          ? 'bg-white/90 backdrop-blur-md shadow-sm supports-[backdrop-filter]:bg-white/60 border-b-2 border-red-600' 
+          : 'bg-white border-b-2 border-red-600'
       }`}>
         <div className="container mx-auto max-w-6xl px-4">
           <div className="flex items-center justify-between h-16">
             {/* Logo */}
-            <Link href="/" className="flex items-center space-x-2">
-              <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-sm">W</span>
-              </div>
-              <span className="font-bold text-xl text-gray-900">Waterlooville.co</span>
+            <Link href="/" className="flex items-center hover:opacity-80 transition-opacity">
+              <Image 
+                src="/logo.png" 
+                alt="Waterlooville.co - Local News, Business Directory & Community Guide" 
+                width={200}
+                height={60}
+                priority
+                className="h-auto"
+              />
             </Link>
 
             {/* Desktop Navigation */}
@@ -47,7 +52,7 @@ export default function TopNav() {
                 <Link
                   key={item.href}
                   href={item.href}
-                  className="text-gray-700 hover:text-blue-600 font-medium transition-colors"
+                  className="text-gray-700 hover:text-red-600 font-medium transition-colors"
                 >
                   {item.label}
                 </Link>
@@ -59,7 +64,7 @@ export default function TopNav() {
               {/* Search Icon */}
               <button
                 onClick={() => setIsSearchOpen(!isSearchOpen)}
-                className="p-2 text-gray-600 hover:text-blue-600 transition-colors"
+                className="p-2 text-gray-600 hover:text-red-600 transition-colors"
                 aria-label="Search"
               >
                 <Search className="w-5 h-5" />
@@ -68,7 +73,7 @@ export default function TopNav() {
               {/* Mobile Menu Button */}
               <button
                 onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-                className="md:hidden p-2 text-gray-600 hover:text-blue-600 transition-colors"
+                className="md:hidden p-2 text-gray-600 hover:text-red-600 transition-colors"
                 aria-label="Menu"
               >
                 {isMobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
@@ -83,12 +88,12 @@ export default function TopNav() {
                 <input
                   type="search"
                   placeholder="Search businesses, services..."
-                  className="w-full px-4 py-3 pr-12 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                  className="w-full px-4 py-3 pr-12 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-transparent"
                   autoFocus
                 />
                 <button
                   type="submit"
-                  className="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-400 hover:text-blue-600"
+                  className="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-400 hover:text-red-600"
                 >
                   <Search className="w-5 h-5" />
                 </button>
@@ -104,7 +109,7 @@ export default function TopNav() {
                   <Link
                     key={item.href}
                     href={item.href}
-                    className="text-gray-700 hover:text-blue-600 font-medium transition-colors py-2"
+                    className="text-gray-700 hover:text-red-600 font-medium transition-colors py-2"
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
                     {item.label}
@@ -133,7 +138,7 @@ export default function TopNav() {
               <Link
                 key={topic.href}
                 href={topic.href}
-                className="flex-shrink-0 flex items-center space-x-2 px-3 py-2 bg-white rounded-full border border-gray-200 hover:border-blue-300 hover:bg-blue-50 transition-colors"
+                className="flex-shrink-0 flex items-center space-x-2 px-3 py-2 bg-white rounded-full border border-gray-200 hover:border-red-300 hover:bg-red-50 transition-colors"
               >
                 <span className="text-sm">{topic.icon}</span>
                 <span className="text-sm font-medium text-gray-700 whitespace-nowrap">{topic.label}</span>

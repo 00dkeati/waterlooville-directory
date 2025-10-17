@@ -34,7 +34,7 @@ export default function CardNews({ article, size }: NewsCardProps) {
                 {/* Kicker */}
                 {article.kicker && (
                   <div className="absolute top-3 left-3">
-                    <span className="inline-block px-2 py-1 text-xs font-semibold text-white bg-blue-600 rounded">
+                    <span className="inline-block px-2 py-1 text-xs font-semibold text-white bg-red-600 rounded">
                       {article.kicker}
                     </span>
                   </div>
@@ -43,7 +43,7 @@ export default function CardNews({ article, size }: NewsCardProps) {
 
               {/* Content */}
               <div className="p-6 flex flex-col justify-center">
-                <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-blue-600 transition-colors line-clamp-2">
+                <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-red-600 transition-colors line-clamp-2">
                   {article.title}
                 </h3>
                 
@@ -65,7 +65,7 @@ export default function CardNews({ article, size }: NewsCardProps) {
                       </>
                     )}
                   </div>
-                  <span className="text-blue-600 font-medium">Read more</span>
+                  <span className="text-red-600 font-medium">Read more</span>
                 </div>
               </div>
             </div>
@@ -96,7 +96,7 @@ export default function CardNews({ article, size }: NewsCardProps) {
               {/* Kicker */}
               {article.kicker && (
                 <div className="absolute top-2 left-2">
-                  <span className="inline-block px-2 py-1 text-xs font-semibold text-white bg-blue-600 rounded">
+                  <span className="inline-block px-2 py-1 text-xs font-semibold text-white bg-red-600 rounded">
                     {article.kicker}
                   </span>
                 </div>
@@ -105,7 +105,7 @@ export default function CardNews({ article, size }: NewsCardProps) {
 
             {/* Content */}
             <div className="p-4">
-              <h3 className="text-lg font-bold text-gray-900 mb-2 group-hover:text-blue-600 transition-colors line-clamp-2">
+              <h3 className="text-lg font-bold text-gray-900 mb-2 group-hover:text-red-600 transition-colors line-clamp-2">
                 {article.title}
               </h3>
               
@@ -127,7 +127,7 @@ export default function CardNews({ article, size }: NewsCardProps) {
                     </>
                   )}
                 </div>
-                <span className="text-blue-600 font-medium">Read</span>
+                <span className="text-red-600 font-medium">Read</span>
               </div>
             </div>
           </div>
@@ -156,7 +156,7 @@ export default function CardNews({ article, size }: NewsCardProps) {
 
           {/* Content */}
           <div className="flex-1 min-w-0">
-            <h3 className="text-sm font-semibold text-gray-900 group-hover:text-blue-600 transition-colors line-clamp-2">
+            <h3 className="text-sm font-semibold text-gray-900 group-hover:text-red-600 transition-colors line-clamp-2">
               {article.title}
             </h3>
             <div className="flex items-center space-x-2 text-xs text-gray-500 mt-1">
