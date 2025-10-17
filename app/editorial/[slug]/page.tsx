@@ -34,6 +34,32 @@ interface EditorialArticle {
   readTime: number
 }
 
+// Helper function to get business image for an article
+async function getArticleBusinessImage(article: EditorialArticle): Promise<string> {
+  try {
+    // If article already has a heroImage, use it
+    if (article.heroImage && article.heroImage !== 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&h=400&fit=crop') {
+      return article.heroImage;
+    }
+
+    // If article has relatedBusinesses, try to get image from first business
+    if (article.relatedBusinesses && article.relatedBusinesses.length > 0) {
+      const firstBusinessSlug = article.relatedBusinesses[0];
+      const business = await getBusinessBySlug(firstBusinessSlug);
+      
+      if (business && business.images && business.images.length > 0) {
+        return business.images[0];
+      }
+    }
+
+    // Fallback to default image
+    return 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&h=400&fit=crop';
+  } catch (error) {
+    console.error('Error getting business image for article:', error);
+    return 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&h=400&fit=crop';
+  }
+}
+
 async function getArticle(slug: string): Promise<EditorialArticle | null> {
   const articlesData = await import('@/data/editorial-articles.json')
   const articles: EditorialArticle[] = articlesData.default as EditorialArticle[]
@@ -71,6 +97,9 @@ export default async function EditorialArticlePage({ params }: { params: { slug:
     notFound()
   }
 
+  // Get enhanced image for the article
+  const enhancedImage = await getArticleBusinessImage(article)
+
   const formatDate = (dateString: string) => {
     const date = new Date(dateString)
     return date.toLocaleDateString('en-GB', { 
@@ -96,7 +125,7 @@ export default async function EditorialArticlePage({ params }: { params: { slug:
         {/* Hero Image */}
         <div className="relative h-96 w-full">
           <Image 
-            src={article.heroImage}
+            src={enhancedImage}
             alt={article.title}
             fill
             className="object-cover"
