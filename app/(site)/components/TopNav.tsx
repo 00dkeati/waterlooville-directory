@@ -39,10 +39,10 @@ export default function TopNav() {
               <Image 
                 src="/logo.png" 
                 alt="Waterlooville.co - Local News, Business Directory & Community Guide" 
-                width={200}
-                height={60}
+                width={180}
+                height={48}
                 priority
-                className="h-auto"
+                className="h-12 w-auto"
               />
             </Link>
 
