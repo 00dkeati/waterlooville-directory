@@ -58,6 +58,74 @@ export default async function EditorialPage() {
         </p>
       </div>
 
+      {/* Comprehensive Editorial Introduction */}
+      <section className="mb-12 bg-gradient-to-r from-blue-50 to-indigo-50 border-2 border-blue-200 rounded-xl p-8">
+        <h2 className="text-3xl font-bold text-gray-900 mb-6">Discover Waterlooville Through Our Stories</h2>
+        <div className="prose prose-lg max-w-none text-gray-700">
+          <p className="mb-4">
+            Welcome to our editorial section, where we dive deep into the heart of Waterlooville's business community. Our comprehensive guides and in-depth features provide you with valuable insights into the local services, businesses, and professionals that make Waterlooville such a vibrant place to live and work.
+          </p>
+          <p className="mb-4">
+            From detailed comparative analyses of local businesses to expert guides on choosing the right services for your needs, our editorial content is designed to help you make informed decisions while supporting the local economy. We believe that well-researched, honest reviews and guides benefit both consumers and businesses alike.
+          </p>
+          <p className="mb-4">
+            Our team of local experts and researchers work tirelessly to bring you accurate, up-to-date information about Waterlooville's business landscape. Whether you're looking for the best driving instructors, comparing estate agents, or discovering hidden gems in the local market, our editorial content provides the depth and detail you need.
+          </p>
+        </div>
+      </section>
+
+      {/* Editorial Mission */}
+      <section className="mb-12 bg-white rounded-xl shadow-lg p-8">
+        <h2 className="text-2xl font-bold text-gray-900 mb-6">Our Editorial Mission</h2>
+        <div className="grid md:grid-cols-2 gap-8">
+          <div>
+            <h3 className="text-lg font-semibold text-gray-800 mb-3">Transparency & Accuracy</h3>
+            <p className="text-gray-700 mb-4">
+              We are committed to providing honest, transparent reviews and guides based on thorough research, customer feedback, and industry expertise. Our editorial standards ensure that every piece of content meets our high standards for accuracy and usefulness.
+            </p>
+            <h3 className="text-lg font-semibold text-gray-800 mb-3">Local Focus</h3>
+            <p className="text-gray-700">
+              Our content is specifically tailored to Waterlooville residents and businesses. We understand the unique characteristics of our local market and provide insights that are relevant to our community's specific needs and preferences.
+            </p>
+          </div>
+          <div>
+            <h3 className="text-lg font-semibold text-gray-800 mb-3">Comprehensive Coverage</h3>
+            <p className="text-gray-700 mb-4">
+              From essential services like healthcare and education to lifestyle businesses like restaurants and entertainment, we cover the full spectrum of local businesses that matter to Waterlooville residents.
+            </p>
+            <h3 className="text-lg font-semibold text-gray-800 mb-3">Regular Updates</h3>
+            <p className="text-gray-700">
+              Our editorial content is regularly updated to reflect changes in the local business landscape, ensuring that our readers always have access to the most current and relevant information available.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Content Categories */}
+      <section className="mb-12 bg-gradient-to-r from-green-50 to-emerald-50 border-2 border-green-200 rounded-xl p-8">
+        <h2 className="text-2xl font-bold text-gray-900 mb-6">What You'll Find Here</h2>
+        <div className="grid md:grid-cols-3 gap-6">
+          <div className="bg-white rounded-lg p-6 shadow-sm">
+            <h3 className="text-lg font-semibold text-gray-800 mb-3">Business Comparisons</h3>
+            <p className="text-gray-700 text-sm">
+              Detailed side-by-side comparisons of local businesses, including pricing, services, customer reviews, and unique selling points to help you make informed decisions.
+            </p>
+          </div>
+          <div className="bg-white rounded-lg p-6 shadow-sm">
+            <h3 className="text-lg font-semibold text-gray-800 mb-3">Industry Guides</h3>
+            <p className="text-gray-700 text-sm">
+              Comprehensive guides covering different industries and services available in Waterlooville, with expert insights and practical advice for consumers.
+            </p>
+          </div>
+          <div className="bg-white rounded-lg p-6 shadow-sm">
+            <h3 className="text-lg font-semibold text-gray-800 mb-3">Local Insights</h3>
+            <p className="text-gray-700 text-sm">
+              In-depth analysis of local market trends, business developments, and community insights that affect how residents interact with local services.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* Featured Articles */}
       {featuredArticles.length > 0 && (
         <section className="mb-16">

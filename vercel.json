@@ -4,6 +4,7 @@
   "devCommand": "npm run dev",
   "installCommand": "npm install",
   "version": 2,
+  "domains": ["waterlooville.co", "www.waterlooville.co"],
   "functions": {
     "app/sitemap.ts": {
       "maxDuration": 10
