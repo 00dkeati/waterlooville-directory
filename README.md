@@ -17,3 +17,4 @@ A comprehensive local business directory and community guide for Waterlooville, 
 - Performance optimizations deployed
 - Build issues resolved
 - All TypeScript errors fixed
+# Trigger fresh deployment
