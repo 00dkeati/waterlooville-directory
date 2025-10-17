@@ -55,6 +55,16 @@
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/biz/[slug]/page.js"
+    ],
+    "/seo/beauty-salon-waterlooville/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/seo/beauty-salon-waterlooville/page.js"
+    ],
+    "/seo/dentist-waterlooville/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/seo/dentist-waterlooville/page.js"
     ]
   }
 }

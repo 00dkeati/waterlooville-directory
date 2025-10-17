@@ -4,19 +4,19 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Waterlooville Market - Waterlooville Directory',
-  description: 'Discover the best services and information in Waterlooville, Hampshire.',
-  keywords: 'waterlooville market, Waterlooville, Hampshire, local guide, waterlooville market in Waterlooville',
+  title: 'Waterlooville Market - Local Shopping & Fresh Produce',
+  description: 'Discover Waterlooville Market with fresh local produce, artisan goods, and unique finds. Find market days, times, and vendors offering quality products from local suppliers.',
+  keywords: 'waterlooville market, local market waterlooville, fresh produce waterlooville, artisan market waterlooville, Waterlooville shopping',
   openGraph: {
-    title: 'Waterlooville Market - Waterlooville Directory',
-    description: 'Discover the best services and information in Waterlooville, Hampshire.',
+    title: 'Waterlooville Market - Local Shopping & Fresh Produce',
+    description: 'Discover Waterlooville Market with fresh local produce, artisan goods, and unique finds. Find market days, times, and vendors offering quality products from local suppliers.',
     type: 'article',
     locale: 'en_GB',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Waterlooville Market - Waterlooville Directory',
-    description: 'Discover the best services and information in Waterlooville, Hampshire.',
+    title: 'Waterlooville Market - Local Shopping & Fresh Produce',
+    description: 'Discover Waterlooville Market with fresh local produce, artisan goods, and unique finds. Find market days, times, and vendors offering quality products from local suppliers.',
   },
 }
 

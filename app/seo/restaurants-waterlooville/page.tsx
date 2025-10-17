@@ -4,19 +4,19 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Restaurants Waterlooville - Waterlooville Directory',
-  description: 'Discover the best services and information in Waterlooville, Hampshire.',
-  keywords: 'restaurants waterlooville, Waterlooville, Hampshire, local guide, restaurants waterlooville in Waterlooville',
+  title: 'Best Restaurants in Waterlooville - Fine Dining & Casual Eateries',
+  description: 'Discover top-rated restaurants in Waterlooville offering fine dining, casual meals, and family-friendly dining. From traditional British cuisine to international flavors.',
+  keywords: 'restaurants waterlooville, fine dining waterlooville, casual dining waterlooville, family restaurants waterlooville, Waterlooville food',
   openGraph: {
-    title: 'Restaurants Waterlooville - Waterlooville Directory',
-    description: 'Discover the best services and information in Waterlooville, Hampshire.',
+    title: 'Best Restaurants in Waterlooville - Fine Dining & Casual Eateries',
+    description: 'Discover top-rated restaurants in Waterlooville offering fine dining, casual meals, and family-friendly dining. From traditional British cuisine to international flavors.',
     type: 'article',
     locale: 'en_GB',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Restaurants Waterlooville - Waterlooville Directory',
-    description: 'Discover the best services and information in Waterlooville, Hampshire.',
+    title: 'Best Restaurants in Waterlooville - Fine Dining & Casual Eateries',
+    description: 'Discover top-rated restaurants in Waterlooville offering fine dining, casual meals, and family-friendly dining. From traditional British cuisine to international flavors.',
   },
 }
 

@@ -4,19 +4,19 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Dentist Waterlooville - Waterlooville Directory',
-  description: 'Discover the best services and information in Waterlooville, Hampshire.',
-  keywords: 'dentist waterlooville, Waterlooville, Hampshire, local guide, dentist waterlooville in Waterlooville',
+  title: 'Best Dentists in Waterlooville - NHS & Private Dental Care',
+  description: 'Find trusted dentists in Waterlooville offering NHS and private dental care. Compare practices, read reviews, and book appointments for general and cosmetic dentistry.',
+  keywords: 'dentist waterlooville, NHS dentist waterlooville, private dentist waterlooville, dental practice waterlooville, cosmetic dentist waterlooville',
   openGraph: {
-    title: 'Dentist Waterlooville - Waterlooville Directory',
-    description: 'Discover the best services and information in Waterlooville, Hampshire.',
+    title: 'Best Dentists in Waterlooville - NHS & Private Dental Care',
+    description: 'Find trusted dentists in Waterlooville offering NHS and private dental care. Compare practices, read reviews, and book appointments for general and cosmetic dentistry.',
     type: 'article',
     locale: 'en_GB',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Dentist Waterlooville - Waterlooville Directory',
-    description: 'Discover the best services and information in Waterlooville, Hampshire.',
+    title: 'Best Dentists in Waterlooville - NHS & Private Dental Care',
+    description: 'Find trusted dentists in Waterlooville offering NHS and private dental care. Compare practices, read reviews, and book appointments for general and cosmetic dentistry.',
   },
 }
 

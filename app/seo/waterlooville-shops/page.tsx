@@ -4,19 +4,19 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Waterlooville Shops - Waterlooville Directory',
-  description: 'Discover the best services and information in Waterlooville, Hampshire.',
-  keywords: 'waterlooville shops, Waterlooville, Hampshire, local guide, waterlooville shops in Waterlooville',
+  title: 'Best Shops in Waterlooville - Shopping Guide & Retail Directory',
+  description: 'Explore the best shops in Waterlooville including high street retailers, independent boutiques, and specialty stores. Complete shopping guide with opening hours and locations.',
+  keywords: 'waterlooville shops, shopping waterlooville, retail waterlooville, high street waterlooville, independent shops waterlooville',
   openGraph: {
-    title: 'Waterlooville Shops - Waterlooville Directory',
-    description: 'Discover the best services and information in Waterlooville, Hampshire.',
+    title: 'Best Shops in Waterlooville - Shopping Guide & Retail Directory',
+    description: 'Explore the best shops in Waterlooville including high street retailers, independent boutiques, and specialty stores. Complete shopping guide with opening hours and locations.',
     type: 'article',
     locale: 'en_GB',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Waterlooville Shops - Waterlooville Directory',
-    description: 'Discover the best services and information in Waterlooville, Hampshire.',
+    title: 'Best Shops in Waterlooville - Shopping Guide & Retail Directory',
+    description: 'Explore the best shops in Waterlooville including high street retailers, independent boutiques, and specialty stores. Complete shopping guide with opening hours and locations.',
   },
 }
 

@@ -4,19 +4,19 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Beauty Salon Waterlooville - Waterlooville Directory',
-  description: 'Discover the best services and information in Waterlooville, Hampshire.',
-  keywords: 'beauty salon waterlooville, Waterlooville, Hampshire, local guide, beauty salon waterlooville in Waterlooville',
+  title: 'Best Beauty Salons in Waterlooville - Hair, Nails & Spa Services',
+  description: 'Find top-rated beauty salons in Waterlooville offering hair styling, nail art, facials, and spa treatments. Professional beauty services with excellent reviews.',
+  keywords: 'beauty salon waterlooville, hair salon waterlooville, nail salon waterlooville, spa waterlooville, beauty treatments waterlooville',
   openGraph: {
-    title: 'Beauty Salon Waterlooville - Waterlooville Directory',
-    description: 'Discover the best services and information in Waterlooville, Hampshire.',
+    title: 'Best Beauty Salons in Waterlooville - Hair, Nails & Spa Services',
+    description: 'Find top-rated beauty salons in Waterlooville offering hair styling, nail art, facials, and spa treatments. Professional beauty services with excellent reviews.',
     type: 'article',
     locale: 'en_GB',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Beauty Salon Waterlooville - Waterlooville Directory',
-    description: 'Discover the best services and information in Waterlooville, Hampshire.',
+    title: 'Best Beauty Salons in Waterlooville - Hair, Nails & Spa Services',
+    description: 'Find top-rated beauty salons in Waterlooville offering hair styling, nail art, facials, and spa treatments. Professional beauty services with excellent reviews.',
   },
 }
 

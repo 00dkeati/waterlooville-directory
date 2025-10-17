@@ -4,19 +4,19 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Plumber Waterlooville - Waterlooville Directory',
-  description: 'Discover the best services and information in Waterlooville, Hampshire.',
-  keywords: 'plumber waterlooville, Waterlooville, Hampshire, local guide, plumber waterlooville in Waterlooville',
+  title: 'Best Plumbers in Waterlooville - Emergency & General Plumbing',
+  description: 'Find reliable plumbers in Waterlooville for emergency repairs, general plumbing, heating, and bathroom installations. Professional plumbers with 24/7 emergency service.',
+  keywords: 'plumber waterlooville, emergency plumber waterlooville, heating engineer waterlooville, bathroom installation waterlooville, plumbing repairs waterlooville',
   openGraph: {
-    title: 'Plumber Waterlooville - Waterlooville Directory',
-    description: 'Discover the best services and information in Waterlooville, Hampshire.',
+    title: 'Best Plumbers in Waterlooville - Emergency & General Plumbing',
+    description: 'Find reliable plumbers in Waterlooville for emergency repairs, general plumbing, heating, and bathroom installations. Professional plumbers with 24/7 emergency service.',
     type: 'article',
     locale: 'en_GB',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Plumber Waterlooville - Waterlooville Directory',
-    description: 'Discover the best services and information in Waterlooville, Hampshire.',
+    title: 'Best Plumbers in Waterlooville - Emergency & General Plumbing',
+    description: 'Find reliable plumbers in Waterlooville for emergency repairs, general plumbing, heating, and bathroom installations. Professional plumbers with 24/7 emergency service.',
   },
 }
 

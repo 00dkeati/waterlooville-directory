@@ -4,19 +4,19 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Handyman Waterlooville - Waterlooville Directory',
-  description: 'Discover the best services and information in Waterlooville, Hampshire.',
-  keywords: 'handyman waterlooville, Waterlooville, Hampshire, local guide, handyman waterlooville in Waterlooville',
+  title: 'Best Handymen in Waterlooville - Home Repairs & Maintenance',
+  description: 'Find reliable handymen in Waterlooville for home repairs, maintenance, and DIY tasks. Professional tradesmen with excellent reviews for odd jobs and small projects.',
+  keywords: 'handyman waterlooville, home repairs waterlooville, maintenance waterlooville, odd jobs waterlooville, DIY help waterlooville',
   openGraph: {
-    title: 'Handyman Waterlooville - Waterlooville Directory',
-    description: 'Discover the best services and information in Waterlooville, Hampshire.',
+    title: 'Best Handymen in Waterlooville - Home Repairs & Maintenance',
+    description: 'Find reliable handymen in Waterlooville for home repairs, maintenance, and DIY tasks. Professional tradesmen with excellent reviews for odd jobs and small projects.',
     type: 'article',
     locale: 'en_GB',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Handyman Waterlooville - Waterlooville Directory',
-    description: 'Discover the best services and information in Waterlooville, Hampshire.',
+    title: 'Best Handymen in Waterlooville - Home Repairs & Maintenance',
+    description: 'Find reliable handymen in Waterlooville for home repairs, maintenance, and DIY tasks. Professional tradesmen with excellent reviews for odd jobs and small projects.',
   },
 }
 

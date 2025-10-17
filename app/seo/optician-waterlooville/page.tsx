@@ -4,19 +4,19 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Optician Waterlooville - Waterlooville Directory',
-  description: 'Discover the best services and information in Waterlooville, Hampshire.',
-  keywords: 'optician waterlooville, Waterlooville, Hampshire, local guide, optician waterlooville in Waterlooville',
+  title: 'Best Opticians in Waterlooville - Eye Tests & Glasses',
+  description: 'Find trusted opticians in Waterlooville offering comprehensive eye tests, prescription glasses, contact lenses, and eye care services. Professional optical care with expert advice.',
+  keywords: 'optician waterlooville, eye test waterlooville, glasses waterlooville, contact lenses waterlooville, optical care waterlooville',
   openGraph: {
-    title: 'Optician Waterlooville - Waterlooville Directory',
-    description: 'Discover the best services and information in Waterlooville, Hampshire.',
+    title: 'Best Opticians in Waterlooville - Eye Tests & Glasses',
+    description: 'Find trusted opticians in Waterlooville offering comprehensive eye tests, prescription glasses, contact lenses, and eye care services. Professional optical care with expert advice.',
     type: 'article',
     locale: 'en_GB',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Optician Waterlooville - Waterlooville Directory',
-    description: 'Discover the best services and information in Waterlooville, Hampshire.',
+    title: 'Best Opticians in Waterlooville - Eye Tests & Glasses',
+    description: 'Find trusted opticians in Waterlooville offering comprehensive eye tests, prescription glasses, contact lenses, and eye care services. Professional optical care with expert advice.',
   },
 }
 

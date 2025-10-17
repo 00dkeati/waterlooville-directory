@@ -1,3 +1,4 @@
 {
-  "/biz/[slug]/page": "app/biz/[slug]/page.js"
+  "/seo/beauty-salon-waterlooville/page": "app/seo/beauty-salon-waterlooville/page.js",
+  "/seo/dentist-waterlooville/page": "app/seo/dentist-waterlooville/page.js"
 }

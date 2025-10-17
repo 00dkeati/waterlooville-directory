@@ -4,19 +4,19 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Painter Decorator Waterlooville - Waterlooville Directory',
-  description: 'Discover the best services and information in Waterlooville, Hampshire.',
-  keywords: 'painter decorator waterlooville, Waterlooville, Hampshire, local guide, painter decorator waterlooville in Waterlooville',
+  title: 'Best Painters & Decorators in Waterlooville - Interior & Exterior',
+  description: 'Find skilled painters and decorators in Waterlooville for interior and exterior painting, wallpapering, and home decoration. Professional decorators with quality finishes.',
+  keywords: 'painter decorator waterlooville, interior painting waterlooville, exterior painting waterlooville, wallpapering waterlooville, home decoration waterlooville',
   openGraph: {
-    title: 'Painter Decorator Waterlooville - Waterlooville Directory',
-    description: 'Discover the best services and information in Waterlooville, Hampshire.',
+    title: 'Best Painters & Decorators in Waterlooville - Interior & Exterior',
+    description: 'Find skilled painters and decorators in Waterlooville for interior and exterior painting, wallpapering, and home decoration. Professional decorators with quality finishes.',
     type: 'article',
     locale: 'en_GB',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Painter Decorator Waterlooville - Waterlooville Directory',
-    description: 'Discover the best services and information in Waterlooville, Hampshire.',
+    title: 'Best Painters & Decorators in Waterlooville - Interior & Exterior',
+    description: 'Find skilled painters and decorators in Waterlooville for interior and exterior painting, wallpapering, and home decoration. Professional decorators with quality finishes.',
   },
 }
 
