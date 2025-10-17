@@ -126,7 +126,7 @@ export default async function EditorialArticlePage({ params }: { params: { slug:
         {/* Article Content */}
         <div className="p-8 md:p-12">
           <div className="prose prose-lg max-w-none">
-            {article.content.map((block, index) => {
+            {article.content && article.content.length > 0 ? article.content.map((block, index) => {
               switch (block.type) {
                 case 'paragraph':
                   return (
@@ -207,21 +207,25 @@ export default async function EditorialArticlePage({ params }: { params: { slug:
                 default:
                   return null
               }
-            })}
+            }) : (
+              <p className="text-gray-700 leading-relaxed mb-6">
+                Content is being loaded...
+              </p>
+            )}
           </div>
         </div>
 
         {/* Tags */}
         <div className="px-8 md:px-12 pb-8">
           <div className="flex flex-wrap gap-2">
-            {article.tags.map((tag) => (
+            {article.tags && article.tags.length > 0 ? article.tags.map((tag) => (
               <span 
                 key={tag}
                 className="px-3 py-1 text-sm text-gray-600 bg-gray-100 rounded-full hover:bg-gray-200 transition-colors"
               >
                 #{tag}
               </span>
-            ))}
+            )) : null}
           </div>
         </div>
 

@@ -3,6 +3,9 @@ import { NextRequest, NextResponse } from 'next/server'
 const BABYLOVE_API_KEY = 'd09c1189-9188-4c04-9699-d52a59bfe698'
 const BABYLOVE_API_BASE = 'https://api.babylovegrowth.ai/api/public'
 
+// Force dynamic rendering
+export const dynamic = 'force-dynamic'
+
 export async function GET(request: NextRequest) {
   try {
     const url = new URL(request.url)
