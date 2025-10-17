@@ -9,8 +9,8 @@ export const runtime = 'nodejs'
 
 export async function GET(request: NextRequest) {
   try {
-    const url = new URL(request.url)
-    const articleId = url.searchParams.get('id')
+    // Use request.nextUrl instead of request.url to avoid static generation issues
+    const articleId = request.nextUrl.searchParams.get('id')
 
     if (articleId) {
       // Get specific article
