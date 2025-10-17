@@ -148,7 +148,7 @@ export default async function HomePage() {
               {categories.map((category) => (
                 <a
                   key={category.slug}
-                  href={`/categories/${category.slug}`}
+                  href={`/${category.slug}`}
                   className="group bg-gray-50 hover:bg-green-50 rounded-lg p-4 text-center transition-colors border border-gray-200 hover:border-green-300"
                 >
                   <div className="text-3xl mb-2 group-hover:scale-110 transition-transform">

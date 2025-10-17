@@ -1,4 +1,5 @@
 import Breadcrumbs from '@/components/Breadcrumbs'
+import TopNav from "@/app/(site)/components/TopNav"
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
@@ -9,11 +10,12 @@ export const metadata: Metadata = {
 export default function AboutPage() {
   return (
     <>
+      <TopNav />
       <Breadcrumbs items={[
         { label: 'About' }
       ]} />
 
-      <div className="max-w-4xl mx-auto">
+      <div className="max-w-4xl mx-auto px-4 py-8">
         <header className="mb-8">
           <h1 className="text-4xl font-bold text-gray-900 mb-4">
             About Waterlooville Directory

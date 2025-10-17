@@ -2,6 +2,7 @@ export const dynamic = 'force-dynamic'
 import { getCategories } from '@/lib/db'
 import Link from 'next/link'
 import Breadcrumbs from '@/components/Breadcrumbs'
+import TopNav from "@/app/(site)/components/TopNav"
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
@@ -14,11 +15,12 @@ export default async function CategoriesPage() {
 
   return (
     <>
+      <TopNav />
       <Breadcrumbs items={[
         { label: 'Categories' }
       ]} />
 
-      <div className="max-w-4xl mx-auto">
+      <div className="max-w-4xl mx-auto px-4 py-8">
         <header className="mb-8">
           <h1 className="text-4xl font-bold text-gray-900 mb-4">
             Business Categories
