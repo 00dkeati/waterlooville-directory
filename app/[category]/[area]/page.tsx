@@ -36,6 +36,11 @@ export async function generateMetadata({ params }: CategoryAreaPageProps): Promi
 }
 
 export default async function CategoryAreaPage({ params }: CategoryAreaPageProps) {
+  // Exclude 'seo' from being treated as a category to avoid routing conflicts
+  if (params.category === 'seo') {
+    notFound()
+  }
+  
   const [category, area] = await Promise.all([
     getCategoryBySlug(params.category),
     getAreaBySlug(params.area)
