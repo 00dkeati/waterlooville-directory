@@ -33,6 +33,11 @@ export async function generateMetadata({ params }: CategoryPageProps): Promise<M
 }
 
 export default async function CategoryPage({ params }: CategoryPageProps) {
+  // Exclude 'seo' from being treated as a category to avoid routing conflicts
+  if (params.category === 'seo') {
+    notFound()
+  }
+  
   const category = await getCategoryBySlug(params.category)
   
   if (!category) {
