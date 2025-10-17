@@ -4,11 +4,6 @@ import { getCategories, getAreas as getAreasFromDb, getFeaturedBusinesses as get
 // Helper function to get business image for an article
 async function getArticleBusinessImage(article: any): Promise<string | undefined> {
   try {
-    // If article already has a heroImage, use it
-    if (article.heroImage && article.heroImage !== 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&h=400&fit=crop') {
-      return article.heroImage;
-    }
-
     // If article has related businesses, try to get image from first business
     if (article.relatedBusinesses && article.relatedBusinesses.length > 0) {
       const firstBusinessSlug = article.relatedBusinesses[0];
@@ -17,6 +12,11 @@ async function getArticleBusinessImage(article: any): Promise<string | undefined
       if (business && business.images && business.images.length > 0) {
         return business.images[0];
       }
+    }
+
+    // If no business image found, use existing heroImage if it's not the generic fallback
+    if (article.heroImage && article.heroImage !== 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&h=400&fit=crop') {
+      return article.heroImage;
     }
 
     // Fallback to default image
