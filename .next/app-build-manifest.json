@@ -20,6 +20,16 @@
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/seo/best-driving-instructors-waterlooville/page.js"
+    ],
+    "/guides/best-driving-instructors-waterlooville/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/guides/best-driving-instructors-waterlooville/page.js"
+    ],
+    "/driving-instructors-waterlooville/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/driving-instructors-waterlooville/page.js"
     ]
   }
 }
