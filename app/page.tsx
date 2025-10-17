@@ -7,6 +7,7 @@ import Image from 'next/image'
 import BusinessCard from '@/components/BusinessCard'
 import EditorialFeed from '@/components/EditorialFeed'
 import WaterloovilleSchema from '@/components/WaterloovilleSchema'
+import editorialArticles from '@/data/editorial-articles.json'
 
 export const metadata: Metadata = {
   title: 'Waterlooville News & Community - Your Local Source for Hampshire',
@@ -34,6 +35,14 @@ export default async function HomePage() {
 
   // Limit categories to top 6 for performance
   const topCategories = categories.slice(0, 6)
+
+  // Get featured business images for news stories
+  const barberBusiness = featuredBusinesses.find(b => b.category === 'barbers' || b.name.toLowerCase().includes('barber'))
+  const restaurantBusiness = featuredBusinesses.find(b => b.category === 'restaurants')
+  const serviceBusiness = featuredBusinesses.find(b => b.category === 'services' || b.category === 'carpenters')
+  
+  // Get featured editorial article
+  const featuredArticle = editorialArticles.find(article => article.featured)
 
   return (
     <div>
@@ -83,7 +92,7 @@ export default async function HomePage() {
                 <div className="md:w-1/2">
                   <div className="relative h-64 md:h-full">
                     <Image
-                      src="https://images.unsplash.com/photo-1504148455328-c376907d081c?w=800&h=400&fit=crop"
+                      src={featuredArticle?.heroImage || "https://images.unsplash.com/photo-1504148455328-c376907d081c?w=800&h=400&fit=crop"}
                       alt="Waterlooville Carpenter Guide"
                       fill
                       className="object-cover"
@@ -98,25 +107,25 @@ export default async function HomePage() {
                 </div>
                 <div className="md:w-1/2 p-8">
                   <div className="flex items-center text-sm text-gray-500 mb-4">
-                    <span className="bg-blue-100 text-blue-800 px-2 py-1 rounded mr-3">Home & Garden</span>
-                    <span>January 27, 2025</span>
+                    <span className="bg-blue-100 text-blue-800 px-2 py-1 rounded mr-3">{featuredArticle?.category || 'Home & Garden'}</span>
+                    <span>{featuredArticle?.publishedAt ? new Date(featuredArticle.publishedAt).toLocaleDateString('en-GB', { year: 'numeric', month: 'long', day: 'numeric' }) : 'January 27, 2025'}</span>
                   </div>
                   <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4 leading-tight">
-                    The Ultimate Waterlooville Carpenter Guide: Who to Trust With Your Home 2025
+                    {featuredArticle?.title || 'The Ultimate Waterlooville Carpenter Guide: Who to Trust With Your Home 2025'}
                   </h2>
                   <p className="text-gray-700 mb-6 leading-relaxed">
-                    With home improvement projects on the rise and quality tradesmen in high demand, choosing the right carpenter can make or break your renovation. We dive deep into Waterlooville's top carpenters to find out who really delivers.
+                    {featuredArticle?.excerpt || 'With home improvement projects on the rise and quality tradesmen in high demand, choosing the right carpenter can make or break your renovation. We dive deep into Waterlooville\'s top carpenters to find out who really delivers.'}
                   </p>
                   <div className="flex items-center justify-between">
                     <div className="flex items-center">
                       <div className="w-10 h-10 bg-gray-300 rounded-full mr-3"></div>
                       <div>
-                        <p className="text-sm font-semibold text-gray-900">Sarah Mitchell</p>
+                        <p className="text-sm font-semibold text-gray-900">{featuredArticle?.author || 'Sarah Mitchell'}</p>
                         <p className="text-xs text-gray-500">Local Reporter</p>
                       </div>
                     </div>
                     <Link 
-                      href="/editorial/best-carpenters-joiners-waterlooville-2025"
+                      href={`/editorial/${featuredArticle?.slug || 'best-carpenters-joiners-waterlooville-2025'}`}
                       className="bg-red-600 text-white px-6 py-2 rounded-lg font-semibold hover:bg-red-700 transition-colors"
                     >
                       Read Full Story →
@@ -148,7 +157,7 @@ export default async function HomePage() {
               <article className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
                 <div className="relative h-48">
                   <Image
-                    src="https://images.unsplash.com/photo-1583337130417-3346a1be7dee?w=400&h=300&fit=crop"
+                    src={barberBusiness?.images?.[0] || "https://images.unsplash.com/photo-1583337130417-3346a1be7dee?w=400&h=300&fit=crop"}
                     alt="Men's Barbers Waterlooville"
                     fill
                     className="object-cover"
@@ -179,7 +188,7 @@ export default async function HomePage() {
               <article className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
                 <div className="relative h-48">
                   <Image
-                    src="https://images.unsplash.com/photo-1601758228041-f3b2795255f1?w=400&h=300&fit=crop"
+                    src={restaurantBusiness?.images?.[0] || "https://images.unsplash.com/photo-1601758228041-f3b2795255f1?w=400&h=300&fit=crop"}
                     alt="Dog Walks Waterlooville"
                     fill
                     className="object-cover"
@@ -210,7 +219,7 @@ export default async function HomePage() {
               <article className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
                 <div className="relative h-48">
                   <Image
-                    src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=400&h=300&fit=crop"
+                    src={serviceBusiness?.images?.[0] || "https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=400&h=300&fit=crop"}
                     alt="Waterlooville Business Directory"
                     fill
                     className="object-cover"
