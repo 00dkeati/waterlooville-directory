@@ -35,6 +35,11 @@
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/guide-driving-instructors-waterlooville/page.js"
+    ],
+    "/driving-guide/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/driving-guide/page.js"
     ]
   }
 }
