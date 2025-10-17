@@ -23173,5 +23173,125 @@
         "source": "checkatrade"
       }
     ]
+  },
+  {
+    "id": "barber-studio-h-horndean",
+    "name": "Studio H",
+    "slug": "studio-h-horndean",
+    "category": "hair-salons",
+    "area": "horndean",
+    "postcode": "PO8 0BZ",
+    "address": "2b London Rd, Horndean",
+    "lat": 50.92,
+    "lng": -1.01,
+    "phone": "07523 131982",
+    "website": "https://www.hair-studioh.co.uk",
+    "description": "Premium barber shop with perfect 5.0 rating from over 500 reviews. Exceptional attention to detail and modern trendy styles.",
+    "opening_hours_json": "{\"monday\":\"Appointment-based (Closed Thursdays)\",\"tuesday\":\"Appointment-based (Closed Thursdays)\",\"wednesday\":\"Appointment-based (Closed Thursdays)\",\"thursday\":\"Appointment-based (Closed Thursdays)\",\"friday\":\"Appointment-based (Closed Thursdays)\",\"saturday\":\"Appointment-based (Closed Thursdays)\",\"sunday\":\"Closed\"}",
+    "rating": 5,
+    "review_count": 534,
+    "featured": true,
+    "images": [
+      "https://images.unsplash.com/photo-1585747860715-2ba37e788b7d?w=800&h=600&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1560066984-138dadb4c035?w=800&h=600&fit=crop&q=80"
+    ],
+    "created_at": "2025-10-17T20:25:53.293Z",
+    "updated_at": "2025-10-17T20:25:53.294Z"
+  },
+  {
+    "id": "barber-jc-barbering-waterlooville",
+    "name": "JC Barbering",
+    "slug": "jc-barbering-waterlooville",
+    "category": "hair-salons",
+    "area": "waterlooville",
+    "postcode": "PO8 9QQ",
+    "address": "4 Frogmore Ln, Waterlooville",
+    "lat": 50.8817,
+    "lng": -1.0324,
+    "phone": "07487 602476",
+    "website": "https://jcbarbering.co.uk",
+    "description": "Skin fade specialists with near-perfect 4.9 rating. Professional beard styling and precision cuts.",
+    "opening_hours_json": "{\"monday\":\"Tue-Sat (Closed Mon & Sun)\",\"tuesday\":\"Tue-Sat (Closed Mon & Sun)\",\"wednesday\":\"Tue-Sat (Closed Mon & Sun)\",\"thursday\":\"Tue-Sat (Closed Mon & Sun)\",\"friday\":\"Tue-Sat (Closed Mon & Sun)\",\"saturday\":\"Tue-Sat (Closed Mon & Sun)\",\"sunday\":\"Closed\"}",
+    "rating": 4.9,
+    "review_count": 42,
+    "featured": true,
+    "images": [
+      "https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=800&h=600&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1621605815971-fbc98d665033?w=800&h=600&fit=crop&q=80"
+    ],
+    "created_at": "2025-10-17T20:25:53.294Z",
+    "updated_at": "2025-10-17T20:25:53.294Z"
+  },
+  {
+    "id": "barber-the-cowplain-barber-shop-cowplain",
+    "name": "The Cowplain Barber Shop",
+    "slug": "the-cowplain-barber-shop-cowplain",
+    "category": "hair-salons",
+    "area": "cowplain",
+    "postcode": "PO8 8EW",
+    "address": "64 London Rd, Cowplain",
+    "lat": 50.889,
+    "lng": -1.018,
+    "phone": "023 9400 0385",
+    "website": "https://thecowplainbarbershop.setmore.com",
+    "description": "Established since the 1980s with loyal following. Consistent quality and excellent value at £16 per cut.",
+    "opening_hours_json": "{\"monday\":\"Mon-Sat\",\"tuesday\":\"Mon-Sat\",\"wednesday\":\"Mon-Sat\",\"thursday\":\"Mon-Sat\",\"friday\":\"Mon-Sat\",\"saturday\":\"Mon-Sat\",\"sunday\":\"Closed\"}",
+    "rating": 4.7,
+    "review_count": 121,
+    "featured": true,
+    "images": [
+      "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=800&h=600&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1594736797933-d0f6c0b0b0b0?w=800&h=600&fit=crop&q=80"
+    ],
+    "created_at": "2025-10-17T20:25:53.294Z",
+    "updated_at": "2025-10-17T20:25:53.294Z"
+  },
+  {
+    "id": "barber-la-barbers-widley",
+    "name": "L.A. Barbers",
+    "slug": "la-barbers-widley",
+    "category": "hair-salons",
+    "area": "widley",
+    "postcode": "PO7 5AG",
+    "address": "74 London Rd, Widley",
+    "lat": 50.875,
+    "lng": -1.045,
+    "phone": "023 9225 5555",
+    "website": "",
+    "description": "Children's haircut specialists with SEN/autism expertise. Patient and understanding approach for families.",
+    "opening_hours_json": "{\"monday\":\"Mon-Sat (Closed Wed & Sun)\",\"tuesday\":\"Mon-Sat (Closed Wed & Sun)\",\"wednesday\":\"Mon-Sat (Closed Wed & Sun)\",\"thursday\":\"Mon-Sat (Closed Wed & Sun)\",\"friday\":\"Mon-Sat (Closed Wed & Sun)\",\"saturday\":\"Mon-Sat (Closed Wed & Sun)\",\"sunday\":\"Closed\"}",
+    "rating": 4.6,
+    "review_count": 93,
+    "featured": true,
+    "images": [
+      "https://images.unsplash.com/photo-1562322140-8baaccef4b5b?w=800&h=600&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&h=600&fit=crop&q=80"
+    ],
+    "created_at": "2025-10-17T20:25:53.294Z",
+    "updated_at": "2025-10-17T20:25:53.294Z"
+  },
+  {
+    "id": "barber-jays-barbers-cowplain",
+    "name": "Jay's Barbers",
+    "slug": "jays-barbers-cowplain",
+    "category": "hair-salons",
+    "area": "cowplain",
+    "postcode": "PO8 8AA",
+    "address": "12 Portsmouth Road, Cowplain",
+    "lat": 50.889,
+    "lng": -1.018,
+    "phone": "023 9225 6666",
+    "website": "",
+    "description": "Dual service barber shop offering haircuts and body piercing. Walk-in friendly with good local reputation.",
+    "opening_hours_json": "{\"monday\":\"Mon-Sat\",\"tuesday\":\"Mon-Sat\",\"wednesday\":\"Mon-Sat\",\"thursday\":\"Mon-Sat\",\"friday\":\"Mon-Sat\",\"saturday\":\"Mon-Sat\",\"sunday\":\"Closed\"}",
+    "rating": 4.3,
+    "review_count": 80,
+    "featured": false,
+    "images": [
+      "https://images.unsplash.com/photo-1585747860715-2ba37e788b7d?w=800&h=600&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1560066984-138dadb4c035?w=800&h=600&fit=crop&q=80"
+    ],
+    "created_at": "2025-10-17T20:25:53.294Z",
+    "updated_at": "2025-10-17T20:25:53.294Z"
   }
 ]
