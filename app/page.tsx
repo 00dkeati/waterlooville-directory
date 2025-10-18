@@ -1,3 +1,4 @@
+export const dynamic = 'force-dynamic'
 import TopNav from "./(site)/components/TopNav";
 import { getFeatureArticle, getLatestArticles, getTopCategories } from "@/lib/data";
 import Image from "next/image";
