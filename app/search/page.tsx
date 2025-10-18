@@ -56,7 +56,7 @@ export default function SearchPage() {
       const data = await response.json()
       setBusinesses(data)
     } catch (error) {
-      console.error('Search error:', error)
+      // Search failed silently
     } finally {
       setLoading(false)
     }

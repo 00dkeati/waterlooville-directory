@@ -50,7 +50,6 @@ export async function GET(request: NextRequest) {
       return NextResponse.json(articles)
     }
   } catch (error) {
-    console.error('Blog API error:', error)
     return NextResponse.json(
       { error: 'Internal server error' },
       { status: 500 }

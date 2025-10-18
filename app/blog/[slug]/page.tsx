@@ -54,7 +54,6 @@ async function getBlogArticle(slug: string): Promise<BlogArticle | null> {
     
     return await fullResponse.json()
   } catch (error) {
-    console.error('Error fetching blog article:', error)
     return null
   }
 }

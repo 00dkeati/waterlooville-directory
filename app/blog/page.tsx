@@ -46,13 +46,11 @@ async function getBlogArticles(): Promise<BlogArticle[]> {
     })
     
     if (!response.ok) {
-      console.error('Failed to fetch blog articles:', response.status)
       return []
     }
     
     return await response.json()
   } catch (error) {
-    console.error('Error fetching blog articles:', error)
     return []
   }
 }

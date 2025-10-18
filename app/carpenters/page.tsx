@@ -36,7 +36,6 @@ async function getCarpenters() {
       return b.review_count - a.review_count
     })
   } catch (error) {
-    console.error('Error loading carpenters:', error)
     return []
   }
 }

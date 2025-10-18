@@ -55,7 +55,6 @@ async function getArticleBusinessImage(article: EditorialArticle): Promise<strin
     // Fallback to default image
     return 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&h=400&fit=crop';
   } catch (error) {
-    console.error('Error getting business image for article:', error);
     return 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&h=400&fit=crop';
   }
 }
