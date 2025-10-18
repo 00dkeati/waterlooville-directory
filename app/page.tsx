@@ -10,12 +10,6 @@ export default async function HomePage() {
     getTopCategories(12),
   ]);
 
-  // Debug logging
-  console.log('🏠 Homepage Debug:');
-  console.log('   Feature Article:', featureArticle?.title);
-  console.log('   Feature Image URL:', featureArticle?.imageUrl);
-  console.log('   Latest Articles Count:', latestArticles.length);
-
   return (
     <>
       <TopNav />
@@ -45,6 +39,10 @@ export default async function HomePage() {
                           <span className="bg-green-600 text-white px-3 py-1 rounded-full text-sm font-semibold">
                             {featureArticle.kicker || 'Featured'}
                           </span>
+                        </div>
+                        {/* Debug info */}
+                        <div className="absolute bottom-4 left-4 bg-black bg-opacity-50 text-white text-xs p-2 rounded">
+                          Debug: {featureArticle.imageUrl}
                         </div>
                       </div>
                     )}
