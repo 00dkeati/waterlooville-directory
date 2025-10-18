@@ -19,6 +19,12 @@ const nextConfig = {
       },
       {
         protocol: 'https',
+        hostname: 'images.pexels.com',
+        port: '',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
         hostname: 'maps.googleapis.com',
         port: '',
         pathname: '/**',

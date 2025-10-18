@@ -1661,6 +1661,9 @@
         "text": "🏆 Top-Rated Men's Hairdressers in Waterlooville"
       },
       {
+        "type": "barberLeagueTable"
+      },
+      {
         "type": "heading",
         "text": "1. Studio H (Horndean) - ⭐ 5.0/5 (534 Reviews)"
       },
@@ -1877,6 +1880,28 @@
       {
         "type": "paragraph",
         "text": "Discover other excellent services in Waterlooville through our comprehensive business directory. From restaurants and cafes to professional services and retail, [Waterlooville.co](https://waterlooville.co) connects you with the best local businesses in your area."
+      },
+      {
+        "type": "heading",
+        "text": "❓ Frequently Asked Questions"
+      },
+      {
+        "type": "list",
+        "items": [
+          "**How often should I get my hair cut?** Most men benefit from a haircut every 4-6 weeks to maintain their style and keep hair looking fresh.",
+          "**What's the difference between a barber and a hairdresser?** Barbers typically specialize in men's cuts, beard trimming, and traditional techniques, while hairdressers may offer more styling services.",
+          "**Should I book an appointment or can I walk in?** Most top-rated barbers use appointment systems to ensure quality service. Walk-ins are possible but may involve waiting.",
+          "**How much should I expect to pay?** Prices range from £15-£40 depending on the service and establishment. Premium barbers may charge more for specialized cuts.",
+          "**What should I bring to my appointment?** Bring photos of styles you like, be clear about your preferences, and arrive with clean, dry hair for the best results."
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "📝 Missing Your Barbershop?"
+      },
+      {
+        "type": "paragraph",
+        "text": "Don't see your favorite barber on our list? We're always updating our directory with new establishments. If you know of a great barber in the Waterlooville area that should be included, please let us know!"
       },
       {
         "type": "paragraph",

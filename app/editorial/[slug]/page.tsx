@@ -6,15 +6,18 @@ import { getBusinessBySlug } from '@/lib/db'
 import BusinessCard from '@/components/BusinessCard'
 import ChineseTakeawayLeagueTable from '@/components/ChineseTakeawayLeagueTable'
 import SundayRoastLeagueTable from '@/components/SundayRoastLeagueTable'
+import BarberLeagueTable from '@/components/BarberLeagueTable'
+import { getBarbersForWaterlooville } from '@/lib/barbers'
 
 interface ArticleContent {
-  type: 'paragraph' | 'heading' | 'quote' | 'businessSpotlight' | 'list' | 'callout' | 'leagueTable'
+  type: 'paragraph' | 'heading' | 'quote' | 'businessSpotlight' | 'list' | 'callout' | 'leagueTable' | 'barberLeagueTable'
   text?: string
   author?: string
   businessSlug?: string
   items?: string[]
   takeaways?: any[]
   venues?: any[]
+  barbers?: any[]
 }
 
 interface EditorialArticle {
@@ -74,6 +77,23 @@ export async function generateMetadata({ params }: { params: { slug: string } })
     }
   }
 
+  // Special handling for men's hairdressers article
+  if (article.slug === 'best-mens-hairdressers-waterlooville-2025') {
+    return {
+      title: 'Best Men\'s Hairdressers & Barbers in Waterlooville (2025) | Waterlooville Directory',
+      description: 'Discover the top-rated barbers and hairdressers in Waterlooville, Horndean, and Cowplain. Our comprehensive league table ranks the best men\'s haircut establishments based on real customer reviews and ratings.',
+      openGraph: {
+        title: 'Best Men\'s Hairdressers & Barbers in Waterlooville (2025)',
+        description: 'Discover the top-rated barbers and hairdressers in Waterlooville, Horndean, and Cowplain. Our comprehensive league table ranks the best men\'s haircut establishments based on real customer reviews and ratings.',
+        images: [article.heroImage],
+        type: 'article',
+        publishedTime: article.publishedAt,
+        authors: [article.author],
+        tags: article.tags,
+      },
+    }
+  }
+
   return {
     title: `${article.title} | Waterlooville Directory`,
     description: article.excerpt,
@@ -98,6 +118,11 @@ export default async function EditorialArticlePage({ params }: { params: { slug:
 
   // Get enhanced image for the article
   const enhancedImage = await getArticleBusinessImage(article)
+  
+  // Load barber data if this is the men's hairdressers article
+  const barbers = article.slug === 'best-mens-hairdressers-waterlooville-2025' 
+    ? await getBarbersForWaterlooville() 
+    : []
 
   const formatDate = (dateString: string) => {
     const date = new Date(dateString)
@@ -110,6 +135,83 @@ export default async function EditorialArticlePage({ params }: { params: { slug:
 
   return (
     <div className="max-w-4xl mx-auto">
+      {/* JSON-LD Structured Data */}
+      {article.slug === 'best-mens-hairdressers-waterlooville-2025' && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Article",
+              "headline": article.title,
+              "description": article.excerpt,
+              "author": {
+                "@type": "Person",
+                "name": article.author
+              },
+              "publisher": {
+                "@type": "Organization",
+                "name": "Waterlooville Directory",
+                "url": "https://waterlooville.co"
+              },
+              "datePublished": article.publishedAt,
+              "dateModified": article.publishedAt,
+              "image": article.heroImage,
+              "mainEntityOfPage": {
+                "@type": "WebPage",
+                "@id": `https://waterlooville.co/editorial/${article.slug}`
+              },
+              "breadcrumb": {
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                  {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": "https://waterlooville.co"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Editorial",
+                    "item": "https://waterlooville.co/editorial"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "name": "Best Men's Hairdressers 2025"
+                  }
+                ]
+              },
+              "about": {
+                "@type": "ItemList",
+                "name": "Best Men's Hairdressers in Waterlooville",
+                "description": "Ranked list of top-rated barbers and hairdressers in Waterlooville, Horndean, and Cowplain",
+                "numberOfItems": barbers.length,
+                "itemListElement": barbers.slice(0, 10).map((barber, index) => ({
+                  "@type": "ListItem",
+                  "position": index + 1,
+                  "item": {
+                    "@type": "LocalBusiness",
+                    "name": barber.name,
+                    "description": barber.description,
+                    "address": barber.address,
+                    "telephone": barber.phone,
+                    "url": barber.website,
+                    "image": barber.imageUrl,
+                    "aggregateRating": barber.rating ? {
+                      "@type": "AggregateRating",
+                      "ratingValue": barber.rating,
+                      "reviewCount": barber.review_count || 0
+                    } : undefined
+                  }
+                }))
+              }
+            })
+          }}
+        />
+      )}
+
       {/* Breadcrumbs */}
       <nav className="mb-6 text-sm text-gray-600">
         <Link href="/" className="hover:text-blue-600">Home</Link>
@@ -229,6 +331,13 @@ export default async function EditorialArticlePage({ params }: { params: { slug:
                       ) : block.venues ? (
                         <SundayRoastLeagueTable venues={block.venues} />
                       ) : null}
+                    </div>
+                  )
+                
+                case 'barberLeagueTable':
+                  return (
+                    <div key={index} className="my-12">
+                      <BarberLeagueTable barbers={barbers} />
                     </div>
                   )
                 
