@@ -6,7 +6,6 @@ export async function GET() {
     const areas = await getAreas()
     return NextResponse.json(areas)
   } catch (error) {
-    console.error('Areas API error:', error)
     return NextResponse.json({ error: 'Internal server error' }, { status: 500 })
   }
 }

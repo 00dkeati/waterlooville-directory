@@ -83,7 +83,7 @@ async function getReviews(): Promise<Review[]> {
         }
       }
     } catch (error) {
-      console.error('Error fetching from Gist:', error)
+      // Error fetching from Gist, fallback to memory
     }
   }
   
@@ -114,7 +114,7 @@ async function saveReviews(reviews: Review[]): Promise<boolean> {
       
       return response.ok
     } catch (error) {
-      console.error('Error saving to Gist:', error)
+      // Error saving to Gist, fallback to memory
     }
   }
   
@@ -141,7 +141,6 @@ export async function GET(request: Request) {
     
     return NextResponse.json({ reviews })
   } catch (error) {
-    console.error('Error reading reviews:', error)
     return NextResponse.json({ reviews: [] })
   }
 }
@@ -221,7 +220,6 @@ export async function POST(request: Request) {
 
     return NextResponse.json({ success: true, review: newReview })
   } catch (error) {
-    console.error('Error saving review:', error)
     return NextResponse.json(
       { error: 'Failed to save review' },
       { status: 500 }

@@ -58,7 +58,6 @@ export async function GET(request: Request) {
     })
 
   } catch (error) {
-    console.error('Error fetching editorial articles:', error)
     return NextResponse.json({ 
       articles: [],
       error: 'Failed to fetch editorial articles' 
