@@ -27,13 +27,10 @@ export default async function HomePage() {
                     {/* Featured Article Image */}
                     {featureArticle.imageUrl && (
                       <div className="md:w-1/2 relative h-64 md:h-auto">
-                        <Image
+                        <img
                           src={featureArticle.imageUrl}
                           alt={featureArticle.title}
-                          fill
-                          className="object-cover"
-                          sizes="(max-width: 768px) 100vw, 50vw"
-                          priority
+                          className="w-full h-full object-cover"
                         />
                         <div className="absolute top-4 left-4">
                           <span className="bg-green-600 text-white px-3 py-1 rounded-full text-sm font-semibold">

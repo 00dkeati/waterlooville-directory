@@ -4,22 +4,31 @@ import { getCategories, getAreas as getAreasFromDb, getFeaturedBusinesses as get
 // Helper function to get business image for an article
 async function getArticleBusinessImage(article: any): Promise<string | undefined> {
   try {
+    console.log('🔍 getArticleBusinessImage called for:', article.title);
+    console.log('   Related businesses:', article.relatedBusinesses);
+    
     // If article has related businesses, try to get image from first business
     if (article.relatedBusinesses && article.relatedBusinesses.length > 0) {
       const firstBusinessSlug = article.relatedBusinesses[0];
+      console.log('   Looking for business:', firstBusinessSlug);
+      
       const business = await getBusinessBySlug(firstBusinessSlug);
+      console.log('   Business found:', business ? business.name : 'Not found');
       
       if (business && business.images && business.images.length > 0) {
+        console.log('   Using business image:', business.images[0]);
         return business.images[0];
       }
     }
 
     // If no business image found, use existing heroImage if it's not the generic fallback
     if (article.heroImage && article.heroImage !== 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&h=400&fit=crop') {
+      console.log('   Using heroImage:', article.heroImage);
       return article.heroImage;
     }
 
     // Fallback to default image
+    console.log('   Using default image');
     return 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&h=400&fit=crop';
   } catch (error) {
     console.error('Error getting business image for article:', error);
