@@ -14,7 +14,10 @@
     "aggregate:reviews": "tsx scripts/aggregateAllReviews.ts",
     "scrape:reviews": "tsx scripts/simpleAiScraper.ts",
     "scrape:coffee": "tsx scripts/scrapeCoffeeShops.ts",
-    "generate:estate-guide": "tsx scripts/generateEstateAgentGuide.ts"
+    "generate:estate-guide": "tsx scripts/generateEstateAgentGuide.ts",
+    "validate-redirects": "node scripts/redirectUtils.mjs validate",
+    "test-redirects": "node scripts/redirectUtils.mjs test",
+    "redirects-help": "node scripts/redirectUtils.mjs help"
   },
   "dependencies": {
     "@googlemaps/google-maps-services-js": "^3.4.2",

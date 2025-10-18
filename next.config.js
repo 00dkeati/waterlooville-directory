@@ -1,4 +1,6 @@
 /** @type {import('next').NextConfig} */
+const { loadCsvRedirects } = require('./scripts/loadCsvRedirects.mjs');
+
 const nextConfig = {
   // Performance optimizations
   experimental: {
@@ -39,6 +41,27 @@ const nextConfig = {
   //   }
   //   return config;
   // },
+  
+  // CSV-driven redirects
+  async redirects() {
+    try {
+      const rows = loadCsvRedirects('./data/redirects.csv');
+      const rules = rows.map(({ from, to, status }) => {
+        return {
+          source: from,
+          destination: to,
+          permanent: false,
+          statusCode: status || 307,
+        };
+      });
+      
+      console.log(`[next.config] Generated ${rules.length} redirect rules`);
+      return rules;
+    } catch (error) {
+      console.error('[next.config] Error loading redirects:', error);
+      return [];
+    }
+  },
   
   async rewrites() {
     return {

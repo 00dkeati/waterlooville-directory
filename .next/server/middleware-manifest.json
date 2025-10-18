@@ -1,6 +1,30 @@
 {
   "version": 3,
-  "middleware": {},
+  "middleware": {
+    "/": {
+      "files": [
+        "server/edge-runtime-webpack.js",
+        "server/middleware.js"
+      ],
+      "name": "middleware",
+      "page": "/",
+      "matchers": [
+        {
+          "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?(?:\\/((?!api|_next\\/static|_next\\/image|favicon.ico|.*\\.).*))(.json)?[\\/#\\?]?$",
+          "originalSource": "/((?!api|_next/static|_next/image|favicon.ico|.*\\.).*)"
+        }
+      ],
+      "wasm": [],
+      "assets": [],
+      "env": {
+        "__NEXT_BUILD_ID": "5452AQxRdhaXQLxy1-mGo",
+        "NEXT_SERVER_ACTIONS_ENCRYPTION_KEY": "GiqzvGRb7XzmDm7FM0hn0lP8H5quwU/jLQuDT2XqfH4=",
+        "__NEXT_PREVIEW_MODE_ID": "07f700f049c106fabbad9443fed4744c",
+        "__NEXT_PREVIEW_MODE_ENCRYPTION_KEY": "73ef7bc0c87f7f97fa1901182e627fe988e51075d469793ccc78d246485ddf6b",
+        "__NEXT_PREVIEW_MODE_SIGNING_KEY": "ff9d0d36a22302f155e131940d8582409467eb0f291aa35c85e7dc057a532c61"
+      }
+    }
+  },
   "functions": {
     "/opengraph-image/route": {
       "files": [
@@ -36,13 +60,15 @@
         }
       ],
       "env": {
-        "__NEXT_BUILD_ID": "N8DANU_PRMFXalfG_V-8P",
-        "NEXT_SERVER_ACTIONS_ENCRYPTION_KEY": "cow3cJiz0wR6fUSr0F6jVDNkR0WBgIC0MSOFy+BWI3w=",
-        "__NEXT_PREVIEW_MODE_ID": "9969d485ca0729ea12ea3ac60fe2e9cb",
-        "__NEXT_PREVIEW_MODE_ENCRYPTION_KEY": "97b426762b3e370f52de88ae6d98892f91a8f1b8b378adfaa5cc61068ec2ad5a",
-        "__NEXT_PREVIEW_MODE_SIGNING_KEY": "81b9a030163a7c0f358485d3af16eef5d0b52d85ed29ce71a7ad9fed233487b2"
+        "__NEXT_BUILD_ID": "5452AQxRdhaXQLxy1-mGo",
+        "NEXT_SERVER_ACTIONS_ENCRYPTION_KEY": "GiqzvGRb7XzmDm7FM0hn0lP8H5quwU/jLQuDT2XqfH4=",
+        "__NEXT_PREVIEW_MODE_ID": "07f700f049c106fabbad9443fed4744c",
+        "__NEXT_PREVIEW_MODE_ENCRYPTION_KEY": "73ef7bc0c87f7f97fa1901182e627fe988e51075d469793ccc78d246485ddf6b",
+        "__NEXT_PREVIEW_MODE_SIGNING_KEY": "ff9d0d36a22302f155e131940d8582409467eb0f291aa35c85e7dc057a532c61"
       }
     }
   },
-  "sortedMiddleware": []
+  "sortedMiddleware": [
+    "/"
+  ]
 }
