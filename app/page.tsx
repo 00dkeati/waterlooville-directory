@@ -28,9 +28,13 @@ export default async function HomePage() {
                     {featureArticle.imageUrl && (
                       <div className="md:w-1/2 relative h-64 md:h-auto">
                         <img
-                          src={featureArticle.imageUrl}
+                          src="https://images.unsplash.com/photo-1585747860715-2ba37e788b7d?w=800&h=600&fit=crop&q=80"
                           alt={featureArticle.title}
                           className="w-full h-full object-cover"
+                          onError={(e) => {
+                            console.log('Image failed to load, trying fallback');
+                            e.currentTarget.src = 'https://via.placeholder.com/800x600/4ade80/ffffff?text=Barber+Shop';
+                          }}
                         />
                         <div className="absolute top-4 left-4">
                           <span className="bg-green-600 text-white px-3 py-1 rounded-full text-sm font-semibold">
