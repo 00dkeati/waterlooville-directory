@@ -5,8 +5,8 @@ import { useSearchParams } from 'next/navigation'
 import { getBusinesses, getCategories, getAreas } from '@/lib/db'
 import BusinessCard from '@/components/BusinessCard'
 import Breadcrumbs from '@/components/Breadcrumbs'
+import TopNav from "@/app/(site)/components/TopNav"
 import { Business, Category, Area } from '@/lib/db'
-import Head from 'next/head'
 
 export default function SearchPage() {
   const [businesses, setBusinesses] = useState<Business[]>([])
@@ -69,23 +69,12 @@ export default function SearchPage() {
 
   return (
     <>
-      <Head>
-        <title>Search Local Businesses in Waterlooville | Business Directory</title>
-        <meta name="description" content="Search and find local businesses in Waterlooville, Hampshire. Browse restaurants, shops, services, and more with our comprehensive business directory." />
-        <meta name="keywords" content="waterlooville businesses, local search, business directory, waterlooville directory, find businesses waterlooville" />
-        <meta name="robots" content="index, follow" />
-        <meta property="og:title" content="Search Local Businesses in Waterlooville" />
-        <meta property="og:description" content="Find the perfect local business for your needs in Waterlooville, Hampshire." />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://waterlooville.co/search" />
-        <link rel="canonical" href="https://waterlooville.co/search" />
-      </Head>
-      
+      <TopNav />
       <Breadcrumbs items={[
         { label: 'Search' }
       ]} />
 
-      <div className="max-w-6xl mx-auto">
+      <div className="max-w-6xl mx-auto px-4 py-8">
         <header className="mb-8">
           <h1 className="text-4xl font-bold text-gray-900 mb-4">
             Search Local Businesses
