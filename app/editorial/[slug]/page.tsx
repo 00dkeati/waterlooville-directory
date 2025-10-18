@@ -109,7 +109,13 @@ export async function generateMetadata({ params }: { params: { slug: string } })
   }
 }
 
+// Force dynamic rendering and disable caching
+export const dynamic = 'force-dynamic'
+export const revalidate = 0
+
 export default async function EditorialArticlePage({ params }: { params: { slug: string } }) {
+  console.log('[LEAGUE] rendering', new Date().toISOString(), 'for slug:', params.slug)
+  
   const article = await getArticle(params.slug)
 
   if (!article) {
@@ -123,6 +129,10 @@ export default async function EditorialArticlePage({ params }: { params: { slug:
   const barbers = article.slug === 'best-mens-hairdressers-waterlooville-2025' 
     ? await getBarbersForWaterlooville() 
     : []
+  
+  if (article.slug === 'best-mens-hairdressers-waterlooville-2025') {
+    console.log('[LEAGUE] Loaded barbers:', barbers.length, 'barbers')
+  }
 
   const formatDate = (dateString: string) => {
     const date = new Date(dateString)
@@ -133,8 +143,18 @@ export default async function EditorialArticlePage({ params }: { params: { slug:
     })
   }
 
+  // Get build metadata
+  const sha = process.env.VERCEL_GIT_COMMIT_SHA || "local"
+  const branch = process.env.VERCEL_GIT_COMMIT_REF || "unknown"
+  const deployTime = Date.now()
+
   return (
     <div className="max-w-4xl mx-auto">
+      {/* Deployment Marker */}
+      <div data-deploy-marker className="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded mb-4">
+        <strong>DEPLOY_OK_{deployTime}</strong> | Build: {branch}@{sha} | Rendered: {new Date().toISOString()}
+      </div>
+      
       {/* JSON-LD Structured Data */}
       {article.slug === 'best-mens-hairdressers-waterlooville-2025' && (
         <script
