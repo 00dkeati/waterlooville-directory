@@ -96,15 +96,15 @@ async function loadLightweightData() {
   }
   
   if (!businessesLightweightCache || (now - cacheTimestamp) >= CACHE_TTL) {
-    const businesses = await import('@/public/data/businesses-lightweight.json')
+    const businesses = await import('../public/data/businesses-lightweight.json')
     businessesLightweightCache = businesses.default
   }
   if (!categoriesCache || (now - cacheTimestamp) >= CACHE_TTL) {
-    const categories = await import('@/public/data/categories.json')
+    const categories = await import('../public/data/categories.json')
     categoriesCache = categories.default as Category[]
   }
   if (!areasCache || (now - cacheTimestamp) >= CACHE_TTL) {
-    const areas = await import('@/public/data/areas.json')
+    const areas = await import('../public/data/areas.json')
     areasCache = areas.default as Area[]
   }
   
@@ -116,15 +116,15 @@ async function loadFullData() {
   const now = Date.now()
   
   if (!businessesCache || (now - cacheTimestamp) >= CACHE_TTL) {
-    const businesses = await import('@/public/data/businesses.json')
+    const businesses = await import('../public/data/businesses.json')
     businessesCache = businesses.default as Business[]
   }
   if (!categoriesCache || (now - cacheTimestamp) >= CACHE_TTL) {
-    const categories = await import('@/public/data/categories.json')
+    const categories = await import('../public/data/categories.json')
     categoriesCache = categories.default as Category[]
   }
   if (!areasCache || (now - cacheTimestamp) >= CACHE_TTL) {
-    const areas = await import('@/public/data/areas.json')
+    const areas = await import('../public/data/areas.json')
     areasCache = areas.default as Area[]
   }
   

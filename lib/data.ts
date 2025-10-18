@@ -30,7 +30,7 @@ async function getArticleBusinessImage(article: any): Promise<string | undefined
 // Get featured article (most recent featured editorial article)
 export async function getFeatureArticle(): Promise<Article | null> {
   try {
-    const articlesData = await import('@/data/editorial-articles.json');
+    const articlesData = await import('../data/editorial-articles.json');
     const articles: any[] = articlesData.default;
     
     const featured = articles
@@ -63,7 +63,7 @@ export async function getFeatureArticle(): Promise<Article | null> {
 // Get latest articles
 export async function getLatestArticles(n = 9): Promise<Article[]> {
   try {
-    const articlesData = await import('@/data/editorial-articles.json');
+    const articlesData = await import('../data/editorial-articles.json');
     const articles: any[] = articlesData.default;
     
     const latestArticles = articles
@@ -99,7 +99,7 @@ export async function getLatestArticles(n = 9): Promise<Article[]> {
 // Get most read articles (simulated by featured + recent)
 export async function getMostRead(n = 8): Promise<Article[]> {
   try {
-    const articlesData = await import('@/data/editorial-articles.json');
+    const articlesData = await import('../data/editorial-articles.json');
     const articles: any[] = articlesData.default;
     
     // Combine featured and recent articles, prioritize featured
