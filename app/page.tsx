@@ -10,6 +10,12 @@ export default async function HomePage() {
     getTopCategories(12),
   ]);
 
+  // Debug logging
+  console.log('🏠 Homepage Debug:');
+  console.log('   Feature Article:', featureArticle?.title);
+  console.log('   Feature Image URL:', featureArticle?.imageUrl);
+  console.log('   Latest Articles Count:', latestArticles.length);
+
   return (
     <>
       <TopNav />
