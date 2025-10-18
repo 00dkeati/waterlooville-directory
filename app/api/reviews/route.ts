@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server'
 import { validateReviewContent } from '@/lib/contentFilter'
 
-export const dynamic = 'force-dynamic';
+export const runtime = 'nodejs'
 
 interface Review {
   id: string
@@ -15,8 +15,8 @@ interface Review {
 
 // Using GitHub Gist as a simple free database
 // This is a temporary solution - for production, use a proper database
-const GIST_ID = process.env.REVIEWS_GIST_ID || ''
-const GITHUB_TOKEN = process.env.GITHUB_TOKEN || ''
+const GIST_ID = process.env.REVIEWS_GIST_ID ?? ''
+const GITHUB_TOKEN = process.env.GITHUB_TOKEN ?? ''
 
 // Fallback to in-memory storage for development
 let memoryReviews: Review[] = [
@@ -141,6 +141,10 @@ export async function GET(request: Request) {
     
     return NextResponse.json({ reviews })
   } catch (error) {
+    console.error('[API_ERROR]', { 
+      route: '/api/reviews', 
+      error: error instanceof Error ? error.message : String(error) 
+    })
     return NextResponse.json({ reviews: [] })
   }
 }
@@ -220,8 +224,12 @@ export async function POST(request: Request) {
 
     return NextResponse.json({ success: true, review: newReview })
   } catch (error) {
+    console.error('[API_ERROR]', { 
+      route: '/api/reviews', 
+      error: error instanceof Error ? error.message : String(error) 
+    })
     return NextResponse.json(
-      { error: 'Failed to save review' },
+      { error: 'Internal Server Error' },
       { status: 500 }
     )
   }

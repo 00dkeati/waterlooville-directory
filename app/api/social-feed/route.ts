@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server'
 
-export const dynamic = 'force-dynamic'
+export const runtime = 'nodejs'
 
 export async function GET(request: NextRequest) {
   const searchParams = request.nextUrl.searchParams
@@ -68,8 +68,12 @@ export async function GET(request: NextRequest) {
     return NextResponse.json(sampleData)
 
   } catch (error) {
+    console.error('[API_ERROR]', { 
+      route: '/api/social-feed', 
+      error: error instanceof Error ? error.message : String(error) 
+    })
     return NextResponse.json({ 
-      error: 'Failed to fetch social media data',
+      error: 'Internal Server Error',
       posts: [] 
     }, { status: 500 })
   }

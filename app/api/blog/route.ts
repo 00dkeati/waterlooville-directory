@@ -3,8 +3,6 @@ import { NextRequest, NextResponse } from 'next/server'
 const BABYLOVE_API_KEY = 'd09c1189-9188-4c04-9699-d52a59bfe698'
 const BABYLOVE_API_BASE = 'https://api.babylovegrowth.ai/api/public'
 
-// Force dynamic rendering
-export const dynamic = 'force-dynamic'
 export const runtime = 'nodejs'
 
 export async function GET(request: NextRequest) {
@@ -50,8 +48,12 @@ export async function GET(request: NextRequest) {
       return NextResponse.json(articles)
     }
   } catch (error) {
+    console.error('[API_ERROR]', { 
+      route: '/api/blog', 
+      error: error instanceof Error ? error.message : String(error) 
+    })
     return NextResponse.json(
-      { error: 'Internal server error' },
+      { error: 'Internal Server Error' },
       { status: 500 }
     )
   }

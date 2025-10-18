@@ -1,6 +1,6 @@
 import { NextResponse } from 'next/server'
 
-export const dynamic = 'force-dynamic'
+export const runtime = 'nodejs'
 export const revalidate = 3600 // Cache for 1 hour
 
 export interface EditorialArticle {
@@ -35,7 +35,7 @@ export async function GET(request: Request) {
     const limit = searchParams.get('limit') ? parseInt(searchParams.get('limit')!) : undefined
     
     // Import the editorial articles data
-    const articlesData = await import('@/data/editorial-articles.json')
+    const articlesData = await import('../../../data/editorial-articles.json')
     let articles: EditorialArticle[] = articlesData.default as EditorialArticle[]
     
     // Filter featured if requested
@@ -58,9 +58,13 @@ export async function GET(request: Request) {
     })
 
   } catch (error) {
+    console.error('[API_ERROR]', { 
+      route: '/api/editorial', 
+      error: error instanceof Error ? error.message : String(error) 
+    })
     return NextResponse.json({ 
       articles: [],
-      error: 'Failed to fetch editorial articles' 
+      error: 'Internal Server Error' 
     }, { status: 500 })
   }
 }

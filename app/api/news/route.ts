@@ -1,6 +1,6 @@
 import { NextResponse } from 'next/server'
 
-export const dynamic = 'force-dynamic'
+export const runtime = 'nodejs'
 export const revalidate = 3600 // Cache for 1 hour
 
 export async function GET() {
@@ -76,9 +76,13 @@ export async function GET() {
     })
 
   } catch (error) {
+    console.error('[API_ERROR]', { 
+      route: '/api/news', 
+      error: error instanceof Error ? error.message : String(error) 
+    })
     return NextResponse.json({ 
       articles: [],
-      error: 'Failed to fetch news' 
+      error: 'Internal Server Error' 
     }, { status: 500 })
   }
 }

@@ -10,6 +10,8 @@ import SocialMediaFeed from '@/components/SocialMediaFeed'
 import MessageBoard from '@/components/MessageBoard'
 import { Metadata } from 'next'
 
+export const runtime = 'nodejs'
+
 interface BusinessPageProps {
   params: {
     slug: string
@@ -17,39 +19,50 @@ interface BusinessPageProps {
 }
 
 export async function generateMetadata({ params }: BusinessPageProps): Promise<Metadata> {
-  const business: Business | null = await getBusinessBySlug(params.slug)
-  
-  if (!business) {
+  try {
+    const business: Business | null = await getBusinessBySlug(params.slug)
+    
+    if (!business) {
+      return {
+        title: 'Business Not Found'
+      }
+    }
+
+    const [category, area] = await Promise.all([
+      getCategoryBySlug(business.category),
+      getAreaBySlug(business.area)
+    ])
+
+    const title = `${business.name} - ${category?.name || business.category} in ${area?.name || business.area}`
+    const description = business.description || `${business.name} is a professional ${business.category} service in ${business.area}. Contact us for quality service and expert advice.`
+
+    return {
+      title: `${title} | Waterlooville Directory`,
+      description,
+      openGraph: {
+        title,
+        description,
+        type: 'website',
+      },
+    }
+  } catch (error) {
+    console.error('[METADATA_ERROR]', { 
+      path: `/biz/${params.slug}`, 
+      error: error instanceof Error ? error.message : String(error) 
+    })
     return {
       title: 'Business Not Found'
     }
   }
-
-  const [category, area] = await Promise.all([
-    getCategoryBySlug(business.category),
-    getAreaBySlug(business.area)
-  ])
-
-  const title = `${business.name} - ${category?.name || business.category} in ${area?.name || business.area}`
-  const description = business.description || `${business.name} is a professional ${business.category} service in ${business.area}. Contact us for quality service and expert advice.`
-
-  return {
-    title: `${title} | Waterlooville Directory`,
-    description,
-    openGraph: {
-      title,
-      description,
-      type: 'website',
-    },
-  }
 }
 
 export default async function BusinessPage({ params }: BusinessPageProps) {
-  const business: Business | null = await getBusinessBySlug(params.slug)
-  
-  if (!business) {
-    notFound()
-  }
+  try {
+    const business: Business | null = await getBusinessBySlug(params.slug)
+    
+    if (!business) {
+      notFound()
+    }
 
   const [category, area, featuredBusinesses, similarBusinesses] = await Promise.all([
     getCategoryBySlug(business.category),
@@ -506,5 +519,13 @@ export default async function BusinessPage({ params }: BusinessPageProps) {
       </div>
     </>
   )
+  } catch (error) {
+    console.error('[PAGE_ERROR]', { 
+      path: `/biz/${params.slug}`, 
+      slug: params.slug,
+      error: error instanceof Error ? error.message : String(error) 
+    })
+    throw error // This will trigger the error.tsx boundary
+  }
 }
 

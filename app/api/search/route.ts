@@ -1,8 +1,8 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { getBusinesses } from '@/lib/db'
 
+export const runtime = 'nodejs'
 
-export const dynamic = 'force-dynamic';
 export async function GET(request: NextRequest) {
   try {
     const searchParams = request.nextUrl.searchParams
@@ -29,6 +29,10 @@ export async function GET(request: NextRequest) {
 
     return NextResponse.json(businesses)
   } catch (error) {
-    return NextResponse.json({ error: 'Internal server error' }, { status: 500 })
+    console.error('[API_ERROR]', { 
+      route: '/api/search', 
+      error: error instanceof Error ? error.message : String(error) 
+    })
+    return NextResponse.json({ error: 'Internal Server Error' }, { status: 500 })
   }
 }
