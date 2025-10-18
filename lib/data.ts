@@ -22,6 +22,7 @@ async function getArticleBusinessImage(article: any): Promise<string | undefined
     // Fallback to default image
     return 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&h=400&fit=crop';
   } catch (error) {
+    // Return default image if any error occurs
     return 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&h=400&fit=crop';
   }
 }
@@ -54,7 +55,7 @@ export async function getFeatureArticle(): Promise<Article | null> {
       readTime: featured.readTime
     };
   } catch (error) {
-    console.error('Error fetching feature article:', error);
+    // Return null if there's any error loading the article
     return null;
   }
 }
@@ -90,7 +91,7 @@ export async function getLatestArticles(n = 9): Promise<Article[]> {
     
     return articlesWithImages;
   } catch (error) {
-    console.error('Error fetching latest articles:', error);
+    // Return empty array if there's any error
     return [];
   }
 }
@@ -130,7 +131,7 @@ export async function getMostRead(n = 8): Promise<Article[]> {
     
     return articlesWithImages;
   } catch (error) {
-    console.error('Error fetching most read articles:', error);
+    // Return empty array if there's any error
     return [];
   }
 }
@@ -167,7 +168,7 @@ export async function getTopCategories(n = 12): Promise<Category[]> {
       description: cat.description
     }));
   } catch (error) {
-    console.error('Error fetching categories:', error);
+    // Return empty array if there's any error
     return [];
   }
 }
@@ -184,7 +185,7 @@ export async function getAreas(n = 8): Promise<Area[]> {
       name: area.name
     }));
   } catch (error) {
-    console.error('Error fetching areas:', error);
+    // Return empty array if there's any error
     return [];
   }
 }
@@ -211,7 +212,7 @@ export async function getFeaturedBusinesses(n = 8): Promise<Business[]> {
       featured: business.featured
     }));
   } catch (error) {
-    console.error('Error fetching featured businesses:', error);
+    // Return empty array if there's any error
     return [];
   }
 }
