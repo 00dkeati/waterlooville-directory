@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useState, useEffect, Suspense } from 'react'
 import { useSearchParams } from 'next/navigation'
 import { getBusinesses, getCategories, getAreas } from '@/lib/db'
 import BusinessCard from '@/components/BusinessCard'
@@ -8,7 +8,7 @@ import Breadcrumbs from '@/components/Breadcrumbs'
 import TopNav from "@/app/(site)/components/TopNav"
 import { Business, Category, Area } from '@/lib/db'
 
-export default function SearchPage() {
+function SearchContent() {
   const [businesses, setBusinesses] = useState<Business[]>([])
   const [categories, setCategories] = useState<Category[]>([])
   const [areas, setAreas] = useState<Area[]>([])
@@ -200,5 +200,40 @@ export default function SearchPage() {
         </div>
       </div>
     </>
+  )
+}
+
+function SearchLoading() {
+  return (
+    <>
+      <TopNav />
+      <Breadcrumbs items={[
+        { label: 'Search' }
+      ]} />
+
+      <div className="max-w-6xl mx-auto px-4 py-8">
+        <header className="mb-8">
+          <h1 className="text-4xl font-bold text-gray-900 mb-4">
+            Search Local Businesses
+          </h1>
+          <p className="text-xl text-gray-700">
+            Find the perfect local business for your needs
+          </p>
+        </header>
+
+        <div className="text-center py-12">
+          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600 mx-auto"></div>
+          <p className="mt-4 text-gray-600">Loading search...</p>
+        </div>
+      </div>
+    </>
+  )
+}
+
+export default function SearchPage() {
+  return (
+    <Suspense fallback={<SearchLoading />}>
+      <SearchContent />
+    </Suspense>
   )
 }
