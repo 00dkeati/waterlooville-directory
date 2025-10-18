@@ -32,7 +32,6 @@ export default async function HomePage() {
                           alt={featureArticle.title}
                           className="w-full h-full object-cover"
                           onError={(e) => {
-                            console.log('Image failed to load, trying fallback');
                             e.currentTarget.src = 'https://via.placeholder.com/800x600/4ade80/ffffff?text=Barber+Shop';
                           }}
                         />
@@ -40,10 +39,6 @@ export default async function HomePage() {
                           <span className="bg-green-600 text-white px-3 py-1 rounded-full text-sm font-semibold">
                             {featureArticle.kicker || 'Featured'}
                           </span>
-                        </div>
-                        {/* Debug info */}
-                        <div className="absolute bottom-4 left-4 bg-black bg-opacity-50 text-white text-xs p-2 rounded">
-                          Debug: {featureArticle.imageUrl}
                         </div>
                       </div>
                     )}
