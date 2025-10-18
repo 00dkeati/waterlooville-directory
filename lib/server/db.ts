@@ -1,10 +1,30 @@
 import { createClient } from '@libsql/client'
 
-// Centralized database client
-const client = createClient({
-  url: process.env.TURSO_DATABASE_URL ?? '',
-  authToken: process.env.TURSO_AUTH_TOKEN ?? '',
-})
+// Centralized database client - lazy initialization
+let client: any = null
+
+function getClient() {
+  if (!client) {
+    const databaseUrl = process.env.TURSO_DATABASE_URL ?? ''
+    const authToken = process.env.TURSO_AUTH_TOKEN ?? ''
+    
+    // Only create client if we have valid credentials
+    if (databaseUrl && authToken) {
+      client = createClient({
+        url: databaseUrl,
+        authToken: authToken,
+      })
+    } else {
+      // Return a mock client for build time
+      client = {
+        execute: async () => {
+          throw new Error('Database not configured')
+        }
+      }
+    }
+  }
+  return client
+}
 
 // Check if required environment variables are present
 if (!process.env.TURSO_DATABASE_URL) {
@@ -18,7 +38,8 @@ if (!process.env.TURSO_AUTH_TOKEN) {
 // Database ping function for health checks
 export async function dbPing(): Promise<boolean> {
   try {
-    await client.execute('SELECT 1')
+    const dbClient = getClient()
+    await dbClient.execute('SELECT 1')
     return true
   } catch (error) {
     console.error('[DB_PING_ERROR]', error)
@@ -26,6 +47,6 @@ export async function dbPing(): Promise<boolean> {
   }
 }
 
-// Export the client for use in other modules
-export { client }
-export default client
+// Export the client getter for use in other modules
+export { getClient }
+export default getClient

@@ -14,8 +14,10 @@ export async function GET() {
       timestamp: new Date().toISOString(),
     }
 
-    // Test database connection
-    checks.database = await dbPing()
+    // Only test database connection if we have environment variables
+    if (checks.environment.TURSO_DATABASE_URL && checks.environment.TURSO_AUTH_TOKEN) {
+      checks.database = await dbPing()
+    }
 
     const allChecksPass = checks.database && 
       checks.environment.TURSO_DATABASE_URL && 
