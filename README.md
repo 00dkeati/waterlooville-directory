@@ -19,3 +19,4 @@ A comprehensive local business directory and community guide for Waterlooville, 
 - All TypeScript errors fixed
 # Trigger fresh deployment
 # Deployment fix
+# Force fresh deployment
