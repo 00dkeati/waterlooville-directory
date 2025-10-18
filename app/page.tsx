@@ -28,7 +28,7 @@ export default async function HomePage() {
                     {featureArticle.imageUrl && (
                       <div className="md:w-1/2 relative h-64 md:h-auto">
                         <img
-                          src="https://images.unsplash.com/photo-1585747860715-2ba37e788b7d?w=800&h=600&fit=crop&q=80"
+                          src="https://images.pexels.com/photos/1319460/pexels-photo-1319460.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop"
                           alt={featureArticle.title}
                           className="w-full h-full object-cover"
                           onError={(e) => {

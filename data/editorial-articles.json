@@ -45,7 +45,14 @@
       }
     ],
     "relatedBusinesses": [],
-    "tags": ["driving instructors", "driving lessons", "waterlooville", "education", "training", "driving test"],
+    "tags": [
+      "driving instructors",
+      "driving lessons",
+      "waterlooville",
+      "education",
+      "training",
+      "driving test"
+    ],
     "readTime": 8
   },
   {
@@ -195,7 +202,14 @@
       "s-l-turner-carpentry",
       "coombs-carpentry"
     ],
-    "tags": ["carpenters", "joiners", "home improvement", "waterlooville", "woodwork", "2025"],
+    "tags": [
+      "carpenters",
+      "joiners",
+      "home improvement",
+      "waterlooville",
+      "woodwork",
+      "2025"
+    ],
     "readTime": 6
   },
   {
@@ -259,10 +273,25 @@
                 "text": "The meat was very dry and over done, as were the vegetables - everything was tough"
               }
             ],
-            "strengths": ["Exceptional food quality", "Very generous portion sizes", "Consistently praised service", "Beautiful countryside setting"],
-            "weaknesses": ["Food service ends at 7pm on Sundays", "Higher pricing"],
-            "meatOptions": ["Roast Beef", "Roast Lamb"],
-            "specialFeatures": ["New management since March 2025", "Listed building", "Essential booking required"]
+            "strengths": [
+              "Exceptional food quality",
+              "Very generous portion sizes",
+              "Consistently praised service",
+              "Beautiful countryside setting"
+            ],
+            "weaknesses": [
+              "Food service ends at 7pm on Sundays",
+              "Higher pricing"
+            ],
+            "meatOptions": [
+              "Roast Beef",
+              "Roast Lamb"
+            ],
+            "specialFeatures": [
+              "New management since March 2025",
+              "Listed building",
+              "Essential booking required"
+            ]
           },
           {
             "rank": 2,
@@ -270,9 +299,9 @@
             "location": "Waterlooville",
             "address": "Waterlooville",
             "phone": "Not specified",
-            "rating": 5.0,
+            "rating": 5,
             "reviewCount": 66,
-            "overallScore": 6.20,
+            "overallScore": 6.2,
             "priceRange": "£12-18",
             "image": "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=400&h=300&fit=crop",
             "positiveReviews": [
@@ -288,10 +317,25 @@
               }
             ],
             "negativeReviews": [],
-            "strengths": ["Perfect 5.0 rating", "Consistent quality", "Good value for money", "Friendly service"],
-            "weaknesses": ["Fewer reviews overall", "Limited information available"],
-            "meatOptions": ["Roast Pork", "Roast Turkey", "Roast Beef"],
-            "specialFeatures": ["Hidden gem", "Family friendly"]
+            "strengths": [
+              "Perfect 5.0 rating",
+              "Consistent quality",
+              "Good value for money",
+              "Friendly service"
+            ],
+            "weaknesses": [
+              "Fewer reviews overall",
+              "Limited information available"
+            ],
+            "meatOptions": [
+              "Roast Pork",
+              "Roast Turkey",
+              "Roast Beef"
+            ],
+            "specialFeatures": [
+              "Hidden gem",
+              "Family friendly"
+            ]
           },
           {
             "rank": 3,
@@ -323,10 +367,27 @@
                 "text": "The roast potatoes were soggy, the Yorkshire puddings were burnt, and the meat was tough"
               }
             ],
-            "strengths": ["Serves food until 8pm", "Beautiful countryside views", "Dog friendly", "Good portion sizes"],
-            "weaknesses": ["Inconsistent quality during busy periods", "Can get very busy"],
-            "meatOptions": ["Roast Beef", "Roast Pork", "Roast Chicken", "Roast Lamb"],
-            "specialFeatures": ["Late Sunday dining", "Historic pub", "Countryside location"]
+            "strengths": [
+              "Serves food until 8pm",
+              "Beautiful countryside views",
+              "Dog friendly",
+              "Good portion sizes"
+            ],
+            "weaknesses": [
+              "Inconsistent quality during busy periods",
+              "Can get very busy"
+            ],
+            "meatOptions": [
+              "Roast Beef",
+              "Roast Pork",
+              "Roast Chicken",
+              "Roast Lamb"
+            ],
+            "specialFeatures": [
+              "Late Sunday dining",
+              "Historic pub",
+              "Countryside location"
+            ]
           },
           {
             "rank": 4,
@@ -336,7 +397,7 @@
             "phone": "Not specified",
             "rating": 4.1,
             "reviewCount": 341,
-            "overallScore": 6.10,
+            "overallScore": 6.1,
             "priceRange": "£19-26",
             "image": "https://images.unsplash.com/photo-1563379091339-03246963d4d0?w=400&h=300&fit=crop",
             "positiveReviews": [
@@ -358,10 +419,27 @@
                 "text": "Meals are a rip off. Expensive and not value for money"
               }
             ],
-            "strengths": ["High-quality ingredients", "Beautiful presentation", "Rich red wine gravy", "Charming countryside location"],
-            "weaknesses": ["Expensive pricing", "12.5% service charge added"],
-            "meatOptions": ["Sussex Rump of Lamb", "Striploin of Beef", "Roast Chicken", "Slow-roasted Pork Belly"],
-            "specialFeatures": ["Premium pricing", "Countryside setting", "Serves until 8pm"]
+            "strengths": [
+              "High-quality ingredients",
+              "Beautiful presentation",
+              "Rich red wine gravy",
+              "Charming countryside location"
+            ],
+            "weaknesses": [
+              "Expensive pricing",
+              "12.5% service charge added"
+            ],
+            "meatOptions": [
+              "Sussex Rump of Lamb",
+              "Striploin of Beef",
+              "Roast Chicken",
+              "Slow-roasted Pork Belly"
+            ],
+            "specialFeatures": [
+              "Premium pricing",
+              "Countryside setting",
+              "Serves until 8pm"
+            ]
           },
           {
             "rank": 5,
@@ -371,7 +449,7 @@
             "phone": "Not specified",
             "rating": 4.6,
             "reviewCount": 331,
-            "overallScore": 5.90,
+            "overallScore": 5.9,
             "priceRange": "£15-22",
             "image": "https://images.unsplash.com/photo-1582878826629-29b7ad1cdc43?w=400&h=300&fit=crop",
             "positiveReviews": [
@@ -387,10 +465,26 @@
               }
             ],
             "negativeReviews": [],
-            "strengths": ["Exceptional food quality", "Fantastic value for money", "Attentive service", "Perfectly cooked meats"],
-            "weaknesses": ["Closes at 7pm on Sundays", "Limited seating"],
-            "meatOptions": ["Lamb", "Pork Belly", "Beef"],
-            "specialFeatures": ["Head chef Jordan", "Basque cheesecake", "Early closing"]
+            "strengths": [
+              "Exceptional food quality",
+              "Fantastic value for money",
+              "Attentive service",
+              "Perfectly cooked meats"
+            ],
+            "weaknesses": [
+              "Closes at 7pm on Sundays",
+              "Limited seating"
+            ],
+            "meatOptions": [
+              "Lamb",
+              "Pork Belly",
+              "Beef"
+            ],
+            "specialFeatures": [
+              "Head chef Jordan",
+              "Basque cheesecake",
+              "Early closing"
+            ]
           }
         ]
       },
@@ -442,13 +536,21 @@
         "text": "Most venues offer a selection of roast meats including Beef (most commonly available), Pork (often served with crackling), Chicken (standard offering), and Lamb (available at premium venues). Particularly praised options include Bird in Hand's high-quality produce, The Ship & Bell's melt-in-the-mouth pork belly, and The Bat & Ball's tender beef 'perfectly cooked pink'."
       }
     ],
-    "tags": ["sunday roast", "waterlooville", "horndean", "purbrook", "pub food", "restaurant guide", "food review"],
+    "tags": [
+      "sunday roast",
+      "waterlooville",
+      "horndean",
+      "purbrook",
+      "pub food",
+      "restaurant guide",
+      "food review"
+    ],
     "relatedBusinesses": [
-      "bird-in-hand-waterlooville",
-      "the-centurion-waterlooville", 
+      "the-bird-in-hand",
+      "the-centurion",
       "the-bat-ball-hambledon",
-      "the-george-inn-finchdean",
-      "number-73-bar-kitchen-waterlooville"
+      "george-inn",
+      "number-73-bar-and-kitchen"
     ]
   },
   {
@@ -586,7 +688,14 @@
       "cubitt-west-waterlooville-estate-agents",
       "fox-and-sons-estate-agents-waterlooville"
     ],
-    "tags": ["estate agents", "property", "waterlooville", "buying", "selling", "2025"],
+    "tags": [
+      "estate agents",
+      "property",
+      "waterlooville",
+      "buying",
+      "selling",
+      "2025"
+    ],
     "readTime": 6
   },
   {
@@ -769,7 +878,16 @@
       "number-73-bar-and-kitchen",
       "barnards-restaurant"
     ],
-    "tags": ["restaurants", "dining", "food", "waterlooville", "horndean", "pubs", "curry", "2025"],
+    "tags": [
+      "restaurants",
+      "dining",
+      "food",
+      "waterlooville",
+      "horndean",
+      "pubs",
+      "curry",
+      "2025"
+    ],
     "readTime": 8
   },
   {
@@ -825,8 +943,16 @@
                 "text": "AVOID AT ALL COSTS!! You do not want to order from here we got served up raw chicken and got very ill, also missing items after spending over £50 with them!"
               }
             ],
-            "strengths": ["Excellent portions", "Consistent quality", "Friendly staff", "Good pricing"],
-            "weaknesses": ["Cash only", "Occasional quality issues"]
+            "strengths": [
+              "Excellent portions",
+              "Consistent quality",
+              "Friendly staff",
+              "Good pricing"
+            ],
+            "weaknesses": [
+              "Cash only",
+              "Occasional quality issues"
+            ]
           },
           {
             "rank": 2,
@@ -858,8 +984,16 @@
                 "text": "Absolutely disgusting. Do not order the munch box, it's terrible. Nothing like you're expecting, greasy, cold, horrible Chinese food."
               }
             ],
-            "strengths": ["Best chicken satay skewers", "Excellent Pad Thai", "Spotless kitchen", "Good value"],
-            "weaknesses": ["Inconsistent quality", "Munch box is poor"]
+            "strengths": [
+              "Best chicken satay skewers",
+              "Excellent Pad Thai",
+              "Spotless kitchen",
+              "Good value"
+            ],
+            "weaknesses": [
+              "Inconsistent quality",
+              "Munch box is poor"
+            ]
           },
           {
             "rank": 3,
@@ -891,8 +1025,16 @@
                 "text": "I ordered from there tonight WILL NOT BE ORDERING FROM THERE AGAIN when delivery turned up delivery driver was fine but the food was awful. The chicken balls were soggy and the chips were cold."
               }
             ],
-            "strengths": ["Good food", "Quick delivery", "Friendly staff"],
-            "weaknesses": ["Inconsistent quality", "Long delivery times", "Poor customer service"]
+            "strengths": [
+              "Good food",
+              "Quick delivery",
+              "Friendly staff"
+            ],
+            "weaknesses": [
+              "Inconsistent quality",
+              "Long delivery times",
+              "Poor customer service"
+            ]
           },
           {
             "rank": 4,
@@ -924,8 +1066,16 @@
                 "text": "The restaurant has gone down hill, when we arrived there was one other table in use, over £6.00 for 3/4s of a pint of lager."
               }
             ],
-            "strengths": ["Amazing food", "Clean taste", "Friendly staff"],
-            "weaknesses": ["High drink prices", "Inconsistent quality", "Service issues"]
+            "strengths": [
+              "Amazing food",
+              "Clean taste",
+              "Friendly staff"
+            ],
+            "weaknesses": [
+              "High drink prices",
+              "Inconsistent quality",
+              "Service issues"
+            ]
           },
           {
             "rank": 5,
@@ -957,8 +1107,16 @@
                 "text": "Rude staff. My dad ordered a portion of chips. He told the man serving that he had been waiting 20 mins and inquired in a friendly manner roughly how long it will be. The guy serving accused him of lying about waiting 20 mins."
               }
             ],
-            "strengths": ["20 years experience", "Cooked to perfection", "Excellent portions"],
-            "weaknesses": ["Rude staff", "Long waiting times", "Occasional mistakes"]
+            "strengths": [
+              "20 years experience",
+              "Cooked to perfection",
+              "Excellent portions"
+            ],
+            "weaknesses": [
+              "Rude staff",
+              "Long waiting times",
+              "Occasional mistakes"
+            ]
           },
           {
             "rank": 6,
@@ -985,8 +1143,15 @@
                 "text": "I've purchased from New Purbrook Garden this evening for my daughter birthday and the food was the worst food I've had. It was very obvious that the Crispy shredded chicken was days old and refried again and was oil soaked and hard."
               }
             ],
-            "strengths": ["Good flavor", "Variety of options", "Friendly staff"],
-            "weaknesses": ["Food quality issues", "Slow delivery"]
+            "strengths": [
+              "Good flavor",
+              "Variety of options",
+              "Friendly staff"
+            ],
+            "weaknesses": [
+              "Food quality issues",
+              "Slow delivery"
+            ]
           },
           {
             "rank": 7,
@@ -1018,8 +1183,16 @@
                 "text": "I've ordered from lucky house for at least 10 years and the food has always been Lovely, but this past year the food has gone down hill. I ordered chicken fried rice which tasted and smelt like an old ash tray."
               }
             ],
-            "strengths": ["Large portions", "Quick delivery", "Good curry sauce"],
-            "weaknesses": ["Inconsistent quality", "Bland dishes", "Missing items"]
+            "strengths": [
+              "Large portions",
+              "Quick delivery",
+              "Good curry sauce"
+            ],
+            "weaknesses": [
+              "Inconsistent quality",
+              "Bland dishes",
+              "Missing items"
+            ]
           },
           {
             "rank": 8,
@@ -1051,8 +1224,17 @@
                 "text": "The ribs were fatty and gristly I asked for no carrots in chow mein but they were in there the chow mein was tasteless even with BBQ sauce"
               }
             ],
-            "strengths": ["Excellent food quality", "Fresh tasting", "Speedy delivery", "Good portions"],
-            "weaknesses": ["Late delivery", "Cold food", "Fatty ribs"]
+            "strengths": [
+              "Excellent food quality",
+              "Fresh tasting",
+              "Speedy delivery",
+              "Good portions"
+            ],
+            "weaknesses": [
+              "Late delivery",
+              "Cold food",
+              "Fatty ribs"
+            ]
           }
         ]
       },
@@ -1107,7 +1289,16 @@
       "lucky-house",
       "hakka-kitchen"
     ],
-    "tags": ["chinese", "takeaway", "food", "waterlooville", "horndean", "purbrook", "delivery", "2025"],
+    "tags": [
+      "chinese",
+      "takeaway",
+      "food",
+      "waterlooville",
+      "horndean",
+      "purbrook",
+      "delivery",
+      "2025"
+    ],
     "readTime": 7
   },
   {
@@ -1173,7 +1364,13 @@
       }
     ],
     "relatedBusinesses": [],
-    "tags": ["coffee", "cafes", "waterlooville", "independent", "local business"],
+    "tags": [
+      "coffee",
+      "cafes",
+      "waterlooville",
+      "independent",
+      "local business"
+    ],
     "readTime": 4
   },
   {
@@ -1236,7 +1433,13 @@
       }
     ],
     "relatedBusinesses": [],
-    "tags": ["plumbers", "home services", "waterlooville", "tips", "advice"],
+    "tags": [
+      "plumbers",
+      "home services",
+      "waterlooville",
+      "tips",
+      "advice"
+    ],
     "readTime": 5
   },
   {
@@ -1295,7 +1498,13 @@
       }
     ],
     "relatedBusinesses": [],
-    "tags": ["hair salons", "beauty", "waterlooville", "hairdressers", "grooming"],
+    "tags": [
+      "hair salons",
+      "beauty",
+      "waterlooville",
+      "hairdressers",
+      "grooming"
+    ],
     "readTime": 5
   },
   {
@@ -1359,7 +1568,13 @@
       }
     ],
     "relatedBusinesses": [],
-    "tags": ["shopping", "retail park", "waterlooville", "asda", "stores"],
+    "tags": [
+      "shopping",
+      "retail park",
+      "waterlooville",
+      "asda",
+      "stores"
+    ],
     "readTime": 4
   },
   {
@@ -1416,7 +1631,13 @@
       }
     ],
     "relatedBusinesses": [],
-    "tags": ["sunday roast", "pubs", "food", "waterlooville", "dining"],
+    "tags": [
+      "sunday roast",
+      "pubs",
+      "food",
+      "waterlooville",
+      "dining"
+    ],
     "readTime": 5
   },
   {
@@ -1673,8 +1894,16 @@
       "la-barbers-widley",
       "jays-barbers-cowplain"
     ],
-    "tags": ["mens hairdressers", "barbers", "haircuts", "waterlooville", "horndean", "cowplain", "grooming", "2025"],
+    "tags": [
+      "mens hairdressers",
+      "barbers",
+      "haircuts",
+      "waterlooville",
+      "horndean",
+      "cowplain",
+      "grooming",
+      "2025"
+    ],
     "readTime": 8
   }
 ]
-
